@@ -17,19 +17,19 @@ export const GlobalStyle = createGlobalStyle`
   border: 0;
   vertical-align: baseline;
 }
+*, ::before, ::after {
+  box-sizing: border-box;
+}
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
   footer, header, hgroup, menu, nav, section {
     display: block;
 }
-h1 {
-
-}
 body {
   background-color: white;
-  max-width: 1440px;
+  ${'' /* max-width: 1440px; */}
   margin: auto;
-  padding: 0 7%;
+  ${'' /* padding: 0 7%; */}
   line-height: 1;
   height: 100vh;
 }
@@ -71,5 +71,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.active {
+  color: ${colors.secondary};
+  font-weight: 400;
 }
 `

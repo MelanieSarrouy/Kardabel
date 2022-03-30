@@ -3,6 +3,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // styles imports
 import { GlobalStyle } from '../styles/bases/globalStyle'
+import Header from './components/Header'
+import Main from './components/Main'
 // import { Main } from '../styles/bases/main'
 // components imports
 import Homepage from './pages/Homepage'
@@ -17,16 +19,17 @@ import Homepage from './pages/Homepage'
  */
 
 export const App = () => {
-
   return (
     <>
       <BrowserRouter>
         <GlobalStyle />
+        <Header />
+        <Main>
           <Routes>
             <Route path="/" element={<Homepage />} />
           </Routes>
+        </Main>
       </BrowserRouter>
     </>
   )
 }
-
