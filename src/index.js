@@ -1,7 +1,6 @@
 import React from 'react'
-import './index.css'
 import * as ReactDOMClient from 'react-dom/client'
-import App from './App'
+import { App } from './React/App'
 import reportWebVitals from './reportWebVitals'
 
 const container = document.getElementById('root')
@@ -9,7 +8,7 @@ const root = ReactDOMClient.createRoot(container)
 
 root.render(
   <React.StrictMode>
-    <App tab="home" />
+    <App tab='accueil' />
   </React.StrictMode>
 )
 
