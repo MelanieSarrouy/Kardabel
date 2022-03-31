@@ -1,15 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 import colors from './colors'
-
-// font-family: 'Outfit', sans-serif;
-
-// font-family: 'Reem Kufi', sans-serif;
+import fonts from './fonts'
 
 export const GlobalStyle = createGlobalStyle`
 /* Styles principaux */
 * {
-  font-family: 'Urbanist','Open Sans', Helvetica, sans-serif;
-  color: ${colors.text};
+  font-family: ${fonts.txt};
+  color: ${colors.primary};
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -27,11 +24,9 @@ export const GlobalStyle = createGlobalStyle`
 }
 body {
   background-color: white;
-  ${'' /* max-width: 1440px; */}
   margin: auto;
-  ${'' /* padding: 0 7%; */}
   line-height: 1;
-  height: 100vh;
+  height: 100vh; 
 }
 img {
   width: 100%;
@@ -51,11 +46,6 @@ a {
   clip:rect(0,0,0,0);
   white-space:nowrap;
   border:0
-}
-.main {
-  display: flex;
-  flex-direction: column;
-
 }
 ol, ul {
   list-style: none;

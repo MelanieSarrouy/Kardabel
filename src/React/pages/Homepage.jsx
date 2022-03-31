@@ -1,8 +1,10 @@
-// IMPORTS // ______________________________________________________________
+/* IMPORTS */
 
 import React from 'react'
+import SectionIntroAgence from '../components/SectionIntroAgence'
 
 // JSX // _________________________________________________________________
+
 
 /**
  * Homepage component to display website's homepage
@@ -11,10 +13,9 @@ import React from 'react'
  */
 
 const Homepage = () => {
-
   return (
     <>
-      <h2>L'Agence</h2>
+      <SectionIntroAgence />
     </>
   )
 }
