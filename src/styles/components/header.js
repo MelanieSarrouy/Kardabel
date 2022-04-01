@@ -4,20 +4,22 @@ import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 
 export const HeaderStyle = styled.header`
-  background-color: ${colors.primary}D8;
-  padding: 0.6rem 7%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 1000;
+  background-color: ${colors.primary}D8;
+
 `
 export const DivHeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
+  max-width: 2200px;
+  margin: auto;
+  padding: 0.4rem 7%;
 `
 export const ImgStyle = styled.img`
   max-width: 160px;
@@ -26,7 +28,6 @@ export const ImgStyle = styled.img`
 export const NavStyle = styled.nav`
   display: flex;
   justify-content: end;
-  width: 100%;
 `
 export const NavLinkStyle = styled(NavLink)`
   font-family: ${fonts.titles};

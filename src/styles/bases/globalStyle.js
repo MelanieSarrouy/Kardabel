@@ -24,9 +24,9 @@ export const GlobalStyle = createGlobalStyle`
 }
 body {
   background-color: white;
+  max-width: 2200px;
   margin: auto;
   line-height: 1;
-  height: 100vh; 
 }
 img {
   width: 100%;
