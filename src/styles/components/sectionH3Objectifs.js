@@ -6,6 +6,7 @@ export const SectionObjectifs = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10rem;
 `
 export const DivObectifsContent = styled.div`
   display: flex;

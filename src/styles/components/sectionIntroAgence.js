@@ -84,6 +84,9 @@ export const TextIntro = styled.p`
   text-align: center;
   line-height: 3rem;
   padding: 2rem 5%;
+  @media (max-width: 1023px) {
+    padding: 2rem 0;
+  }
 `
 export const DivButtonContainer = styled.div`
   display: flex;
