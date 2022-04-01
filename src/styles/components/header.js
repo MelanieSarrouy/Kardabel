@@ -19,7 +19,7 @@ export const DivHeaderContent = styled.div`
   align-items: center;
   max-width: 2200px;
   margin: auto;
-  padding: 0.4rem 7%;
+  padding: 0.6rem 7%;
 `
 export const ImgStyle = styled.img`
   max-width: 160px;
