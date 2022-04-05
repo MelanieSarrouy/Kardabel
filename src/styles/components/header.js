@@ -11,7 +11,6 @@ export const HeaderStyle = styled.header`
   width: 100%;
   z-index: 1000;
   background-color: ${colors.primary}D8;
-
 `
 export const DivHeaderContent = styled.div`
   display: flex;
@@ -19,7 +18,7 @@ export const DivHeaderContent = styled.div`
   align-items: center;
   max-width: 2200px;
   margin: auto;
-  padding: 0.6rem 7%;
+  padding: 1rem 7%;
 `
 export const ImgStyle = styled.img`
   max-width: 160px;
@@ -35,10 +34,11 @@ export const NavLinkStyle = styled(NavLink)`
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
-  padding: 0rem 1rem;
+  padding: 1rem 0rem;
+  margin-left: 3rem; 
+
   @media (max-width: 850px) {
     font-size: 0.8rem;
-    padding: 0rem 0.5rem;
   }
   &:hover {
     font-weight: 400;

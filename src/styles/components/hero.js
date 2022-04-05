@@ -227,11 +227,12 @@ export const LinkServices = styled(Link)`
   font-weight: 600;
   font-size: 1.2rem;
   color: ${colors.primary};
-  border: 2px solid ${colors.primary};
+  border: 2px solid ${colors.secondary};
   margin-right: 1rem;
   text-decoration: none;
   transition: color 0.2s, background-color 0.5s;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.15rem 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
   @media (max-width: 950px) {
     font-size: 1rem;
   }
@@ -255,6 +256,7 @@ export const LinkContacts = styled(Link)`
   margin-right: 1rem;
   text-decoration: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
   @media (max-width: 950px) {
     font-size: 1rem;
   }

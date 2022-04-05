@@ -37,7 +37,7 @@ export const Title = styled.div`
 export const SVGTrio = styled.img`
   width: 5.5rem;
   margin: 0 2rem 1rem 1rem;
-  filter: drop-shadow(0.25rem 0.25rem 0.3rem rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5));
   @media (max-width: 1023px) {
     width: 4rem;
     margin-right: 1.6rem;
@@ -61,7 +61,7 @@ export const H2Style = styled.h2`
   text-transform: uppercase;
   font-weight: 600;
   padding-bottom: 5rem;
-  text-shadow: 0.25rem 0.25rem 0.3rem rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5));
   @media (max-width: 1023px) {
     font-size: 5.5rem;
   }
@@ -88,28 +88,36 @@ export const TextIntro = styled.p`
     padding: 2rem 0;
   }
 `
+export const TextCTA = styled.p`
+  padding: 3rem 5% 0rem 5%;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 3rem;
+  font-style: italic;
+`
 export const DivButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: baseline;
-  padding: 5rem 0;
+  padding: 3rem 0;
 `
-export const LinkButtonContactUs = styled(Link)`
-  background-color: ${colors.primary};
+export const LinkButtonServices = styled(Link)`
+  background-color: ${colors.secondary};
   padding: 1rem 3.5rem;
   border-radius: 3rem;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5rem;
-  color: ${colors.background};
-  border: 4px solid ${colors.primary};
-  margin-right: 1rem;
+  color: ${colors.primary};
+  border: 2px solid ${colors.secondary};
   text-decoration: none;
   transition: color 0.2s, background-color 0.5s;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0.15rem 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+
   &:hover {
-    background-color: ${colors.background};
-    border: 4px solid ${colors.primary};
-    color: ${colors.primary};
-    font-weight: 700;
+    background-color: ${colors.primary};
+    border: 2px solid ${colors.secondary};
+    color: ${colors.secondary};
   }
 `

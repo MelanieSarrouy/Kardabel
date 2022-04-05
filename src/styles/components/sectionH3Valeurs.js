@@ -5,7 +5,6 @@ import colors from "../bases/colors"
 
 
 export const SectionValeurs = styled.section`
-  margin-bottom: 5rem;
   background: url(${backgroundVectorValeurs});
   background-size: cover;
   display: flex;
@@ -18,7 +17,7 @@ export const DivValeursContent = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding: 12rem 7% 12rem 7%;
+  padding: 10rem 7% 20rem 7%;
 `
 export const DivArticlesContainer = styled.div`
   display: flex;
@@ -33,7 +32,7 @@ export const ArticleCard = styled.article`
   border-radius: 1.5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 3rem 0;
-  border-left: solid 0.5rem ${colors.primary};
+  border-left: solid 0.5rem ${colors.secondary};
   padding: 2rem;
   min-height: 25rem;
 `

@@ -3,10 +3,11 @@ import trioDore from '../../assets/trio-dore.svg'
 import {
   DivButtonContainer,
   H2Style,
-  LinkButtonContactUs,
+  LinkButtonServices,
   SectionIntro,
   SVGTrio,
   TextIntro,
+  TextCTA,
   Title,
 } from '../../styles/components/sectionIntroAgence'
 
@@ -25,8 +26,12 @@ const SectionIntroAgence = () => {
         chartes graphiques, cartes de visite, flyers , affiches, dépliants, PLV, étiquettes,
         brochures, retouche photo,...
       </TextIntro>
+      <TextCTA>
+        Envie d’en savoir plus sur les différents services que nous proposons pour vous accompagner
+        ?
+      </TextCTA>
       <DivButtonContainer>
-        <LinkButtonContactUs to="/contacts">Nous contacter</LinkButtonContactUs>
+        <LinkButtonServices to="/services">Cliquez ici</LinkButtonServices>
       </DivButtonContainer>
     </SectionIntro>
   )
