@@ -26,13 +26,12 @@ const SectionIntroAgence = () => {
         chartes graphiques, cartes de visite, flyers , affiches, dépliants, PLV, étiquettes,
         brochures, retouche photo,...
       </TextIntro>
-      <TextCTA>
-        Envie d’en savoir plus sur les différents services que nous proposons pour vous accompagner
-        ?
-      </TextCTA>
-      <DivButtonContainer>
-        <LinkButtonServices to="/services">Cliquez ici</LinkButtonServices>
-      </DivButtonContainer>
+        <TextCTA>
+          Envie d’en savoir plus sur les services que nous vous proposons ?
+        </TextCTA>
+        <DivButtonContainer>
+          <LinkButtonServices to="/services">découvrir</LinkButtonServices>
+        </DivButtonContainer>
     </SectionIntro>
   )
 }

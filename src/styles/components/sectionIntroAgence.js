@@ -4,7 +4,7 @@ import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 
 export const SectionIntro = styled.section`
-  padding: 30rem 7% 5rem 7%;
+  padding: 25rem 7% 5rem 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +80,7 @@ export const H2Style = styled.h2`
 `
 export const TextIntro = styled.p`
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   line-height: 3rem;
   padding: 2rem 5%;
@@ -88,23 +88,29 @@ export const TextIntro = styled.p`
     padding: 2rem 0;
   }
 `
+export const DivCTA = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5% 3rem 5%;
+`
 export const TextCTA = styled.p`
-  padding: 3rem 5% 0rem 5%;
   font-weight: 500;
   font-size: 1.8rem;
   text-align: center;
   line-height: 3rem;
   font-style: italic;
+  padding: 3rem 5% 1rem 5%;
 `
 export const DivButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: baseline;
-  padding: 3rem 0;
+  padding: 1rem 5% 3rem 5%;
 `
 export const LinkButtonServices = styled(Link)`
   background-color: ${colors.secondary};
-  padding: 1rem 3.5rem;
+  padding: .8rem 2.5rem;
   border-radius: 3rem;
   font-weight: 600;
   font-size: 1.5rem;
@@ -116,7 +122,7 @@ export const LinkButtonServices = styled(Link)`
   text-transform: uppercase;
 
   &:hover {
-    background-color: ${colors.primary};
+    background-color: ${colors.primaryDark};
     border: 2px solid ${colors.secondary};
     color: ${colors.secondary};
   }

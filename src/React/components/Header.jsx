@@ -17,30 +17,45 @@ const Header = () => {
           <ImgStyle src={logo} alt="logo" />
         </Link>
         <NavStyle>
-          <NavLinkStyle to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-            L'Agence
-          </NavLinkStyle>
-          <NavLinkStyle
-            to="/services"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-          >
-            Services
-          </NavLinkStyle>
-          <NavLinkStyle
-            to="/portfolios"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-          >
-            Portfolios
-          </NavLinkStyle>
-          <NavLinkStyle to="/CV" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-            CV
-          </NavLinkStyle>
-          <NavLinkStyle
-            to="/contacts"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-          >
-            Contacts
-          </NavLinkStyle>
+          <ul>
+            <li>
+              <NavLinkStyle to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+                L'Agence
+              </NavLinkStyle>
+            </li>
+            <li>
+              <NavLinkStyle
+                to="/services"
+                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+              >
+                Services
+              </NavLinkStyle>
+            </li>
+            <li>
+              <NavLinkStyle
+                to="/portfolios"
+                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+              >
+                Portfolios
+              </NavLinkStyle>
+            </li>
+            <li>
+              <NavLinkStyle
+                to="/CV"
+                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+              >
+                CV
+              </NavLinkStyle>
+            </li>
+            <li>
+              <NavLinkStyle
+                to="/contacts"
+                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+              >
+                Contacts
+              </NavLinkStyle>
+            </li>
+          </ul>
         </NavStyle>
       </DivHeaderContent>
     </HeaderStyle>

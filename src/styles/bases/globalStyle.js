@@ -64,7 +64,17 @@ export const GlobalStyle = createGlobalStyle`
   }
   .active {
     font-weight: 400;
-    border-bottom: solid 2px ${colors.secondary};
+    border-bottom: solid 3px ${colors.secondary};
     color: ${colors.secondary};
+    &:hover {
+      color: ${colors.secondary};
+      text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .nav2active {
+    background-color: ${colors.secondary};
+    color: ${colors.primary};
+    border: 2px solid ${colors.secondary};
+    box-shadow: 0px 0.15rem 4px rgba(0, 0, 0, 0.25);
   }
 `

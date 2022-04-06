@@ -3,9 +3,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // styles imports
 import { GlobalStyle } from '../styles/bases/globalStyle'
+import Android from './components/Android'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Identity from './components/Identity'
 import Main from './components/Main'
+import Print from './components/Print'
+import Web from './components/Web'
 // import { Main } from '../styles/bases/main'
 // components imports
 import Homepage from './pages/Homepage'
@@ -30,7 +34,12 @@ export const App = () => {
         <Main>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/services" element={<Services />}>
+              <Route path="identite" element={<Identity />} />
+              <Route path="print" element={<Print />} />
+              <Route path="web" element={<Web />} />
+              <Route path="android" element={<Android />} />
+            </Route>
             <Route path="/portfolios" element={<Services />} />
             <Route path="/cv" element={<Services />} />
             <Route path="/contacts" element={<Services />} />

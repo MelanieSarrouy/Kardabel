@@ -4,7 +4,7 @@ import colors from "../bases/colors"
 
 export const FooterStyle = styled.footer`
   width: 100%;
-  background-color: ${colors.primary};
+  background-color: ${colors.primaryDark};
 `
 export const DivFooterContent = styled.div`
   display: flex;

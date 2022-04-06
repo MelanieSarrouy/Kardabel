@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const MainStyle = styled.main`
-  ${'' /* padding: 0 7%; */}
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 `

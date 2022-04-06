@@ -71,7 +71,6 @@ export const HeroContent = styled.div`
   @media (max-width: 380px) {
     height: 600px;
   }
-
 `
 export const LogoContainer = styled.div`
   width: 100%;
@@ -100,7 +99,6 @@ export const LogoContainer = styled.div`
   @media (max-width: 460px) {
     padding: 4rem 0rem 2rem 0rem;
   }
-
 `
 export const ImgLogo = styled.img`
   max-width: 250px;
@@ -218,7 +216,6 @@ export const ButtonsContainer = styled.div`
     justify-content: center;
     padding: 2rem 0 0 0;
   }
-
 `
 export const LinkServices = styled(Link)`
   background-color: ${colors.secondary};
@@ -231,7 +228,7 @@ export const LinkServices = styled(Link)`
   margin-right: 1rem;
   text-decoration: none;
   transition: color 0.2s, background-color 0.5s;
-  box-shadow: 0px 0.15rem 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   @media (max-width: 950px) {
     font-size: 1rem;
@@ -240,7 +237,7 @@ export const LinkServices = styled(Link)`
     padding: 0.4rem 1.8rem;
   }
   &:hover {
-    background-color: ${colors.primary};
+    background-color: ${colors.primaryDark};
     border: solid 2px ${colors.secondary};
     color: ${colors.secondary};
   }
@@ -253,10 +250,11 @@ export const LinkContacts = styled(Link)`
   font-size: 1.2rem;
   color: ${colors.secondary};
   border: solid 2px ${colors.primary};
-  margin-right: 1rem;
   text-decoration: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
+  transition: color 0.2s, border 0.2s, background-color 0.5s;
+
   @media (max-width: 950px) {
     font-size: 1rem;
   }
@@ -265,5 +263,6 @@ export const LinkContacts = styled(Link)`
   }
   &:hover {
     border: solid 2px ${colors.secondary};
+    background-color: ${colors.primaryDark};
   }
 `

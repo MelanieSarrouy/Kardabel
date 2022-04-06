@@ -1,15 +1,16 @@
 import React from 'react'
 import {
-  DivButtonContainer,
   H2Style,
-  LinkButtonServices,
   SectionIntro,
   SVGTrio,
   TextIntro,
   Title,
 } from '../../styles/components/sectionIntroAgence'
 import trioDore from '../../assets/trio-dore.svg'
-import { Route, Routes } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import { NavServicesStyle } from '../../styles/pages/services'
+import { LinkContacts } from '../../styles/components/hero'
+
 const Services = () => {
   return (
     <div>
@@ -22,19 +23,44 @@ const Services = () => {
           Pour répondre au mieux à vos besoins en communiction et visibilité, nous vous propsons un
           ensemble de services dans le domaine du Design Graphique et du Développement.
         </TextIntro>
-        <DivButtonContainer>
-          <LinkButtonServices to="/services/identite">Identité</LinkButtonServices>
-          <LinkButtonServices to="/services/print">Print</LinkButtonServices>
-          <LinkButtonServices to="/services/web">Web</LinkButtonServices>
-          <LinkButtonServices to="/services/android">Android</LinkButtonServices>
-        </DivButtonContainer>
+        <NavServicesStyle>
+          <ul>
+            <li>
+              <LinkContacts
+                to="/services/identite"
+                className={({ isActive }) => (isActive ? 'nav2active' : 'nav2inactive')}
+              >
+                Identité
+              </LinkContacts>
+            </li>
+            <li>
+              <LinkContacts
+                to="/services/print"
+                className={({ isActive }) => (isActive ? 'nav2active' : 'nav2inactive')}
+              >
+                Print
+              </LinkContacts>
+            </li>
+            <li>
+              <LinkContacts
+                to="/services/web"
+                className={({ isActive }) => (isActive ? 'nav2active' : 'nav2inactive')}
+              >
+                Web
+              </LinkContacts>
+            </li>
+            <li>
+              <LinkContacts
+                to="/services/android"
+                className={({ isActive }) => (isActive ? 'nav2active' : 'nav2inactive')}
+              >
+                Android
+              </LinkContacts>
+            </li>
+          </ul>
+        </NavServicesStyle>
       </SectionIntro>
-        <Routes>
-          <Route path="/services/identite" element={<Services />} />
-          <Route path="/services/print" element={<Services />} />
-          <Route path="/services/web" element={<Services />} />
-          <Route path="/services/android" element={<Services />} />
-        </Routes>
+      <Outlet />
     </div>
   )
 }
