@@ -1,9 +1,9 @@
 /* IMPORTS */
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import SectionH3Objectifs from '../components/SectionH3Objectifs'
 import SectionH3Valeurs from '../components/SectionH3Valeurs'
-import SectionIntroAgence from '../components/SectionIntroAgence'
+import SectionH2IntroAgence from '../components/SectionH2IntroAgence'
 
 
 // JSX // _________________________________________________________________
@@ -15,9 +15,12 @@ import SectionIntroAgence from '../components/SectionIntroAgence'
  */
 
 const Homepage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
-      <SectionIntroAgence />
+      <SectionH2IntroAgence />
       <SectionH3Objectifs />
       <SectionH3Valeurs />
     </>

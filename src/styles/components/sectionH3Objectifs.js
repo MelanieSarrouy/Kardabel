@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import backgroundVectorObectifs from '../../assets/vector-objectifs.svg'
+import backgroundVectorObectifs from '../../assets/shapes/vector-objectifs.svg'
 import fonts from '../../styles/bases/fonts'
 
 export const SectionObjectifs = styled.section`

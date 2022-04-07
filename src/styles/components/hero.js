@@ -131,6 +131,7 @@ export const PTitleStyle = styled.p`
   color: ${colors.secondary};
   font-weight: 700;
   translatex: -0.2rem;
+  text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   @media (max-width: 1240px) {
     font-size: 4.5rem;
   }
@@ -170,6 +171,10 @@ export const H1Style = styled.h1`
   text-transform: uppercase;
   line-height: 2.6rem;
   padding: 3rem 0 3rem 0.2rem;
+  ${'' /* text-shadow: 0rem 0rem 1.8rem rgba(0, 0, 0, 0.6);
+  -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke-color: ${colors.primaryDark}; */}
+
   @media (max-width: 1240px) {
     font-size: 1.5rem;
     padding: 2rem 0 2rem 0.2rem;
@@ -223,7 +228,7 @@ export const LinkServices = styled(Link)`
   border-radius: 2rem;
   font-weight: 600;
   font-size: 1.2rem;
-  color: ${colors.primary};
+  color: ${colors.primaryDark};
   border: 2px solid ${colors.secondary};
   margin-right: 1rem;
   text-decoration: none;

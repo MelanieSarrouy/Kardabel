@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../../assets/kardabel_logo-simple.svg'
-import wave from '../../assets/wave.svg'
+import logo from '../../assets/logo/kardabel_logo-simple.svg'
+import wave from '../../assets/shapes/wave.svg'
 import {
   Baseline,
   ButtonsContainer,

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/kardabel.png'
+import logo from '../../assets/logo/kardabel.png'
 import { DivFooterContent, DivTextFooterContainer, FooterStyle, ImgFooterStyle, LinksFooterStyle, NavFooter, PTextCopyright } from '../../styles/components/footer'
 
 

@@ -13,17 +13,16 @@ export const DivFooterContent = styled.div`
   justify-content: center;
   max-width: 2200px;
   margin: auto;
-  padding: 3rem 7%;
+  padding: 2rem 7%;
 `
 export const ImgFooterStyle = styled.img`
-  max-width: 18rem;
+  max-width: 12rem;
   padding-bottom: 1rem;
 `
 export const DivTextFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 2rem 0 0 0;
   width: 100%;
 `
 export const PTextCopyright = styled.p`

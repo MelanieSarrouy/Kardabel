@@ -25,10 +25,8 @@ export const ImgStyle = styled.img`
   min-width: 100px;
 `
 export const NavStyle = styled.nav`
-  & > ul {
-    display: flex;
-    justify-content: end;
-  }
+  display: flex;
+  justify-content: end;
 `
 export const NavLinkStyle = styled(NavLink)`
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
