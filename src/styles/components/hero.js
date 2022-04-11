@@ -6,34 +6,31 @@ import fonts from '../bases/fonts'
 export const ImgCurvyStyle = styled.img`
   width: 100%;
   position: absolute;
-  top: 0px;
+  top: -50px;
   display: block;
   line-height: 2.6rem;
-  max-width: 2200px;
+  max-width: 1920px;
   margin: auto;
   @media (max-width: 1800px) {
-    top: 50px;
+    top: 20px;
   }
   @media (max-width: 1700px) {
-    top: 100px;
+    top: 40px;
   }
   @media (max-width: 1600px) {
-    top: 200px;
+    top: 90px;
   }
-  @media (max-width: 1360px) {
-    top: 250px;
+  @media (max-width: 1400px) {
+    top: 180px;
   }
-  @media (max-width: 1240px) {
-    top: 150px;
+  @media (max-width: 1100px) {
+    top: 210px;
   }
-  @media (max-width: 1140px) {
-    top: 250px;
+  @media (max-width: 1000px) {
+    top: 240px;
   }
   @media (max-width: 950px) {
-    top: 150px;
-  }
-  @media (max-width: 850px) {
-    top: 200px;
+    top: 160px;
   }
   @media (max-width: 640px) {
     top: 500px;
@@ -50,13 +47,10 @@ export const HeroContent = styled.div`
   padding: 10rem 7%;
   display: flex;
   justify-content: space-between;
-  height: 580px;
+  height: 450px;
   background-color: ${colors.primary};
   z-index: 800;
-  @media (max-width: 2200px) {
-    height: 480px;
-  }
-  @media (max-width: 1240px) {
+  ${'' /* @media (max-width: 1240px) {
     height: 380px;
   }
   @media (max-width: 950px) {
@@ -70,17 +64,14 @@ export const HeroContent = styled.div`
   }
   @media (max-width: 380px) {
     height: 600px;
-  }
+  } */}
 `
 export const LogoContainer = styled.div`
   width: 100%;
   text-align: center;
-  padding: 0 8rem 0 0;
+  padding: 2rem 8rem 0 0;
   z-index: 800;
 
-  @media (max-width: 1980px) {
-    padding: 2rem 8rem 0 0;
-  }
   @media (max-width: 1580px) {
     padding: 3rem 8rem 0 0;
   }

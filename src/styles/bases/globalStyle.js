@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: white;
-    max-width: 2200px;
+    max-width: 1920px;
     margin: auto;
     line-height: 1;
   }

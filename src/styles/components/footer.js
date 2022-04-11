@@ -11,7 +11,7 @@ export const DivFooterContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 2200px;
+  max-width: 1920px;
   margin: auto;
   padding: 2rem 7%;
 `

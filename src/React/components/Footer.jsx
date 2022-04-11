@@ -14,7 +14,7 @@ const Footer = () => {
             <PTextCopyright>Site conçu et développé par Kardabel / Mélanie Sarrouy</PTextCopyright>
           </div>
           <NavFooter>
-            <LinksFooterStyle to="/contacts">Contacts</LinksFooterStyle>
+            <LinksFooterStyle to="/contact">Contact</LinksFooterStyle>
             <LinksFooterStyle to="/mentions-legales">Mentions Légales</LinksFooterStyle>
           </NavFooter>
         </DivTextFooterContainer>

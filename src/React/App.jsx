@@ -40,9 +40,9 @@ export const App = () => {
               <Route path="web" element={<Web />} />
               <Route path="android" element={<Android />} />
             </Route>
-            <Route path="/portfolios" element={<Services />} />
-            <Route path="/cv" element={<Services />} />
-            <Route path="/contacts" element={<Services />} />
+            <Route path="/portfolio" element={<Services />} />
+            {/* <Route path="/cv" element={<Services />} /> */}
+            <Route path="/contact" element={<Services />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Main>

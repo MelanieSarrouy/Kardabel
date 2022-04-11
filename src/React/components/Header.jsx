@@ -27,22 +27,16 @@ const Header = () => {
                 Services
               </NavLinkStyle>
               <NavLinkStyle
-                to="/portfolios"
+                to="/portfolio"
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
               >
-                Portfolios
+                Portfolio
               </NavLinkStyle>
               <NavLinkStyle
-                to="/CV"
+                to="/contact"
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
               >
-                CV
-              </NavLinkStyle>
-              <NavLinkStyle
-                to="/contacts"
-                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-              >
-                Contacts
+                Contact
               </NavLinkStyle>
         </NavStyle>
       </DivHeaderContent>

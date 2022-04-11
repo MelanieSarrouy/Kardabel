@@ -5,7 +5,7 @@ import {
   NavServicesStyle,
   LinkSecondaryStyle,
   LinkSecondaryStyleActive,
-} from '../../styles/pages/services'
+} from '../../styles/components/sectionIntroServices'
 import SectionH3Services from './SectionH3Services'
 
 
@@ -27,22 +27,22 @@ const SectionH2IntroServices = () => {
       <H2Intro title={title} content={content}>
         <NavServicesStyle>
           {identity ? (
-            <LinkSecondaryStyleActive to="/services/identite">Identité</LinkSecondaryStyleActive>
+            <LinkSecondaryStyleActive to="/services">Identité</LinkSecondaryStyleActive>
           ) : (
-            <LinkSecondaryStyle to="/services/identite">Identité</LinkSecondaryStyle>
+            <LinkSecondaryStyle to="/services/identite/#service">Identité</LinkSecondaryStyle>
           )}
           {print ? (
-            <LinkSecondaryStyleActive to="/services/print">Print</LinkSecondaryStyleActive>
+            <LinkSecondaryStyleActive to="/services">Print</LinkSecondaryStyleActive>
           ) : (
             <LinkSecondaryStyle to="/services/print">Print</LinkSecondaryStyle>
           )}
           {web ? (
-            <LinkSecondaryStyleActive to="/services/web">Web</LinkSecondaryStyleActive>
+            <LinkSecondaryStyleActive to="/services">Web</LinkSecondaryStyleActive>
           ) : (
             <LinkSecondaryStyle to="/services/web">Web</LinkSecondaryStyle>
           )}
           {android ? (
-            <LinkSecondaryStyleActive to="/services/android">Android</LinkSecondaryStyleActive>
+            <LinkSecondaryStyleActive to="/services">Android</LinkSecondaryStyleActive>
           ) : (
             <LinkSecondaryStyle to="/services/android">Android</LinkSecondaryStyle>
           )}

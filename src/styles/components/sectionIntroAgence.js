@@ -18,20 +18,20 @@ export const DivButtonContainer = styled.div`
   padding: 1rem 5% 3rem 5%;
 `
 export const LinkButtonServices = styled(Link)`
-  background-color: ${colors.secondary};
+  background-color: ${colors.primary};
   padding: .8rem 2.5rem;
   border-radius: 3rem;
   font-weight: 600;
   font-size: 1.5rem;
-  color: ${colors.primaryDark};
-  border: 2px solid ${colors.secondary};
+  color: ${colors.background};
+  border: 2px solid ${colors.primary};
   text-decoration: none;
-  transition: color 0.2s, background-color 0.5s;
+  transition: color 0.2s, border 0.3s, background-color 0.5s;
   box-shadow: 0px 0.15rem 4px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   &:hover {
     background-color: ${colors.primaryDark};
-    border: 2px solid ${colors.secondary};
-    color: ${colors.secondary};
+    border: 2px solid ${colors.background};
+    color: ${colors.background};
   }
 `
