@@ -1,8 +1,16 @@
 import React from 'react'
-import trioBleu from '../../assets/icons/trio-bleu.svg'
-import objectifsImage from '../../assets/illustrations/Idea applications_Monochromatic.svg'
-import { SectionObjectifs, DivH3Title, DivImgObjContainer, DivObectifsContent, H3Style, ImgObjContainer, PTextObjectifs, SVGTrioH3 } from '../../styles/components/sectionH3Objectifs'
-
+import trioBleu from '../../../assets/icons/trio-bleu.svg'
+import objectifsImage from '../../../assets/illustrations/Idea applications_Monochromatic.svg'
+import {
+  SectionObjectifs,
+  DivH3Title,
+  DivImgObjContainer,
+  DivObectifsContent,
+  H3Style,
+  ImgObjContainer,
+  PTextObjectifs,
+  SVGTrioH3,
+} from '../../../styles/components/pageAgence/sectionH3Objectifs'
 
 const SectionH3Objectifs = () => {
   return (

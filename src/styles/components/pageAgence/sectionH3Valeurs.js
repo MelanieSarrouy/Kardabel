@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import backgroundVectorValeurs from '../../assets/shapes/vector-background-valeurs.svg'
-import colors from "../bases/colors"
+import backgroundVectorValeurs from '../../../assets/shapes/vector-background-valeurs.svg'
+import colors from "../../bases/colors"
 
 
 

@@ -1,7 +1,8 @@
-import backgroundVectorServices from '../../assets/shapes/vector-2.svg'
+import backgroundVectorServices from '../../../assets/shapes/vector-2.svg'
 import styled from 'styled-components'
-import fonts from '../../styles/bases/fonts'
-import { Link } from 'react-router-dom'
+import fonts from '../../bases/fonts'
+import { HashLink } from 'react-router-hash-link'
+
 
 export const Section4Services = styled.section`
   background: url(${backgroundVectorServices});
@@ -13,7 +14,7 @@ export const DivServicesContent = styled.div`
   justify-content: space-between;
   padding: 2rem 7% 10rem 7%;
 `
-export const LinkCardService = styled(Link)`
+export const LinkCardService = styled(HashLink)`
   display: flex;
   flex-direction: column;
   align-items: center;

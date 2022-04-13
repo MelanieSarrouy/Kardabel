@@ -3,13 +3,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // styles imports
 import { GlobalStyle } from '../styles/bases/globalStyle'
-import Android from './components/Android'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Identity from './components/Identity'
-import Main from './components/Main'
-import Print from './components/Print'
-import Web from './components/Web'
+import Android from './components/4pagesService/Android'
+import Footer from './layout/Footer'
+import Header from './layout/Header'
+import Identity from './components/4pagesService/Identity'
+import Main from './layout/Main'
+import Print from './components/4pagesService/Print'
+import Web from './components/4pagesService/Web'
 // import { Main } from '../styles/bases/main'
 // components imports
 import Homepage from './pages/Homepage'
@@ -41,7 +41,6 @@ export const App = () => {
               <Route path="android" element={<Android />} />
             </Route>
             <Route path="/portfolio" element={<Services />} />
-            {/* <Route path="/cv" element={<Services />} /> */}
             <Route path="/contact" element={<Services />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

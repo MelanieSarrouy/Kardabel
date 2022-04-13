@@ -1,7 +1,14 @@
 import React from 'react'
 import logo from '../../assets/logo/kardabel.png'
-import { DivFooterContent, DivTextFooterContainer, FooterStyle, ImgFooterStyle, LinksFooterStyle, NavFooter, PTextCopyright } from '../../styles/components/footer'
-
+import {
+  DivFooterContent,
+  DivTextFooterContainer,
+  FooterStyle,
+  ImgFooterStyle,
+  LinksFooterStyle,
+  NavFooter,
+  PTextCopyright,
+} from '../../styles/layout/footer'
 
 const Footer = () => {
   return (

@@ -2,7 +2,6 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../../assets/logo/kardabel_logo-simple.svg'
-// import wave from '../../assets/shapes/wave.svg'
 import waveAgence from '../../assets/shapes/waveAgence.svg'
 import waveServices from '../../assets/shapes/waveServices.svg'
 import wavePortfolio from '../../assets/shapes/wavePortfolio.svg'
@@ -22,7 +21,7 @@ import {
   PTitleStyle,
   SpanTitle,
   TextHeroContainer,
-} from '../../styles/components/hero'
+} from '../../styles/layout/hero'
 
 export const PTitlePage = styled.p`
   color: ${colors.primaryDark}4D;
@@ -45,10 +44,6 @@ const Hero = () => {
   const portfolio = page.indexOf('portfolio') > -1
   const contact = page.indexOf('contact') > -1
   const agence = !services && !portfolio && !contact
-  console.log(services)
-  console.log(portfolio)
-  console.log(contact)
-  console.log(agence)
 
   return (
     <header>
@@ -64,7 +59,7 @@ const Hero = () => {
             <SpanTitle>Design Graphique & Développement Web</SpanTitle>
           </H1Style>
           <ButtonsContainer>
-            <LinkServices to="/services">Services</LinkServices>
+            <LinkServices to="/services#services">Services</LinkServices>
             <LinkContacts to="/contact">Contact</LinkContacts>
           </ButtonsContainer>
         </TextHeroContainer>

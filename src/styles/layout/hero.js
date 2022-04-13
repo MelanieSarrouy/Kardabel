@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../bases/colors'
 import fonts from '../bases/fonts'
+import { HashLink } from 'react-router-hash-link'
+
 
 export const ImgCurvyStyle = styled.img`
   width: 100%;
@@ -213,7 +215,7 @@ export const ButtonsContainer = styled.div`
     padding: 2rem 0 0 0;
   }
 `
-export const LinkServices = styled(Link)`
+export const LinkServices = styled(HashLink)`
   background-color: ${colors.secondary};
   padding: 0.5rem 2rem;
   border-radius: 2rem;

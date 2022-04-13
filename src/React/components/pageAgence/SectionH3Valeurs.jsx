@@ -1,13 +1,24 @@
 import React from 'react'
-import trioBleu from '../../assets/icons/trio-bleu.svg'
-import eye from '../../assets/icons/vector-eye.svg'
-import sound from '../../assets/icons/vector-sound.svg'
-import solution from '../../assets/icons/vector-solution.svg'
-import regardImage from '../../assets/illustrations/analytics_process_flatline.svg'
-import ecouteImage from '../../assets/illustrations/Consulting_Flatline.svg'
-import solutionsImage from '../../assets/illustrations/Problem Solving_Flatline.svg'
-import { ArticleCard, DivArticlesContainer, DivH4Container, DivIconContainer, DivValeursContent, H4Style, ImgSVGCard, ImgSvgIcon, PtextCards, SectionValeurs } from '../../styles/components/sectionH3Valeurs'
-import { DivH3Title, H3Style, SVGTrioH3 } from '../../styles/components/sectionH3Objectifs'
+import trioBleu from '../../../assets/icons/trio-bleu.svg'
+import eye from '../../../assets/icons/vector-eye.svg'
+import sound from '../../../assets/icons/vector-sound.svg'
+import solution from '../../../assets/icons/vector-solution.svg'
+import regardImage from '../../../assets/illustrations/analytics_process_flatline.svg'
+import ecouteImage from '../../../assets/illustrations/Consulting_Flatline.svg'
+import solutionsImage from '../../../assets/illustrations/Problem Solving_Flatline.svg'
+import {
+  ArticleCard,
+  DivArticlesContainer,
+  DivH4Container,
+  DivIconContainer,
+  DivValeursContent,
+  H4Style,
+  ImgSVGCard,
+  ImgSvgIcon,
+  PtextCards,
+  SectionValeurs,
+} from '../../../styles/components/pageAgence/sectionH3Valeurs'
+import { DivH3Title, H3Style, SVGTrioH3 } from '../../../styles/components/pageAgence/sectionH3Objectifs'
 
 const SectionH3Valeurs = () => {
   return (

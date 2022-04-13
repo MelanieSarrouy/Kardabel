@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import backgroundVectorObectifs from '../../assets/shapes/vector-objectifs.svg'
-import fonts from '../../styles/bases/fonts'
+import backgroundVectorObectifs from '../../../assets/shapes/vector-objectifs.svg'
+import fonts from '../../bases/fonts'
 
 export const SectionObjectifs = styled.section`
   display: flex;

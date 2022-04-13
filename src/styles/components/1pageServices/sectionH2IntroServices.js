@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import colors from '../bases/colors'
+import colors from '../../bases/colors'
+import { HashLink } from 'react-router-hash-link'
 
 export const NavServicesStyle = styled.nav`
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  padding: 3rem 0 1rem 0;
+  & > ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 3rem 0 1rem 0;
+  }
 `
-export const LinkSecondaryStyle = styled(Link)`
+export const LinkSecondaryStyle = styled(HashLink)`
   background-color: ${colors.primary};
   padding: 0.6rem 2rem;
   border-radius: 2rem;
@@ -48,5 +51,4 @@ export const LinkSecondaryStyleActive = styled(Link)`
     border: solid 2px ${colors.primaryDark};
     color: ${colors.primaryDark};
   }
-
 `

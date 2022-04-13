@@ -5,13 +5,13 @@ import {
   SVGTrio,
   TextIntro,
   Title,
-} from '../../styles/components/h2Intro'
+} from '../../styles/layout/h2Intro'
 import trioDore from '../../assets/icons/trio-dore.svg'
 
 
 const H2Intro = (props) => {
   return (
-    <SectionIntro>
+    <SectionIntro id={props.id}>
       <Title>
         <SVGTrio src={trioDore} alt="deco" />
         <H2Style>{props.title}</H2Style>

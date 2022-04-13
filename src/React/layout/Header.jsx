@@ -7,7 +7,7 @@ import {
   ImgStyle,
   NavLinkStyle,
   NavStyle,
-} from '../../styles/components/header'
+} from '../../styles/layout/header'
 
 const Header = () => {
   return (

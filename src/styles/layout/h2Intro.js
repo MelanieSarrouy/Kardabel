@@ -3,7 +3,7 @@ import colors from "../bases/colors"
 import fonts from "../bases/fonts"
 
 export const SectionIntro = styled.section`
-  padding: 25rem 7% 5rem 7%;
+  padding: 25rem 7% 2rem 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;

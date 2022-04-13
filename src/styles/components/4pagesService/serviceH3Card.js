@@ -1,10 +1,8 @@
-import React from 'react'
-import ImgSVGLogo from '../../assets/logo/logo-simple-dore.svg'
-import waveCard from '../../assets/shapes/waveCard.svg'
 import styled from 'styled-components'
+import waveCard from '../../../assets/shapes/waveCard.svg'
 
 export const DivServiceBlock = styled.div`
-  padding: 5rem 7% 5rem 7%;
+  padding: 8rem 7% 5rem 7%;
 `
 export const DivProfileCard = styled.div`
   width: 100%;
@@ -13,10 +11,30 @@ export const DivProfileCard = styled.div`
   background: no-repeat url(${waveCard}) ${(props) => props.color};
   background-size: 70%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
 `
 export const ImgSVGTitle = styled.img`
   width: 80%;
   padding-bottom: 3rem;
+`
+export const UlCardStyle = styled.ul`
+  position: absolute;
+  bottom: 30%;
+  left: 35%;
+`
+export const LiCardstyle = styled.li`
+  padding: 1rem;
+  & > a {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    & > img {
+      width: 2rem;
+      margin-right: 1rem;
+    }
+  }
 `
 export const DivImagesContainer = styled.div`
   display: flex;
@@ -30,20 +48,3 @@ export const ImgSVGLogoDore = styled.img`
 export const ImgSVGIllustrationCard = styled.img`
   max-width: 30rem;
 `
-const ServiceH3Card = (props) => {
-  return (
-    <DivServiceBlock id={props.id} >
-      <DivProfileCard color={props.color}>
-        <ImgSVGTitle src={props.h3Illustration} alt="title" />
-        <h3 className="sr-only">{props.h3Title}</h3>
-        <DivImagesContainer>
-          <ImgSVGLogoDore src={ImgSVGLogo} alt="logo kardabel" />
-          <ImgSVGIllustrationCard src={props.illustrationCard} alt="illustration identité" />
-        </DivImagesContainer>
-      </DivProfileCard>
-      {props.chidren}
-    </DivServiceBlock>
-  )
-}
-
-export default ServiceH3Card

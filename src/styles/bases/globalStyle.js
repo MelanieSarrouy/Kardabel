@@ -22,6 +22,9 @@ export const GlobalStyle = createGlobalStyle`
     footer, header, hgroup, menu, nav, section {
       display: block;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: white;
     max-width: 1920px;

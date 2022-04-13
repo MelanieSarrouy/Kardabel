@@ -1,8 +1,8 @@
 import React from 'react'
-import identityPicture from '../../assets/illustrations/Profile analysis _Flatline.svg'
-import printPicture from '../../assets/illustrations/Designer _Flatline.svg'
-import webPicture from '../../assets/illustrations/Web development _Flatline.svg'
-import androidPicture from '../../assets/illustrations/Authentication_Flatline.svg'
+import identityPicture from '../../../assets/illustrations/Profile analysis _Flatline.svg'
+import printPicture from '../../../assets/illustrations/Designer _Flatline.svg'
+import webPicture from '../../../assets/illustrations/Web development _Flatline.svg'
+import androidPicture from '../../../assets/illustrations/Authentication_Flatline.svg'
 import {
   DivServicesContent,
   H3ServiceStyle,
@@ -10,13 +10,13 @@ import {
   LinkCardService,
   PtextService,
   Section4Services,
-} from '../../styles/components/sectionH3Services'
+} from '../../../styles/components/1pageServices/sectionH3Services'
 
 const SectionH3Services = () => {
   return (
     <Section4Services>
       <DivServicesContent>
-        <LinkCardService to="/services/identite">
+        <LinkCardService to="/services/identite#service">
           <ImgSVGService src={identityPicture} alt="illustration identité" />
           <H3ServiceStyle>Identité</H3ServiceStyle>
           <PtextService>
@@ -25,7 +25,7 @@ const SectionH3Services = () => {
             (logo, charte graphique, brand board)
           </PtextService>
         </LinkCardService>
-        <LinkCardService to="/services/print">
+        <LinkCardService to="/services/print#service">
           <ImgSVGService src={printPicture} alt="illustration print" />
           <H3ServiceStyle>Print</H3ServiceStyle>
           <PtextService>
@@ -33,7 +33,7 @@ const SectionH3Services = () => {
             besoin
           </PtextService>
         </LinkCardService>
-        <LinkCardService to="/services/web">
+        <LinkCardService to="/services/web#service">
           <ImgSVGService src={webPicture} alt="illustration web" />
           <H3ServiceStyle>web</H3ServiceStyle>
           <PtextService>
@@ -41,7 +41,7 @@ const SectionH3Services = () => {
             pour un site sur-mesure
           </PtextService>
         </LinkCardService>
-        <LinkCardService to="/services/android">
+        <LinkCardService to="/services/android#service">
           <ImgSVGService src={androidPicture} alt="illustration android" />
           <H3ServiceStyle>Android</H3ServiceStyle>
           <PtextService>

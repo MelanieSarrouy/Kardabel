@@ -1,9 +1,9 @@
 /* IMPORTS */
 
 import React, { useEffect } from 'react'
-import SectionH3Objectifs from '../components/SectionH3Objectifs'
-import SectionH3Valeurs from '../components/SectionH3Valeurs'
-import SectionH2IntroAgence from '../components/SectionH2IntroAgence'
+import SectionH3Objectifs from '../components/pageAgence/SectionH3Objectifs'
+import SectionH3Valeurs from '../components/pageAgence/SectionH3Valeurs'
+import SectionH2IntroAgence from '../components/pageAgence/SectionH2IntroAgence'
 
 
 // JSX // _________________________________________________________________
