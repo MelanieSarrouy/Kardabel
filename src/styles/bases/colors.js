@@ -5,9 +5,13 @@ const colors = {
   tertiary: '#FAF1E4', //doré crème très clair
   background: '#ffffff', //blanc
   color1: '#FFEEAD', //jaune
+  color1clair: '#FFFEF7', //jaune clair
   color2: '#F9C5D5', //rose
+  color2clair: '#FFFAFB', //rose clair
   color3: '#B5DEFF', //bleu
+  color3clair: '#F8FCFF', //bleu clair
   color4: '#B9E59F', //vert
+  color4clair: '#F8FDF6', //vert clair
 }
 
 export default colors

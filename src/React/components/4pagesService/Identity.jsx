@@ -8,9 +8,10 @@ import circle from '../../../assets/shapes/EllipseJaune.svg'
 
 const title = 'Pourquoi créer et utiliser une identité visuelle ?'
 const content =
-  'Au travers de la création d’une image de marque forte, efficace et positive, nous développons votre visibilité et valorisons vos produits et services.'
+  'Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.'
 
 const Identity = () => {
+  console.log(content)
   return (
     <>
       <ServiceH3Card
@@ -20,7 +21,13 @@ const Identity = () => {
         h3Title="Identité"
         illustrationCard={illustrationCard}
       />
-      <SectionH4Title title={title} id="pourquoi" circle={circle} content={content} />
+      <SectionH4Title
+        title={title}
+        id="pourquoi"
+        circle={circle}
+        color={`${colors.color1clair}`}
+        content={content}
+      />
     </>
   )
 }
