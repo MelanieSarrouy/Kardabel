@@ -7,7 +7,7 @@ import {
   PtextCards,
   DivH4Container,
   H4Style
-} from '../../../styles/components/pageAgence/sectionH3Valeurs'
+} from '../../../styles/components/pageAgence/articleServiceCard'
 
 const ArticleServiceCard = (props) => {
   return (

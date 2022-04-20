@@ -1,8 +1,4 @@
 import React from 'react'
-import identityPicture from '../../../assets/illustrations/Profile analysis _Flatline.svg'
-import printPicture from '../../../assets/illustrations/Designer _Flatline.svg'
-import webPicture from '../../../assets/illustrations/Web development _Flatline.svg'
-import androidPicture from '../../../assets/illustrations/Authentication_Flatline.svg'
 import {
   DivServicesContent,
   H3ServiceStyle,
@@ -11,43 +7,42 @@ import {
   PtextService,
   Section4Services,
 } from '../../../styles/components/1pageServices/sectionH3Services'
+import { services } from '../../../datas/services'
+
+export const standardizeAndLowerCase = (str) => {
+  let a = str
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[œ]/g, 'oe')
+    .replace(/[ÈÉÊËèéêë]/g, 'e')
+    .replace(/[ÂÄÀàâä]/g, 'a')
+    .replace(/[ÔÖôö]/g, 'o')
+    .replace(/[ÛÜûü]/g, 'u')
+    .replace(/[ÎÏîï]/g, 'i')
+    .toLowerCase()
+    .replace('.', '')
+    .replace(' ', '')
+  return a
+}
+
+const createRedirectionLink = (str) => {
+  return '/services/' + standardizeAndLowerCase(str) + '#service'
+}
+
+const createIllustrationAlt = (str) => {
+  return 'illustration ' + str
+}
 
 const SectionH3Services = () => {
   return (
     <Section4Services>
       <DivServicesContent>
-        <LinkCardService to="/services/identite#service">
-          <ImgSVGService src={identityPicture} alt="illustration identité" />
-          <H3ServiceStyle>Identité</H3ServiceStyle>
-          <PtextService>
-            Création ou refonte de votre identité visuelle
-            (logo, charte graphique, brand board)
-          </PtextService>
-        </LinkCardService>
-        <LinkCardService to="/services/print#service">
-          <ImgSVGService src={printPicture} alt="illustration print" />
-          <H3ServiceStyle>Print</H3ServiceStyle>
-          <PtextService>
-            Concéption et réalisation de tous les supports de communication matériels dont vous avez
-            besoin
-          </PtextService>
-        </LinkCardService>
-        <LinkCardService to="/services/web#service">
-          <ImgSVGService src={webPicture} alt="illustration web" />
-          <H3ServiceStyle>web</H3ServiceStyle>
-          <PtextService>
-            Création ou refonte de votre site internet avec un CMS type WordPress ou ‘from scatch’
-            pour un site sur-mesure
-          </PtextService>
-        </LinkCardService>
-        <LinkCardService to="/services/android#service">
-          <ImgSVGService src={androidPicture} alt="illustration android" />
-          <H3ServiceStyle>Android</H3ServiceStyle>
-          <PtextService>
-            Conception et réalisation d’une application Android pour un outil qui vous facilite la
-            vie en fonction de vos besoins et de votre activité
-          </PtextService>
-        </LinkCardService>
+        {services.map((element, index) => (
+          <LinkCardService key={index} to={createRedirectionLink(element.name)}>
+            <ImgSVGService src={element.illustration} alt={createIllustrationAlt(element.name)} />
+            <H3ServiceStyle>{element.name}</H3ServiceStyle>
+            <PtextService>{element.text}</PtextService>
+          </LinkCardService>
+        ))}
       </DivServicesContent>
     </Section4Services>
   )

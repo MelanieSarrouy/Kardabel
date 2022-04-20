@@ -1,25 +1,19 @@
 import React from 'react'
-import trioBleu from '../../../assets/icons/trio-bleu.svg'
 import objectifsImage from '../../../assets/illustrations/Idea applications_Monochromatic.svg'
 import {
   SectionObjectifs,
-  DivH3Title,
   DivImgObjContainer,
   DivObectifsContent,
-  H3Style,
   ImgObjContainer,
   PTextObjectifs,
-  SVGTrioH3,
 } from '../../../styles/components/pageAgence/sectionH3Objectifs'
+import H3TrioTitle from '../../layout/H3TrioTitle'
 
 const SectionH3Objectifs = () => {
   return (
     <SectionObjectifs>
       <DivObectifsContent>
-        <DivH3Title>
-          <SVGTrioH3 src={trioBleu} alt="deco" />
-          <H3Style>Nos objectifs</H3Style>
-        </DivH3Title>
+        <H3TrioTitle title={'Nos objectifs'} />
         <PTextObjectifs>
           Nous souhaitons avant tout mettre en valeur vos idées, votre personnalité, l'identité de
           votre structure et bien sûr vous aider à concrétiser vos projets.

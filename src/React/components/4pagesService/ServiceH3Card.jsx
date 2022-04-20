@@ -12,34 +12,29 @@ import {
 } from '../../../styles/components/4pagesService/serviceH3Card'
 import arrow from '../../../assets/icons/fleche.svg'
 import { HashLink } from 'react-router-hash-link'
+import { standardizeAndLowerCase } from '../1pageServices/SectionH3Services'
+const titlesList = ['Pourquoi ?', 'Avantages', 'Préstations']
 
+const createLink = (str) => {
+  return '#' + standardizeAndLowerCase(str)
+}
 
 
 const ServiceH3Card = (props) => {
   return (
-    <DivServiceBlock id={props.id}>
+    <DivServiceBlock id='service'>
       <DivProfileCard color={props.color}>
         <ImgSVGTitle src={props.h3Illustration} alt="title" />
         <h3 className="sr-only">{props.h3Title}</h3>
         <UlCardStyle>
-          <LiCardstyle>
-            <HashLink to="#pourquoi">
-              <img src={arrow} alt="icon" />
-              Pourquoi ?
+        {titlesList.map((element, index) => (
+          <LiCardstyle key={index}>
+            <HashLink to={createLink(element)}>
+            <img src={arrow} alt="icon" />
+            {element}
             </HashLink>
           </LiCardstyle>
-          <LiCardstyle>
-            <HashLink to="#avantages">
-              <img src={arrow} alt="icon" />
-              Avantages
-            </HashLink>
-          </LiCardstyle>
-          <LiCardstyle>
-            <HashLink to="#prestations">
-              <img src={arrow} alt="icon" />
-              Prestations
-            </HashLink>
-          </LiCardstyle>
+        ))}
         </UlCardStyle>
         <DivImagesContainer>
           <ImgSVGLogoDore src={ImgSVGLogo} alt="logo kardabel" />

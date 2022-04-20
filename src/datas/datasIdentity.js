@@ -1,23 +1,30 @@
+import colors from '../styles/bases/colors'
+import titleCard from '../assets/illustrations/h3CardIdentity.svg'
+import illustrationCard from '../assets/illustrations/Profile analysis _Flatline-2.svg'
+import backgroundCard from '../assets/shapes/EllipseJaune.svg'
+import logoIllustration from '../assets/illustrations/logo-illustration.svg'
+import charteIllustration from '../assets/illustrations/charte-illustration.svg'
+import moodBoardIllustration from '../assets/illustrations/mood-board-illustration.svg'
+
 export const datasIdentity = {
-  id: 'identite',
   title: 'Identité',
   illustrations: {
-    title: '../assets/illustrations/h3CardIdentity.svg',
-    illustration: '../assets/illustrations/Profile analysis _Flatline-2.svg',
+    title: titleCard,
+    illustration: illustrationCard,
   },
   colors: {
-    normal: '#FFEEAD',
-    light: '#FFFEF7',
+    normal: colors.color1,
+    light: colors.color1clair,
   },
-  subtitles: [
-    {
+  subtitles: {
+    why: {
       title: 'Pourquoi créer et utiliser une identité visuelle ?',
-      background: '../assets/shapes/EllipseJaune.svg',
+      background: backgroundCard,
       content: [
         'Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.',
       ],
     },
-    {
+    benefits: {
       title: 'Les avantages d’une identité visuelle',
       cards: [
         {
@@ -41,12 +48,12 @@ export const datasIdentity = {
         },
       ],
     },
-    {
+    services: {
       title: 'Kardabel vous propose',
       background: '',
       services: [
         {
-          illustration: '../assets/illustrations/logo-illustration.svg',
+          illustration: logoIllustration,
           text: 'La création de votre logo, simple, puissant et efficace avec ou sans baseline (slogan)',
           lexicon: [
             {
@@ -62,7 +69,7 @@ export const datasIdentity = {
           ],
         },
         {
-          illustration: '../assets/illustrations/charte-illustration.svg',
+          illustration: charteIllustration,
           text: 'La création ou la refonte de votre Charte graphique (branding)',
           lexicon: [
             {
@@ -73,7 +80,7 @@ export const datasIdentity = {
           ],
         },
         {
-          illustration: '../assets/illustrations/mood-board-illustration.svg',
+          illustration: moodBoardIllustration,
           text: 'La création  de votre Brand Board (tableau de marque)',
           lexicon: [
             {
@@ -85,5 +92,5 @@ export const datasIdentity = {
         },
       ],
     },
-  ],
+  },
 }

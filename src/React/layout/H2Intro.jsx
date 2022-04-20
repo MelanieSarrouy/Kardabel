@@ -1,23 +1,12 @@
 import React from 'react'
-import {
-  H2Style,
-  SectionIntro,
-  SVGTrio,
-  TextIntro,
-  Title,
-} from '../../styles/layout/h2Intro'
-import trioDore from '../../assets/icons/trio-dore.svg'
-
+import { SectionIntro, TextIntro } from '../../styles/layout/h2Intro'
+import H2TrioTitle from './H2TrioTitle'
 
 const H2Intro = (props) => {
   return (
     <SectionIntro id={props.id}>
-      <Title>
-        <SVGTrio src={trioDore} alt="deco" />
-        <H2Style>{props.title}</H2Style>
-      </Title>
-      <TextIntro>{props.content}
-      </TextIntro>
+      <H2TrioTitle title={props.title} />
+      <TextIntro>{props.content}</TextIntro>
       {props.children}
     </SectionIntro>
   )

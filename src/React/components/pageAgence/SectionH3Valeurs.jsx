@@ -1,26 +1,18 @@
 import React from 'react'
-import trioBleu from '../../../assets/icons/trio-bleu.svg'
 import {
   DivArticlesContainer,
   DivValeursContent,
   SectionValeurs,
 } from '../../../styles/components/pageAgence/sectionH3Valeurs'
-import {
-  DivH3Title,
-  H3Style,
-  SVGTrioH3,
-} from '../../../styles/components/pageAgence/sectionH3Objectifs'
 import { datasValues } from '../../../datas/datasValues'
 import ArticleServiceCard from './ArticleServiceCard'
+import H3TrioTitle from '../../layout/H3TrioTitle'
 
 const SectionH3Valeurs = () => {
   return (
     <SectionValeurs>
       <DivValeursContent>
-        <DivH3Title>
-          <SVGTrioH3 src={trioBleu} alt="deco" />
-          <H3Style>Nos valeurs</H3Style>
-        </DivH3Title>
+        <H3TrioTitle title={'Nos valeurs'} />
         <DivArticlesContainer>
           {datasValues.map((element, index) => (
             <ArticleServiceCard

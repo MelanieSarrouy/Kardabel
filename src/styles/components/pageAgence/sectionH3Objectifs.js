@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import backgroundVectorObectifs from '../../../assets/shapes/vector-objectifs.svg'
-import fonts from '../../bases/fonts'
 
 export const SectionObjectifs = styled.section`
   display: flex;
@@ -16,21 +15,6 @@ export const DivObectifsContent = styled.div`
   background: left / contain no-repeat url(${backgroundVectorObectifs});
   width: 60%;
   padding: 4rem 7%;
-`
-export const DivH3Title = styled.div`
-  display: flex;
-  align-items: baseline;
-  padding: 3rem 0;
-`
-export const SVGTrioH3 = styled.img`
-  width: 3.25rem;
-  margin-right: 1rem;
-`
-export const H3Style = styled.h3`
-  font-family: ${fonts.titles};
-  font-size: 4.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
 `
 export const PTextObjectifs = styled.p`
   font-size: 1.4rem;

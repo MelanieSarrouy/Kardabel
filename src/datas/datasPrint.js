@@ -1,25 +1,31 @@
+import colors from '../styles/bases/colors'
+import titleCard from '../assets/illustrations/h3CardPrint.svg'
+import illustrationCard from '../assets/illustrations/Designer _Flatline-2.svg'
+import backgroundCard from '../assets/shapes/EllipseRose.svg'
+import servicesBackground from '../assets/illustrations/pink-1311251_1920.jpg'
+
 export const datasPrint = {
   id: 'print',
   title: 'Print',
   illustrations: {
-    title: '../assets/illustrations/h3CardPrint.svg',
-    illustration: '../assets/illustrations/Designer _Flatline-2.svg',
+    title: titleCard,
+    illustration: illustrationCard,
   },
   colors: {
-    normal: '#F9C5D5',
-    light: '#FFFAFB',
+    normal: colors.color2,
+    light: colors.color2clair,
   },
-  subtitles: [
-    {
+  subtitles: {
+    why: {
       title: 'Pourquoi utiliser la communication print ?',
-      background: '../assets/shapes/EllipseRose.svg',
+      background: backgroundCard,
       content: [
-        'Le print, en complément du digital, est essentielpour communiquer efficacement avec vos clients, prospects, adhérents ou bien d’éventuels partenaires.',
-        'Il véhicule votre identité, vos savoir-faire, votre professionnalisme et vous permet d’être en contact physique direct avec le consommateur.',
-        'Il marque l’esprit du lecteur avec une image forte.',
+        'Le print en complément du digital est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires.',
+        'Il véhicule votre identité, vos savoir-faire, votre professionnalisme et vous permet d\'être en contact physique direct avec le consommateur.',
+        'Il marque l\'esprit du lecteur avec une image forte.',
       ],
     },
-    {
+    benefits: {
       title: 'Les avantages du print',
       cards: [
         {
@@ -47,9 +53,9 @@ export const datasPrint = {
         },
       ],
     },
-    {
+    services: {
       title: 'Kardabel vous propose',
-      background: '../assets/illustrations/pink-1311251_1920.jpg',
+      background: servicesBackground,
       intro: [
         'Le choix en matière de type de support, format et finition est quasi illimité.',
         'Nous sommes là pour vous onseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
@@ -106,5 +112,5 @@ export const datasPrint = {
         },
       ],
     },
-  ],
+  },
 }
