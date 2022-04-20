@@ -21,7 +21,6 @@ const SectionH3Services = () => {
           <H3ServiceStyle>Identité</H3ServiceStyle>
           <PtextService>
             Création ou refonte de votre identité visuelle
-            <br />
             (logo, charte graphique, brand board)
           </PtextService>
         </LinkCardService>

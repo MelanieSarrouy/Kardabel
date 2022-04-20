@@ -11,7 +11,6 @@ const content =
   'Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.'
 
 const Identity = () => {
-  console.log(content)
   return (
     <>
       <ServiceH3Card
