@@ -28,7 +28,7 @@ export const DivH4Container = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  width: 75%;
+  width: 50%;
   padding: 2rem;
 `
 export const H4Style = styled.h4`
@@ -43,5 +43,5 @@ export const PtextCards = styled.p`
   padding: .5rem 0;
 `
 export const ImgSVGCard = styled.img`
-  max-width: 20rem;
+  width: 20rem;
 `

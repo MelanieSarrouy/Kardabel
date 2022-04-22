@@ -1,7 +1,6 @@
 import backgroundVectorServices from '../../../assets/shapes/vector-2.svg'
 import styled from 'styled-components'
 import fonts from '../../bases/fonts'
-import { HashLink } from 'react-router-hash-link'
 
 
 export const Section4Services = styled.section`
@@ -14,13 +13,15 @@ export const DivServicesContent = styled.div`
   justify-content: space-between;
   padding: 2rem 7% 10rem 7%;
 `
-export const LinkCardService = styled(HashLink)`
+export const ButtonCardService = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
   padding: 1rem 6rem 4rem 6rem;
+  background-color: rgba(255, 255, 255, 0);
 `
+
 export const ImgSVGService = styled.img`
   max-width: 25rem;
 `

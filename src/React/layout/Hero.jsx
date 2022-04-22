@@ -59,7 +59,7 @@ const Hero = () => {
             <SpanTitle>Design Graphique & Développement Web</SpanTitle>
           </H1Style>
           <ButtonsContainer>
-            <LinkServices to="/services#services">Services</LinkServices>
+            <LinkServices to="/services">Services</LinkServices>
             <LinkContacts to="/contact">Contact</LinkContacts>
           </ButtonsContainer>
         </TextHeroContainer>
