@@ -12,7 +12,7 @@ export const DivBenefitsCards = styled.div`
   column-gap: 3rem;
   row-gap: 3rem;
 `
-export const DivCardRecto = styled.div`
+export const DivCard = styled.div`
   background: no-repeat center center url(${logoBenefitCard});
   background: ${(props) =>
     props.bck === 'yes' ? `no-repeat center center url(${logoBenefitCard})` : 'none'};
@@ -25,6 +25,7 @@ export const DivCardRecto = styled.div`
   align-items: center;
   height: 20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
   & > p {
     text-align: center;
   }
@@ -46,6 +47,28 @@ const BenefitsComponent = (props) => {
   const [card1, setCard1] = useState(false)
   const [card2, setCard2] = useState(false)
   const [card3, setCard3] = useState(false)
+  const [verso, setVerso] = useState(false)
+
+  const cardsCloseFunction = () => {
+    setCard0(false)
+    setCard1(false)
+    setCard2(false)
+    setCard3(false)
+    setVerso(false)
+  }
+  const cardOpenFunction = (index) => {
+    setVerso(true)
+    setCard0(false)
+    setCard1(false)
+    setCard2(false)
+    setCard3(false)
+    let setCards = [setCard0, setCard1, setCard2, setCard3]
+    setCards[index](true)
+  }
+
+  const handleClick = (index) => {
+    verso ? cardsCloseFunction() : cardOpenFunction(index)
+  }
 
   return (
     <section>
@@ -53,42 +76,41 @@ const BenefitsComponent = (props) => {
       <DivH4Content>
         <DivBenefitsCards>
           {card0 ? (
-            <DivCardRecto bck={'yes'} color={colors.tertiary} onClick={() => setCard0(false)}>
+            <DivCard bck={'yes'} color={colors.tertiary} onClick={() => handleClick(0)}>
               <PTextBenefitCard>{cards[0].content}</PTextBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           ) : (
-            <DivCardRecto bck={'no'} color={colors.color1} onClick={() => setCard0(true)}>
+            <DivCard bck={'no'} color={colors.color1} onClick={() => handleClick(0)}>
               <PTitleBenefitCard>{cards[0].title}</PTitleBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           )}
           {card1 ? (
-            <DivCardRecto bck={'yes'} color={colors.tertiary} onClick={() => setCard1(false)}>
+            <DivCard bck={'yes'} color={colors.tertiary} onClick={() => handleClick(1)}>
               <PTextBenefitCard>{cards[1].content}</PTextBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           ) : (
-            <DivCardRecto bck={'no'} color={colors.color1} onClick={() => setCard1(true)}>
+            <DivCard bck={'no'} color={colors.color1} onClick={() => handleClick(1)}>
               <PTitleBenefitCard>{cards[1].title}</PTitleBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           )}
           {card2 ? (
-            <DivCardRecto bck={'yes'} color={colors.tertiary} onClick={() => setCard2(false)}>
+            <DivCard bck={'yes'} color={colors.tertiary} onClick={() => handleClick(2)}>
               <PTextBenefitCard>{cards[2].content}</PTextBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           ) : (
-            <DivCardRecto bck={'no'} color={colors.color1} onClick={() => setCard2(true)}>
+            <DivCard bck={'no'} color={colors.color1} onClick={() => handleClick(2)}>
               <PTitleBenefitCard>{cards[2].title}</PTitleBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           )}
           {card3 ? (
-            <DivCardRecto bck={'yes'} color={colors.tertiary} onClick={() => setCard3(false)}>
+            <DivCard bck={'yes'} color={colors.tertiary} onClick={() => handleClick(3)}>
               <PTextBenefitCard>{cards[3].content}</PTextBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           ) : (
-            <DivCardRecto bck={'no'} color={colors.color1} onClick={() => setCard3(true)}>
+            <DivCard bck={'no'} color={colors.color1} onClick={() => handleClick(3)}>
               <PTitleBenefitCard>{cards[3].title}</PTitleBenefitCard>
-            </DivCardRecto>
+            </DivCard>
           )}
-
         </DivBenefitsCards>
       </DivH4Content>
     </section>
