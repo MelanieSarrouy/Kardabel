@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "prettier": "^2.6.1",
+    "react-scrollable-anchor": "^0.6.1",
     "styled-components": "^5.3.5"
   }
 }

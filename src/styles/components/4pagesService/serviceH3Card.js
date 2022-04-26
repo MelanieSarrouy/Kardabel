@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import waveCard from '../../../assets/shapes/waveCard.svg'
+import colors from '../../bases/colors'
 
 export const DivServiceBlock = styled.div`
   padding: 8rem 7% 5rem 7%;
@@ -30,6 +31,7 @@ export const LiCardstyle = styled.li`
     font-style: italic;
     display: flex;
     align-items: center;
+    color: ${colors.primary};
     & > img {
       width: 2rem;
       margin-right: 1rem;

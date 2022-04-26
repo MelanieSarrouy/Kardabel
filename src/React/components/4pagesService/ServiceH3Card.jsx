@@ -13,6 +13,7 @@ import {
 import arrow from '../../../assets/icons/fleche.svg'
 import { HashLink } from 'react-router-hash-link'
 import { standardizeAndLowerCase } from '../1pageServices/SectionH3Services'
+
 const titlesList = ['Pourquoi ?', 'Avantages', 'Préstations']
 
 const createLink = (str) => {
@@ -29,11 +30,12 @@ const ServiceH3Card = (props) => {
         <UlCardStyle>
         {titlesList.map((element, index) => (
           <LiCardstyle key={index}>
-            <HashLink to={createLink(element)}>
+            <HashLink to={createLink(element)} >
             <img src={arrow} alt="icon" />
             {element}
             </HashLink>
           </LiCardstyle>
+
         ))}
         </UlCardStyle>
         <DivImagesContainer>

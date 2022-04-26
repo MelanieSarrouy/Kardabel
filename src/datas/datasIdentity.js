@@ -14,7 +14,7 @@ export const datasIdentity = {
   },
   colors: {
     normal: colors.color1,
-    light: colors.color1clair,
+    light: colors.tertiary,
   },
   subtitles: {
     why: {

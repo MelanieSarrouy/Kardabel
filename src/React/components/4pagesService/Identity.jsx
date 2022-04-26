@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
 import { datasIdentity } from '../../../datas/datasIdentity'
+import BenefitsComponent from './BenefitsComponent'
 
 const Identity = () => {
   return (
@@ -19,6 +20,7 @@ const Identity = () => {
         color={datasIdentity.colors.light}
         content={datasIdentity.subtitles.why.content}
       />
+      <BenefitsComponent title={datasIdentity.subtitles.benefits.title} id="avantages" />
     </>
   )
 }
