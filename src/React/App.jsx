@@ -10,7 +10,6 @@ import Identity from './components/4pagesService/Identity'
 import Main from './layout/Main'
 import Print from './components/4pagesService/Print'
 import Web from './components/4pagesService/Web'
-// import { Main } from '../styles/bases/main'
 // components imports
 import Homepage from './pages/Homepage'
 import NotFound from './pages/NotFound'

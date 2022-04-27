@@ -21,7 +21,7 @@ export const LinkButtonServices = styled(Link)`
   background-color: ${colors.primary};
   padding: .8rem 2.5rem;
   border-radius: 3rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
   color: ${colors.background};
   border: 2px solid ${colors.primary};

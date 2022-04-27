@@ -13,12 +13,13 @@ export const datasPrint = {
   },
   colors: {
     normal: colors.color2,
-    light: colors.color2clair,
+    light: colors.tertiary,
   },
   subtitles: {
     why: {
       title: 'Pourquoi utiliser la communication print ?',
       background: backgroundCard,
+      side: 'left',
       content: [
         'Le print en complément du digital est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires.',
         'Il véhicule votre identité, vos savoir-faire, votre professionnalisme et vous permet d\'être en contact physique direct avec le consommateur.',
@@ -36,7 +37,7 @@ export const datasPrint = {
         {
           title: 'Diffusion',
           content:
-            'Ce qui compte en matière de communication c’est le taux de répétition. Les supports papiers permettent justement de multiplier les points de contacts et de diffusion. Avec le bon format, le bon design et une finition originale, l’impact de votre message augmente considérablement.',
+            'Les supports papiers permettent de multiplier les points de contacts et de diffusion. Avec le bon format, le bon design et une finition originale, l’impact de votre message augmente considérablement.',
         },
         {
           title: 'Pérennité',

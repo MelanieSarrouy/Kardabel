@@ -12,6 +12,8 @@ const colors = {
   color3clair: '#F8FCFF', //bleu clair
   color4: '#B9E59F', //vert
   color4clair: '#F8FDF6', //vert clair
+  textSecondary: '#AFAFAF', //gris clair
+  textTertiary: '#323742', //gris foncé
 }
 
 export default colors

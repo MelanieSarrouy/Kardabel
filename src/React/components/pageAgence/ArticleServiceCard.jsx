@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import {
   ArticleCard,
   DivIconContainer,
@@ -6,8 +7,14 @@ import {
   ImgSvgIcon,
   PtextCards,
   DivH4Container,
-  H4Style
+  H4Style,
+  DivTextContainer,
+  ImgCommasStart,
+  DivText,
+  ImgCommasEnd,
 } from '../../../styles/components/pageAgence/articleServiceCard'
+import commas from '../../../assets/icons/commas.svg'
+
 
 const ArticleServiceCard = (props) => {
   return (
@@ -17,9 +24,16 @@ const ArticleServiceCard = (props) => {
       </DivIconContainer>
       <DivH4Container>
         <H4Style>{props.title}</H4Style>
-        {props.text.map((el, index) => (
-          <PtextCards key={index}>{el}</PtextCards>
-        ))}
+        <DivTextContainer>
+          <ImgCommasStart src={commas} alt="" />
+          <DivText>
+          {props.text.map((el, index) => (
+            <PtextCards key={index}>{el}</PtextCards>
+          ))}
+          </DivText>
+
+          <ImgCommasEnd src={commas} alt="" />
+        </DivTextContainer>
       </DivH4Container>
       <DivIconContainer>
         <ImgSVGCard src={props.illustration} alt={props.altIllustration} width={400} />

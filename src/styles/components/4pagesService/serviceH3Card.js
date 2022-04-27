@@ -45,7 +45,7 @@ export const DivImagesContainer = styled.div`
 `
 export const ImgSVGLogoDore = styled.img`
   max-width: 17.5rem;
-  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5));
+  ${'' /* filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5)); */}
 `
 export const ImgSVGIllustrationCard = styled.img`
   max-width: 30rem;

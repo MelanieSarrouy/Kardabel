@@ -30,18 +30,47 @@ export const DivH4Container = styled.div`
   justify-content: center;
   width: 50%;
   padding: 2rem;
+  position: relative;
+
 `
 export const H4Style = styled.h4`
   font-size: 2.25rem;
   font-weight: 600;
-  font-style: italic;
   padding-bottom: 2rem;
 `
 export const PtextCards = styled.p`
   font-size: 1.4rem;
   line-height: 1.8rem;
   padding: .5rem 0;
+  font-style: italic;
 `
 export const ImgSVGCard = styled.img`
   width: 20rem;
+`
+export const DivTextContainer = styled.div`
+  display: flex;
+  position: relative;
+`
+export const DivText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+`
+export const ImgCommasStart = styled.img`
+  height: 2rem;
+  width: auto;
+  margin: 1rem;
+  position: absolute;
+  left: -4.5rem;
+  top: -1.2rem;
+`
+export const ImgCommasEnd = styled.img`
+  height: 2rem;
+  width: auto;
+  transform: rotate(180deg);
+  margin: 1rem;
+  position: absolute;
+  right: -4rem;
+  bottom: -1.2rem;
 `

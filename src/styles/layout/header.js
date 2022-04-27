@@ -27,8 +27,10 @@ export const ImgStyle = styled.img`
 export const NavStyle = styled.nav`
   display: flex;
   justify-content: end;
+  align-items: start;
 `
 export const NavLinkStyle = styled(NavLink)`
+  border-bottom: solid 3px rgba(0, 0, 0, 0);
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   font-family: ${fonts.titles};
   color: ${colors.background};
@@ -46,4 +48,12 @@ export const NavLinkStyle = styled(NavLink)`
     color: ${colors.tertiary};
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   }
+`
+export const ImgMenuArrow = styled.img`
+  width: 1.2rem;
+  margin: .2rem 0 0 1rem;
+  padding: 1rem 0rem;
+  border-bottom: solid 3px rgba(0, 0, 0, 0);
+
+
 `

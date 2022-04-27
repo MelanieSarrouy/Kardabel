@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgSVGLogo from '../../../assets/logo/logo-simple-dore.svg'
+import ImgSVGLogo from '../../../assets/logo/logo-simple-dore-dark.svg'
 import {
   DivImagesContainer,
   DivProfileCard,
