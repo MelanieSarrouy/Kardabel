@@ -22,7 +22,7 @@ const createURL = (str) => {
 
 const SectionH3Services = () => {
   return (
-    <SectionServices>
+    <SectionServices id='nosServices'>
       <DivServices>
         <H3TrioTitle title={'Nos services'} />
         <UlServicesContent>

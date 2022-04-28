@@ -7,11 +7,12 @@ import { Link } from 'react-router-dom'
 export const SectionServices = styled.section`
   background: no-repeat center center url(${backgroundVectorServices});
   background-size: cover;
+  margin-bottom: 5rem;
 `
 export const DivServices = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 7% 2rem 7%;
+  padding: 4rem 7% 2rem 7%;
 `
 
 export const UlServicesContent = styled.ul`

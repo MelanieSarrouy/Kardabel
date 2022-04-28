@@ -8,6 +8,7 @@ export const DivWhyContent = styled.div`
   background: url(${props => props.circle}) no-repeat center ${props => props.side};
   background-size: contain;
   padding: 6rem;
+  margin-top: -2rem;
 `
 export const DivWhyTextContent = styled.div`
   background-color: ${(props) => props.color};

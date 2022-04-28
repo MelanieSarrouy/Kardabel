@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import logoBenefitCard from '../../../assets/logo/logo-benefits-cards.svg'
-import logoBenefitCard2 from '../../../assets/logo/logo-simple-dore-dark.svg'
+import logoBenefitCard2 from '../../../assets/logo/logo-simple-dore.svg'
 import backgroundCard from '../../../assets/shapes/EllipseRose-light.svg'
 
 export const DivBenefitsCards = styled.div`
@@ -10,7 +10,6 @@ export const DivBenefitsCards = styled.div`
   row-gap: 3rem;
 `
 export const DivCard = styled.div`
-  background: no-repeat center center url(${logoBenefitCard});
   background: ${(props) =>
     props.bck === 'yes'
       ? `no-repeat center center url(${logoBenefitCard})`
@@ -30,9 +29,9 @@ export const DivCard = styled.div`
   }
 `
 export const PTitleBenefitCard = styled.p`
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 `
 export const PTextBenefitCard = styled.p`
   font-size: 1.8rem;

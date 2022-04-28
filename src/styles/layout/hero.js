@@ -8,40 +8,43 @@ import { HashLink } from 'react-router-hash-link'
 export const ImgCurvyStyle = styled.img`
   width: 100%;
   position: absolute;
-  top: -50px;
+  top: 10vh;
   display: block;
   line-height: 2.6rem;
   max-width: 1620px;
   margin: auto;
-  @media (max-width: 1800px) {
-    top: 20px;
+  @media (max-width: 1500px) {
+    top: 20vh;
   }
-  @media (max-width: 1700px) {
-    top: 40px;
+  @media (max-width: 1360px) {
+    top: 25vh;
   }
-  @media (max-width: 1600px) {
-    top: 90px;
-  }
-  @media (max-width: 1400px) {
-    top: 180px;
+  @media (max-width: 1240px) {
+    top: 20vh;
   }
   @media (max-width: 1100px) {
-    top: 210px;
+    top: 24vh;
   }
-  @media (max-width: 1000px) {
-    top: 240px;
-  }
+
   @media (max-width: 950px) {
-    top: 160px;
+    top: 18vh;
   }
+  @media (max-width: 820px) {
+    top: 22vh;
+  }
+
+  @media (max-width: 710px) {
+    top: 28vh;
+  }
+
   @media (max-width: 640px) {
-    top: 500px;
+    top: 55vh;
   }
   @media (max-width: 460px) {
-    top: 520px;
+    top: 60vh;
   }
   @media (max-width: 380px) {
-    top: 580px;
+    top: 60vh;
   }
 `
 
@@ -52,7 +55,8 @@ export const HeroContent = styled.div`
   height: 450px;
   background-color: ${colors.primary};
   z-index: 800;
-  ${'' /* @media (max-width: 1240px) {
+  max-width: 1620px;
+  @media (max-width: 1240px) {
     height: 380px;
   }
   @media (max-width: 950px) {
@@ -66,7 +70,7 @@ export const HeroContent = styled.div`
   }
   @media (max-width: 380px) {
     height: 600px;
-  } */}
+  }
 `
 export const LogoContainer = styled.div`
   width: 100%;

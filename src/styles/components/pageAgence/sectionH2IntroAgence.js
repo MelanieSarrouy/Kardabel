@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
 import colors from '../../bases/colors'
 
@@ -17,21 +17,27 @@ export const DivButtonContainer = styled.div`
   align-items: baseline;
   padding: 1rem 5% 3rem 5%;
 `
-export const LinkButtonServices = styled(Link)`
+export const LinkButtonServices = styled(HashLink)`
   background-color: ${colors.primary};
-  padding: .8rem 2.5rem;
-  border-radius: 3rem;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: ${colors.background};
-  border: 2px solid ${colors.primary};
+  border: solid 2px ${colors.primary};
   text-decoration: none;
-  transition: color 0.2s, border 0.3s, background-color 0.5s;
-  box-shadow: 0px 0.15rem 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
+  transition: color 0.2s, border 0.2s, background-color 0.5s;
+  margin: 0 0.5rem;
+  @media (max-width: 950px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 710px) {
+    padding: 0.4rem 1.8rem;
+  }
   &:hover {
+    border: solid 2px ${colors.primaryDark};
     background-color: ${colors.primaryDark};
-    border: 2px solid ${colors.background};
-    color: ${colors.background};
   }
 `
