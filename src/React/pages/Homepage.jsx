@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import SectionH3Objectifs from '../components/pageAgence/SectionH3Objectifs'
 import SectionH3Valeurs from '../components/pageAgence/SectionH3Valeurs'
 import SectionH2IntroAgence from '../components/pageAgence/SectionH2IntroAgence'
-
+import SectionH3Services from '../components/pageAgence/SectionH3Services'
 
 // JSX // _________________________________________________________________
 
@@ -21,6 +21,7 @@ const Homepage = () => {
   return (
     <>
       <SectionH2IntroAgence />
+      <SectionH3Services />
       <SectionH3Objectifs />
       <SectionH3Valeurs />
     </>

@@ -12,7 +12,7 @@ import {
 } from '../../../styles/components/4pagesService/serviceH3Card'
 import arrow from '../../../assets/icons/fleche.svg'
 import { HashLink } from 'react-router-hash-link'
-import { standardizeAndLowerCase } from '../1pageServices/SectionH3Services'
+import { standardizeAndLowerCase } from '../../../helpers/standardizeAndLowerCase'
 
 const titlesList = ['Pourquoi ?', 'Avantages', 'Préstations']
 

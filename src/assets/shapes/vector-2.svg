@@ -1,3 +1,10 @@
-<svg width="1440" height="1193" viewBox="0 0 1440 1193" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.2" d="M442.693 648.001C128.91 732.501 0 613.501 0 613.501V973.001C0 973.001 165.385 1234.5 458.182 1187C750.978 1139.5 721.527 715.605 1012.8 634.501C1304.07 553.396 1440 695.501 1440 695.501V238.5C1440 238.5 1388.04 -1.99969 1060.26 0.500313C732.491 3.00031 756.475 563.501 442.693 648.001Z" fill="#EBCA94"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1440 1193" style="enable-background:new 0 0 1440 1193;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.25;fill:#EBCA94;enable-background:new    ;}
+</style>
+<path class="st0" d="M379.7,0.5C52-2,0,238.5,0,238.5v457c0,0,135.9-142.1,427.2-61s261.8,505,554.6,552.5S1440,973,1440,973V613.5
+	c0,0-128.9,119-442.7,34.5S707.5,3,379.7,0.5z"/>
 </svg>

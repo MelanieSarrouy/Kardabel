@@ -1,23 +1,31 @@
 import backgroundVectorServices from '../../../assets/shapes/vector-2.svg'
 import styled from 'styled-components'
 import fonts from '../../bases/fonts'
+import { Link } from 'react-router-dom'
 
 
-export const Section4Services = styled.section`
-  background: url(${backgroundVectorServices});
+export const SectionServices = styled.section`
+  background: no-repeat center center url(${backgroundVectorServices});
   background-size: cover;
 `
-export const DivServicesContent = styled.div`
+export const DivServices = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2rem 7% 10rem 7%;
+  flex-direction: column;
+  padding: 2rem 7% 2rem 7%;
 `
-export const ButtonCardService = styled.button`
+
+export const UlServicesContent = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  column-row: 2rem;
+  padding: 2rem 0;
+`
+export const LinkCardService = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  ${'' /* width: 50%; */}
   padding: 1rem 6rem 4rem 6rem;
   background-color: rgba(255, 255, 255, 0);
 `

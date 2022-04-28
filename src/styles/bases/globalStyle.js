@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: white;
-    max-width: 1920px;
+    max-width: 1620px;
     margin: auto;
     line-height: 1;
   }
@@ -74,10 +74,21 @@ export const GlobalStyle = createGlobalStyle`
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     }
   }
-  .selected {
-    background-color: ${colors.secondary};
-    color: ${colors.primary};
-    border: 2px solid ${colors.secondary};
-    box-shadow: 0px 0.15rem 4px rgba(0, 0, 0, 0.25);
+  nav a.is-active {
+  background-color: ${colors.background};
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  color: ${colors.primary};
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  border: 2px solid ${colors.primary};
+  box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  &:hover {
+    border: solid 2px ${colors.primaryDark};
+    color: ${colors.primaryDark};
+  }
   }
 `

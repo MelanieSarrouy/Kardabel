@@ -1,15 +1,12 @@
 import styled from "styled-components"
 
 export const SectionIntro = styled.section`
-  padding: 25rem 7% 2rem 7%;
+  padding: 22rem 7% 5rem 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1440px;
   margin: auto;
-  @media (max-width: 1800px) {
-    padding-top: 25rem;
-  }
   @media (max-width: 1023px) {
     padding-top: 20rem;
   }

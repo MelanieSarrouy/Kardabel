@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { Outlet } from 'react-router-dom'
 import SectionH2IntroServices from '../components/1pageServices/SectionH2IntroServices'
 
 const Services = () => {
@@ -10,7 +9,6 @@ const Services = () => {
   return (
     <>
       <SectionH2IntroServices />
-      <Outlet />
     </>
   )
 }

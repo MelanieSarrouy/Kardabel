@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../bases/colors'
-import { HashLink } from 'react-router-hash-link'
 
 export const NavServicesStyle = styled.nav`
   & > ul {
@@ -11,7 +10,7 @@ export const NavServicesStyle = styled.nav`
     padding: 3rem 0 1rem 0;
   }
 `
-export const LinkSecondaryStyle = styled(HashLink)`
+export const LinkSecondaryStyle = styled(Link)`
   background-color: ${colors.primary};
   padding: 0.6rem 2rem;
   border-radius: 2rem;

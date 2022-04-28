@@ -13,7 +13,7 @@ export const ImgH4Arrow = styled.img`
 `
 export const H4Style = styled.h4`
   font-size: 3rem;
-  font-style: italic;
+  ${'' /* font-style: italic; */}
   font-family: ${fonts.titles};
   font-weight: 600;
   color: ${colors.primary};

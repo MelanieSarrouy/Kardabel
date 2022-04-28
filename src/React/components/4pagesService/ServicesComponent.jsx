@@ -20,10 +20,9 @@ const ServicesComponent = (props) => {
           <div key={index}>
             <DivWhyContent circle={props.circle} side={element.circleSide}>
               <DivWhyTextContent color={props.color}>
-                <DivServiceContent>
+                <DivServiceContent direction={element.circleSide === 'left' ? 'row' : 'row-reverse'}>
+                  <div>
                   <PWhyText>{element.text}</PWhyText>
-                  <ImgServicesCards src={element.illustration} alt="illustration" />
-                </DivServiceContent>
                   {Array.isArray(element.lexicon) ? (
                     <UlLexique>
                       {element.lexicon.map((el, index) => (
@@ -36,8 +35,14 @@ const ServicesComponent = (props) => {
                   ) : (
                     ''
                   )}
+
+                  </div>
+                  {/* <ImgServicesCards src={element.illustration} alt="illustration" /> */}
+                </DivServiceContent>
               </DivWhyTextContent>
+
             </DivWhyContent>
+
           </div>
         ))}
       </DivH4Content>

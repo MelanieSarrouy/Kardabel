@@ -7,12 +7,17 @@ export const UlSubMenu = styled.ul`
   top: 4.2rem;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
   background-color: ${colors.primaryDark}D8;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+  padding: 0.3rem 1.3rem 1.3rem 1.3rem;
   width: 9rem;
   & > li {
     padding: 1rem 0;
+  }
+  & > li > a {
+    margin: 0;
+    padding: .4rem 0;
+
   }
 `

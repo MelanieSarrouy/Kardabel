@@ -55,17 +55,18 @@ export const datasIdentity = {
         {
           illustration: logoIllustration,
           circleSide: 'left',
+
           text: 'La création de votre logo, simple, puissant et efficace avec ou sans baseline (slogan)',
           lexicon: [
             {
               word: 'Logo (ou logotype) :',
               definition:
-                'Représentation graphique d’une entité (marque, entreprise, événement...), elle qui est utilisé pour communiquer en son nom, via tous les supports de communication. C’est l’élément central de l’identité visuelle. À ne pas confondre avec un pictogramme ou une icône.',
+                'Représentation graphique d’une entité. C’est l’élément central de l’identité visuelle.',
             },
             {
               word: 'Baseline :',
               definition:
-                'Phrase courte qui permet de préciser l’activité ou attirer la cible. Elle est souvent liée au logo (on parle alors de bloc marque) mais peut aussi vivre seule sur un support de communication, comme une phrase d’accroche.',
+                'Phrase courte qui permet de préciser l’activité ou attirer la cible. Elle est souvent liée au logo mais peut aussi vivre seule comme phrase d’accroche.',
             },
           ],
         },
@@ -89,7 +90,7 @@ export const datasIdentity = {
             {
               word: 'Brand board :',
               definition:
-                'Sorte de charte graphique condensée, sans les règles d’usage, un document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle : Le logo et ses déclinaisons / Les typographies / La palette de couleurs / Les icônes / Des images d’inspiration.',
+                'Sorte de charte graphique condensée, sans les règles d’usage. Document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle : Logo et ses déclinaisons / Typographies / Palette de couleurs / Icônes / Images d’inspiration.',
             },
           ],
         },

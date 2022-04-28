@@ -11,7 +11,7 @@ export const ImgCurvyStyle = styled.img`
   top: -50px;
   display: block;
   line-height: 2.6rem;
-  max-width: 1920px;
+  max-width: 1620px;
   margin: auto;
   @media (max-width: 1800px) {
     top: 20px;

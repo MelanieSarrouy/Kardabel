@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 export const DivWhyContent = styled.div`
   display: flex;
+  flex-direction: column;
+
   background: url(${props => props.circle}) no-repeat center ${props => props.side};
   background-size: contain;
   padding: 6rem;
@@ -22,6 +24,7 @@ export const PWhyText = styled.p`
   font-size: 2.25rem;
   line-height: 3.5rem;
   text-align: center;
+  font-style: italic;
   font-weight: 500;
-  padding: 1rem 2rem;
+  ${'' /* padding: 1rem 2rem; */}
 `

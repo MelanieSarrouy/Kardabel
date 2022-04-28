@@ -2,7 +2,7 @@ import styled from "styled-components"
 import backgroundVectorValeurs from '../../../assets/shapes/vector-background-valeurs.svg'
 
 export const SectionValeurs = styled.section`
-  background: url(${backgroundVectorValeurs});
+  background: no-repeat center center url(${backgroundVectorValeurs});
   background-size: cover;
   display: flex;
   flex-direction: column;
