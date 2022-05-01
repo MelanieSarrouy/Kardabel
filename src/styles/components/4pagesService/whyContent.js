@@ -27,5 +27,5 @@ export const PWhyText = styled.p`
   text-align: center;
   font-style: italic;
   font-weight: 500;
-  ${'' /* padding: 1rem 2rem; */}
+  padding: .5rem;
 `

@@ -163,15 +163,12 @@ export const Baseline = styled.p`
 `
 export const H1Style = styled.h1`
   font-family: ${fonts.titles};
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   color: ${colors.secondary};
+  font-weight: 300;
   text-transform: uppercase;
-  line-height: 2.6rem;
+  line-height: 2.2rem;
   padding: 3rem 0 3rem 0.2rem;
-  ${'' /* text-shadow: 0rem 0rem 1.8rem rgba(0, 0, 0, 0.6);
-  -webkit-text-stroke: 0.2px;
-  -webkit-text-stroke-color: ${colors.primaryDark}; */}
-
   @media (max-width: 1240px) {
     font-size: 1.5rem;
     padding: 2rem 0 2rem 0.2rem;
@@ -195,6 +192,9 @@ export const SpanTitle = styled.span`
   color: ${colors.secondary};
   font-family: ${fonts.titles};
   font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+
   @media (max-width: 1240px) {
     font-size: 1.2rem;
   }

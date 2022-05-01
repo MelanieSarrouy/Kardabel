@@ -2,7 +2,8 @@ import colors from '../styles/bases/colors'
 import titleCard from '../assets/illustrations/h3CardPrint.svg'
 import illustrationCard from '../assets/illustrations/Designer _Flatline-2.svg'
 import backgroundCard from '../assets/shapes/EllipseRose.svg'
-import servicesBackground from '../assets/illustrations/pink-1311251_1920.jpg'
+import servicesBackground from '../assets/illustrations/pink-background.jpg'
+import circlePicturePink from '../assets/illustrations/print-masque-picturePink.png'
 
 export const datasPrint = {
   id: 'print',
@@ -53,6 +54,12 @@ export const datasPrint = {
           ],
         },
       ],
+      advice: [
+        'Le choix en matière de type de support, format et finition est quasi illimité.',
+        'Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
+      ],
+      adviceIllustration: circlePicturePink,
+
     },
     services: {
       title: 'Kardabel vous propose',

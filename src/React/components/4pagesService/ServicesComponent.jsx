@@ -6,7 +6,7 @@ import {
   DivWhyTextContent,
   PWhyText,
 } from '../../../styles/components/4pagesService/whyContent'
-import { DivH4Content, DivServiceContent, ImgServicesCards, PLexiqueWord, UlLexique } from '../../../styles/components/4pagesService/servicesComponent'
+import { DivH4Content, DivServiceContent, PLexiqueWord, UlLexique } from '../../../styles/components/4pagesService/servicesComponent'
 
 
 const services = datasIdentity.subtitles.services.services

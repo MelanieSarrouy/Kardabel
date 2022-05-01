@@ -20,14 +20,8 @@ export const UlLexique = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  ${'' /* margin-bottom: 2rem; */}
-  ${'' /* padding: 2rem 6rem; */}
   padding-top: 3rem;
-  ${'' /* padding: 1rem 2rem 2rem 2rem; */}
-  ${'' /* margin: 1rem; */}
   line-height: 1.5rem;
-  ${'' /* background-color: white; */}
-  ${'' /* box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .25); */}
   }
   & > li > p {
     color: ${colors.textTertiary};

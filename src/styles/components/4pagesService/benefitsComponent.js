@@ -48,5 +48,6 @@ export const DivNoCard = styled.div`
   padding: 2rem;
   & > p {
     font-weight: 600;
+    padding: .5rem;
   }
 `

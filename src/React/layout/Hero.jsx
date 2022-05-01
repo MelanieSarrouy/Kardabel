@@ -56,7 +56,7 @@ const Hero = () => {
           <Baseline>Un regard, une écoute, des solutions</Baseline>
           <H1Style>
             Agence Print & Web <br />
-            <SpanTitle>Design Graphique & Développement Web</SpanTitle>
+            <SpanTitle>Design Graphique & Développement <br/>(Web / Front-End / Applications)</SpanTitle>
           </H1Style>
           <ButtonsContainer>
             <LinkServices to="/services">Services</LinkServices>

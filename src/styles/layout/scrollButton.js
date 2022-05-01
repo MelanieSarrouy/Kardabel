@@ -5,6 +5,7 @@ export const ImgSVGArrowTop = styled.img`
   bottom: 10%;
   right: 2%;
   width: 3rem;
+  padding: .5rem 0rem;
 `
 export const ImgSVGArrowBottom = styled.img`
   position: fixed;
