@@ -1,5 +1,22 @@
 import styled from 'styled-components'
 
+
+export const DivServicesIntro = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrapo: wrap;
+  width: 100%;
+  padding: 2rem 7% 5rem 7%;
+  & > p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    text-align: center;
+    padding: 0.5rem 5rem;
+  }
+`
 export const DivServicesBackground = styled.div`
   background: no-repeat center center url(${(props) => props.bck});
   background-size: cover;
@@ -9,7 +26,6 @@ export const DivServicesBackground = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10rem 7% 10rem 7%;
-  margin: 4rem 0 5rem 0;
 `
 export const DivServicesCardsBackground = styled.div`
   background: no-repeat center center url(${(props) => props.circle});
@@ -20,6 +36,7 @@ export const DivServicesCardsBackground = styled.div`
   justify-content: center;
   align-items: center;
   height: 20rem;
+  padding: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: background-size 800ms, box-shadow 100ms ease-in-out;
   cursor: pointer;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NewlineText } from '../../../helpers/newLineText'
 import colors from '../../../styles/bases/colors'
 import {
   PTextBenefitCard,
@@ -7,9 +8,9 @@ import {
 import {
   DivServicesBackground,
   DivServicesCardsBackground,
+  DivServicesIntro
 } from '../../../styles/components/4pagesService/servicesComponent'
 import H4Title from '../../layout/H4Title'
-import ChoiceComponent from './ChoiceComponent'
 
 const ServicesComponent = (props) => {
   const [flipped, setFlipped] = useState(-1)
@@ -23,14 +24,14 @@ const ServicesComponent = (props) => {
   }
   return (
     <section>
-      <H4Title id={props.id} title={props.title} />
-      <ChoiceComponent txt={props.txt} />
+      <H4Title id={props.id} title={props.title} /> 
+      <DivServicesIntro>{NewlineText(props.intro)}</DivServicesIntro>
       <DivServicesBackground bck={props.bck}>
         {props.services.map((element, index) => (
           <div key={index} onClick={() => handleClick(index)}>
             {(flipped === index) ? (
               <DivServicesCardsBackground bckColor={colors.tertiary}>
-                <PTextBenefitCard>{element.details}</PTextBenefitCard>
+                <PTextBenefitCard>{NewlineText(element.details)}</PTextBenefitCard>
               </DivServicesCardsBackground>
             ) : (
               <DivServicesCardsBackground bckColor='white' circle={props.circle}>

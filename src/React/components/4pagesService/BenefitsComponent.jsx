@@ -9,6 +9,7 @@ import {
   PTextBenefitCard,
   PTitleBenefitCard,
 } from '../../../styles/components/4pagesService/benefitsComponent'
+import { NewlineText } from '../../../helpers/newLineText'
 
 const BenefitsComponent = (props) => {
   const [flipped, setFlipped] = useState(-1)
@@ -31,7 +32,7 @@ const BenefitsComponent = (props) => {
               <div key={index} onClick={() => handleClick(index)}>
               {flipped === index ? (
                 <DivCard bck={'yes'} color={colors.tertiary}>
-                  <PTextBenefitCard>{element.content}</PTextBenefitCard>
+                  <PTextBenefitCard>{NewlineText(element.content)}</PTextBenefitCard>
                 </DivCard>
               ) : (
                 <DivCard bck={'no'} color={props.color}>
@@ -41,7 +42,7 @@ const BenefitsComponent = (props) => {
             </div>
             ) : (
               <DivNoCard key={index} >
-                <PTextBenefitCard >{element.content}</PTextBenefitCard>
+                <PTextBenefitCard >{NewlineText(element.content)}</PTextBenefitCard>
             </DivNoCard>
             )
           ))}

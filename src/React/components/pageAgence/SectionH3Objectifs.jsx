@@ -13,7 +13,7 @@ const SectionH3Objectifs = () => {
   return (
     <SectionObjectifs id='nosObjectifs'>
       <DivObectifsContent>
-        <H3TrioTitle title={'Nos objectifs'} />
+        <H3TrioTitle title={'Nos objectifs'} />        
         <PTextObjectifs>
           Nous souhaitons avant tout mettre en valeur vos idées, votre personnalité, l'identité de
           votre structure et bien sûr vous aider à concrétiser vos projets.

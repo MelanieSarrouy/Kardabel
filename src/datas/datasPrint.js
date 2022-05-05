@@ -20,11 +20,7 @@ export const datasPrint = {
       title: 'Pourquoi utiliser la communication print ?',
       background: backgroundCard,
       side: 'left',
-      content: [
-        'Le print en complément du digital est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires.',
-        'Il véhicule votre identité, vos savoir-faire, votre professionnalisme et vous permet d\'être en contact physique direct avec le consommateur.',
-        'Il marque l\'esprit du lecteur avec une image forte.',
-      ],
+      content: 'Le print en complément du digital est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires. \n Il véhicule votre identité, vos savoir-faire, votre professionnalisme et vous permet d\'être en contact physique direct avec le consommateur. \n Il marque l\'esprit du lecteur avec une image forte.',
     },
     benefits: {
       title: 'Les avantages du print',
@@ -32,12 +28,12 @@ export const datasPrint = {
         {
           title: 'Mémorisation',
           content:
-            'La communication print offre des solutions innovantes, attractives et surprenantes. Avec le bon message et le bon design, elle favorise la mémorisation et la valorisation de votre marque.',
+            'La communication print offre des solutions innovantes, attractives et surprenantes. \n Avec le bon message et le bon design, elle favorise la mémorisation et la valorisation de votre marque.',
         },
         {
           title: 'Diffusion',
           content:
-            'Les supports papiers permettent de multiplier les points de contacts et de diffusion. Avec le bon format, le bon design et une finition originale, l’impact de votre message augmente considérablement.',
+            'Les supports papiers permettent de multiplier les points de contacts et de diffusion. \n Avec le bon format, le bon design et une finition originale, l’impact de votre message augmente considérablement.',
         },
         {
           title: 'Pérennité',
@@ -46,66 +42,64 @@ export const datasPrint = {
         },
         {
           title: '',
-          content: 'Vous voulez attirer l’attention ? Ne pas laisser indifférent ? Confiez-nous la conception de vos supports de communication !', 
+          content:
+            'Vous voulez attirer l’attention ? \n Ne pas laisser indifférent ? \n Confiez-nous la conception de vos supports de communication !',
         },
       ],
     },
     services: {
       title: 'Kardabel vous propose',
+      intro: 'Le choix en matière de type de support, format et finition est quasi illimité.\n Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
       background: servicesBackground,
-      intro: [
-        'Le choix en matière de type de support, format et finition est quasi illimité.',
-        'Nous sommes là pour vous onseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
-      ],
       services: [
         {
           name: 'Cartes',
           details:
-            'Cartes de visite, cartes de fidélité, cartes cadeau, faires-parts, invitations...',
+            'Cartes de visite, \n cartes de fidélité, \n cartes cadeau, \n faires-parts, \n invitations...',
         },
         {
           name: 'Flyers',
-          details: 'Flyers tous formats',
+          details: 'Flyers \ntous formats',
         },
         {
           name: 'Affiches',
-          details: 'Affiches tous formats',
+          details: 'Affiches \n tous formats',
         },
         {
           name: 'Dépliants',
-          details: 'Dépliants, plaquettes commerciales, plaquettes de présentation...',
+          details: 'Dépliants, \n plaquettes commerciales, \n plaquettes de présentation...',
         },
         {
           name: 'Brochures',
-          details: 'Brochures, livrets, journaux, magazines, livres...',
+          details: 'Brochures, \n livrets, \n journaux, \n magazines, \n livres...',
         },
         {
           name: 'PLV',
-          details: 'Banderoles, kakémonos, ou autres PLV',
+          details: 'Banderoles, \n kakémonos, \n ou autres PLV',
         },
         {
           name: 'Packaging',
-          details: 'Étiquettes et packaging',
+          details: 'Étiquettes \n et packaging',
         },
         {
           name: 'Stickers',
-          details: 'Autocollants, marquage sur véhicule',
+          details: 'Autocollants, \n marquage sur véhicule',
         },
         {
           name: 'Menus',
-          details: 'Menus et cartes de vins',
+          details: 'Menus \n et cartes de vins',
         },
         {
           name: 'Macarons',
-          details: 'Macarons pour CD ou vinyles',
+          details: 'Macarons \n pour CD ou vinyles',
         },
         {
           name: 'Dossiers',
-          details: 'CV, dossiers de presse...',
+          details: 'CV, \n dossiers de presse, \n etc.',
         },
         {
           name: 'Goodies',
-          details: 'Textiles, papeterie, etc.',
+          details: 'Textiles, \n papeterie, \n etc.',
         },
       ],
     },

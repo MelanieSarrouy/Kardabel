@@ -15,6 +15,14 @@ export const DivServiceContent = styled.div`
   flex-direction: ${(props) => props.direction};
   justify-content: space-between;
   align-items: center;
+  & > div > p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
 `
 export const UlLexique = styled.ul`
   display: flex;

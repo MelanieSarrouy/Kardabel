@@ -21,9 +21,7 @@ export const datasIdentity = {
       title: 'Pourquoi créer et utiliser une identité visuelle ?',
       background: backgroundCard,
       side: 'left',
-      content: [
-        'Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.',
-      ],
+      content: 'Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.',
     },
     benefits: {
       title: 'Les avantages d’une identité visuelle',
@@ -51,6 +49,11 @@ export const datasIdentity = {
     },
     services: {
       title: 'Kardabel vous propose',
+      intro: [
+        'Le choix en matière de type de support, format et finition est quasi illimité.',
+        'Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
+      ],
+
       services: [
         {
           illustration: logoIllustration,

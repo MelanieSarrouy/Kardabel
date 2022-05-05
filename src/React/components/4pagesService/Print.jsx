@@ -30,12 +30,11 @@ const Print = () => {
         id="avantages"
         color={datasPrint.colors.normal}
         benefits={datasPrint.subtitles.benefits.cards}
-
       />
       <ServicesComponent
         title={datasPrint.subtitles.services.title}
         id="prestations"
-        txt={datasPrint.subtitles.services.intro}
+        intro={datasPrint.subtitles.services.intro}
         bck={bck}
         services={datasPrint.subtitles.services.services}
         circle={circle}

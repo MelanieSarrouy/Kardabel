@@ -34,14 +34,16 @@ export const PTitleBenefitCard = styled.p`
   font-weight: 700;
   padding: 1rem;
 `
-export const PTextBenefitCard = styled.p`
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.8rem;
+export const PTextBenefitCard = styled.div`
+& > p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
   text-align: center;
-  padding: 2.5rem;
-
+  padding: .4rem;
+}
 `
+
 export const DivNoCard = styled.div`
   background: no-repeat center center url(${backgroundCard});
   display: flex;

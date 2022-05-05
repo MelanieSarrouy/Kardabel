@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 
-
 export const DivWhyContent = styled.div`
   display: flex;
   flex-direction: column;
-
-  background: url(${props => props.circle}) no-repeat center ${props => props.side};
+  background: url(${(props) => props.circle}) no-repeat center ${(props) => props.side};
   background-size: contain;
   padding: 6rem;
   margin-top: -2rem;
@@ -18,14 +16,14 @@ export const DivWhyTextContent = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
-`
-export const PWhyText = styled.p`
-  font-size: 2.25rem;
-  line-height: 3.5rem;
-  text-align: center;
-  font-style: italic;
-  font-weight: 500;
-  padding: .5rem;
+  & > p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    padding: 0.5rem;
+  }
 `

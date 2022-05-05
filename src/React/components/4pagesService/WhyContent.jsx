@@ -1,19 +1,14 @@
 import React from 'react'
+import { NewlineText } from '../../../helpers/newLineText'
 import {
   DivWhyContent,
   DivWhyTextContent,
-  PWhyText,
 } from '../../../styles/components/4pagesService/whyContent'
 
 const WhyContent = (props) => {
   return (
     <DivWhyContent circle={props.circle} side={props.side}>
-      <DivWhyTextContent color={props.color}>
-        {Array.isArray(props.content) ? (
-          props.content.map((element, index) => <PWhyText key={index}>{element}</PWhyText>)
-        ) : (
-          <PWhyText>{props.content}</PWhyText>
-        )}
+      <DivWhyTextContent color={props.color}>{NewlineText(props.content)}
       </DivWhyTextContent>
     </DivWhyContent>
   )
