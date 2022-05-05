@@ -3,38 +3,9 @@ import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
 import { datasPrint } from '../../../datas/datasPrint'
 import BenefitsComponent from './BenefitsComponent'
-import ChoiceComponent from './ChoiceComponent'
-import H4Title from '../../layout/H4Title'
-import styled from 'styled-components'
 import bck from '../../../assets/illustrations/pink-background.jpg'
 import circle from '../../../assets/shapes/EllipseLightGold.svg'
-import { PTitleBenefitCard } from '../../../styles/components/4pagesService/benefitsComponent'
-
-export const DivServicesBackground = styled.div`
-  background: no-repeat center center url(${bck});
-  background-size: cover;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 22rem);
-  grid-gap: 4rem;
-  justify-content: center;
-  align-items: center;
-  padding: 10rem 7% 10rem 7%;
-  margin: 4rem 0 5rem 0;
-  & > div {
-    background: no-repeat center center url(${circle});
-    background-color: white;
-    background-size: 55%;
-    border-radius: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20rem;
-    transition: background-size 200ms ease-in-out;
-    &:hover {
-      background-size: 80%;
-    }
-  }
-`
+import ServicesComponent from './ServicesComponent'
 
 const Print = () => {
   return (
@@ -58,18 +29,17 @@ const Print = () => {
         title={datasPrint.subtitles.benefits.title}
         id="avantages"
         color={datasPrint.colors.normal}
+        benefits={datasPrint.subtitles.benefits.cards}
+
       />
-      <section>
-        <H4Title id="prestations" title={datasPrint.subtitles.services.title} />
-        <ChoiceComponent txt={datasPrint.subtitles.benefits.advice} />
-        <DivServicesBackground>
-          {datasPrint.subtitles.services.services.map((element, index) => (
-            <div key={index}>
-              <PTitleBenefitCard>{element.name}</PTitleBenefitCard>
-            </div>
-          ))}
-        </DivServicesBackground>
-      </section>
+      <ServicesComponent
+        title={datasPrint.subtitles.services.title}
+        id="prestations"
+        txt={datasPrint.subtitles.services.intro}
+        bck={bck}
+        services={datasPrint.subtitles.services.services}
+        circle={circle}
+      />
     </>
   )
 }

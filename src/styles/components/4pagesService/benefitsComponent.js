@@ -32,12 +32,15 @@ export const PTitleBenefitCard = styled.p`
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 1rem;
 `
 export const PTextBenefitCard = styled.p`
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.8rem;
   text-align: center;
+  padding: 2.5rem;
+
 `
 export const DivNoCard = styled.div`
   background: no-repeat center center url(${backgroundCard});

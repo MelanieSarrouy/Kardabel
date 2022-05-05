@@ -1,36 +1,30 @@
 import styled from 'styled-components'
-import colors from '../../bases/colors'
 
-export const DivH4Content = styled.div`
-  padding: 3rem 7%;
-`
-
-export const ImgServicesCards = styled.img`
-  width: 20rem;
-  padding: 0 1rem;
-  filter: drop-shadow(0.5rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5));
-`
-export const DivServiceContent = styled.div`
-  display: flex;
-  flex-direction: ${(props) => props.direction};
-  justify-content: space-between;
+export const DivServicesBackground = styled.div`
+  background: no-repeat center center url(${(props) => props.bck});
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 22rem);
+  grid-gap: 4rem;
+  justify-content: center;
   align-items: center;
+  padding: 10rem 7% 10rem 7%;
+  margin: 4rem 0 5rem 0;
 `
-export const UlLexique = styled.ul`
+export const DivServicesCardsBackground = styled.div`
+  background: no-repeat center center url(${(props) => props.circle});
+  background-color: ${(props) => props.bckColor};
+  background-size: 55%;
+  border-radius: 1.5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 3rem;
-  line-height: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-size 800ms, box-shadow 100ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-size: 130%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
   }
-  & > li > p {
-    color: ${colors.textTertiary};
-    padding: 0 1rem;
-    border-left: ${colors.textSecondary} solid 1px;
-  }
-`
-export const PLexiqueWord = styled.p`
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: .5rem 0;
 `

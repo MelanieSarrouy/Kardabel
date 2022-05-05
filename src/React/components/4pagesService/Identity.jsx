@@ -3,7 +3,7 @@ import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
 import { datasIdentity } from '../../../datas/datasIdentity'
 import BenefitsComponent from './BenefitsComponent'
-import ServicesComponent from './ServicesComponent'
+import FourServicesComponent from './FourServicesComponent'
 
 const Identity = () => {
   return (
@@ -27,8 +27,10 @@ const Identity = () => {
         title={datasIdentity.subtitles.benefits.title}
         id="avantages"
         color={datasIdentity.colors.normal}
+        benefits={datasIdentity.subtitles.benefits.cards}
+
       />
-      <ServicesComponent
+      <FourServicesComponent
         title={datasIdentity.subtitles.services.title}
         id="prestations"
         circle={datasIdentity.subtitles.why.background}

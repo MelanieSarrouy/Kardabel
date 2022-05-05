@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const SectionIntro = styled.section`
   padding: 22rem 7% 5rem 7%;
@@ -23,13 +23,16 @@ export const SectionIntro = styled.section`
     padding-top: 12rem;
   }
 `
-export const TextIntro = styled.p`
-  font-weight: 500;
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 3rem;
-  padding: 2rem 5%;
-  @media (max-width: 1023px) {
-    padding: 2rem 0;
+export const TextIntro = styled.div`
+  white-space: pre-wrap;
+  & > p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 3rem;
+    padding: 1rem 5%;
+    @media (max-width: 1023px) {
+      padding: 2rem 0;
+    }
   }
 `

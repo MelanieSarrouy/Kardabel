@@ -12,7 +12,7 @@ export const DivPrintBenefitsChoice = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 10rem;
+    padding: 0 5rem;
     & > p {
       font-size: 1.8rem;
       font-weight: 600;

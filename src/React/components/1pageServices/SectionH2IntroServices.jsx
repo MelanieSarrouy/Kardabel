@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import H2Intro from '../../layout/H2Intro'
 import {
   NavServicesStyle,
@@ -22,6 +22,14 @@ const createLink = (str) => {
 const SectionH2IntroServices = () => {
   const sampleLocation = useLocation()
   const location = sampleLocation.pathname
+  const hash = sampleLocation.hash.substring(1)
+  const history = window.history
+
+  useEffect(() => {
+    if (hash !== '') {
+      history.pushState(null, '', `${location}`);
+    }
+  }, [hash, history, location])
 
   return (
     <div>

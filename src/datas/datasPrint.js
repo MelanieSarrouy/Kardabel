@@ -3,7 +3,6 @@ import titleCard from '../assets/illustrations/h3CardPrint.svg'
 import illustrationCard from '../assets/illustrations/Designer _Flatline-2.svg'
 import backgroundCard from '../assets/shapes/EllipseRose.svg'
 import servicesBackground from '../assets/illustrations/pink-background.jpg'
-import circlePicturePink from '../assets/illustrations/print-masque-picturePink.png'
 
 export const datasPrint = {
   id: 'print',
@@ -47,19 +46,9 @@ export const datasPrint = {
         },
         {
           title: '',
-          content: [
-            'Vous voulez attirer l’attention ?',
-            'Ne pas laisser indifférent ?',
-            'Confiez-nous la conception de vos supports de communication !',
-          ],
+          content: 'Vous voulez attirer l’attention ? Ne pas laisser indifférent ? Confiez-nous la conception de vos supports de communication !', 
         },
       ],
-      advice: [
-        'Le choix en matière de type de support, format et finition est quasi illimité.',
-        'Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
-      ],
-      adviceIllustration: circlePicturePink,
-
     },
     services: {
       title: 'Kardabel vous propose',
@@ -72,7 +61,7 @@ export const datasPrint = {
         {
           name: 'Cartes',
           details:
-            'Cartes de visite, cartes de fidélité, cartes cadeau, faires-parts,invitations...',
+            'Cartes de visite, cartes de fidélité, cartes cadeau, faires-parts, invitations...',
         },
         {
           name: 'Flyers',
