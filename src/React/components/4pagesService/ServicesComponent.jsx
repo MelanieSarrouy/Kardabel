@@ -8,7 +8,7 @@ import {
 import {
   DivServicesBackground,
   DivServicesCardsBackground,
-  DivServicesIntro
+  DivServicesIntro,
 } from '../../../styles/components/4pagesService/servicesComponent'
 import H4Title from '../../layout/H4Title'
 
@@ -24,22 +24,23 @@ const ServicesComponent = (props) => {
   }
   return (
     <section>
-      <H4Title id={props.id} title={props.title} /> 
+      <H4Title id={props.id} title={props.title} />
       <DivServicesIntro>{NewlineText(props.intro)}</DivServicesIntro>
       <DivServicesBackground bck={props.bck}>
-        {props.services.map((element, index) => (
-          <div key={index} onClick={() => handleClick(index)}>
-            {(flipped === index) ? (
-              <DivServicesCardsBackground bckColor={colors.tertiary}>
-                <PTextBenefitCard>{NewlineText(element.details)}</PTextBenefitCard>
-              </DivServicesCardsBackground>
-            ) : (
-              <DivServicesCardsBackground bckColor='white' circle={props.circle}>
-                <PTitleBenefitCard>{element.name}</PTitleBenefitCard>
-              </DivServicesCardsBackground>
-            )}
-          </div>
-        ))}
+        {props.services !== '' &&
+          props.services.map((element, index) => (
+            <div key={index} onClick={() => handleClick(index)}>
+              {flipped === index ? (
+                <DivServicesCardsBackground bckColor={colors.tertiary}>
+                  <PTextBenefitCard>{NewlineText(element.details)}</PTextBenefitCard>
+                </DivServicesCardsBackground>
+              ) : (
+                <DivServicesCardsBackground bckColor="white" circle={props.circle}>
+                  <PTitleBenefitCard>{NewlineText(element.name)}</PTitleBenefitCard>
+                </DivServicesCardsBackground>
+              )}
+            </div>
+          ))}
       </DivServicesBackground>
     </section>
   )

@@ -2,9 +2,8 @@ import colors from '../styles/bases/colors'
 import titleCard from '../assets/illustrations/h3CardIdentity.svg'
 import illustrationCard from '../assets/illustrations/Profile analysis _Flatline-2.svg'
 import backgroundCard from '../assets/shapes/EllipseJaune.svg'
-import logoIllustration from '../assets/illustrations/logo-illustration.png'
-import charteIllustration from '../assets/illustrations/charte-illustration.png'
-import moodBoardIllustration from '../assets/illustrations/mood-board-illustration.png'
+import servicesBackground from '../assets/illustrations/the-great-wave-off-kanagawa.png'
+
 
 export const datasIdentity = {
   title: 'Identité',
@@ -49,53 +48,20 @@ export const datasIdentity = {
     },
     services: {
       title: 'Kardabel vous propose',
-      intro: [
-        'Le choix en matière de type de support, format et finition est quasi illimité.',
-        'Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
-      ],
-
+      intro: 'Une image vaut mille mots... \n Votre identité visuelle vous représente, elle doit être simple, puissante et efficace. \n Kardabel est là pour vous guider et vous conseiller au mieux en fonction de vos besoins.',
+      background: servicesBackground,
       services: [
         {
-          illustration: logoIllustration,
-          circleSide: 'left',
-
-          text: 'La création de votre logo, simple, puissant et efficace avec ou sans baseline (slogan)',
-          lexicon: [
-            {
-              word: 'Logo (ou logotype) :',
-              definition:
-                'Représentation graphique d’une entité. C’est l’élément central de l’identité visuelle.',
-            },
-            {
-              word: 'Baseline :',
-              definition:
-                'Phrase courte qui permet de préciser l’activité ou attirer la cible. Elle est souvent liée au logo mais peut aussi vivre seule comme phrase d’accroche.',
-            },
-          ],
+          name: 'La création de votre logo avec ou sans baseline',
+          details: 'Logo : élément graphique central de l’identité visuelle. \n Baseline : phrase courte ou slogan, elle est souvent liée au logo.'
         },
         {
-          illustration: charteIllustration,
-          circleSide: 'right',
-          text: 'La création ou la refonte de votre Charte graphique (branding)',
-          lexicon: [
-            {
-              word: 'Charte graphique :',
-              definition:
-                'Document de référence qui rassemble toutes les règles d’utilisation de tous éléments graphiques d’une marque, c’est-à-dire les détails de l’identité visuelle, ainsi que la manière de l’appliquer sur les supports de communication. C’est le mode d’emploi de l’identité visuelle',
-            },
-          ],
+          name: 'La création ou la refonte de votre Charte graphique',
+          details: 'Charte graphique : document de référence qui rassemble toutes les règles d’utilisation des éléments graphiques d’une marque. C’est le mode d’emploi de l’identité visuelle'
         },
         {
-          illustration: moodBoardIllustration,
-          circleSide: 'left',
-          text: 'La création  de votre Brand Board (tableau de marque)',
-          lexicon: [
-            {
-              word: 'Brand board :',
-              definition:
-                'Sorte de charte graphique condensée, sans les règles d’usage. Document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle : Logo et ses déclinaisons / Typographies / Palette de couleurs / Icônes / Images d’inspiration.',
-            },
-          ],
+          name: 'La création de votre Brand Board ou planche de style',
+          details: 'Brand board : document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle (Logos / Typos / Couleurs / Icônes / Images).'
         },
       ],
     },

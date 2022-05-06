@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const DivServicesIntro = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,20 +7,20 @@ export const DivServicesIntro = styled.div`
   justify-content: center;
   flex-wrapo: wrap;
   width: 100%;
-  padding: 2rem 7% 5rem 7%;
+  padding: 1rem 7% 5rem 7%;
   & > p {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.8rem;
     text-align: center;
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 10rem;
   }
 `
 export const DivServicesBackground = styled.div`
   background: no-repeat center center url(${(props) => props.bck});
   background-size: cover;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 22rem);
+  grid-template-columns: repeat(auto-fill, 30%);
   grid-gap: 4rem;
   justify-content: center;
   align-items: center;

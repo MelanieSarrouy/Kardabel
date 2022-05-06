@@ -36,7 +36,7 @@ const BenefitsComponent = (props) => {
                 </DivCard>
               ) : (
                 <DivCard bck={'no'} color={props.color}>
-                  <PTitleBenefitCard>{element.title}</PTitleBenefitCard>
+                  <PTitleBenefitCard>{NewlineText(element.title)}</PTitleBenefitCard>
                 </DivCard>
               )}
             </div>

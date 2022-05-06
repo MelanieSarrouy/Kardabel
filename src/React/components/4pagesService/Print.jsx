@@ -3,7 +3,6 @@ import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
 import { datasPrint } from '../../../datas/datasPrint'
 import BenefitsComponent from './BenefitsComponent'
-import bck from '../../../assets/illustrations/pink-background.jpg'
 import circle from '../../../assets/shapes/EllipseLightGold.svg'
 import ServicesComponent from './ServicesComponent'
 
@@ -35,7 +34,7 @@ const Print = () => {
         title={datasPrint.subtitles.services.title}
         id="prestations"
         intro={datasPrint.subtitles.services.intro}
-        bck={bck}
+        bck={datasPrint.subtitles.services.background}
         services={datasPrint.subtitles.services.services}
         circle={circle}
       />

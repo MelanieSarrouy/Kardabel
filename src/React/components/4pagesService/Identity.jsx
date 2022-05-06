@@ -3,7 +3,8 @@ import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
 import { datasIdentity } from '../../../datas/datasIdentity'
 import BenefitsComponent from './BenefitsComponent'
-import FourServicesComponent from './FourServicesComponent'
+import ServicesComponent from './ServicesComponent'
+import circle from '../../../assets/shapes/EllipseLightGold.svg'
 
 const Identity = () => {
   return (
@@ -28,13 +29,15 @@ const Identity = () => {
         id="avantages"
         color={datasIdentity.colors.normal}
         benefits={datasIdentity.subtitles.benefits.cards}
-
       />
-      <FourServicesComponent
+      <ServicesComponent 
         title={datasIdentity.subtitles.services.title}
         id="prestations"
-        circle={datasIdentity.subtitles.why.background}
-        color={datasIdentity.colors.light}
+        intro={datasIdentity.subtitles.services.intro}
+        bck={datasIdentity.subtitles.services.background}
+        services={datasIdentity.subtitles.services.services}
+        circle={circle}
+
       />
     </>
   )

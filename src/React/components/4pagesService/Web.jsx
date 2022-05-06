@@ -1,30 +1,40 @@
 import React from 'react'
 import ServiceH3Card from './ServiceH3Card'
-import colors from '../../../styles/bases/colors'
-import h3 from '../../../assets/illustrations/h3CardWeb.svg'
-import illustrationCard from '../../../assets/illustrations/Web development _Flatline-2.svg'
 import WhyComponent from './WhyComponent'
-import circle from '../../../assets/shapes/EllipseBleue.svg'
-
-const title = 'Pourquoi adopter la communication web ?'
-const content =
-  "Aujourd'hui une stratégie de communication efficace ne se conçoit pas sans un volet digital. Entre smartphones, tablettes, ordinateurs portables, de bureau ou autres, les nouvelles technologies nous accompagnent partout. C'est un univers en perpétuelle évolution, incontournable pour votre visibilité, votre notoriété et votre image professionnelle."
+import { datasWeb } from '../../../datas/datasWeb'
+import BenefitsComponent from './BenefitsComponent'
+import ServicesComponent from './ServicesComponent'
 
 const Web = () => {
   return (
     <>
       <ServiceH3Card
-        color={`${colors.color3}`}
-        h3Illustration={h3}
-        h3Title="Web"
-        illustrationCard={illustrationCard}
+        color={datasWeb.colors.normal}
+        h3Illustration={datasWeb.illustrations.title}
+        h3Title={datasWeb.title}
+        illustrationCard={datasWeb.illustrations.illustration}
       />
       <WhyComponent
-        title={title}
+        title={datasWeb.subtitles.why.title}
         id="pourquoi"
-        circle={circle}
-        color={`${colors.color3clair}`}
-        content={content}
+        side={datasWeb.subtitles.why.side}
+        circle={datasWeb.subtitles.why.background}
+        color={datasWeb.colors.light}
+        content={datasWeb.subtitles.why.content}
+      />
+      <BenefitsComponent
+        cards={datasWeb.subtitles.benefits.cards}
+        title={datasWeb.subtitles.benefits.title}
+        id="avantages"
+        color={datasWeb.colors.normal}
+        benefits={datasWeb.subtitles.benefits.cards}
+      />
+      <ServicesComponent
+        title={datasWeb.subtitles.services.title}
+        id="prestations"
+        intro={datasWeb.subtitles.services.intro}
+        bck={datasWeb.subtitles.services.background}
+        services={datasWeb.subtitles.services.services}
       />
     </>
   )

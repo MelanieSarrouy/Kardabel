@@ -28,11 +28,14 @@ export const DivCard = styled.div`
     text-align: center;
   }
 `
-export const PTitleBenefitCard = styled.p`
-  font-size: 2.5rem;
+export const PTitleBenefitCard = styled.div`
+& > p {
+  font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 700;
+  ${'' /* text-align: center; */}
   padding: 1rem;
+}
 `
 export const PTextBenefitCard = styled.div`
 & > p {
