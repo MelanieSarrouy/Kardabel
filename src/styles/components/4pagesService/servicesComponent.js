@@ -19,10 +19,14 @@ export const DivServicesIntro = styled.div`
 export const DivServicesBackground = styled.div`
   background: no-repeat center center url(${(props) => props.bck});
   background-size: cover;
+  ${'' /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem;   */}
   display: grid;
   grid-template-columns: repeat(auto-fill, 30%);
   grid-gap: 4rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10rem 7% 10rem 7%;
 `
@@ -34,13 +38,16 @@ export const DivServicesCardsBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  min-height: 22rem;
+  width: 26rem;
   padding: 2rem;
+  scale: ${(props) => props.scale};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background-size 800ms, box-shadow 100ms ease-in-out;
+  transition: background-size 800ms, transform 400ms, box-shadow 100ms ease-in-out;
   cursor: pointer;
   &:hover {
     background-size: 130%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+    transform: scale(${(props) => props.scaleHover});
   }
 `

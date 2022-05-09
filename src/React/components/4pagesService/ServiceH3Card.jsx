@@ -23,7 +23,7 @@ const createLink = (str) => {
 
 const ServiceH3Card = (props) => {
   return (
-    <DivServiceBlock id='service'>
+    <DivServiceBlock id={props.id}>
       <DivProfileCard color={props.color}>
         <ImgSVGTitle src={props.h3Illustration} alt="title" />
         <h3 className="sr-only">{props.h3Title}</h3>

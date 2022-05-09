@@ -31,11 +31,11 @@ const ServicesComponent = (props) => {
           props.services.map((element, index) => (
             <div key={index} onClick={() => handleClick(index)}>
               {flipped === index ? (
-                <DivServicesCardsBackground bckColor={colors.tertiary}>
+                <DivServicesCardsBackground bckColor={colors.tertiary} scale={1.05} scaleHover={1}>
                   <PTextBenefitCard>{NewlineText(element.details)}</PTextBenefitCard>
                 </DivServicesCardsBackground>
               ) : (
-                <DivServicesCardsBackground bckColor="white" circle={props.circle}>
+                <DivServicesCardsBackground bckColor="white" circle={props.circle} scale={1} scaleHover={1.05}>
                   <PTitleBenefitCard>{NewlineText(element.name)}</PTitleBenefitCard>
                 </DivServicesCardsBackground>
               )}

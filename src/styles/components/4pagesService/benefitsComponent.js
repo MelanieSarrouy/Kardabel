@@ -15,7 +15,7 @@ export const DivCard = styled.div`
       ? `no-repeat center center url(${logoBenefitCard})`
       : `no-repeat center center url(${logoBenefitCard2})`};
   background-color: ${(props) => props.color};
-  background-size: 30%;
+  background-size: 25%;
   border-radius: 1.5rem;
   padding: 3rem 4rem 3rem 4rem;
   display: flex;
@@ -23,28 +23,36 @@ export const DivCard = styled.div`
   align-items: center;
   height: 20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  scale: ${(props) => props.scale};
+  transition: background-size 800ms, transform 400ms, box-shadow 100ms ease-in-out;
   cursor: pointer;
-  & > p {
-    text-align: center;
+  &:hover {
+    background-size: 50%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+    transform: scale(${(props) => props.scaleHover});
   }
+
 `
 export const PTitleBenefitCard = styled.div`
-& > p {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  ${'' /* text-align: center; */}
-  padding: 1rem;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > p {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+  }
 `
 export const PTextBenefitCard = styled.div`
-& > p {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  text-align: center;
-  padding: .4rem;
-}
+  & > p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 0.4rem;
+  }
 `
 
 export const DivNoCard = styled.div`
@@ -56,6 +64,6 @@ export const DivNoCard = styled.div`
   padding: 2rem;
   & > p {
     font-weight: 600;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 `

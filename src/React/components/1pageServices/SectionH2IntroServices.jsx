@@ -24,7 +24,6 @@ const SectionH2IntroServices = () => {
   const location = sampleLocation.pathname
   const hash = sampleLocation.hash.substring(1)
   const history = window.history
-  console.log(location)
 
   useEffect(() => {
     if (hash !== '') {

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export const SectionServices = styled.section`
   background: no-repeat center center url(${backgroundVectorServices});
   background-size: cover;
-  margin-bottom: 5rem;
+  ${'' /* margin-bottom: 5rem; */}
 `
 export const DivServices = styled.div`
   display: flex;

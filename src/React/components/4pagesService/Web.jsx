@@ -4,6 +4,8 @@ import WhyComponent from './WhyComponent'
 import { datasWeb } from '../../../datas/datasWeb'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
+import circle from '../../../assets/shapes/EllipseLightGold.svg'
+
 
 const Web = () => {
   return (
@@ -35,6 +37,7 @@ const Web = () => {
         intro={datasWeb.subtitles.services.intro}
         bck={datasWeb.subtitles.services.background}
         services={datasWeb.subtitles.services.services}
+        circle={circle}
       />
     </>
   )

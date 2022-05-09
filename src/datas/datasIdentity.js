@@ -6,6 +6,7 @@ import servicesBackground from '../assets/illustrations/the-great-wave-off-kanag
 
 
 export const datasIdentity = {
+  id: 'identite',
   title: 'Identité',
   illustrations: {
     title: titleCard,

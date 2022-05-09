@@ -51,48 +51,41 @@ export const datasWeb = {
     services: {
       title: 'Kardabel vous propose',
       background: servicesBackground,
-      intro: 'Création ou refonte de votre site internet ou landing page. \n Kardabel développe les sites avec le CMS WordPress ou bien des sites sur-mesure (from scratch).',
+      intro: 'Création ou refonte de votre site internet ou landing page. \n Kardabel développe les sites avec le CMS WordPress ou bien des sites sur-mesure (from scratch). \n Nous choisirons ensemble les technologies les mieux adaptées à votre projet.',
       services: [
         {
           name: 'Webdesign \n (UX UI Design)',
-          illustration: '../assets/icons/webdesign.svg',
           details:
-            'L’expérience utilisateur, la convivialité et l’accessibilité doivent être pris en compte dans la conception du graphisme. Notre but est de concevoir des interfaces simples et originales, qui reflètent votre identité et transmettent un message clair tout en offrant une expérience utilisateur fluide, intuitive et efficace.',
+            'Notre but est de concevoir ou personnaliser des interfaces simples et originales, tout en offrant une expérience utilisateur (UX) conviviale, accessible, intuitive et efficace.',
         },
         {
           name: 'Intégration',
-          illustration: '../assets/icons/integration.svg',
           details:
-            'Sur la base des maquettes que nous aurons créées ou que vous nous aurez fourni, nous intégrerons vos contenus dans le respect des normes W3C et des bonnes pratiques de code. Dans un soucis de maintenabilité et de performance, nous choisirons les technologies les mieux adaptées à votre projet.',
+            'À partir des maquettes que nous concevons ou que vous nous fournissez, nous intégrons vos contenus dans le respect des normes W3C et des bonnes pratiques de développement.',
         },
         {
           name: 'Responsive',
-          illustration: '../assets/icons/responsive.svg',
           details:
             'Votre site internet doit reprendre votre identité visuelle et être adapté à tous les écrans pour pouvoir consulter vos informations sur tous les supports.',
         },
         {
           name: 'Accessibilité',
-          illustration: '../assets/icons/accessibility.svg',
           details:
             'Votre site doit être accessible à toutes et tous et se charger rapidement pour garantir une bonne navigation ainsi qu’une bonne indexation de la part des moteurs de recherche.',
         },
-        {
-          name: 'SEO',
-          illustration: '../assets/icons/SEO.svg',
-          details:
-            'Pour un référencement naturel optimisé, nous veillons à fournir une bonne sélection de mots-clés, des balises sémantiques utilisées judicieusement et un temps de chargement minimum. Il ne vous reste plus qu’à fournir des contenus de qualité.',
-        },
+        // {
+        //   name: 'SEO',
+        //   details:
+        //     'Pour un meilleur référencement naturel, nous prenons en compte certains élément dès la conception de nos sites. Il ne vous reste plus qu’à fournir des contenus de qualité.',
+        // },
         {
           name: 'Nom de domaine \n hébergement',
-          illustration: '../assets/icons/domaine.svg',
           details: 'Nous vous accompagnerons dans le choix du nom de domaine et de l’hébergement.',
         },
         {
           name: 'Maintenance',
-          illustration: '../assets/icons/settings.svg',
           details:
-            'Nous proposons un service complémentaire de maintenance annuel de mise à jour et de sauvegarde régulières afin de vous garantir la pérennité et la stabilité de votre site web.',
+            'Nous proposons un service complémentaire de maintenance (mises à jour et sauvegardes régulières) afin de vous garantir la pérennité et la stabilité de votre site web.',
         },
       ],
     },
