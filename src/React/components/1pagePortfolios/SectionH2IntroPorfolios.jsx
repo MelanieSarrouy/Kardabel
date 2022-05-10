@@ -1,22 +1,22 @@
 import React, { useEffect } from 'react'
-import H2Intro from '../../layout/H2Intro'
+import { Outlet, useLocation } from 'react-router-dom'
+import { createLink } from '../../../helpers/createLink'
 import {
-  NavServicesStyle,
   LinkSecondaryStyle,
   LinkSecondaryStyleActive,
+  NavServicesStyle,
 } from '../../../styles/components/1pageServices/sectionH2IntroServices'
-import { Outlet } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
-import { createLink } from '../../../helpers/createLink'
+import H2Intro from '../../layout/H2Intro'
 
-const title = 'Services'
+const title = 'Portfolios'
 const content =
-  'Pour répondre au mieux à vos besoins en communiction et visibilité, nous vous propsons un ensemble de services dans le domaine du Design Graphique et du Développement. '
-const links = ['Identité', 'Print', 'Web', 'Android']
-const name = 'services'
-const prefixeName = ''
+  'Découvrez une sélection de nos différentes productions, qu\'il s\'agisse de créations graphiques, de sites web ou d\'applications.'
+const links = ['Graphisme', 'Web', 'Android']
+const name = 'portfolios'
+const prefixeName = 'portfolio-'
 
-const SectionH2IntroServices = () => {
+
+const SectionH2IntroPorfolios = () => {
   const sampleLocation = useLocation()
   const location = sampleLocation.pathname
   const hash = sampleLocation.hash.substring(1)
@@ -24,19 +24,19 @@ const SectionH2IntroServices = () => {
 
   useEffect(() => {
     if (hash !== '') {
-      history.pushState(null, '', `${location}`);
+      history.pushState(null, '', `${location}`)
     }
   }, [hash, history, location])
 
   return (
     <div>
-      <H2Intro id="services" title={title} content={content}>
+      <H2Intro id="portfolios" title={title} content={content}>
         <NavServicesStyle>
           <ul>
             {links.map((element, index) => (
               <li key={index}>
                 {location === createLink(element, name, prefixeName) ? (
-                  <LinkSecondaryStyleActive to="/services">{element}</LinkSecondaryStyleActive>
+                  <LinkSecondaryStyleActive to="/portfolios">{element}</LinkSecondaryStyleActive>
                 ) : (
                   <LinkSecondaryStyle to={createLink(element, name, prefixeName)}>
                     {element}
@@ -52,4 +52,4 @@ const SectionH2IntroServices = () => {
   )
 }
 
-export default SectionH2IntroServices
+export default SectionH2IntroPorfolios

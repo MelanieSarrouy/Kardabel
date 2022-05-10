@@ -14,12 +14,15 @@ import {
 } from '../../styles/layout/header'
 import SubMenuServices from './SubMenuServices'
 import styled from 'styled-components'
+import SubMenuPortfolios from './SubMenuPorfolios'
 
 export const DivDropdownSubmenu = styled.div`
   position: relative;
 `
 const Header = () => {
-  const [submenu, setSubmenu] = useState(false)
+  const [submenu1, setSubmenu1] = useState(false)
+  const [submenu2, setSubmenu2] = useState(false)
+
   return (
     <HeaderStyle>
       <DivHeaderContent>
@@ -38,18 +41,27 @@ const Header = () => {
           </NavLinkStyle>
           <DivDropdownSubmenu>
             <ImgMenuArrow
-              src={submenu ? arrowUpWhite : arrowDownWhite}
+              src={submenu1 ? arrowUpWhite : arrowDownWhite}
               alt="accès au sous-menu"
-              onClick={() => setSubmenu(!submenu)}
+              onClick={() => setSubmenu1(!submenu1)}
             />
-            {submenu && <SubMenuServices />}
+            {submenu1 && <SubMenuServices />}
           </DivDropdownSubmenu>
           <NavLinkStyle
-            to="/portfolio"
+            to="/portfolios"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
           >
-            Portfolio
+            Portfolios
           </NavLinkStyle>
+          <DivDropdownSubmenu>
+            <ImgMenuArrow
+              src={submenu2 ? arrowUpWhite : arrowDownWhite}
+              alt="accès au sous-menu"
+              onClick={() => setSubmenu2(!submenu2)}
+            />
+            {submenu2 && <SubMenuPortfolios />}
+          </DivDropdownSubmenu>
+
           <NavLinkStyle
             to="/contact"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}

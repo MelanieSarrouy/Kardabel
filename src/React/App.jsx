@@ -14,6 +14,10 @@ import Web from './components/4pagesService/Web'
 import Homepage from './pages/Homepage'
 import NotFound from './pages/NotFound'
 import Services from './pages/Services'
+import Portfolios from './pages/Portfolios'
+import GraphismePortfolio from './components/3pagesPortfolio/GraphismePortfolio'
+import WebPortfolio from './components/3pagesPortfolio/WebPortfolio'
+import AndroidPortfolio from './components/3pagesPortfolio/AndroidPortfolio'
 // JSX // _________________________________________________________________
 
 /**
@@ -38,7 +42,11 @@ export const App = () => {
               <Route path="web" element={<Web />} />
               <Route path="android" element={<Android />} />
             </Route>
-            <Route path="/portfolio" element={<Services />} />
+            <Route path="/portfolios" element={<Portfolios />}>
+              <Route path="portfolio-graphisme" element={<GraphismePortfolio />} />
+              <Route path="portfolio-web" element={<WebPortfolio />} />
+              <Route path="portfolio-android" element={<AndroidPortfolio />} />
+            </Route>
             <Route path="/contact" element={<Services />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

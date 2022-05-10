@@ -67,14 +67,14 @@ export const GlobalStyle = createGlobalStyle`
   }
   .active {
     font-weight: 400;
-    border-bottom: solid 3px ${colors.secondary};
+    border-bottom: solid 2px ${colors.secondary};
     color: ${colors.secondary};
     &:hover {
       color: ${colors.secondary};
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     }
   }
-  nav a.is-active {
+  ${'' /* nav a.is-active {
   background-color: ${colors.background};
   padding: 0.6rem 2rem;
   border-radius: 2rem;
@@ -90,5 +90,5 @@ export const GlobalStyle = createGlobalStyle`
     border: solid 2px ${colors.primaryDark};
     color: ${colors.primaryDark};
   }
-  }
+  } */}
 `

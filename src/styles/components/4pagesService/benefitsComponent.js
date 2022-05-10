@@ -31,7 +31,6 @@ export const DivCard = styled.div`
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
     transform: scale(${(props) => props.scaleHover});
   }
-
 `
 export const PTitleBenefitCard = styled.div`
   display: flex;
@@ -54,7 +53,6 @@ export const PTextBenefitCard = styled.div`
     padding: 0.4rem;
   }
 `
-
 export const DivNoCard = styled.div`
   background: no-repeat center center url(${backgroundCard});
   display: flex;

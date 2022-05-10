@@ -3,7 +3,7 @@ import waveCard from '../../../assets/shapes/waveCard.svg'
 import colors from '../../bases/colors'
 
 export const DivServiceBlock = styled.div`
-  padding: 0 7% 5rem 7%;
+  padding: 0 7% 3rem 7%;
 `
 export const DivProfileCard = styled.div`
   width: 100%;

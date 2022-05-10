@@ -38,7 +38,6 @@ const Identity = () => {
         bck={datasIdentity.subtitles.services.background}
         services={datasIdentity.subtitles.services.services}
         circle={circle}
-
       />
     </>
   )
