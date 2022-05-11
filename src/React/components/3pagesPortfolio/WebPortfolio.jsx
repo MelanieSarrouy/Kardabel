@@ -1,49 +1,28 @@
 import React from 'react'
-import H3TrioTitle from '../../layout/H3TrioTitle'
-import { LinkSecondaryStyle } from '../../../styles/components/1pageServices/sectionH2IntroServices'
-import {
-  ArticlePortfolioFlipCard,
-  DivBackPortfolioCard,
-  DivFrontPortfolioCard,
-  PDescriptionPortfolioVersoCard,
-  PTitlePortfolioVersoCard,
-  SectionPortfolio,
-  UlTechnosPortfolioVersoCard,
-} from '../../../styles/components/3pagesPortfolio/webPortfolio'
+import { DivPortfolioCardsContainer, SectionPortfolio } from '../../../styles/components/3pagesPortfolio/webPortfolio'
+import WebPortfolioCard from './WebPortfolioCard'
+import { datasPortfolioWeb } from '../../../datas/datasPortfolioWeb'
 
-const title = 'Créations web'
+const data = datasPortfolioWeb.reverse()
 
 const WebPortfolio = () => {
+  
   return (
     <SectionPortfolio>
-      <H3TrioTitle title={title} />
-
-      <ArticlePortfolioFlipCard>
-        <div>
-          <DivFrontPortfolioCard>
-            <p>Reservia</p>
-          </DivFrontPortfolioCard>
-
-          <DivBackPortfolioCard>
-            <PTitlePortfolioVersoCard>Reservia</PTitlePortfolioVersoCard>
-            <PDescriptionPortfolioVersoCard>
-              Site de planification de vacances (logement et activités)
-            </PDescriptionPortfolioVersoCard>
-            <UlTechnosPortfolioVersoCard>
-              <li>HTML</li>
-              <li>CSS</li>
-            </UlTechnosPortfolioVersoCard>
-            <div>
-              <LinkSecondaryStyle to="https://melaniesarrouy.github.io/Reservia_12-2020/">
-                site
-              </LinkSecondaryStyle>
-              <LinkSecondaryStyle to="https://github.com/MelanieSarrouy/Reservia_12-2020">
-                code
-              </LinkSecondaryStyle>
-            </div>
-          </DivBackPortfolioCard>
-        </div>
-      </ArticlePortfolioFlipCard>
+      <DivPortfolioCardsContainer>
+      {data.map((element, index) => (
+        <WebPortfolioCard
+          key={index}
+          title={element.title}
+          image={element.image}
+          description={element.description}
+          work={element.work}
+          technos={element.technos}
+          site={element.links.site}
+          code={element.links.code}
+        />
+      ))}
+      </DivPortfolioCardsContainer>
     </SectionPortfolio>
   )
 }

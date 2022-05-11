@@ -6,6 +6,7 @@ export const ImgSVGArrowTop = styled.img`
   right: 2%;
   width: 3rem;
   padding: .5rem 0rem;
+  z-index: 5;
 `
 export const ImgSVGArrowBottom = styled.img`
   position: fixed;
@@ -13,5 +14,6 @@ export const ImgSVGArrowBottom = styled.img`
   right: 2%;
   width: 3rem;
   transform: rotate(180deg);
+  z-index: 5;
 `
 
