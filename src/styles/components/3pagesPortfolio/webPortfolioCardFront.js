@@ -20,7 +20,7 @@ export const DivFrontPortfolioCard = styled.div`
 export const ImgFrontCard = styled.img`
   height: 100%;
   transform: scale(1);
-  transition: transform 400ms ease-in-out, filter 600ms ease-out;
+  transition: transform 600ms ease-in-out, filter 600ms ease-out;
   filter: brightness(60%);
   &:hover {
     transform: scale(1.05);
@@ -30,7 +30,7 @@ export const ImgFrontCard = styled.img`
 export const PTitleFront = styled.p`
   position: absolute;
   text-align: center;
-  padding: 2rem;
+  margin: 0 2rem;
   line-height: 3.5rem;
   font-size: 2.8rem;
   font-weight: 600;

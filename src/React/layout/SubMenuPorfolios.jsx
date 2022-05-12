@@ -1,34 +1,30 @@
 import React from 'react'
-import { NavLinkStyle } from '../../styles/layout/header'
-import { UlSubMenu } from '../../styles/layout/subMenuServices'
+import { useLocation } from 'react-router-dom'
+import { createLink } from '../../helpers/createLink'
+import { SubNavLinkStyle, SubNavLinkStyleActive, UlSubMenu } from '../../styles/layout/subMenuServices'
+
+const links = ['Graphisme', 'Web', 'Android']
+const name = 'portfolios'
+const prefixeName = 'portfolio-'
+
 
 const SubMenuPortfolios = () => {
+  const sampleLocation = useLocation()
+  const location = sampleLocation.pathname
+
   return (
     <UlSubMenu>
-      <li>
-        <NavLinkStyle
-          to="portfolios/portfolio-graphisme"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-        >
-          Graphisme
-        </NavLinkStyle>
-      </li>
-      <li>
-        <NavLinkStyle
-          to="portfolios/portfolio-web"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-        >
-          Web
-        </NavLinkStyle>
-      </li>
-      <li>
-        <NavLinkStyle
-          to="portfolios/portfolio-android"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-        >
-          Android
-        </NavLinkStyle>
-      </li>
+          {links.map((element, index) => (
+        <li key={index}>
+          {location === createLink(element, name, prefixeName) ? (
+            <SubNavLinkStyleActive to="/services">{element}</SubNavLinkStyleActive>
+          ) : (
+            <SubNavLinkStyle to={createLink(element, name, prefixeName)}>
+              {element}
+            </SubNavLinkStyle>
+          )}
+        </li>
+      ))}
     </UlSubMenu>
   )
 }

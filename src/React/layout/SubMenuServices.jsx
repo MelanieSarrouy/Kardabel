@@ -1,42 +1,29 @@
 import React from 'react'
-import { NavLinkStyle } from '../../styles/layout/header'
-import { UlSubMenu } from '../../styles/layout/subMenuServices'
+import { useLocation } from 'react-router-dom'
+import { createLink } from '../../helpers/createLink'
+import { SubNavLinkStyle, SubNavLinkStyleActive, UlSubMenu } from '../../styles/layout/subMenuServices'
+
+const links = ['Identité', 'Print', 'Web', 'Android']
+const name = 'services'
+const prefixeName = ''
 
 const SubMenuServices = () => {
+  const sampleLocation = useLocation()
+  const location = sampleLocation.pathname
+
   return (
     <UlSubMenu>
-      <li>
-        <NavLinkStyle
-          to="services/identite"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-        >
-          Identité
-        </NavLinkStyle>
-      </li>
-      <li>
-        <NavLinkStyle
-          to="services/print"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-        >
-          Print
-        </NavLinkStyle>
-      </li>
-      <li>
-        <NavLinkStyle
-          to="services/web"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-        >
-          Web
-        </NavLinkStyle>
-      </li>
-      <li>
-        <NavLinkStyle
-          to="services/android"
-          className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-        >
-          Android
-        </NavLinkStyle>
-      </li>
+      {links.map((element, index) => (
+        <li key={index}>
+          {location === createLink(element, name, prefixeName) ? (
+            <SubNavLinkStyleActive to="/services">{element}</SubNavLinkStyleActive>
+          ) : (
+            <SubNavLinkStyle to={createLink(element, name, prefixeName)}>
+              {element}
+            </SubNavLinkStyle>
+          )}
+        </li>
+      ))}
     </UlSubMenu>
   )
 }

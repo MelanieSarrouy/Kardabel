@@ -5,14 +5,23 @@
 
 <!-- [SportSee](https://sportseep12.netlify.app/) -->
 
-# KARDABEL : Site vitrine, services et portfolios
+# KARDABEL : site vitrine, services et portfolios
+
+### To do :
+- [ ] responsive (in progress)
+- [ ] animations CSS
+- [ ] optimisation performances
+- [ ] portfolio print
+- [ ] portfolio android
+- [ ] page contact
+- [ ] mentions légales
 
 ### L'agence
 
 Kardabel est une agence print & web au service des professionnels, particuliers,associations et institutions. Elle est le partenaire fiable et créatif dont vous avez besoin pour assurer la communication visuelle de vos projets. Confiez-nous la conception de vos supports de communication ! Sites web, applications Android, logos, chartes graphiques, cartes de visite, flyers, affiches, dépliants, PLV, étiquettes, brochures, retouche photo,...
   
 
-[Maquette](https://www.figma.com/file/xUaxxVAB03iuA6jUYUPZXS/KARDABEL?node-id=0%3A1)
+<!-- [Maquette](https://www.figma.com/file/xUaxxVAB03iuA6jUYUPZXS/KARDABEL?node-id=0%3A1) -->
 
 
 ## 1. Technologies

@@ -18,26 +18,28 @@ export const DivHeaderContent = styled.div`
   align-items: center;
   max-width: 1620px;
   margin: auto;
-  padding: 1rem 7%;
+  padding: 0rem 7%;
 `
 export const ImgStyle = styled.img`
   max-width: 160px;
   min-width: 100px;
+  padding: 1rem 0;
 `
 export const NavStyle = styled.nav`
   display: flex;
   justify-content: end;
   align-items: start;
+  position: relative;
 `
 export const NavLinkStyle = styled(NavLink)`
-  border-bottom: solid 3px rgba(0, 0, 0, 0);
+  border-top: solid 3px rgba(0, 0, 0, 0);
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   font-family: ${fonts.titles};
   color: ${colors.background};
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
   margin-left: 3rem;
   transition: font-weight 0.1s, color 0.2s, text-shadow 0.3s;
   @media (max-width: 850px) {
@@ -45,15 +47,13 @@ export const NavLinkStyle = styled(NavLink)`
   }
   &:hover {
     font-weight: 400;
-    color: ${colors.tertiary};
+    color: ${colors.secondary};
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   }
 `
 export const ImgMenuArrow = styled.img`
   width: 1.2rem;
   margin: .2rem 0 0 1rem;
-  padding: 1rem 0rem;
+  padding: 2.1rem 0rem;
   border-bottom: solid 3px rgba(0, 0, 0, 0);
-
-
 `

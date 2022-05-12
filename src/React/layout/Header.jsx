@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo/kardabel.png'
 import arrowDownWhite from '../../assets/icons/chevron-down-solid-white.svg'
-import arrowUpWhite from '../../assets/icons/chevron-up-solid-white.svg'
+import arrowUpGold from '../../assets/icons/chevron-up-solid-gold.svg'
 
 import {
   HeaderStyle,
@@ -23,6 +23,19 @@ const Header = () => {
   const [submenu1, setSubmenu1] = useState(false)
   const [submenu2, setSubmenu2] = useState(false)
 
+  const handleClickClose = () => {
+    setSubmenu1(false)
+    setSubmenu2(false)
+  }
+  const handleClickServices = () => {
+    setSubmenu1(!submenu1)
+    setSubmenu2(false)
+  }
+  const handleClickPortfolios = () => {
+    setSubmenu2(!submenu2)
+    setSubmenu1(false)
+  }
+
   return (
     <HeaderStyle>
       <DivHeaderContent>
@@ -30,34 +43,40 @@ const Header = () => {
           <ImgStyle src={logo} alt="logo" />
         </Link>
         <NavStyle>
-          <NavLinkStyle to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+          <NavLinkStyle
+            to="/"
+            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            onClick={() => handleClickClose}
+          >
             L'Agence
           </NavLinkStyle>
           <NavLinkStyle
             to="/services"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            onClick={() => handleClickServices()}
           >
             Services
           </NavLinkStyle>
           <DivDropdownSubmenu>
             <ImgMenuArrow
-              src={submenu1 ? arrowUpWhite : arrowDownWhite}
+              src={submenu1 ? arrowUpGold : arrowDownWhite}
               alt="accès au sous-menu"
-              onClick={() => setSubmenu1(!submenu1)}
+              onClick={() => handleClickServices()}
             />
             {submenu1 && <SubMenuServices />}
           </DivDropdownSubmenu>
           <NavLinkStyle
             to="/portfolios"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            onClick={() => handleClickPortfolios()}
           >
             Portfolios
           </NavLinkStyle>
           <DivDropdownSubmenu>
             <ImgMenuArrow
-              src={submenu2 ? arrowUpWhite : arrowDownWhite}
+              src={submenu2 ? arrowUpGold : arrowDownWhite}
               alt="accès au sous-menu"
-              onClick={() => setSubmenu2(!submenu2)}
+              onClick={() => handleClickPortfolios()}
             />
             {submenu2 && <SubMenuPortfolios />}
           </DivDropdownSubmenu>
@@ -65,6 +84,7 @@ const Header = () => {
           <NavLinkStyle
             to="/contact"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            onClick={() => handleClickClose()}
           >
             Contact
           </NavLinkStyle>

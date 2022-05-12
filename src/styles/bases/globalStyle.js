@@ -67,7 +67,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   .active {
     font-weight: 400;
-    border-bottom: solid 2px ${colors.secondary};
+    border-top: solid 3px ${colors.secondary};
     color: ${colors.secondary};
     &:hover {
       color: ${colors.secondary};

@@ -18,6 +18,7 @@ import Portfolios from './pages/Portfolios'
 import GraphismePortfolio from './components/3pagesPortfolio/GraphismePortfolio'
 import WebPortfolio from './components/3pagesPortfolio/WebPortfolio'
 import AndroidPortfolio from './components/3pagesPortfolio/AndroidPortfolio'
+import Contact from './pages/Contact'
 // JSX // _________________________________________________________________
 
 /**
@@ -47,7 +48,7 @@ export const App = () => {
               <Route path="portfolio-web" element={<WebPortfolio />} />
               <Route path="portfolio-android" element={<AndroidPortfolio />} />
             </Route>
-            <Route path="/contact" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Main>
