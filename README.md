@@ -1,7 +1,7 @@
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/818fd35c-fd6f-424a-817d-b3ba8b90f30c/deploy-status)](https://app.netlify.com/sites/sportseep12/deploys) -->
 
-<!-- <br/>
-<p align="center"><img  src="https://github.com/MelanieSarrouy/MelanieSarrouy_P14_16112021/blob/main/src/assets/logo-vert.png?raw=true" alt="HRNet logo" /></p> -->
+<br/>
+<p align="center"><img  src="https://github.com/MelanieSarrouy/Kardabel/blob/main/src/assets/kardabel_logo-simplifié_bleu-et-doré.png?raw=true" alt="Kardabel logo" /></p>
 
 <!-- [SportSee](https://sportseep12.netlify.app/) -->
 
