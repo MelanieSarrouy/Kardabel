@@ -3,7 +3,6 @@ import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 import { HashLink } from 'react-router-hash-link'
 
-
 export const ImgCurvyStyle = styled.img`
   width: 100%;
   position: absolute;
@@ -12,38 +11,53 @@ export const ImgCurvyStyle = styled.img`
   line-height: 2.6rem;
   max-width: 1620px;
   margin: auto;
+  @media (max-width: 1560px) {
+    top: 16vh;
+  }
   @media (max-width: 1500px) {
-    top: 20vh;
+    top: 18vh;
   }
-  @media (max-width: 1360px) {
-    top: 25vh;
+  @media (max-width: 1380px) {
+    top: 22vh;
   }
-  @media (max-width: 1240px) {
-    top: 20vh;
-  }
-  @media (max-width: 1100px) {
+  @media (max-width: 1320px) {
     top: 24vh;
   }
-
+  @media (max-width: 1280px) {
+    top: 26vh;
+  }
+  @media (max-width: 1150px) {
+    top: 24vh;
+  }
+  @media (max-width: 1100px) {
+    top: 30vh;
+  }
+  @media (max-width: 1023px) {
+    top: 34vh;
+  }
   @media (max-width: 950px) {
     top: 18vh;
   }
-  @media (max-width: 820px) {
+  @media (max-width: 880px) {
     top: 22vh;
   }
-
+  @media (max-width: 780px) {
+    top: 26vh;
+  }
   @media (max-width: 710px) {
     top: 28vh;
   }
-
   @media (max-width: 640px) {
-    top: 55vh;
+    top: 64vh;
+  }
+  @media (max-width: 500px) {
+    top: 64vh;
   }
   @media (max-width: 460px) {
-    top: 60vh;
+    top: 64vh;
   }
-  @media (max-width: 380px) {
-    top: 60vh;
+  @media (max-width: 330px) {
+    top: 68vh;
   }
 `
 
@@ -59,16 +73,19 @@ export const HeroContent = styled.div`
     height: 380px;
   }
   @media (max-width: 950px) {
-    padding: 8rem 7%;
+    padding: 8rem 2rem;
     height: 280px;
   }
   @media (max-width: 640px) {
     flex-direction: column;
-    padding: 5rem 7%;
+    padding: 5rem 2rem;
     height: 600px;
   }
   @media (max-width: 380px) {
     height: 600px;
+  }
+  @media (max-width: 330px) {
+    height: 620px;
   }
 `
 export const LogoContainer = styled.div`
@@ -90,7 +107,7 @@ export const LogoContainer = styled.div`
     padding: 4rem 4rem 0 0;
   }
   @media (max-width: 640px) {
-    padding: 4rem 0rem;
+    padding: 4rem 0rem 3rem 0;
   }
   @media (max-width: 460px) {
     padding: 4rem 0rem 2rem 0rem;
@@ -108,6 +125,9 @@ export const ImgLogo = styled.img`
   @media (max-width: 710px) {
     max-width: 150px;
   }
+  @media (max-width: 420px) {
+    max-width: 120px;
+  }
 `
 export const TextHeroContainer = styled.div`
   display: flex;
@@ -115,7 +135,6 @@ export const TextHeroContainer = styled.div`
   align-items: start;
   width: 50%;
   z-index: 800;
-
   @media (max-width: 640px) {
     width: 100%;
     align-items: center;
@@ -132,13 +151,17 @@ export const PTitleStyle = styled.p`
     font-size: 4.5rem;
   }
   @media (max-width: 950px) {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
   @media (max-width: 710px) {
     font-size: 3rem;
   }
   @media (max-width: 640px) {
     font-size: 3.5rem;
+    text-align: center;
+  }
+  @media (max-width: 420px) {
+    font-size: 3rem;
   }
 `
 export const Baseline = styled.p`
@@ -158,6 +181,10 @@ export const Baseline = styled.p`
   }
   @media (max-width: 640px) {
     font-size: 1.1rem;
+    text-align: center;
+  }
+  @media (max-width: 420px) {
+    font-size: 1rem;
   }
 `
 export const H1Style = styled.h1`
@@ -185,6 +212,9 @@ export const H1Style = styled.h1`
     font-size: 1.3rem;
     text-align: center;
   }
+  @media (max-width: 420px) {
+    font-size: 1.2rem;
+  }
 `
 export const SpanTitle = styled.span`
   text-transform: capitalize;
@@ -206,15 +236,14 @@ export const SpanTitle = styled.span`
   @media (max-width: 640px) {
     font-size: 1.1rem;
   }
+  @media (max-width: 420px) {
+    font-size: 1rem;
+  }
 `
 export const ButtonsContainer = styled.div`
-  padding: 3rem 0 0 0;
+  display: flex;
+  padding: 2.6rem 0 0 0;
   @media (max-width: 950px) {
-    padding: 2rem 0 0 0;
-  }
-  @media (max-width: 640px) {
-    display: flex;
-    justify-content: center;
     padding: 2rem 0 0 0;
   }
 `
@@ -233,14 +262,23 @@ export const LinkServices = styled(HashLink)`
   text-transform: uppercase;
   @media (max-width: 950px) {
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: solid 1px ${colors.secondary};
   }
-  @media (max-width: 710px) {
-    padding: 0.4rem 1.8rem;
+  @media (max-width: 640px) {
+    padding: 0.5rem 2rem;
   }
+  @media (max-width: 350px) {
+    padding: 0.5rem 1rem;
+  }
+
   &:hover {
     background-color: ${colors.primaryDark};
     border: solid 2px ${colors.secondary};
     color: ${colors.secondary};
+    @media (max-width: 950px) {
+      border: solid 1px ${colors.secondary};
+    }
   }
 `
 export const LinkContacts = styled(HashLink)`
@@ -254,16 +292,24 @@ export const LinkContacts = styled(HashLink)`
   text-decoration: none;
   box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
-  transition: color 0.2s, border 0.2s, background-color 0.5s;
-
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.5s ease-in-out;
   @media (max-width: 950px) {
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: solid 1px ${colors.primary};
   }
-  @media (max-width: 710px) {
-    padding: 0.4rem 1.8rem;
+  @media (max-width: 640px) {
+    padding: 0.5rem 2rem;
   }
+  @media (max-width: 350px) {
+    padding: 0.5rem 1rem;
+  }
+
   &:hover {
     border: solid 2px ${colors.secondary};
     background-color: ${colors.primaryDark};
+    @media (max-width: 950px) {
+      border: solid 1px ${colors.secondary};
+    }
   }
 `

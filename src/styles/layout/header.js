@@ -19,6 +19,10 @@ export const DivHeaderContent = styled.div`
   max-width: 1620px;
   margin: auto;
   padding: 0rem 7%;
+  @media (max-width: 850px) {
+    padding: 0rem 2rem;
+  }
+
 `
 export const ImgStyle = styled.img`
   max-width: 160px;
