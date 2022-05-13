@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import H2Intro from '../../layout/H2Intro'
 import {
   NavServicesStyle,
@@ -15,18 +15,12 @@ const content =
 const links = ['Identité', 'Print', 'Web', 'Android']
 const name = 'services'
 const prefixeName = ''
+const suffixeName = '#card'
+const empty = ''
 
 const SectionH2IntroServices = () => {
   const sampleLocation = useLocation()
   const location = sampleLocation.pathname
-  const hash = sampleLocation.hash.substring(1)
-  const history = window.history
-
-  useEffect(() => {
-    if (hash !== '') {
-      history.pushState(null, '', `${location}`);
-    }
-  }, [hash, history, location])
 
   return (
     <div>
@@ -35,10 +29,10 @@ const SectionH2IntroServices = () => {
           <ul>
             {links.map((element, index) => (
               <li key={index}>
-                {location === createLink(element, name, prefixeName) ? (
+                {location === createLink(element, name, prefixeName, empty) ? (
                   <LinkSecondaryStyleActive to="/services">{element}</LinkSecondaryStyleActive>
                 ) : (
-                  <LinkSecondaryStyle to={createLink(element, name, prefixeName)}>
+                  <LinkSecondaryStyle to={createLink(element, name, prefixeName, suffixeName)}>
                     {element}
                   </LinkSecondaryStyle>
                 )}

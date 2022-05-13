@@ -15,9 +15,11 @@ import SectionH3Services from '../components/pageAgence/SectionH3Services'
  */
 
 const Homepage = () => {
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  
   return (
     <>
       <SectionH2IntroAgence />

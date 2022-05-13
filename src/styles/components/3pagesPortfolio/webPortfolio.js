@@ -4,6 +4,7 @@ export const SectionPortfolio = styled.section`
   margin: 0 7% 5rem 7%;
   background-color: white;
   perspective: 200rem;
+  padding-top: 8rem;
 `
 export const DivPortfolioCardsContainer = styled.div`
   display: grid;

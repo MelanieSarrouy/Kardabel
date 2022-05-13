@@ -1,7 +1,8 @@
 import { standardizeAndLowerCase } from './standardizeAndLowerCase'
 
-export const createLink = (str, name, prefixeName) => {
+export const createLink = (str, name, prefixeName, suffixeName) => {
   let a = standardizeAndLowerCase(str)
   let b = prefixeName + a
-  return '/' + name + '/' + b
+  let c= suffixeName
+  return '/' + name + '/' + b + c
 }

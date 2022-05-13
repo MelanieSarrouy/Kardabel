@@ -10,15 +10,14 @@ import {
 } from '../../../styles/components/pageAgence/sectionH3Services'
 import { services } from '../../../datas/services'
 import H3TrioTitle from '../../layout/H3TrioTitle'
-import { standardizeAndLowerCase } from '../../../helpers/standardizeAndLowerCase'
+import { createLink } from '../../../helpers/createLink'
 
 const createIllustrationAlt = (str) => {
   return 'illustration ' + str
 }
-const createURL = (str) => {
-  let a = standardizeAndLowerCase(str)
-  return 'services/' + a
-}
+const name = 'services'
+const prefixeName = ''
+const suffixeName = '#card'
 
 const SectionH3Services = () => {
   return (
@@ -28,7 +27,7 @@ const SectionH3Services = () => {
         <UlServicesContent>
           {services.map((element, index) => (
             <li key={index}>
-              <LinkCardService to={createURL(element.name)}>
+              <LinkCardService to={createLink(element.name, name, prefixeName, suffixeName)}>
                 <ImgSVGService
                   src={element.illustration}
                   alt={createIllustrationAlt(element.name)}

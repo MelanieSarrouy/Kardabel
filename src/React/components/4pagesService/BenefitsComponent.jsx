@@ -34,8 +34,6 @@ const BenefitsComponent = (props) => {
                   <DivCard
                     bck={'yes'}
                     color={colors.tertiary}
-                    scale={1.05}
-                    scaleHover={1}
                   >
                     <PTextBenefitCard>{NewlineText(element.content)}</PTextBenefitCard>
                   </DivCard>
@@ -43,8 +41,6 @@ const BenefitsComponent = (props) => {
                   <DivCard
                     bck={'no'}
                     color={props.color}
-                    scale={1}
-                    scaleHover={1.05}
                   >
                     <PTitleBenefitCard>{NewlineText(element.title)}</PTitleBenefitCard>
                   </DivCard>

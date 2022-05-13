@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
 import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 
 export const UlSubMenu = styled.ul`
   position: absolute;
+  top: 5.5rem;
   right: 0rem;
   display: flex;
   flex-direction: column;
@@ -33,7 +35,7 @@ export const UlSubMenu = styled.ul`
     }
   }
 `
-export const SubNavLinkStyle = styled(Link)`
+export const SubNavLinkStyle = styled(HashLink)`
   color: ${colors.background};
   font-weight: 300;
   transition: font-weight 0.1s, color 0.2s, text-shadow 0.3s;
@@ -43,7 +45,7 @@ export const SubNavLinkStyle = styled(Link)`
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
   }
 `
-export const SubNavLinkStyleActive = styled(Link)`
+export const SubNavLinkStyleActive = styled(HashLink)`
   background-color: ${colors.secondary};
   font-weight: 500;
 `

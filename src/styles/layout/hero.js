@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../bases/colors'
 import fonts from '../bases/fonts'
@@ -244,7 +243,7 @@ export const LinkServices = styled(HashLink)`
     color: ${colors.secondary};
   }
 `
-export const LinkContacts = styled(Link)`
+export const LinkContacts = styled(HashLink)`
   background-color: ${colors.primary};
   padding: 0.5rem 2rem;
   border-radius: 2rem;

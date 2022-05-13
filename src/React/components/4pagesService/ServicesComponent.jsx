@@ -33,8 +33,6 @@ const ServicesComponent = (props) => {
               {flipped === index ? (
                 <DivServicesCardsBackground
                   bckColor={colors.tertiary}
-                  scale={1.05}
-                  scaleHover={1}
                 >
                   <PTextBenefitCard>{NewlineText(element.details)}</PTextBenefitCard>
                 </DivServicesCardsBackground>
@@ -42,8 +40,6 @@ const ServicesComponent = (props) => {
                 <DivServicesCardsBackground
                   bckColor="white"
                   circle={props.circle}
-                  scale={1}
-                  scaleHover={1.05}
                 >
                   <PTitleBenefitCard>{NewlineText(element.name)}</PTitleBenefitCard>
                 </DivServicesCardsBackground>

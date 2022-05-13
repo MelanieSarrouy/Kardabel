@@ -40,54 +40,58 @@ const Header = () => {
     <HeaderStyle>
       <DivHeaderContent>
         <Link to="/">
-          <ImgStyle src={logo} alt="logo" />
+          <ImgStyle src={logo} alt="logo" width={160} />
         </Link>
         <NavStyle>
-          <NavLinkStyle
-            to="/"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-            onClick={() => handleClickClose}
-          >
-            L'Agence
-          </NavLinkStyle>
-          <NavLinkStyle
-            to="/services"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-            onClick={() => handleClickServices()}
-          >
-            Services
-          </NavLinkStyle>
-          <DivDropdownSubmenu>
-            <ImgMenuArrow
-              src={submenu1 ? arrowUpGold : arrowDownWhite}
-              alt="accès au sous-menu"
-              onClick={() => handleClickServices()}
-            />
-            {submenu1 && <SubMenuServices />}
-          </DivDropdownSubmenu>
-          <NavLinkStyle
-            to="/portfolios"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-            onClick={() => handleClickPortfolios()}
-          >
-            Portfolios
-          </NavLinkStyle>
-          <DivDropdownSubmenu>
-            <ImgMenuArrow
-              src={submenu2 ? arrowUpGold : arrowDownWhite}
-              alt="accès au sous-menu"
-              onClick={() => handleClickPortfolios()}
-            />
-            {submenu2 && <SubMenuPortfolios />}
-          </DivDropdownSubmenu>
-
-          <NavLinkStyle
-            to="/contact"
-            className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-            onClick={() => handleClickClose()}
-          >
-            Contact
-          </NavLinkStyle>
+          <ul>
+            <li onClick={() => handleClickClose()}>
+              <NavLinkStyle to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+                L'Agence
+              </NavLinkStyle>
+            </li>
+            <li>
+              <div onClick={() => handleClickServices()}>
+                <NavLinkStyle
+                  to="/services"
+                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                >
+                  Services
+                </NavLinkStyle>
+                <DivDropdownSubmenu>
+                  <ImgMenuArrow
+                    src={submenu1 ? arrowUpGold : arrowDownWhite}
+                    alt="accès au sous-menu"
+                  />
+                </DivDropdownSubmenu>
+              </div>
+              {submenu1 && <SubMenuServices />}
+            </li>
+            <li>
+              <div onClick={() => handleClickPortfolios()}>
+                <NavLinkStyle
+                  to="/portfolios"
+                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                >
+                  Portfolios
+                </NavLinkStyle>
+                <DivDropdownSubmenu>
+                  <ImgMenuArrow
+                    src={submenu2 ? arrowUpGold : arrowDownWhite}
+                    alt="accès au sous-menu"
+                  />
+                </DivDropdownSubmenu>
+              </div>
+              {submenu2 && <SubMenuPortfolios />}
+            </li>
+            <li onClick={() => handleClickClose()}>
+              <NavLinkStyle
+                to="/contact"
+                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+              >
+                Contact
+              </NavLinkStyle>
+            </li>
+          </ul>
         </NavStyle>
       </DivHeaderContent>
     </HeaderStyle>

@@ -43,15 +43,13 @@ export const DivServicesCardsBackground = styled.div`
   min-height: 22rem;
   width: 26rem;
   padding: 2rem;
-  scale: ${(props) => props.scale};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background-size 800ms, transform 400ms, box-shadow 100ms ease-in-out;
+  transition: background-size 800ms cubic-bezier(.78,.08,.73,.87), box-shadow 100ms ease-in-out;
   cursor: pointer;
   position: relative;
   border-left-style: solid;
   &:hover {
-    background-size: 100%;
+    background-size: 130%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
-    transform: scale(${(props) => props.scaleHover});
   }
 `

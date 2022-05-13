@@ -3,7 +3,7 @@ import ImgSVGLogo from '../../../assets/logo/logo-simple-dore.svg'
 import {
   DivImagesContainer,
   DivProfileCard,
-  DivServiceBlock,
+  SectionCard,
   ImgSVGIllustrationCard,
   ImgSVGLogoDore,
   ImgSVGTitle,
@@ -23,7 +23,7 @@ const createLink = (str) => {
 
 const ServiceH3Card = (props) => {
   return (
-    <DivServiceBlock id='service'>
+    <SectionCard id='card'>
       <DivProfileCard color={props.color}>
         <ImgSVGTitle src={props.h3Illustration} alt="title" />
         <h3 className="sr-only">{props.h3Title}</h3>
@@ -44,7 +44,7 @@ const ServiceH3Card = (props) => {
         </DivImagesContainer>
       </DivProfileCard>
       {props.chidren}
-    </DivServiceBlock>
+    </SectionCard>
   )
 }
 

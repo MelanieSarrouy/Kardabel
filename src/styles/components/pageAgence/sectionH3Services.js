@@ -1,13 +1,12 @@
 import backgroundVectorServices from '../../../assets/shapes/vector-2.svg'
 import styled from 'styled-components'
 import fonts from '../../bases/fonts'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 
 export const SectionServices = styled.section`
   background: no-repeat center center url(${backgroundVectorServices});
   background-size: cover;
-  ${'' /* margin-bottom: 5rem; */}
 `
 export const DivServices = styled.div`
   display: flex;
@@ -22,11 +21,10 @@ export const UlServicesContent = styled.ul`
   column-row: 2rem;
   padding: 2rem 0;
 `
-export const LinkCardService = styled(Link)`
+export const LinkCardService = styled(HashLink)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${'' /* width: 50%; */}
   padding: 1rem 6rem 4rem 6rem;
   background-color: rgba(255, 255, 255, 0);
 `

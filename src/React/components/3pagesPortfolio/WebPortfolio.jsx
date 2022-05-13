@@ -8,7 +8,7 @@ const data = datasPortfolioWeb.reverse()
 const WebPortfolio = () => {
   
   return (
-    <SectionPortfolio>
+    <SectionPortfolio id='gallery'>
       <DivPortfolioCardsContainer>
       {data.map((element, index) => (
         <WebPortfolioCard

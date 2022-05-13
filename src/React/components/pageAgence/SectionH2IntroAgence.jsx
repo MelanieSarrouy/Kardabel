@@ -24,7 +24,7 @@ const SectionH2IntroAgence = () => {
     <H2Intro id='agence' title={title} content={content}>
       <TextCTA>Envie d’en savoir plus sur les services que nous vous proposons ?</TextCTA>
       <DivButtonContainer>
-        <LinkButtonServices to="/#nosServices" replace>Nos Services</LinkButtonServices>
+        <LinkButtonServices to="/#nosServices">Nos Services</LinkButtonServices>
         <LinkButtonServices to="/#nosObjectifs">Nos Objectifs</LinkButtonServices>
         <LinkButtonServices to="/#nosValeurs">Nos Valeurs</LinkButtonServices>
       </DivButtonContainer>

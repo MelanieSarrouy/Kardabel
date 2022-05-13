@@ -26,10 +26,17 @@ export const ImgStyle = styled.img`
   padding: 1rem 0;
 `
 export const NavStyle = styled.nav`
-  display: flex;
-  justify-content: end;
-  align-items: start;
-  position: relative;
+  & > ul {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    & > li, & > li > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  }
 `
 export const NavLinkStyle = styled(NavLink)`
   border-top: solid 3px rgba(0, 0, 0, 0);
@@ -39,7 +46,7 @@ export const NavLinkStyle = styled(NavLink)`
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
-  padding: 2rem 0rem;
+  padding: 2.2rem 0rem;
   margin-left: 3rem;
   transition: font-weight 0.1s, color 0.2s, text-shadow 0.3s;
   @media (max-width: 850px) {
@@ -53,7 +60,7 @@ export const NavLinkStyle = styled(NavLink)`
 `
 export const ImgMenuArrow = styled.img`
   width: 1.2rem;
-  margin: .2rem 0 0 1rem;
+  margin: 0.2rem 0 0 1rem;
   padding: 2.1rem 0rem;
   border-bottom: solid 3px rgba(0, 0, 0, 0);
 `

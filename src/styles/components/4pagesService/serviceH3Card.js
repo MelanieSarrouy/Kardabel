@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import waveCard from '../../../assets/shapes/waveCard.svg'
 import colors from '../../bases/colors'
 
-export const DivServiceBlock = styled.div`
-  padding: 0 7% 3rem 7%;
+export const SectionCard = styled.section`
+  padding: 8rem 7% 3rem 7%;
 `
 export const DivProfileCard = styled.div`
   width: 100%;

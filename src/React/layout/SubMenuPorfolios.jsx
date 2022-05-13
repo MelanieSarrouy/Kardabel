@@ -6,6 +6,9 @@ import { SubNavLinkStyle, SubNavLinkStyleActive, UlSubMenu } from '../../styles/
 const links = ['Graphisme', 'Web', 'Android']
 const name = 'portfolios'
 const prefixeName = 'portfolio-'
+const suffixeName = '#gallery'
+const empty = ''
+
 
 
 const SubMenuPortfolios = () => {
@@ -16,10 +19,10 @@ const SubMenuPortfolios = () => {
     <UlSubMenu>
           {links.map((element, index) => (
         <li key={index}>
-          {location === createLink(element, name, prefixeName) ? (
+          {location === createLink(element, name, prefixeName, empty) ? (
             <SubNavLinkStyleActive to="/services">{element}</SubNavLinkStyleActive>
           ) : (
-            <SubNavLinkStyle to={createLink(element, name, prefixeName)}>
+            <SubNavLinkStyle to={createLink(element, name, prefixeName, suffixeName)}>
               {element}
             </SubNavLinkStyle>
           )}

@@ -7,10 +7,8 @@ const content =
 
 const SectionH2IntroContact = () => {
   return (
-    <>
       <H2Intro id="contact" title={title} content={content}>
       </H2Intro>
-    </>
   )
 }
 

@@ -23,13 +23,11 @@ export const DivCard = styled.div`
   align-items: center;
   height: 20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  scale: ${(props) => props.scale};
-  transition: background-size 800ms, transform 400ms, box-shadow 100ms ease-in-out;
+  transition: background-size 800ms cubic-bezier(.49,.4,.28,1), box-shadow 100ms ease-in-out;
   cursor: pointer;
   &:hover {
-    background-size: 50%;
+    background-size: 45%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
-    transform: scale(${(props) => props.scaleHover});
   }
 `
 export const PTitleBenefitCard = styled.div`
@@ -46,7 +44,7 @@ export const PTitleBenefitCard = styled.div`
 `
 export const PTextBenefitCard = styled.div`
   & > p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.5rem;
     text-align: center;

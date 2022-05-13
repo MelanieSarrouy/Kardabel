@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { createLink } from '../../../helpers/createLink'
 import {
@@ -14,19 +14,14 @@ const content =
 const links = ['Graphisme', 'Web', 'Android']
 const name = 'portfolios'
 const prefixeName = 'portfolio-'
+const suffixeName = '#gallery'
+const empty = ''
+
 
 
 const SectionH2IntroPorfolios = () => {
   const sampleLocation = useLocation()
   const location = sampleLocation.pathname
-  const hash = sampleLocation.hash.substring(1)
-  const history = window.history
-
-  useEffect(() => {
-    if (hash !== '') {
-      history.pushState(null, '', `${location}`)
-    }
-  }, [hash, history, location])
 
   return (
     <div>
@@ -35,10 +30,10 @@ const SectionH2IntroPorfolios = () => {
           <ul>
             {links.map((element, index) => (
               <li key={index}>
-                {location === createLink(element, name, prefixeName) ? (
+                {location === createLink(element, name, prefixeName, empty) ? (
                   <LinkSecondaryStyleActive to="/portfolios">{element}</LinkSecondaryStyleActive>
                 ) : (
-                  <LinkSecondaryStyle to={createLink(element, name, prefixeName)}>
+                  <LinkSecondaryStyle to={createLink(element, name, prefixeName, suffixeName)}>
                     {element}
                   </LinkSecondaryStyle>
                 )}
