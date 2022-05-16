@@ -11,7 +11,7 @@ import H3TrioTitle from '../../layout/H3TrioTitle'
 
 const SectionH3Objectifs = () => {
   return (
-    <SectionObjectifs id='nosObjectifs'>
+    <SectionObjectifs id='objectifs'>
       <DivObectifsContent>
         <H3TrioTitle title={'Nos objectifs'} />        
         <PTextObjectifs>

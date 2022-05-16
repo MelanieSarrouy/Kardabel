@@ -10,7 +10,7 @@ import H3TrioTitle from '../../layout/H3TrioTitle'
 
 const SectionH3Valeurs = () => {
   return (
-    <SectionValeurs id='nosValeurs'>
+    <SectionValeurs id='valeurs'>
       <DivValeursContent>
         <H3TrioTitle title={'Nos valeurs'} />
         <DivArticlesContainer>

@@ -12,6 +12,8 @@ export const SectionIntro = styled.section`
   }
   @media (max-width: 950px) {
     margin-top: 10rem;
+    padding: 10rem 7% 0rem 7%;
+
   }
   @media (max-width: 750px) {
     margin-top: 8rem;
@@ -28,7 +30,6 @@ export const SectionIntro = styled.section`
   @media (max-width: 400px) {
     padding-top: 8rem;
   }
-
 `
 export const TextIntro = styled.div`
   white-space: pre-wrap;
@@ -37,9 +38,11 @@ export const TextIntro = styled.div`
     font-size: 1.8rem;
     text-align: center;
     line-height: 3rem;
-    padding: 1rem 5%;
-    @media (max-width: 1023px) {
-      padding: 2rem 0;
+    padding: 1rem 7% 2rem 7%;
+    @media (max-width: 640px) {
+      padding: 1rem 0 2rem 0;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
     }
   }
 `

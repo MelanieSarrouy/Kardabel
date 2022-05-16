@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   UlServicesContent,
-  H3ServiceStyle,
+  H4ServiceStyle,
   ImgSVGService,
   PtextService,
   LinkCardService,
@@ -21,7 +21,7 @@ const suffixeName = '#card'
 
 const SectionH3Services = () => {
   return (
-    <SectionServices id='nosServices'>
+    <SectionServices id='prestations'>
       <DivServices>
         <H3TrioTitle title={'Nos services'} />
         <UlServicesContent>
@@ -32,7 +32,7 @@ const SectionH3Services = () => {
                   src={element.illustration}
                   alt={createIllustrationAlt(element.name)}
                 />
-                <H3ServiceStyle>{element.name}</H3ServiceStyle>
+                <H4ServiceStyle>{element.name}</H4ServiceStyle>
                 <PtextService>{element.text}</PtextService>
               </LinkCardService>
             </li>
