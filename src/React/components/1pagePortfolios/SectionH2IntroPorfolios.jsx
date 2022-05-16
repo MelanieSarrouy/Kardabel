@@ -16,7 +16,7 @@ const name = 'portfolios'
 const prefixeName = 'portfolio-'
 const suffixeName = '#gallery'
 const empty = ''
-
+const submenu = true
 
 
 const SectionH2IntroPorfolios = () => {
@@ -30,10 +30,10 @@ const SectionH2IntroPorfolios = () => {
           <ul>
             {links.map((element, index) => (
               <li key={index}>
-                {location === createLink(element, name, prefixeName, empty) ? (
+                {location === createLink(element, name, submenu, prefixeName, empty) ? (
                   <LinkSecondaryStyleActive to="/portfolios">{element}</LinkSecondaryStyleActive>
                 ) : (
-                  <LinkSecondaryStyle to={createLink(element, name, prefixeName, suffixeName)}>
+                  <LinkSecondaryStyle to={createLink(element, name, submenu, prefixeName, suffixeName)}>
                     {element}
                   </LinkSecondaryStyle>
                 )}

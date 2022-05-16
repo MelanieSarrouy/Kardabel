@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
 import colors from '../bases/colors'
@@ -6,22 +5,25 @@ import fonts from '../bases/fonts'
 
 export const UlSubMenu = styled.ul`
   position: absolute;
-  top: 5.5rem;
+  top: 5.7rem;
   right: 0rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  width: 100%;
   background-color: ${colors.primaryDark}D8;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   border-top: solid 3px ${colors.secondary};
-  & > li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  & > li,
+  & > li > div {
     width: 100%;
+    &:hover {
+      @media (min-width: 950px) {
+        background-color: ${colors.primaryDark};
+      }
+    }
     & > a {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
@@ -29,9 +31,19 @@ export const UlSubMenu = styled.ul`
       text-transform: uppercase;
       font-size: 1rem;
       width: 100%;
-      @media (max-width: 850px) {
-        font-size: 0.8rem;
+      @media (max-width: 950px) {
+        padding: 1rem 21% 1rem 2rem;
       }
+      @media (max-width: 800px) {
+        padding: 1rem 14% 1rem 2rem;
+      }
+      @media (max-width: 640px) {
+        padding: 1rem 7%;
+      }
+    }
+    & a > p {
+      text-transform: uppercase;
+      text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     }
   }
 `
@@ -44,6 +56,12 @@ export const SubNavLinkStyle = styled(HashLink)`
     font-weight: 400;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
   }
+  @media (max-width: 950px) {
+    &:hover {
+      background-color: ${colors.primaryDark};
+    }
+      }
+
 `
 export const SubNavLinkStyleActive = styled(HashLink)`
   background-color: ${colors.secondary};

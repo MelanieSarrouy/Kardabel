@@ -9,9 +9,9 @@ export const DivH2Title = styled.div`
 `
 export const SvgH2Trio = styled.img`
   width: 5.5rem;
-  margin: 0 2rem 1rem 1rem;
+  margin: 0 2rem 1rem 0;
   ${'' /* filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5)); */}
-  @media (max-width: 1023px) {
+  @media (max-width: 1280px) {
     width: 4rem;
     margin-right: 1.6rem;
   }
@@ -35,7 +35,7 @@ export const H2TitleStyle = styled.h2`
   font-weight: 600;
   padding-bottom: 5rem;
   ${'' /* filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5)); */}
-  @media (max-width: 1023px) {
+  @media (max-width: 1280px) {
     font-size: 5.5rem;
   }
   @media (max-width: 640px) {

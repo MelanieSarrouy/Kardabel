@@ -12,9 +12,9 @@ import {
   NavStyle,
   ImgMenuArrow,
 } from '../../styles/layout/header'
-import SubMenuServices from './SubMenuServices'
 import styled from 'styled-components'
-import SubMenuPortfolios from './SubMenuPorfolios'
+import NavBurger from './NavBurger'
+import SubMenuDesktop from './SubMenuDesktop'
 
 export const DivDropdownSubmenu = styled.div`
   position: relative;
@@ -44,10 +44,15 @@ const Header = () => {
         </Link>
         <NavStyle>
           <ul>
-            <li onClick={() => handleClickClose()}>
-              <NavLinkStyle to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-                L'Agence
-              </NavLinkStyle>
+            <li>
+              <div onClick={() => handleClickClose()}>
+                <NavLinkStyle
+                  to="/"
+                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                >
+                  L'Agence
+                </NavLinkStyle>
+              </div>
             </li>
             <li>
               <div onClick={() => handleClickServices()}>
@@ -64,7 +69,14 @@ const Header = () => {
                   />
                 </DivDropdownSubmenu>
               </div>
-              {submenu1 && <SubMenuServices />}
+              {submenu1 && (
+                <SubMenuDesktop
+                  links={['Identité', 'Print', 'Web', 'Android']}
+                  name={'services'}
+                  prefixeName={''}
+                  suffixeName={'#card'}
+                />
+              )}
             </li>
             <li>
               <div onClick={() => handleClickPortfolios()}>
@@ -81,18 +93,28 @@ const Header = () => {
                   />
                 </DivDropdownSubmenu>
               </div>
-              {submenu2 && <SubMenuPortfolios />}
+              {submenu2 && 
+                <SubMenuDesktop
+                  links={['Graphisme', 'Web', 'Android']}
+                  name={'portfolios'}
+                  prefixeName={'portfolio-'}
+                  suffixeName={'#gallery'}
+                />
+              }
             </li>
-            <li onClick={() => handleClickClose()}>
-              <NavLinkStyle
-                to="/contact"
-                className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-              >
-                Contact
-              </NavLinkStyle>
+            <li>
+              <div onClick={() => handleClickClose()}>
+                <NavLinkStyle
+                  to="/contact"
+                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+                >
+                  Contact
+                </NavLinkStyle>
+              </div>
             </li>
           </ul>
         </NavStyle>
+        <NavBurger />
       </DivHeaderContent>
     </HeaderStyle>
   )

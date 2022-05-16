@@ -17,6 +17,7 @@ const name = 'services'
 const prefixeName = ''
 const suffixeName = '#card'
 const empty = ''
+const submenu = true
 
 const SectionH2IntroServices = () => {
   const sampleLocation = useLocation()
@@ -29,10 +30,10 @@ const SectionH2IntroServices = () => {
           <ul>
             {links.map((element, index) => (
               <li key={index}>
-                {location === createLink(element, name, prefixeName, empty) ? (
+                {location === createLink(element, name, submenu, prefixeName, empty) ? (
                   <LinkSecondaryStyleActive to="/services">{element}</LinkSecondaryStyleActive>
                 ) : (
-                  <LinkSecondaryStyle to={createLink(element, name, prefixeName, suffixeName)}>
+                  <LinkSecondaryStyle to={createLink(element, name, submenu, prefixeName, suffixeName)}>
                     {element}
                   </LinkSecondaryStyle>
                 )}

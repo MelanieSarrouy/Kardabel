@@ -24,16 +24,16 @@ export const ImgCurvyStyle = styled.img`
     top: 24vh;
   }
   @media (max-width: 1280px) {
-    top: 26vh;
+    top: 18vh;
   }
-  @media (max-width: 1150px) {
+  @media (max-width: 1180px) {
     top: 24vh;
   }
   @media (max-width: 1100px) {
-    top: 30vh;
+    top: 26vh;
   }
   @media (max-width: 1023px) {
-    top: 34vh;
+    top: 30vh;
   }
   @media (max-width: 950px) {
     top: 18vh;
@@ -48,7 +48,7 @@ export const ImgCurvyStyle = styled.img`
     top: 28vh;
   }
   @media (max-width: 640px) {
-    top: 64vh;
+    top: 62vh;
   }
   @media (max-width: 500px) {
     top: 64vh;
@@ -69,16 +69,16 @@ export const HeroContent = styled.div`
   background-color: ${colors.primary};
   z-index: 800;
   max-width: 1620px;
-  @media (max-width: 1240px) {
+  @media (max-width: 1280px) {
     height: 380px;
   }
   @media (max-width: 950px) {
-    padding: 8rem 2rem;
+    padding: 8rem 7%;
     height: 280px;
   }
   @media (max-width: 640px) {
     flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 5rem 7%;
     height: 600px;
   }
   @media (max-width: 380px) {
@@ -116,7 +116,7 @@ export const LogoContainer = styled.div`
 export const ImgLogo = styled.img`
   max-width: 250px;
   filter: drop-shadow(0.25rem 0.25rem 0.3rem rgba(0, 0, 0, 0.5));
-  @media (max-width: 1240px) {
+  @media (max-width: 1280px) {
     max-width: 200px;
   }
   @media (max-width: 950px) {
@@ -147,7 +147,7 @@ export const PTitleStyle = styled.p`
   font-weight: 700;
   translatex: -0.2rem;
   text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
-  @media (max-width: 1240px) {
+  @media (max-width: 1280px) {
     font-size: 4.5rem;
   }
   @media (max-width: 950px) {
@@ -170,7 +170,7 @@ export const Baseline = styled.p`
   color: ${colors.background};
   font-weight: 300;
   padding: 1rem 0 1rem 0.2rem;
-  @media (max-width: 1240px) {
+  @media (max-width: 1280px) {
     font-size: 1.2rem;
   }
   @media (max-width: 950px) {
@@ -195,7 +195,7 @@ export const H1Style = styled.h1`
   text-transform: uppercase;
   line-height: 2.2rem;
   padding: 3rem 0 3rem 0.2rem;
-  @media (max-width: 1240px) {
+  @media (max-width: 1280px) {
     font-size: 1.5rem;
     padding: 2rem 0 2rem 0.2rem;
     line-height: 2.2rem;
@@ -224,7 +224,7 @@ export const SpanTitle = styled.span`
   font-weight: 300;
   line-height: 1.2rem;
 
-  @media (max-width: 1240px) {
+  @media (max-width: 1280px) {
     font-size: 1.2rem;
   }
   @media (max-width: 950px) {
