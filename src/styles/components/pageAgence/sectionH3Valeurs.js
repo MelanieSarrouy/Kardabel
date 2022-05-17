@@ -4,18 +4,26 @@ import backgroundVectorValeurs from '../../../assets/shapes/vector-background-va
 export const SectionValeurs = styled.section`
   background: no-repeat center top url(${backgroundVectorValeurs});
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 5rem;
+  @media (max-width: 420px) {
+    margin-bottom: 2rem;
+  }
 `
 export const DivValeursContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding: 4rem 7% 20rem 7%;
+  padding: 4rem 7% 18rem 7%;
+  @media (max-width: 1280px) {
+    padding: 3rem 7% 15rem 7%;
+  }
+  @media (max-width: 950px) {
+    padding: 4rem 7% 12rem 7%;
+  }
+  @media (max-width: 420px) {
+    padding: 4rem 2rem 10rem 2rem;
+  }
 `
 export const DivArticlesContainer = styled.div`
   display: flex;

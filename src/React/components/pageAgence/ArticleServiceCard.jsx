@@ -2,6 +2,7 @@ import React from 'react'
 import {
   ArticleCard,
   DivIconContainer,
+  DivImgContainer,
   ImgSVGCard,
   ImgSvgIcon,
   PtextCards,
@@ -34,9 +35,9 @@ const ArticleServiceCard = (props) => {
           <ImgCommasEnd src={commas} alt="" />
         </DivTextContainer>
       </DivH4Container>
-      <DivIconContainer>
+      <DivImgContainer>
         <ImgSVGCard src={props.illustration} alt={props.altIllustration} width={400} />
-      </DivIconContainer>
+      </DivImgContainer>
     </ArticleCard>
   )
 }

@@ -17,7 +17,7 @@ const Footer = () => {
         <ImgFooterStyle src={logo} alt="logo Kardabel" />
         <DivTextFooterContainer>
           <div>
-            <PTextCopyright>copyright © KARDABEL 2022</PTextCopyright>
+            <PTextCopyright>© KARDABEL 2022</PTextCopyright>
             <PTextCopyright>Site conçu et développé par Kardabel / Mélanie Sarrouy</PTextCopyright>
           </div>
           <NavFooter>

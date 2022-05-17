@@ -26,7 +26,7 @@ export const UlMenuBurger = styled.ul`
   display: flex;
   flex-direction: column;
   width: 33%;
-  background-color: ${colors.primaryDark}D8;
+  background-color: ${colors.primaryDark}E6;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   border-top: solid 3px ${colors.secondary};
   @media (max-width: 800px) {

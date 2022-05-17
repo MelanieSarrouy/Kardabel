@@ -14,16 +14,20 @@ export const SvgH2Trio = styled.img`
     width: 4rem;
     margin-right: 1.6rem;
   }
+  @media (max-width: 950px) {
+    width: 2.8rem;
+    margin-right: 1.1rem;
+  }
   @media (max-width: 640px) {
-    width: 3.1rem;
-    margin-right: 1.2rem;
+    width: 2.5rem;
   }
   @media (max-width: 480px) {
-    width: 2.5rem;
+    width: 2.2rem;
     margin-right: 1rem;
   }
   @media (max-width: 400px) {
-    width: 2.2rem;
+    width: 1.8rem;
+    margin-right: .8rem;
   }
 `
 export const H2TitleStyle = styled.h2`
@@ -35,18 +39,20 @@ export const H2TitleStyle = styled.h2`
   padding-bottom: 5rem;
   @media (max-width: 1280px) {
     font-size: 5.5rem;
+    padding-bottom: 4rem;
   }
-  @media (max-width: 640px) {
-    font-size: 4.5rem;
+  @media (max-width: 950px) {
+    font-size: 4rem;
     padding-bottom: 3rem;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     font-size: 3.5rem;
+    padding-bottom: 2rem;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     font-size: 3rem;
   }
-  @media (max-width: 330px) {
+  @media (max-width: 400px) {
     font-size: 2.5rem;
   }
 `

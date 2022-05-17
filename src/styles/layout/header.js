@@ -10,7 +10,7 @@ export const HeaderStyle = styled.header`
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: ${colors.primaryDark}D8;
+  background-color: ${colors.primaryDark}E6;
 `
 export const DivHeaderContent = styled.div`
   display: flex;
@@ -22,6 +22,10 @@ export const DivHeaderContent = styled.div`
   @media (max-width: 850px) {
     padding: 0rem 7%;
   }
+  @media (max-width: 420px) {
+    padding: 0rem 2rem;
+  }
+
 `
 export const ImgStyle = styled.img`
   max-width: 160px;

@@ -13,7 +13,7 @@ export const datasValues = [
     illustration: regardImage,
     altIllustration: 'illustration observation de données',
     text: [
-      'Nous vous apportons notre regard, une expertise dans le domaine de la communication visuelle, des tendances dans le design et des bonnes pratiques en graphisme et en développement web.',
+      'Nous vous apportons notre regard, une expertise dans le domaine de la communication visuelle, des tendances dans le design et des bonnes pratiques en graphisme et en développement.',
       'Nous mettons notre professionnalisme et notre créativité au service de vos besoins.',
     ],
   },
@@ -24,7 +24,7 @@ export const datasValues = [
     illustration: ecouteImage,
     altIllustration: 'illustration discussion',
     text: [
-      'Parce que l’écoute est la clé de voute de la réussite de notre collaboration, nous prenons le temps nécessaire pour comprendre vos besoins, le contexte, vos objectifs, les enjeux, mais aussi pour apprendre à vous connaître, découvrir l’histoire de votre structure, de votre projet, les valeurs que vous souhaitez véhiculer, vos interrogations…',
+      'Parce que l’écoute est la clé de voute de la réussite de notre collaboration, nous prenons le temps nécessaire pour comprendre vos besoins, le contexte, vos objectifs et les enjeux.', 'Nous cherchons à vous connaître, à découvrir l’histoire de votre structure, de votre projet, les valeurs que vous souhaitez véhiculer, vos interrogations…',
     ],
   },
   {

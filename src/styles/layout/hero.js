@@ -6,58 +6,55 @@ import { HashLink } from 'react-router-hash-link'
 export const ImgCurvyStyle = styled.img`
   width: 100%;
   position: absolute;
-  top: 10vh;
+  top: 6rem;
   display: block;
   line-height: 2.6rem;
   max-width: 1620px;
   margin: auto;
-  @media (max-width: 1560px) {
-    top: 16vh;
+  @media (max-width: 1520px) {
+    top: 9rem;
   }
-  @media (max-width: 1500px) {
-    top: 18vh;
-  }
-  @media (max-width: 1380px) {
-    top: 22vh;
+  @media (max-width: 1420px) {
+    top: 11rem;
   }
   @media (max-width: 1320px) {
-    top: 24vh;
+    top: 12em;
   }
   @media (max-width: 1280px) {
-    top: 18vh;
+    top: 9rem;
   }
-  @media (max-width: 1180px) {
-    top: 24vh;
+  @media (max-width: 1200px) {
+    top: 12rem;
   }
-  @media (max-width: 1100px) {
-    top: 26vh;
+  @media (max-width: 1120px) {
+    top: 14rem;
   }
   @media (max-width: 1023px) {
-    top: 30vh;
+    top: 16rem;
   }
   @media (max-width: 950px) {
-    top: 18vh;
+    top: 8rem;
   }
-  @media (max-width: 880px) {
-    top: 22vh;
+  @media (max-width: 900px) {
+    top: 10rem;
   }
-  @media (max-width: 780px) {
-    top: 26vh;
+  @media (max-width: 820px) {
+    top: 12rem;
   }
-  @media (max-width: 710px) {
-    top: 28vh;
+  @media (max-width: 720px) {
+    top: 13.5rem;
   }
   @media (max-width: 640px) {
-    top: 62vh;
+    top: 30rem;
   }
-  @media (max-width: 500px) {
-    top: 64vh;
+  @media (max-width: 520px) {
+    top: 32rem;
   }
-  @media (max-width: 460px) {
-    top: 64vh;
+  @media (max-width: 420px) {
+    top: 30rem;
   }
-  @media (max-width: 330px) {
-    top: 68vh;
+  @media (max-width: 340px) {
+    top: 32rem;
   }
 `
 
@@ -69,9 +66,6 @@ export const HeroContent = styled.div`
   background-color: ${colors.primary};
   z-index: 800;
   max-width: 1620px;
-  @media (max-width: 1280px) {
-    height: 380px;
-  }
   @media (max-width: 950px) {
     padding: 8rem 7%;
     height: 280px;
@@ -79,13 +73,7 @@ export const HeroContent = styled.div`
   @media (max-width: 640px) {
     flex-direction: column;
     padding: 5rem 7%;
-    height: 600px;
-  }
-  @media (max-width: 380px) {
-    height: 600px;
-  }
-  @media (max-width: 330px) {
-    height: 620px;
+    height: 550px;
   }
 `
 export const LogoContainer = styled.div`
@@ -104,13 +92,13 @@ export const LogoContainer = styled.div`
     padding: 4rem 6rem 0 0;
   }
   @media (max-width: 710px) {
-    padding: 4rem 4rem 0 0;
+    padding: 3rem 4rem 0 0;
   }
   @media (max-width: 640px) {
-    padding: 4rem 0rem 3rem 0;
+    padding: 3rem 0rem 3rem 0;
   }
   @media (max-width: 460px) {
-    padding: 4rem 0rem 2rem 0rem;
+    padding: 3rem 0rem 2rem 0rem;
   }
 `
 export const ImgLogo = styled.img`
@@ -157,10 +145,10 @@ export const PTitleStyle = styled.p`
     font-size: 3rem;
   }
   @media (max-width: 640px) {
-    font-size: 3.5rem;
+    font-size: 4em;
     text-align: center;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     font-size: 3rem;
   }
 `
@@ -180,10 +168,10 @@ export const Baseline = styled.p`
     font-size: 1rem;
   }
   @media (max-width: 640px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     font-size: 1rem;
   }
 `
@@ -209,10 +197,10 @@ export const H1Style = styled.h1`
     font-size: 1.1rem;
   }
   @media (max-width: 640px) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     font-size: 1.2rem;
   }
 `
@@ -234,9 +222,9 @@ export const SpanTitle = styled.span`
     font-size: 0.9rem;
   }
   @media (max-width: 640px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     font-size: 1rem;
   }
 `

@@ -2,7 +2,6 @@ import React from 'react'
 import {
   DivButtonContainer,
   LinkButtonServices,
-  TextCTA,
 } from '../../../styles/components/pageAgence/sectionH2IntroAgence'
 import H2Intro from '../../layout/H2Intro'
 const title = "L'Agence"
@@ -12,7 +11,6 @@ const SectionH2IntroAgence = () => {
 
     return (
     <H2Intro id='agence' title={title} content={content}>
-      <TextCTA>Envie d’en savoir plus sur notre agence ?</TextCTA>
       <DivButtonContainer>
         <LinkButtonServices to="/#prestations">Prestations</LinkButtonServices>
         <LinkButtonServices to="/#objectifs">Objectifs</LinkButtonServices>

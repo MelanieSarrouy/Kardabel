@@ -2,28 +2,18 @@ import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
 import colors from '../../bases/colors'
 
-export const TextCTA = styled.p`
-  font-weight: 600;
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 3rem;
-  font-style: italic;
-  padding: 2rem 7% 3rem 7%;
-  @media (max-width: 640px) {
-    padding: 1rem 0 2rem 0;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-`
 export const DivButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: baseline;
-  padding: 0rem 7% 5rem 7%;
+  padding: 2rem 7% 5rem 7%;
+  & > a {
+    min-width: 12rem;
+  }
   @media (max-width: 750px) {
     flex-direction: column;
     align-items: center;
-    padding: 0rem;
+    padding: 2rem 7% 2rem 7%;
   }
 `
 export const LinkButtonServices = styled(HashLink)`
