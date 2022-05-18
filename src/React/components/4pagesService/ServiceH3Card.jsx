@@ -10,11 +10,10 @@ import {
   LiCardstyle,
   UlCardStyle,
 } from '../../../styles/components/4pagesService/serviceH3Card'
-import arrow from '../../../assets/icons/fleche.svg'
-import { HashLink } from 'react-router-hash-link'
 import { standardizeAndLowerCase } from '../../../helpers/standardizeAndLowerCase'
+import { LinkButtonServices } from '../../../styles/components/pageAgence/sectionH2IntroAgence'
 
-const titlesList = ['Pourquoi ?', 'Avantages', 'Préstations']
+const titlesList = ['Pourquoi', 'Avantages', 'Préstations']
 
 const createLink = (str) => {
   return '#' + standardizeAndLowerCase(str)
@@ -30,10 +29,9 @@ const ServiceH3Card = (props) => {
         <UlCardStyle>
         {titlesList.map((element, index) => (
           <LiCardstyle key={index}>
-            <HashLink to={createLink(element)} >
-            <img src={arrow} alt="icon" />
+            <LinkButtonServices to={createLink(element)} >
             {element}
-            </HashLink>
+            </LinkButtonServices>
           </LiCardstyle>
 
         ))}

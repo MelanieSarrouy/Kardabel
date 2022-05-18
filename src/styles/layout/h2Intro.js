@@ -34,7 +34,7 @@ export const SectionIntro = styled.section`
   }
   @media (max-width: 750px) {
     margin-top: 6rem;
-    padding-bottom: 3rem;
+    ${'' /* padding-bottom: 3rem; */}
   }
   @media (max-width: 640px) {
     margin-top: 4rem;

@@ -14,6 +14,8 @@ export const datasAndroid = {
   colors: {
     normal: colors.color4,
     light: colors.tertiary,
+    dark: colors.color4Dark
+
   },
   subtitles: {
     why: {

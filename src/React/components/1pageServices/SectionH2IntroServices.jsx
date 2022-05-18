@@ -11,7 +11,7 @@ import { createLink } from '../../../helpers/createLink'
 
 const title = 'Services'
 const content =
-  'Pour répondre au mieux à vos besoins en communiction et visibilité, nous vous propsons un ensemble de services dans le domaine du Design Graphique et du Développement. '
+  'Pour répondre au mieux à vos besoins en communication et visibilité, nous vous propsons un ensemble de services dans le domaine du Design Graphique et du Développement. '
 const links = ['Identité', 'Print', 'Web', 'Android']
 const name = 'services'
 const prefixeName = ''

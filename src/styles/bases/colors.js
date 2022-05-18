@@ -8,12 +8,19 @@ const colors = {
   background: '#ffffff', //blanc
   color1: '#FFEEAD', //jaune
   color1clair: '#FFFEF7', //jaune clair 
+  color1Dark: '#D8C271', //jaune foncé
   color2: '#F9C5D5', //rose
   color2clair: '#FFFAFB', //rose clair
+  color2Dark: '#F29FB8', //rose foncé
+
   color3: '#B5DEFF', //bleu
   color3clair: '#F8FCFF', //bleu clair
+  color3Dark: '#87C9FF', //bleu foncé
+
   color4: '#B9E59F', //vert
   color4clair: '#F8FDF6', //vert clair
+  color4Dark: '#92CC6F', //vert foncé
+
   textSecondary: '#AFAFAF', //gris clair
   textTertiary: '#323742', //gris foncé
 }

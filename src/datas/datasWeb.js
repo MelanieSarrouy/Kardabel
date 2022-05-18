@@ -14,6 +14,8 @@ export const datasWeb = {
   colors: {
     normal: colors.color3,
     light: colors.tertiary,
+    dark: colors.color3Dark
+
   },
   subtitles: {
     why:

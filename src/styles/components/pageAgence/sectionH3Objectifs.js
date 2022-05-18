@@ -5,20 +5,18 @@ export const SectionObjectifs = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0 5rem 0;
+  margin: 0rem 0 5rem 0;
+  padding-top: 5.5rem;
   @media (max-width: 1200px) {
-    margin: 0rem 0 3rem 0;
-  }
-  @media (max-width: 1024px) {
-    margin: 2rem 0 3rem 0;
+    margin: 0 0 3rem 0;
   }
   @media (max-width: 950px) {
    flex-direction: column;
    align-items: start;
-   margin: 2rem 0 0rem 0;
+   margin: 0rem;
   }
   @media (max-width: 750px) {
-   margin: 2rem 0 2rem 0;
+   margin: 0 0 2rem 0;
   }
   @media (max-width: 640px) {
    margin: 0rem;

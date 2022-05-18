@@ -22,6 +22,6 @@ export const services = [
   {
     name: 'android',
     illustration: androidPicture,
-    text: 'Conception et réalisation d’une application Android pour un outil qui vous facilite la vie en fonction de vos besoins et de votre activité'
+    text: 'Conception et réalisation d’une application Android, un outil pour vous faciliter la vie en fonction de vos besoins et de votre activité'
   }
 ]

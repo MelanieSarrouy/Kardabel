@@ -6,8 +6,15 @@ import { HashLink } from 'react-router-hash-link'
 export const SectionServices = styled.section`
   background: no-repeat center center url(${backgroundVectorServices});
   background-size: cover;
+  padding-top: 5.5rem;
   @media (max-width: 950px) {
-    background: linear-gradient(180deg, rgba(250, 242, 228, 1) 86%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(250, 242, 228, 1) 8%,
+      rgba(250, 242, 228, 1) 86%,
+      rgba(255, 255, 255, 1) 100%
+    );
   }
 `
 export const DivServices = styled.div`
@@ -24,38 +31,46 @@ export const DivServices = styled.div`
 export const UlServicesContent = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7%;
+  gap: 8rem;
   padding: 2rem 0 3rem 0;
+  @media (max-width: 1440px) {
+    gap: 6rem;
+  }
+  @media (max-width: 1240px) {
+    gap: 4rem;
+  }
+  @media (max-width: 1240px) {
+    gap: 3rem;
+  }
+
   @media (max-width: 950px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   @media (max-width: 640px) {
-    padding: 1rem 0 3rem 0;
+    padding: 2rem 0 0rem 0;
   }
 `
 export const LinkCardService = styled(HashLink)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 6rem 4rem 6rem;
-  background-color: rgba(255, 255, 255, 0);
-  @media (max-width: 1440px) {
-    padding: 1rem 4rem 4rem 4rem;
-  }
+  padding: 1rem 4rem 2rem 4rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  height: 38rem;
   @media (max-width: 1240px) {
-    padding: 1rem 2rem 4rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
   }
   @media (max-width: 1024px) {
-    padding: 0rem;
+    height: 34rem;
   }
+
   @media (max-width: 950px) {
     padding: 1rem;
-    margin: 1rem 0;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    height: auto;
   }
 `
 export const ImgSVGService = styled.img`
@@ -91,7 +106,7 @@ export const PtextService = styled.p`
   line-height: 2rem;
   padding: 1rem 2rem;
   @media (max-width: 1240px) {
-    padding: 2rem;
+    padding: 1rem;
   }
   @media (max-width: 1024px) {
     padding: 1rem 0rem;
@@ -99,11 +114,11 @@ export const PtextService = styled.p`
   @media (max-width: 950px) {
     padding: 1rem 3rem;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 750px) {
     padding: 1rem 1rem;
     font-weight: 500;
   }
-  @media (max-width: 450px) {
-    padding: 1rem 0rem;
+  @media (max-width: 420px) {
+    padding: 0.6rem;
   }
 `

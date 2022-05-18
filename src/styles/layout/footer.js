@@ -5,6 +5,10 @@ import colors from '../bases/colors'
 export const FooterStyle = styled.footer`
   width: 100%;
   background-color: ${colors.primaryDark};
+  margin-top: 5rem;
+  ${'' /* @media (max-width: 640px) {
+    margin-top: 2rem;
+  } */}
 `
 export const DivFooterContent = styled.div`
   display: flex;

@@ -22,7 +22,7 @@ export const ImgBurger = styled.img`
 export const UlMenuBurger = styled.ul`
   position: absolute;
   top: 5.7rem;
-  right: 0rem;
+  right: 0;
   display: flex;
   flex-direction: column;
   width: 33%;
@@ -44,17 +44,21 @@ export const UlMenuBurger = styled.ul`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 21% 1rem 2rem;
+      padding: 1rem 2rem;
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
       text-transform: uppercase;
       font-size: 1rem;
       width: 100%;
       @media (max-width: 800px) {
-        padding: 1rem 14% 1rem 2rem;
+        padding: 1rem 2rem;
       }
       @media (max-width: 640px) {
         padding: 1rem 7%;
       }
+      @media (max-width: 420px) {
+        padding: 1rem 2rem;
+      }
+
     }
     & a > p {
       text-transform: uppercase;

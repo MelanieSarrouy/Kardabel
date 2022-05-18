@@ -14,6 +14,7 @@ export const datasPrint = {
   colors: {
     normal: colors.color2,
     light: colors.tertiary,
+    dark: colors.color2Dark
   },
   subtitles: {
     why: {

@@ -4,12 +4,12 @@ import fonts from '../bases/fonts'
 export const DivH3Title = styled.div`
   display: flex;
   align-items: baseline;
-  padding: 3rem 0;
+  padding: 0 0 3rem 0;
   @media (max-width: 1023px) {
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
   }
   @media (max-width: 450px) {
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
   }
 
 `
