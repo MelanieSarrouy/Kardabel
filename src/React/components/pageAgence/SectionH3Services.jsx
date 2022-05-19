@@ -27,7 +27,7 @@ const SectionH3Services = () => {
         <UlServicesContent>
           {services.map((element, index) => (
             <li key={index}>
-              <LinkCardService to={createLink(element.name, name, prefixeName, suffixeName)}>
+              <LinkCardService to={createLink(element.name, name, true, prefixeName, suffixeName)}>
                 <ImgSVGService
                   src={element.illustration}
                   alt={createIllustrationAlt(element.name)}

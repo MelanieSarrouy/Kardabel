@@ -7,7 +7,7 @@ export const NavServicesStyle = styled.nav`
     display: flex;
     justify-content: center;
     align-items: baseline;
-    padding: 3rem 0 0rem 0;
+    padding: 3rem 0 2rem 0;
     @media (max-width: 750px) {
       display: grid;
       grid-template-columns: 1fr 1fr;

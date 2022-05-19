@@ -20,13 +20,13 @@ export const datasWeb = {
   subtitles: {
     why:
     {
-      title: 'Pourquoi adopter la communication web ?',
+      title: 'Le Web, kesako',
       background: backgroundCard,
       side: 'left',
-      content: 'Aujourd’hui une stratégie de communication efficace ne se conçoit pas sans un volet digital. \n Entre smartphones, tablettes, ordinateurs portables, de bureau, ou autres, les nouvelles technologies nous accompagnent partout. \n c’est un univers en perpétuelle évolution, incontournable pour votre visibilité, votre notoriété et votre image professionnelle.'
+      content: 'Ici, le Web désigne la communication digitale aussi connue sous le nom de communication numérique, c\'est-à-dire la communication via des canaux d\'informations tels que sites web, blogs ou newsletters.\nAujourd’hui une stratégie de communication efficace ne se conçoit pas sans un volet digital. Entre smartphones, tablettes, ordinateurs portables ou de bureau,les nouvelles technologies nous accompagnent partout. \n C’est un univers en perpétuelle évolution, incontournable pour votre visibilité, votre notoriété et votre image dynamique et professionnelle.'
     },
     benefits: {
-      title: 'Les avantages du web',
+      title: 'Avantages du web',
       cards: [
         {
           title: 'Visibilité',
@@ -53,7 +53,7 @@ export const datasWeb = {
     services: {
       title: 'Kardabel vous propose',
       background: servicesBackground,
-      intro: 'Création ou refonte de votre site internet ou landing page. \n Kardabel développe les sites avec le CMS WordPress ou bien des sites sur-mesure (from scratch). \n Nous choisirons ensemble les technologies les mieux adaptées à votre projet.',
+      intro: 'Création ou refonte de votre site internet ou landing page. \n Kardabel développe pour vous des sites internet sur-mesure from scratch ou avec le CMS WordPress. \n Nous choisirons ensemble les technologies les mieux adaptées à votre projet.',
       services: [
         {
           name: 'Webdesign \n (UX UI Design)',

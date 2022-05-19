@@ -17,7 +17,7 @@ const Print = () => {
       />
       <WhyComponent
         title={datasPrint.subtitles.why.title}
-        id="pourquoi"
+        id="kesako"
         side={datasPrint.subtitles.why.side}
         circle={datasPrint.subtitles.why.background}
         color={datasPrint.colors.light}

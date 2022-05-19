@@ -11,7 +11,6 @@ export const DivH3Title = styled.div`
   @media (max-width: 450px) {
     padding: 0 0 1rem 0;
   }
-
 `
 export const SvgH3Trio = styled.img`
   width: 3.25rem;

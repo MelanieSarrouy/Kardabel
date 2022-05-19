@@ -19,18 +19,32 @@ export const DivServicesIntro = styled.div`
 export const DivServicesBackground = styled.div`
   background: no-repeat center center url(${(props) => props.bck});
   background-size: cover;
-  ${
-    '' /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 4rem;   */
-  }
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
-  grid-gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
   justify-content: space-between;
   align-items: center;
   padding: 10rem 7% 10rem 7%;
+  @media (max-width: 1440px) {
+    gap: 2rem;
+  }
+  @media (max-width: 1360px) {
+    gap: 1rem;
+  }
+  @media (max-width: 1320px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  @media (max-width: 1180px) {
+    gap: 2rem;
+  }
+  @media (max-width: 950px) {
+    gap: 1rem;
+  }
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 `
 export const DivServicesCardsBackground = styled.div`
   background: no-repeat center center url(${(props) => props.circle});
@@ -41,13 +55,25 @@ export const DivServicesCardsBackground = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 22rem;
-  width: 26rem;
   padding: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background-size 800ms cubic-bezier(.78,.08,.73,.87), box-shadow 100ms ease-in-out;
+  transition: background-size 800ms cubic-bezier(0.78, 0.08, 0.73, 0.87),
+    box-shadow 100ms ease-in-out;
   cursor: pointer;
   position: relative;
   border-left-style: solid;
+  @media (max-width: 950px) {
+    min-height: 20rem;
+  }
+  @media (max-width: 850px) {
+    min-height: 18rem;
+    background-size: 30%;
+  }
+  @media (max-width: 420px) {
+    padding: 1rem;
+    background-size: 50%;
+    min-height: 19rem;
+  }
   &:hover {
     background-size: 130%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);

@@ -18,13 +18,13 @@ export const datasPrint = {
   },
   subtitles: {
     why: {
-      title: 'Pourquoi utiliser la communication print ?',
+      title: 'Le Print, kesako',
       background: backgroundCard,
       side: 'left',
-      content: 'Le print en complément du digital est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires. \n Il véhicule votre identité, vos savoir-faire, votre professionnalisme et vous permet d\'être en contact physique direct avec le consommateur. \n Il marque l\'esprit du lecteur avec une image forte.',
+      content: 'Le Print désigne l\'ensemble des supports de communication imprimés tels que flyers, affiches, brochures ou cartes de visites, utilisés pour promouvoir une marque ou diffuser un message.\n En complément du digital, il est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires.\n Il marque l\'esprit du lecteur avec une image forte et véhicule votre identité, vos savoir-faire et votre professionnalisme.',
     },
     benefits: {
-      title: 'Les avantages du print',
+      title: 'Avantages du print',
       cards: [
         {
           title: 'Mémorisation',

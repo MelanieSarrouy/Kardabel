@@ -16,6 +16,7 @@ const WebPortfolioCard = (props) => {
           technos={props.technos}
           site={props.site}
           code={props.code}
+          other={props.other}
         />
       ) : (
         <WebPortfolioCardFront flipped={flipped} image={props.image} title={props.title} />

@@ -18,7 +18,7 @@ const Web = () => {
       />
       <WhyComponent
         title={datasWeb.subtitles.why.title}
-        id="pourquoi"
+        id="kesako"
         side={datasWeb.subtitles.why.side}
         circle={datasWeb.subtitles.why.background}
         color={datasWeb.colors.light}

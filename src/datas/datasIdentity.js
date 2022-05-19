@@ -20,13 +20,13 @@ export const datasIdentity = {
   },
   subtitles: {
     why: {
-      title: 'Pourquoi créer et utiliser une identité visuelle ?',
+      title: 'L\'Identité visuelle, kesako',
       background: backgroundCard,
       side: 'left',
-      content: 'Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.',
+      content: 'L\'identité visuelle ou identité graphique est un ensemble d\'éléments visuels cohérents qui permettent de reconnaître une marque ou une structure au premier coup d\'œil. \n Ces différents éléments sont le logo, la typographie, les couleurs, les icônes, les pictogrammes, etc. \n Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.',
     },
     benefits: {
-      title: 'Les avantages d’une identité visuelle',
+      title: 'Avantages d’une identité visuelle',
       cards: [
         {
           title: 'Se démarquer',
@@ -40,31 +40,31 @@ export const datasIdentity = {
         {
           title: 'Attirer',
           content:
-            'Un identité graphique permet de gagner en visibilité, en crédibilité, en notoriété et donc de gagner de nouveaux clients, prospects, adhérents ou autres.',
+            'Un identité graphique permet de gagner en visibilité, en crédibilité, en notoriété et donc de gagner de nouveaux clients, prospects, adhérents, etc.',
         },
         {
           title: 'Économiser',
           content:
-            "Une charte graphique représente un gain de temps (et donc d'argent) non négligeable pour la création de vos futurs supports de communication print et web.",
+            "Une charte graphique représente un gain de temps (et donc d'argent) non négligeable pour la création de vos futurs supports de communication.",
         },
       ],
     },
     services: {
       title: 'Kardabel vous propose',
-      intro: 'Une image vaut mille mots... \n Votre identité visuelle vous représente, elle doit être simple, puissante et efficace. \n Kardabel est là pour vous guider et vous conseiller au mieux en fonction de vos besoins.',
+      intro: 'Puisqu\'une image vaut mille mots, trouvons ensemble la bonne image, la vôtre... \n Votre identité visuelle vous représente, elle doit être simple, puissante et efficace. \n Kardabel est là pour vous guider et vous conseiller au mieux en fonction de vos besoins.',
       background: servicesBackground,
       services: [
         {
-          name: 'La création de votre logo avec ou sans baseline',
-          details: 'Logo : élément graphique central de l’identité visuelle. \n Baseline : phrase courte ou slogan, elle est souvent liée au logo.'
+          name: 'Logo',
+          details: 'Création de votre logo avec ou sans baseline \n Logo : élément graphique central de l’identité visuelle. \n Baseline : phrase courte ou slogan, souvent liée au logo.'
         },
         {
-          name: 'La création ou la refonte de votre Charte graphique',
-          details: 'Charte graphique : document de référence qui rassemble toutes les règles d’utilisation des éléments graphiques d’une marque. C’est le mode d’emploi de l’identité visuelle'
+          name: 'Charte graphique',
+          details: 'Création ou refonte de votre charte graphique \n Document de référence qui rassemble toutes les règles d’utilisation des éléments graphiques d’une marque'
         },
         {
-          name: 'La création de votre Brand Board ou planche de style',
-          details: 'Brand board : document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle (Logos / Typos / Couleurs / Icônes / Images).'
+          name: 'Brand Board',
+          details: 'Création de votre Brand Board (ou planche de style) \n Document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle'
         },
       ],
     },

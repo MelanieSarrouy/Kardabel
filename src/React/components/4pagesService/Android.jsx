@@ -16,7 +16,7 @@ const Android = () => {
       />
       <WhyComponent
         title={datasAndroid.subtitles.why.title}
-        id="pourquoi"
+        id="kesako"
         side={datasAndroid.subtitles.why.side}
         circle={datasAndroid.subtitles.why.background}
         color={datasAndroid.colors.light}

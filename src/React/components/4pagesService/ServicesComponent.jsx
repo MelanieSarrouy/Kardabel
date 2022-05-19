@@ -32,7 +32,7 @@ const ServicesComponent = (props) => {
             <div key={index} onClick={() => handleClick(index)}>
               {flipped === index ? (
                 <DivServicesCardsBackground
-                  bckColor={colors.tertiary}
+                  bckColor={colors.background}
                 >
                   <PTextBenefitCard>{NewlineText(element.details)}</PTextBenefitCard>
                 </DivServicesCardsBackground>

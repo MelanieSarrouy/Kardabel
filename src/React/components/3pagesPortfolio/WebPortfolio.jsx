@@ -20,6 +20,7 @@ const WebPortfolio = () => {
           technos={element.technos}
           site={element.links.site}
           code={element.links.code}
+          other={element.links.other}
         />
       ))}
       </DivPortfolioCardsContainer>

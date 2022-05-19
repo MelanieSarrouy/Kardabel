@@ -15,20 +15,18 @@ export const datasAndroid = {
     normal: colors.color4,
     light: colors.tertiary,
     dark: colors.color4Dark
-
   },
   subtitles: {
     why: {
-      title: 'Pourquoi avoir sa propre application Android ?',
+      title: 'Android, kesako',
       background: backgroundCard,
       side: 'left',
       content:
         "Un site web permet de mettre en valeur une vitrine et de partager du contenu, alors qu'une application est un outil, un service. \n Proposer une application Android, c’est s’adresser à 84% du marché mondial du smartphone. En France, c’est en moyenne 3,6 heures passées chaque jour sur un mobile. \n Avec une application mobile, il est possible d’avoir une place dans le quotidien de vos utilisateurs.",
     },
     benefits: {
-      title: 'Les avantages d’une application',
+      title: 'Avantages d’une application',
       background: backgroundCard,
-
       cards: [
         {
           title: 'Confort',

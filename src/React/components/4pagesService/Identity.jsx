@@ -18,7 +18,7 @@ const Identity = () => {
       />
       <WhyComponent
         title={datasIdentity.subtitles.why.title}
-        id="pourquoi"
+        id="kesako"
         circle={datasIdentity.subtitles.why.background}
         side={datasIdentity.subtitles.why.side}
         color={datasIdentity.colors.light}

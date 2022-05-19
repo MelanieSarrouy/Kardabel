@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import waveCard from '../../../assets/shapes/waveCard.svg'
 
 export const SectionCard = styled.section`
-  padding: 8rem 7% 1rem 7%;
+  padding: 8rem 7% 2rem 7%;
 `
 export const DivProfileCard = styled.div`
   width: 100%;

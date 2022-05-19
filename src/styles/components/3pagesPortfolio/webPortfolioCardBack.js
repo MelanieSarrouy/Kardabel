@@ -39,6 +39,7 @@ export const PWorkPortfolioVersoCard = styled.p`
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
+  padding: 0.8rem 0;
 `
 
 export const UlTechnosPortfolioVersoCard = styled.ul`
@@ -46,17 +47,26 @@ export const UlTechnosPortfolioVersoCard = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: start;
   width: 100%;
   padding: 0.8rem 0;
   border-top: solid 1px;
-  border-bottom: solid 1px;
   & > li {
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
     padding: .5rem;
     text-transform: uppercase;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    & > p {
+      padding: .8rem 0 0 0;
+      text-align: center;
+      font-size: .8rem;
+    }
   }
 `
 export const DivButtonsContainers = styled.div`
@@ -65,4 +75,25 @@ export const DivButtonsContainers = styled.div`
   justify-content: center;
   align-items: baseline;
   padding: 1.2rem 0 0 0;
+  border-top: solid 1px;
+
+  & > a {
+    display: block;
+      text-align: center;
+      padding: 0.6rem 0rem;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0.4rem;
+      width: 7rem;
+      @media (max-width: 750px) {
+        margin: 0rem;
+      }
+
+  }
+`
+export const ImgIconTechno = styled.img`
+  width: 3rem;
 `

@@ -6,8 +6,13 @@ import backgroundCard from '../../../assets/shapes/EllipseRose-light.svg'
 export const DivBenefitsCards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
-  row-gap: 3rem;
+  gap: 3rem;
+  @media (max-width: 950px) {
+    gap: 2rem;
+  }
+  @media (max-width: 690px) {
+    grid-template-columns: 1fr;
+  }
 `
 export const DivCard = styled.div`
   background: ${(props) =>
@@ -23,8 +28,25 @@ export const DivCard = styled.div`
   align-items: center;
   height: 20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background-size 800ms cubic-bezier(.49,.4,.28,1), box-shadow 100ms ease-in-out;
+  transition: background-size 800ms cubic-bezier(0.49, 0.4, 0.28, 1), box-shadow 100ms ease-in-out;
   cursor: pointer;
+  @media (max-width: 1140px) {
+    padding: 2rem;
+  }
+  @media (max-width: 950px) {
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  @media (max-width: 690px) {
+    height: 15rem;
+    padding: 2rem;
+  }
+  @media (max-width: 470px) {
+    padding: 1.5rem;
+  }
+  @media (max-width: 370px) {
+    padding: 1rem;
+  }
   &:hover {
     background-size: 45%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
@@ -35,11 +57,20 @@ export const PTitleBenefitCard = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
   & > p {
     font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: 700;
     padding: 1rem;
+    line-height: 3.2rem;
+    letter-spacing: 1px;
+
+    @media (max-width: 1140px) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 `
 export const PTextBenefitCard = styled.div`
@@ -49,6 +80,22 @@ export const PTextBenefitCard = styled.div`
     line-height: 2.5rem;
     text-align: center;
     padding: 0.4rem;
+    @media (max-width: 950px) {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+    @media (max-width: 750px) {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+    @media (max-width: 690px) {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+    @media (max-width: 470px) {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
   }
 `
 export const DivNoCard = styled.div`
