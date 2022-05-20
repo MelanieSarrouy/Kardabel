@@ -15,6 +15,7 @@ const Identity = () => {
         h3Illustration={datasIdentity.illustrations.title}
         h3Title={datasIdentity.title}
         illustrationCard={datasIdentity.illustrations.illustration}
+        colorbtnhover={datasIdentity.colors.normal}
       />
       <WhyComponent
         title={datasIdentity.subtitles.why.title}
@@ -36,8 +37,10 @@ const Identity = () => {
         id="prestations"
         intro={datasIdentity.subtitles.services.intro}
         bck={datasIdentity.subtitles.services.background}
+        bckSize='cover'
         services={datasIdentity.subtitles.services.services}
         circle={circle}
+        circleIntro={datasIdentity.subtitles.why.background}
       />
     </>
   )

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import logoBenefitCard from '../../../assets/logo/logo-benefits-cards.svg'
 import logoBenefitCard2 from '../../../assets/logo/logo-simple-dore.svg'
 import backgroundCard from '../../../assets/shapes/EllipseRose-light.svg'
 
@@ -13,14 +12,18 @@ export const DivBenefitsCards = styled.div`
   @media (max-width: 690px) {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 420px) {
+    grid-template-columns: 100%;
+  }
+
 `
 export const DivCard = styled.div`
   background: ${(props) =>
     props.bck === 'yes'
-      ? `no-repeat center center url(${logoBenefitCard})`
-      : `no-repeat center center url(${logoBenefitCard2})`};
+      ? ``
+      : `no-repeat bottom 2% left 5% url(${logoBenefitCard2})`};
   background-color: ${(props) => props.color};
-  background-size: 25%;
+  background-size: 15%;
   border-radius: 1.5rem;
   padding: 3rem 4rem 3rem 4rem;
   display: flex;
@@ -28,7 +31,9 @@ export const DivCard = styled.div`
   align-items: center;
   height: 20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background-size 800ms cubic-bezier(0.49, 0.4, 0.28, 1), box-shadow 100ms ease-in-out;
+  transition: background-size 800ms cubic-bezier(0.49, 0.4, 0.28, 1),
+    background 200ms cubic-bezier(.55,.1,.6,1), box-shadow 100ms ease-in-out;
+
   cursor: pointer;
   @media (max-width: 1140px) {
     padding: 2rem;
@@ -48,8 +53,16 @@ export const DivCard = styled.div`
     padding: 1rem;
   }
   &:hover {
-    background-size: 45%;
+    background: ${(props) =>
+      props.bck === 'yes'
+        ? ``
+        : `no-repeat bottom 5% center url(${logoBenefitCard2})`};
+    background-color: ${(props) => props.color};
+    background-size: 20%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+    transition: background-size 800ms cubic-bezier(0.49, 0.4, 0.28, 1),
+    background 800ms cubic-bezier(.55,.1,.6,1), box-shadow 100ms ease-in-out;
+
   }
 `
 export const PTitleBenefitCard = styled.div`

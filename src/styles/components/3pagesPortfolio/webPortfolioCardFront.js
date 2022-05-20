@@ -36,5 +36,6 @@ export const PTitleFront = styled.p`
   font-weight: 600;
   color: white;
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  word-break: break-word;
   z-index: 2;
 `

@@ -5,6 +5,10 @@ export const DivH4Container = styled.div`
   padding: 7rem 7% 4rem 7%;
   display: flex;
   align-items: baseline;
+  @media (max-width: 420px) {
+    padding: 7rem 2rem 4rem 2rem;
+  }
+
 `
 export const SvgH4Trio = styled.img`
   width: 2.6rem;

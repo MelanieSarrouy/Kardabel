@@ -1,14 +1,15 @@
 import React from 'react'
-import { LinkSecondaryStyle } from '../../../styles/components/1pageServices/sectionH2IntroServices'
+import colors from '../../../styles/bases/colors'
 import {
   DivBackPortfolioCard,
-  DivButtonsContainers,
+  UlButtonsContainers,
   PDescriptionPortfolioVersoCard,
   PWorkPortfolioVersoCard,
   PTitlePortfolioVersoCard,
   UlTechnosPortfolioVersoCard,
   ImgIconTechno,
 } from '../../../styles/components/3pagesPortfolio/webPortfolioCardBack'
+import { LinkButtonServices } from '../../../styles/components/pageAgence/sectionH2IntroAgence'
 const figma = 'figma'
 const npm = 'npm'
 const trello = 'trello'
@@ -28,19 +29,40 @@ const WebPortfolioCardBack = (props) => {
           </li>
         ))}
       </UlTechnosPortfolioVersoCard>
-      <DivButtonsContainers>
+      <UlButtonsContainers>
         {props.site !== '' && (
-          <LinkSecondaryStyle to={{ pathname: props.site }} target="_blank">
+          <li><LinkButtonServices
+            btncolorbck={colors.primaryDark}
+            btncolorhover={colors.secondary}
+            btncolortxt={colors.background}
+            boxshadow='true'
+            to={{ pathname: props.site }}
+            target="_blank"
+          >
             {props.site.indexOf(figma) !== -1 ? figma : 'site'}
-          </LinkSecondaryStyle>
+          </LinkButtonServices></li>
         )}
         {props.code !== '' && (
-          <LinkSecondaryStyle to={{ pathname: props.code }} target="_blank">
+          <li><LinkButtonServices
+            btncolorbck={colors.primaryDark}
+            btncolorhover={colors.secondary}
+            btncolortxt={colors.background}
+            boxshadow='true'
+            to={{ pathname: props.code }}
+            target="_blank"
+          >
             code
-          </LinkSecondaryStyle>
+          </LinkButtonServices></li>
         )}
         {props.other !== '' && (
-          <LinkSecondaryStyle to={{ pathname: props.other }} target="_blank">
+          <li><LinkButtonServices
+            btncolorbck={colors.primaryDark}
+            btncolorhover={colors.secondary}
+            btncolortxt={colors.background}
+            boxshadow='true'
+            to={{ pathname: props.other }}
+            target="_blank"
+          >
             {props.other.indexOf(npm) !== -1
               ? npm
               : props.other.indexOf(trello) !== -1
@@ -48,9 +70,9 @@ const WebPortfolioCardBack = (props) => {
               : props.other.indexOf(swagger) !== -1
               ? swagger
               : ''}
-          </LinkSecondaryStyle>
+          </LinkButtonServices></li>
         )}
-      </DivButtonsContainers>
+      </UlButtonsContainers>
     </DivBackPortfolioCard>
   )
 }

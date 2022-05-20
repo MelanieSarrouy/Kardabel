@@ -231,6 +231,20 @@ export const SpanTitle = styled.span`
 export const ButtonsContainer = styled.div`
   display: flex;
   padding: 2.6rem 0 0 0;
+  & > a {
+    display: block;
+    width: 10rem;
+    text-align: center;
+    @media (max-width: 950px) {
+      width: 8rem;
+    }
+    @media (max-width: 750px) {
+      max-width: 7.5rem;
+    }
+    @media (max-width: 640px) {
+      min-width: 10rem;
+    }
+  }
   @media (max-width: 950px) {
     padding: 2rem 0 0 0;
   }
@@ -239,13 +253,14 @@ export const LinkServices = styled(HashLink)`
   background-color: ${colors.secondary};
   padding: 0.5rem 2rem;
   border-radius: 2rem;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.2rem;
   color: ${colors.primaryDark};
   border: 2px solid ${colors.secondary};
   margin-right: 1rem;
   text-decoration: none;
-  transition: color 0.2s, background-color 0.5s;
+  transition: color 200ms, background-color 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97),
+    border 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   box-shadow: 0rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   @media (max-width: 950px) {
@@ -255,17 +270,20 @@ export const LinkServices = styled(HashLink)`
   }
   @media (max-width: 640px) {
     padding: 0.5rem 2rem;
+    margin: 0 .5rem;
+
   }
   @media (max-width: 350px) {
     padding: 0.5rem 1rem;
   }
-
   &:hover {
     background-color: ${colors.primaryDark};
-    border: solid 2px ${colors.secondary};
     color: ${colors.secondary};
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    border: solid 2px ${colors.primaryDark};
     @media (max-width: 950px) {
-      border: solid 1px ${colors.secondary};
+      border: solid 1px ${colors.primaryDark};
     }
   }
 `
@@ -273,31 +291,33 @@ export const LinkContacts = styled(HashLink)`
   background-color: ${colors.primary};
   padding: 0.5rem 2rem;
   border-radius: 2rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.1px;
   font-size: 1.2rem;
   color: ${colors.secondary};
-  border: solid 2px ${colors.primary};
+  border: solid 2px ${colors.secondary};
   text-decoration: none;
-  box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
-  transition: color 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.5s ease-in-out;
+  transition: border 600ms, background-color 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   @media (max-width: 950px) {
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border: solid 1px ${colors.primary};
+    border: solid 1px ${colors.secondary};
   }
   @media (max-width: 640px) {
     padding: 0.5rem 2rem;
+    margin: 0 .5rem;
+
   }
   @media (max-width: 350px) {
     padding: 0.5rem 1rem;
   }
-
   &:hover {
-    border: solid 2px ${colors.secondary};
     background-color: ${colors.primaryDark};
+    border: solid 2px ${colors.primaryDark};
+
     @media (max-width: 950px) {
-      border: solid 1px ${colors.secondary};
+      border: solid 1px ${colors.primaryDark};
     }
   }
 `

@@ -53,6 +53,7 @@ export const datasIdentity = {
       title: 'Kardabel vous propose',
       intro: 'Puisqu\'une image vaut mille mots, trouvons ensemble la bonne image, la vôtre... \n Votre identité visuelle vous représente, elle doit être simple, puissante et efficace. \n Kardabel est là pour vous guider et vous conseiller au mieux en fonction de vos besoins.',
       background: servicesBackground,
+      circleService : backgroundCard,
       services: [
         {
           name: 'Logo',

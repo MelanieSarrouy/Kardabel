@@ -76,6 +76,8 @@ export const H4Style = styled.h4`
   font-size: 2.25rem;
   font-weight: 600;
   padding-bottom: 2rem;
+  color: ${colors.primaryDark};
+
   @media (max-width: 950px) {
     padding-top: 0.5rem;
   }

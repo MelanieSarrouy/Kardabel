@@ -192,8 +192,8 @@ export const datasPortfolioWeb = [
     title: 'Kardabel',
     image: imgKardabel,
     description:
-      "Site vitrine, services print et web, identité visuelle, design graphique, développement d'applications et de sites internets",
-    work: "Refonte de la charte graphique et du logo de l'entreprise, maquette du site et intégration",
+      "Site vitrine : services print et web, identité visuelle, design graphique, développement d'applications et de sites internets",
+    work: "Refonte de la charte graphique et du logo, conception maquette et intégration",
     technos: [
       { logo: react, legende: 'React' },
       { logo: styledComponents, legende: 'Styled-Components' },

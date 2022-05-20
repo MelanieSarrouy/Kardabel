@@ -58,7 +58,6 @@ export const UlMenuBurger = styled.ul`
       @media (max-width: 420px) {
         padding: 1rem 2rem;
       }
-
     }
     & a > p {
       text-transform: uppercase;

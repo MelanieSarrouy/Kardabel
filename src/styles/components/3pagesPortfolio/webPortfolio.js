@@ -5,6 +5,10 @@ export const SectionPortfolio = styled.section`
   background-color: white;
   perspective: 200rem;
   padding-top: 8rem;
+  @media (max-width: 420px) {
+    margin: 0 2rem 5rem 2rem;
+  }
+
 `
 export const DivPortfolioCardsContainer = styled.div`
   display: grid;
@@ -12,10 +16,11 @@ export const DivPortfolioCardsContainer = styled.div`
   grid-gap: 3rem;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 1360px) {
+  @media (max-width: 1450px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     grid-template-columns: 1fr;
+
   }
 `

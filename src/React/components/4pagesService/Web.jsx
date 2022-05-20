@@ -15,6 +15,7 @@ const Web = () => {
         h3Illustration={datasWeb.illustrations.title}
         h3Title={datasWeb.title}
         illustrationCard={datasWeb.illustrations.illustration}
+        colorbtnhover={datasWeb.colors.normal}
       />
       <WhyComponent
         title={datasWeb.subtitles.why.title}
@@ -36,8 +37,10 @@ const Web = () => {
         id="prestations"
         intro={datasWeb.subtitles.services.intro}
         bck={datasWeb.subtitles.services.background}
+        bckSize='cover'
         services={datasWeb.subtitles.services.services}
         circle={circle}
+        circleIntro={datasWeb.subtitles.why.background}
       />
     </>
   )

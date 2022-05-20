@@ -7,6 +7,13 @@ export const SectionIntro = styled.section`
   justify-content: center;
   max-width: 1440px;
   margin: 14rem auto 0 auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 242, 228, 1) 35%,
+    rgba(250, 242, 228, 1) 65%,
+    rgba(255, 255, 255, 1) 100%
+  );
   @media (max-width: 1520px) {
     margin-top: 16rem;
   }
@@ -34,7 +41,6 @@ export const SectionIntro = styled.section`
   }
   @media (max-width: 750px) {
     margin-top: 6rem;
-    ${'' /* padding-bottom: 3rem; */}
   }
   @media (max-width: 640px) {
     margin-top: 4rem;
@@ -59,7 +65,7 @@ export const TextIntro = styled.div`
     line-height: 3rem;
     padding: 1rem 7% 2rem 7%;
     @media (max-width: 950px) {
-      padding: .8rem 0 2rem 0;
+      padding: 0.8rem 0 2rem 0;
       font-size: 1.7rem;
       line-height: 2.6rem;
     }
@@ -68,7 +74,7 @@ export const TextIntro = styled.div`
       line-height: 2.4rem;
     }
     @media (max-width: 420px) {
-      padding: .5rem 0 2rem 0;
+      padding: 0.5rem 0 2rem 0;
       font-size: 1.4rem;
       line-height: 2.2rem;
     }

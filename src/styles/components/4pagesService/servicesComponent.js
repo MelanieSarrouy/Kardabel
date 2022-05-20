@@ -6,25 +6,65 @@ export const DivServicesIntro = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrapo: wrap;
+  background: url(${(props) => props.circleIntro}) no-repeat center ${(props) => props.side};
+  background-size: contain;
+
   width: 100%;
-  padding: 1rem 7% 5rem 7%;
+  padding: 2rem 7% 2rem 7%;
+  margin-bottom: 4rem;
+  @media (max-width: 640px) {
+    padding: 0 7% 3rem 7%;
+  }
+  @media (max-width: 420px) {
+    padding: 0 2rem 3rem 2rem;
+  }
   & > p {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.8rem;
     text-align: center;
-    padding: 0.5rem 10rem;
+    padding: 0.5rem;
+    @media (max-width: 1320px) {
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+    }
+    @media (max-width: 1180px) {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      padding: 0.5rem 12rem;
+    }
+    @media (max-width: 1024px) {
+      padding: 0.5rem 2rem;
+    }
+    @media (max-width: 950px) {
+      font-size: 1.5rem;
+      padding: 0.5rem 6rem;
+    }
+    @media (max-width: 750px) {
+      padding: 0.5rem 2rem;
+    }
+    @media (max-width: 640px) {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      padding: 0.5rem 0rem;
+    }
+    @media (max-width: 450px) {
+      font-size: 1.3rem;
+      line-height: 1.9rem;
+      padding: 0.5rem 0rem;
+    }
   }
 `
 export const DivServicesBackground = styled.div`
   background: no-repeat center center url(${(props) => props.bck});
-  background-size: cover;
+  background-size: ${(props) => props.bckSize};
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
   justify-content: space-between;
   align-items: center;
   padding: 10rem 7% 10rem 7%;
+  min-height: 20rem;
   @media (max-width: 1440px) {
     gap: 2rem;
   }
@@ -45,11 +85,17 @@ export const DivServicesBackground = styled.div`
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  @media (max-width: 640px) {
+    padding: 5rem 7%;
+    }
+  @media (max-width: 420px) {
+    padding: 5rem 2rem;
+    }
 `
 export const DivServicesCardsBackground = styled.div`
   background: no-repeat center center url(${(props) => props.circle});
   background-color: ${(props) => props.bckColor};
-  background-size: 55%;
+  background-size: 40%;
   border-radius: 1.5rem;
   display: flex;
   justify-content: center;
@@ -75,7 +121,7 @@ export const DivServicesCardsBackground = styled.div`
     min-height: 19rem;
   }
   &:hover {
-    background-size: 130%;
+    background-size: 140%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
   }
 `

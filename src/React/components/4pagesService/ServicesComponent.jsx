@@ -25,8 +25,8 @@ const ServicesComponent = (props) => {
   return (
     <section>
       <H4Title id={props.id} title={props.title} />
-      <DivServicesIntro>{NewlineText(props.intro)}</DivServicesIntro>
-      <DivServicesBackground bck={props.bck}>
+      <DivServicesIntro circleIntro={props.circleIntro}>{NewlineText(props.intro)}</DivServicesIntro>
+      <DivServicesBackground bck={props.bck} bckSize={props.bckSize}>
         {props.services !== '' &&
           props.services.map((element, index) => (
             <div key={index} onClick={() => handleClick(index)}>

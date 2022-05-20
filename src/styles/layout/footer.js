@@ -6,9 +6,6 @@ export const FooterStyle = styled.footer`
   width: 100%;
   background-color: ${colors.primaryDark};
   margin-top: 5rem;
-  ${'' /* @media (max-width: 640px) {
-    margin-top: 2rem;
-  } */}
 `
 export const DivFooterContent = styled.div`
   display: flex;
@@ -57,7 +54,6 @@ export const PTextCopyright = styled.p`
   @media (max-width: 640px) {
     line-height: 1.8rem;
     padding: 0.3rem 3rem;
-
   }
 
 `

@@ -13,6 +13,7 @@ const Android = () => {
         h3Illustration={datasAndroid.illustrations.title}
         h3Title={datasAndroid.title}
         illustrationCard={datasAndroid.illustrations.illustration}
+        colorbtnhover={datasAndroid.colors.normal}
       />
       <WhyComponent
         title={datasAndroid.subtitles.why.title}
@@ -34,7 +35,10 @@ const Android = () => {
         id="prestations"
         intro={datasAndroid.subtitles.services.intro}
         bck={datasAndroid.subtitles.services.background}
+        bckSize='contain'
         services={datasAndroid.subtitles.services.services}
+        circleIntro={datasAndroid.subtitles.why.background}
+
       />
     </>
   )

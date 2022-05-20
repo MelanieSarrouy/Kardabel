@@ -41,8 +41,12 @@ export const DivObectifsContent = styled.div`
   }
   @media (max-width: 640px) {
     padding: 2rem 7% 3rem 7%;
+    background-size: contain;
+  }
+  @media (max-width: 610px) {
     background-size: cover;
   }
+
   @media (max-width: 420px) {
     padding: 3rem 2rem;
   }

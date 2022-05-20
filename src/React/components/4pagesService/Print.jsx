@@ -14,6 +14,7 @@ const Print = () => {
         h3Illustration={datasPrint.illustrations.title}
         h3Title={datasPrint.title}
         illustrationCard={datasPrint.illustrations.illustration}
+        colorbtnhover={datasPrint.colors.normal}
       />
       <WhyComponent
         title={datasPrint.subtitles.why.title}
@@ -35,8 +36,10 @@ const Print = () => {
         id="prestations"
         intro={datasPrint.subtitles.services.intro}
         bck={datasPrint.subtitles.services.background}
+        bckSize='cover'
         services={datasPrint.subtitles.services.services}
         circle={circle}
+        circleIntro={datasPrint.subtitles.why.background}
       />
     </>
   )

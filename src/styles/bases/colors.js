@@ -1,14 +1,23 @@
 const colors = {
   primary: '#0B7189', //bleu cannard
-  primaryDark : '#0D4F6C', // Bleu Navy
+  primaryDark: '#0D4F6C', // Bleu Navy
+
   secondary: '#EBCA94', //doré crème
   secondaryMiddle: '#f0d7af', //doré crème moyen
   secondaryLight: '#f5e5ca', //doré crème clair
   tertiary: '#FAF2E4', //doré crème très clair
+  test: '#FFF2D1', //jaune background
+
   background: '#ffffff', //blanc
+  transparent: '#ffffff00', //transparent
+
+
   color1: '#FFEEAD', //jaune
-  color1clair: '#FFFEF7', //jaune clair 
+  color1clair: '#FFFEF7', //jaune clair
   color1Dark: '#D8C271', //jaune foncé
+
+
+
   color2: '#F9C5D5', //rose
   color2clair: '#FFFAFB', //rose clair
   color2Dark: '#F29FB8', //rose foncé

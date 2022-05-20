@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
 import colors from '../../bases/colors'
 
@@ -9,17 +9,21 @@ export const NavServicesStyle = styled.nav`
     align-items: baseline;
     padding: 3rem 0 2rem 0;
     @media (max-width: 750px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.6rem;
+      gap: 0.8rem;
     }
     @media (max-width: 640px) {
-      padding: 2rem 0 0rem 0;
+      flex-direction: column;
+      padding: 2rem 0 0.2rem 0;
       gap: 1rem;
     }
     @media (max-width: 420px) {
       grid-template-columns: 1fr;
       gap: 1rem;
+    }
+    & > li {
+      @media (max-width: 640px) {
+        width: 100%;
+      }
     }
     & > li > a {
       display: block;
@@ -30,33 +34,38 @@ export const NavServicesStyle = styled.nav`
       text-decoration: none;
       text-transform: uppercase;
       margin: 0 0.5rem;
-      min-width: 9rem;
+      min-width: 11rem;
+      @media (max-width: 950px) {
+        min-width: 9rem;
+        padding: 0.6rem 1rem;
+      }
       @media (max-width: 750px) {
+        min-width: 8rem;
         margin: 0rem;
+        font-size: 1.1rem;
+        padding: 0.6rem;
       }
     }
   }
 `
-export const LinkSecondaryStyle = styled(Link)`
-  background-color: ${colors.primary};
-  font-weight: 500;
+export const LinkSecondaryStyle = styled(HashLink)`
+  background-color: ${colors.primaryDark};
+  font-weight: 600;
   color: ${colors.background};
-  border: solid 2px ${colors.primary};
-  box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
-  transition: color 0.2s, border 0.2s, background-color 0.5s;
+  border: solid 3px ${colors.primaryDark};
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  transition: background-color 400ms, border 400ms, box-shadow 400ms ease-out;
   &:hover {
-    border: solid 2px ${colors.primaryDark};
-    background-color: ${colors.primaryDark};
+    border: solid 3px ${colors.secondary};
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: ${colors.secondary};
   }
 `
-export const LinkSecondaryStyleActive = styled(Link)`
-  background-color: ${colors.background};
-  color: ${colors.primary};
-  border: 2px solid ${colors.primary};
-  box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
+export const LinkSecondaryStyleActive = styled(HashLink)`
+  background-color: ${colors.secondary};
+  color: ${colors.background};
+  border: 3px solid ${colors.secondary};
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   font-weight: 700;
-  &:hover {
-    border: solid 2px ${colors.primaryDark};
-    color: ${colors.primaryDark};
-  }
+  transition: box-shadow 400ms ease-out;
 `

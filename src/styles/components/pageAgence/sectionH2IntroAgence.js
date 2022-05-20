@@ -1,6 +1,5 @@
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
-import colors from '../../bases/colors'
 
 export const UlButtonContainer = styled.ul`
   display: flex;
@@ -9,47 +8,41 @@ export const UlButtonContainer = styled.ul`
   padding: 2rem 0 5rem 0;
   @media (max-width: 750px) {
     padding: 2rem 0 2rem 0;
-    }
-
-  & > li > a {
-    display: block;
-    min-width: 12rem;
-    padding: 0.6rem 2rem;
-    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
   }
   & > li {
     @media (max-width: 750px) {
       width: 100%;
-      margin: 0.6rem 0rem;
-      padding: 0 2rem;
     }
     @media (max-width: 420px) {
-      width: 100%;
-      margin: 0.6rem 0rem;
       padding: 0rem;
     }
-
   }
-  @media (max-width: 750px) {
-    flex-direction: column;
-    align-items: center;
-    ${'' /* padding: 2rem 7% 2rem 7%; */}
+  & > li > a {
+    display: block;
+    min-width: 12rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    margin: 0.6rem;
+    @media (max-width: 750px) {
+      margin: 0.6rem 0;
+    }
   }
 `
 export const LinkButtonServices = styled(HashLink)`
-  background-color: ${colors.primary};
+  background-color: ${(props) => props.btncolorbck};
   border-radius: 2rem;
-  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: ${colors.background};
-  border: solid 2px ${colors.primary};
-  box-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
-  transition: color 0.2s, border 0.2s, background-color 0.5s;
-  margin: 0 0.5rem;
+  font-weight: 500;
+  color: ${(props) => props.btncolortxt};
+  box-shadow: ${(props) => props.boxshadow === 'true' ? '0 3px 8px rgba(0, 0, 0, 0.4)' : ''};
+  transition: background-color 600ms, box-shadow 400ms cubic-bezier(.2,.63,.55,.97);
   &:hover {
-    border: solid 2px ${colors.primaryDark};
-    background-color: ${colors.primaryDark};
+    background-color: ${(props) => props.btncolorhover};
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
   }
 `

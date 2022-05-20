@@ -1,4 +1,5 @@
 import React from 'react'
+import colors from '../../../styles/bases/colors'
 import {
   UlButtonContainer,
   LinkButtonServices,
@@ -13,13 +14,37 @@ const SectionH2IntroAgence = () => {
     <H2Intro id="agence" title={title} content={content}>
       <UlButtonContainer>
         <li>
-          <LinkButtonServices to="/#prestations">Prestations</LinkButtonServices>
+          <LinkButtonServices
+            btncolorbck={colors.primaryDark}
+            btncolorhover={colors.secondary}
+            btncolortxt={colors.background}
+            boxshadow='true'
+            to="/#noservices"
+          >
+            Nos services
+          </LinkButtonServices>
         </li>
         <li>
-          <LinkButtonServices to="/#objectifs">Objectifs</LinkButtonServices>
+          <LinkButtonServices
+            btncolorbck={colors.primaryDark}
+            btncolorhover={colors.secondary}
+            btncolortxt={colors.background}
+            boxshadow='true'
+            to="/#nosobjectifs"
+          >
+            Nos objectifs
+          </LinkButtonServices>
         </li>
         <li>
-          <LinkButtonServices to="/#valeurs">Valeurs</LinkButtonServices>
+          <LinkButtonServices
+            btncolorbck={colors.primaryDark}
+            btncolorhover={colors.secondary}
+            btncolortxt={colors.background}
+            boxshadow='true'
+            to="/#nosvaleurs"
+          >
+            Nos valeurs
+          </LinkButtonServices>
         </li>
       </UlButtonContainer>
     </H2Intro>

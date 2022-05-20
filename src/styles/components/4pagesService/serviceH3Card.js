@@ -3,6 +3,9 @@ import waveCard from '../../../assets/shapes/waveCard.svg'
 
 export const SectionCard = styled.section`
   padding: 8rem 7% 2rem 7%;
+  @media (max-width: 420px) {
+    padding: 8rem 2rem 2rem 2rem;
+  }
 `
 export const DivProfileCard = styled.div`
   width: 100%;
@@ -25,11 +28,10 @@ export const ImgSVGTitle = styled.img`
 export const UlCardStyle = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: flex-end;
   padding: 1rem 0;
   height: 23rem;
-  z-index: 3;
   @media (max-width: 1440px) {
   }
   @media (max-width: 1240px) {
@@ -49,7 +51,6 @@ export const UlCardStyle = styled.ul`
   }
 `
 export const LiCardstyle = styled.li`
-  z-index: 2;
   & > a {
     font-weight: 600;
     padding: 1rem 2rem;
@@ -90,24 +91,6 @@ export const DivImagesContainer = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-`
-export const ImgSVGLogoDore = styled.img`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  max-width: 17.5rem;
-  z-index: 0;
-
-  @media (max-width: 950px) {
-    max-width: 12rem;
-  }
-  @media (max-width: 640px) {
-    visibility: hidden;
-  }
-  @media (max-width: 420px) {
-    visibility: visible;
-  }
-
 `
 export const ImgSVGIllustrationCard = styled.img`
   position: absolute;
