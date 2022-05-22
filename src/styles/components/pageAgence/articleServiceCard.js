@@ -107,6 +107,9 @@ export const DivText = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  & > div {
+    display: inline-block;
+  }
 `
 export const ImgCommasStart = styled.img`
   height: 1.8rem;

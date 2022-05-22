@@ -5,7 +5,7 @@ import colors from '../bases/colors'
 export const BurgerContainer = styled.div`
   display: none;
   @media (max-width: 950px) {
-    height: 5.7rem;
+    height: 4rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -16,7 +16,7 @@ export const NavBurgerContainer = styled.nav`
   flex-direction: column;
 `
 export const ImgBurger = styled.img`
-  height: 2rem;
+  height: 1.8rem;
   width: auto;
 `
 export const UlMenuBurger = styled.ul`
@@ -29,6 +29,10 @@ export const UlMenuBurger = styled.ul`
   background-color: ${colors.primaryDark}E6;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   border-top: solid 3px ${colors.secondary};
+  @media (max-width: 950px) {
+    top: 4.2rem;
+  }
+
   @media (max-width: 800px) {
     width: 50%;
   }
@@ -49,6 +53,7 @@ export const UlMenuBurger = styled.ul`
       text-transform: uppercase;
       font-size: 1rem;
       width: 100%;
+
       @media (max-width: 800px) {
         padding: 1rem 2rem;
       }

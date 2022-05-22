@@ -4,7 +4,7 @@ import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 
 export const HeaderStyle = styled.header`
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
   top: 0;
@@ -19,18 +19,18 @@ export const DivHeaderContent = styled.div`
   max-width: 1620px;
   margin: auto;
   padding: 0rem 7%;
-  @media (max-width: 850px) {
-    padding: 0rem 7%;
-  }
   @media (max-width: 420px) {
     padding: 0rem 2rem;
   }
-
 `
 export const ImgStyle = styled.img`
-  max-width: 160px;
-  min-width: 100px;
-  padding: 1rem 0;
+  max-height: 4.5rem;
+  min-width: 2rem;
+  padding: 0.6rem 0;
+  @media (max-width: 1024px) {
+    max-height: 4rem;
+  }
+
 `
 export const NavStyle = styled.nav`
   display: flex;
@@ -39,19 +39,16 @@ export const NavStyle = styled.nav`
     justify-content: end;
     align-items: start;
     & > li {
-      margin-left: 3rem;
       position: relative;
-      @media (max-width: 1023px) {
-        margin-left: 1rem;
-      }
-      &:hover {
-        background-color: ${colors.primaryDark};
-      }
     }
     & > li > div {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 0 1.8rem;
+      @media (max-width: 1024px) {
+        padding: 0 1.2rem;
+      }
     }
   }
   @media (max-width: 950px) {
@@ -59,6 +56,7 @@ export const NavStyle = styled.nav`
   }
 `
 export const NavLinkStyle = styled(NavLink)`
+  padding: 1.8rem 0;
   border-top: solid 3px rgba(0, 0, 0, 0);
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   font-family: ${fonts.titles};
@@ -66,7 +64,6 @@ export const NavLinkStyle = styled(NavLink)`
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
-  padding: 2.2rem 1rem;
   transition: font-weight 0.1s, color 0.2s, text-shadow 0.3s;
   &:hover {
     font-weight: 400;
@@ -75,10 +72,7 @@ export const NavLinkStyle = styled(NavLink)`
   }
 `
 export const ImgMenuArrow = styled.img`
-  width: 2rem;
-  padding: 0rem 1rem 0rem 0rem;
+  width: 1rem;
+  margin: 0 0rem 0 1rem;
   border-top: solid 3px rgba(0, 0, 0, 0);
-  @media (max-width: 950px) {
-    padding: 0rem 0rem 0rem 1rem;
-  }
 `

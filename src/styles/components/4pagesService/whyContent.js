@@ -14,6 +14,12 @@ export const DivWhyContent = styled.div`
   @media (max-width: 1024px) {
     padding: 4rem 0 0 0;
   }
+  @media (max-width: 640px) {
+    padding: 3rem 0 0 0;
+  }
+  @media (max-width: 420px) {
+    padding: 2rem 0 0 0;
+  }
 
   @media (max-width: 750px) {
     background: url(${(props) => props.circle}) no-repeat top center;

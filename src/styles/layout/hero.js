@@ -248,6 +248,11 @@ export const ButtonsContainer = styled.div`
   @media (max-width: 950px) {
     padding: 2rem 0 0 0;
   }
+  @media (max-width: 400px) {
+    flex-direction: column;
+    gap: .8rem;
+    padding: .8rem 0 0 0;
+  }
 `
 export const LinkServices = styled(HashLink)`
   background-color: ${colors.secondary};

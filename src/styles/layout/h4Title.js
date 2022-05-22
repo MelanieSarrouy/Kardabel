@@ -2,13 +2,26 @@ import styled from "styled-components"
 import fonts from "../bases/fonts"
 
 export const DivH4Container = styled.div`
-  padding: 7rem 7% 4rem 7%;
+  padding: 6rem 7% 4rem 7%;
   display: flex;
   align-items: baseline;
-  @media (max-width: 420px) {
-    padding: 7rem 2rem 4rem 2rem;
+  @media (max-width: 1200px) {
+    padding: 5rem 7% 3rem 7%;
   }
 
+  @media (max-width: 1024px) {
+    padding: 5rem 7% 2rem 7%;
+  }
+  @media (max-width: 950px) {
+    padding: 4.5rem 7% 2rem 7%;
+  }
+  @media (max-width: 640px) {
+    padding: 4.5rem 7% 1rem 7%;
+  }
+
+  @media (max-width: 420px) {
+    padding: 4.5rem 2rem 1rem 2rem;
+  }
 `
 export const SvgH4Trio = styled.img`
   width: 2.6rem;
@@ -34,6 +47,10 @@ export const SvgH4Trio = styled.img`
   @media (max-width: 640px) {
     width: 1.5rem;
     margin-right: 0.6rem;
+  }
+  @media (max-width: 460px) {
+    width: 1.2em;
+    margin-right: 0.5rem;
   }
   @media (max-width: 350px) {
     width: 1.1rem;
@@ -65,12 +82,12 @@ export const H4Style = styled.h4`
     font-size: 2rem;
     line-height: 3rem;
   }
-  ${'' /* @media (max-width: 420px) {
-    font-size: 1.8rem;
-  } */}
+  @media (max-width: 460px) {
+    font-size: 1.7rem;
+  }
   @media (max-width: 350px) {
     font-size: 1.6rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
 
   }
 

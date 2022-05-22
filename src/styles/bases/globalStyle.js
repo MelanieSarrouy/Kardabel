@@ -74,27 +74,4 @@ export const GlobalStyle = createGlobalStyle`
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     }
   }
-  .book-card-container {
-    &.flipped {
-      .book-front {
-        transform: rotate(180deg);
-      }
-      .book-back {
-        transform: rotate(0deg);
-      }
-    }
-    .book-front,
-    .book-back {
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-      transition: transform ease 500ms;
-    }
-    .book-front {
-      z-index: 2;
-      transform: rotateY(0deg);
-    }
-    .book-back {
-      transform: rotateY(-180deg);
-    }
-  }
 `

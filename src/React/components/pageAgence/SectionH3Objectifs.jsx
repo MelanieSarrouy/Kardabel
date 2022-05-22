@@ -4,7 +4,6 @@ import {
   SectionObjectifs,
   DivImgObjContainer,
   DivObectifsContent,
-  ImgObjContainer,
   PTextObjectifs,
 } from '../../../styles/components/pageAgence/sectionH3Objectifs'
 import H3TrioTitle from '../../layout/H3TrioTitle'
@@ -29,7 +28,7 @@ const SectionH3Objectifs = () => {
         </PTextObjectifs>
       </DivObectifsContent>
       <DivImgObjContainer>
-        <ImgObjContainer src={objectifsImage} alt="illustration femme sur echelle avec ampoule" />
+        <img src={objectifsImage} alt="illustration femme sur echelle avec ampoule" />
       </DivImgObjContainer>
     </SectionObjectifs>
   )

@@ -35,11 +35,19 @@ const Header = () => {
     setSubmenu2(!submenu2)
     setSubmenu1(false)
   }
+  const handleCloseDropdowns = () => {
+    if (submenu1) {
+      setSubmenu1(false)
+    }
+    if (submenu2) {
+      setSubmenu2(false)
+    }
+  }
 
   return (
-    <HeaderStyle>
+    <HeaderStyle onClick={() => handleCloseDropdowns()}>
       <DivHeaderContent>
-        <Link to="/">
+        <Link to="/" onClick={() => handleClickClose()}>
           <ImgStyle src={logo} alt="logo" width={160} />
         </Link>
         <NavStyle>

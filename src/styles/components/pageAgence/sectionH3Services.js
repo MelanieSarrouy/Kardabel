@@ -6,7 +6,7 @@ import { HashLink } from 'react-router-hash-link'
 export const SectionServices = styled.section`
   background: no-repeat center center url(${backgroundVectorServices});
   background-size: cover;
-  padding-top: 5.5rem;
+  padding-top: 5rem;
   @media (max-width: 950px) {
     background: linear-gradient(
       180deg,
@@ -20,12 +20,12 @@ export const SectionServices = styled.section`
 export const DivServices = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 7% 4rem 7%;
+  padding: 1rem 7% 4rem 7%;
   @media (max-width: 950px) {
-    padding: 1rem 7% 0rem 7%;
+    padding: 1rem 7%;
   }
   @media (max-width: 420px) {
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 1rem 2rem;
   }
 `
 export const UlServicesContent = styled.ul`

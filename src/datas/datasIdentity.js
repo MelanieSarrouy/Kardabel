@@ -20,13 +20,13 @@ export const datasIdentity = {
   },
   subtitles: {
     why: {
-      title: 'L\'Identité visuelle, kesako',
+      title: 'Kesako ?',
       background: backgroundCard,
       side: 'left',
       content: 'L\'identité visuelle ou identité graphique est un ensemble d\'éléments visuels cohérents qui permettent de reconnaître une marque ou une structure au premier coup d\'œil. \n Ces différents éléments sont le logo, la typographie, les couleurs, les icônes, les pictogrammes, etc. \n Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.',
     },
     benefits: {
-      title: 'Avantages d’une identité visuelle',
+      title: 'Avantages',
       cards: [
         {
           title: 'Se démarquer',
@@ -50,7 +50,7 @@ export const datasIdentity = {
       ],
     },
     services: {
-      title: 'Kardabel vous propose',
+      title: 'Prestations',
       intro: 'Puisqu\'une image vaut mille mots, trouvons ensemble la bonne image, la vôtre... \n Votre identité visuelle vous représente, elle doit être simple, puissante et efficace. \n Kardabel est là pour vous guider et vous conseiller au mieux en fonction de vos besoins.',
       background: servicesBackground,
       circleService : backgroundCard,

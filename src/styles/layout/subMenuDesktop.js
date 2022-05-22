@@ -5,7 +5,7 @@ import fonts from '../bases/fonts'
 
 export const UlSubMenu = styled.ul`
   position: absolute;
-  top: 5.5rem;
+  top: 4.8rem;
   right: 0rem;
   display: flex;
   flex-direction: column;
@@ -25,12 +25,16 @@ export const UlSubMenu = styled.ul`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 1rem 1.8rem;
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
       font-family: ${fonts.titles};
       text-transform: uppercase;
       font-size: 1rem;
       width: 100%;
+      @media (max-width: 1024px) {
+        padding: 1rem 1.2rem;
+      }
+
       @media (max-width: 950px) {
         padding: 1rem 21% 1rem 2rem;
       }
@@ -60,8 +64,7 @@ export const SubNavLinkStyle = styled(HashLink)`
     &:hover {
       background-color: ${colors.primaryDark};
     }
-      }
-
+  }
 `
 export const SubNavLinkStyleActive = styled(HashLink)`
   background-color: ${colors.secondary};

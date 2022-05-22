@@ -6,20 +6,29 @@ export const SectionObjectifs = styled.section`
   justify-content: space-between;
   align-items: center;
   margin: 0rem 0 5rem 0;
-  padding-top: 5.5rem;
+  padding-top: 5rem;
+  background: left center/ contain no-repeat url(${backgroundVectorObectifs});
+  position: relative;
   @media (max-width: 1200px) {
     margin: 0 0 3rem 0;
   }
   @media (max-width: 950px) {
-   flex-direction: column;
-   align-items: start;
-   margin: 0rem;
+    background: left top/ contain no-repeat url(${backgroundVectorObectifs});
+    background-size: 70%;
   }
+  @media (max-width: 820px) {
+    background: left center/ contain no-repeat url(${backgroundVectorObectifs});
+  }
+
   @media (max-width: 750px) {
-   margin: 0 0 2rem 0;
+    margin: 0 0 2rem 0;
   }
+  @media (max-width: 600px) {
+    background: left center/ cover no-repeat url(${backgroundVectorObectifs});
+  }
+
   @media (max-width: 640px) {
-   margin: 0rem;
+    margin: 0rem;
   }
 `
 export const DivObectifsContent = styled.div`
@@ -27,24 +36,23 @@ export const DivObectifsContent = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  background: left center/ contain no-repeat url(${backgroundVectorObectifs});
   width: 60%;
-  padding: 4rem 7%;
+  padding: 1rem 7%;
   @media (max-width: 1320px) {
     width: 70%;
   }
   @media (max-width: 1200px) {
-    padding: 2rem 7%;
+    padding: 1rem 7%;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 1080px) {
+    width: 80%;
+  }
+  @media (max-width: 820px) {
     width: 100%;
   }
+
   @media (max-width: 640px) {
-    padding: 2rem 7% 3rem 7%;
-    background-size: contain;
-  }
-  @media (max-width: 610px) {
-    background-size: cover;
+    padding: 1rem 7% 3rem 7%;
   }
 
   @media (max-width: 420px) {
@@ -65,21 +73,13 @@ export const DivImgObjContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 40%;
-  @media (max-width: 1320px) {
-    width: 30%;
-  }
   @media (max-width: 950px) {
-    width: 100%;
-    justify-content: flex-end;
-    align-items: end;
-    margin-top: -3rem;
+    position: absolute;
+    right: 0;
+    bottom: 6.5rem;
+    width: 36%;
   }
-  @media (max-width: 750px) {
+  @media (max-width: 820px) {
     display: none;
-  }
-`
-export const ImgObjContainer = styled.img`
-  @media (max-width: 950px) {
-    width: 50%;
   }
 `

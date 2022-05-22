@@ -25,7 +25,7 @@ export const SvgH2Trio = styled.img`
     width: 2.2rem;
     margin-right: 1rem;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     width: 1.6rem;
     margin-right: .5rem;
   }
@@ -52,7 +52,7 @@ export const H2TitleStyle = styled.h2`
   @media (max-width: 480px) {
     font-size: 3rem;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     font-size: 2.2rem;
   }
 `

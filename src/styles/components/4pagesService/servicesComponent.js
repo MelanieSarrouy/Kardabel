@@ -8,15 +8,16 @@ export const DivServicesIntro = styled.div`
   flex-wrapo: wrap;
   background: url(${(props) => props.circleIntro}) no-repeat center ${(props) => props.side};
   background-size: contain;
-
   width: 100%;
   padding: 2rem 7% 2rem 7%;
   margin-bottom: 4rem;
   @media (max-width: 640px) {
-    padding: 0 7% 3rem 7%;
+    padding: 1rem 7% 1rem 7%;
+    margin-bottom: 3rem;
   }
   @media (max-width: 420px) {
-    padding: 0 2rem 3rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-bottom: 2rem;
   }
   & > p {
     font-size: 1.8rem;

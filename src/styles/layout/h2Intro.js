@@ -7,13 +7,6 @@ export const SectionIntro = styled.section`
   justify-content: center;
   max-width: 1440px;
   margin: 14rem auto 0 auto;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(250, 242, 228, 1) 35%,
-    rgba(250, 242, 228, 1) 65%,
-    rgba(255, 255, 255, 1) 100%
-  );
   @media (max-width: 1520px) {
     margin-top: 16rem;
   }
@@ -64,6 +57,8 @@ export const TextIntro = styled.div`
     text-align: center;
     line-height: 3rem;
     padding: 1rem 7% 2rem 7%;
+
+
     @media (max-width: 950px) {
       padding: 0.8rem 0 2rem 0;
       font-size: 1.7rem;
