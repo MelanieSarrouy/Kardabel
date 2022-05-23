@@ -6,56 +6,65 @@ export const DivWhyContent = styled.div`
   background: url(${(props) => props.circle}) no-repeat center ${(props) => props.side};
   background-size: contain;
   padding: 6rem;
-  margin-top: -2rem;
+  @media (max-width: 1280px) {
+    padding: 4rem 0 4rem 4rem;
+  }
   @media (max-width: 1180px) {
     background: url(${(props) => props.circle}) no-repeat center center;
     padding: 4rem 0;
   }
-  @media (max-width: 1024px) {
-    padding: 4rem 0 0 0;
-  }
-  @media (max-width: 640px) {
-    padding: 3rem 0 0 0;
+  @media (max-width: 750px) {
+    padding: 2.5rem 0;
   }
   @media (max-width: 420px) {
-    padding: 2rem 0 0 0;
-  }
-
-  @media (max-width: 750px) {
-    background: url(${(props) => props.circle}) no-repeat top center;
-    background-size: 80%;
+    padding: 2rem 0;
   }
 `
 export const DivWhyTextContent = styled.div`
-  background-color: ${(props) => props.color};
-  padding: 3rem;
-  border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
-  @media (max-width: 1180px) {
-    padding: 2rem;
+  ${
+    '' /* background-color: white;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   }
-  @media (max-width: 640px) {
-    border-radius: 1rem;
+  @media (max-width: 1180px) {
+    padding: 0rem;
   }
   @media (max-width: 420px) {
     padding: 1rem;
   }
   & > p {
     font-size: 1.8rem;
-    line-height: 2.8rem;
-    text-align: center;
+    line-height: 3rem;
+    text-align: left;
     font-style: italic;
-    font-weight: 500;
-    padding: 0.5rem;
+    font-weight: 600;
+    padding: 0.8rem 0.5rem 0.8rem 5rem;
+    ${
+      '' /* &::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1px;
+    background-color: ${colors.primary};
+    margin-bottom: .4rem;
+  } */
+    }
+    @media (max-width: 1440px) {
+      padding: 0.8rem 0.5rem 0.8rem 3rem;
+    }
     @media (max-width: 1280px) {
       font-size: 1.7rem;
     }
     @media (max-width: 1180px) {
+      text-align: center;
+      padding: 0.8rem 0.5rem;
       font-size: 1.6rem;
       line-height: 2.6rem;
     }

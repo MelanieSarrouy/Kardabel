@@ -39,13 +39,16 @@ export const UlCardStyle = styled.ul`
   padding: 1rem 0;
   height: 23rem;
   @media (max-width: 1440px) {
+    gap: 1.8rem;
   }
   @media (max-width: 1240px) {
+    gap: 1.6rem;
     height: 20rem;
   }
   @media (max-width: 1024px) {
     height: 14rem;
-    gap: 1.6rem;
+    gap: 1.4rem;
+    padding: 0;
   }
   @media (max-width: 750px) {
     height: 10rem;
@@ -65,7 +68,6 @@ export const LiCardstyle = styled.li`
     justify-content: center;
     text-align: center;
     width: 35rem;
-    margin: 0 2rem 0 0;
     @media (max-width: 1440px) {
       width: 50%;
       padding: 1rem 2rem;
@@ -73,8 +75,16 @@ export const LiCardstyle = styled.li`
     @media (max-width: 1240px) {
       padding: 0.8rem 2rem;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1140px) {
       font-size: 1.4rem;
+
+      padding: 0.7rem 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 1.2rem;
+      padding: 0.6rem 2rem;
+
     }
     @media (max-width: 950px) {
       font-size: 1.2rem;

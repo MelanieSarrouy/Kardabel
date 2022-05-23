@@ -39,10 +39,9 @@ export const LinkButtonServices = styled(HashLink)`
   font-weight: 500;
   color: ${(props) => props.btncolortxt};
   box-shadow: ${(props) => props.boxshadow === 'true' ? '0 3px 8px rgba(0, 0, 0, 0.4)' : ''};
-  transition: background-color 600ms, box-shadow 400ms cubic-bezier(.2,.63,.55,.97);
+  transition: background-color 600ms, border 100ms,box-shadow 400ms cubic-bezier(.2,.63,.55,.97);
   &:hover {
     background-color: ${(props) => props.btncolorhover};
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-
   }
 `

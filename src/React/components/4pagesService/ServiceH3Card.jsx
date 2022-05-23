@@ -28,9 +28,9 @@ const ServiceH3Card = (props) => {
           {titlesList.map((element, index) => (
             <LiCardstyle key={index}>
               <LinkButtonServices
-                btncolorbck={colors.tertiary}
+                btncolorbck={colors.primary}
                 btncolorhover={props.colorbtnhover}
-                btncolortxt={colors.primary}
+                btncolortxt={colors.background}
                 boxshadow='true'
                 to={createLink(element)}
               >

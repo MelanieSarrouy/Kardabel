@@ -1,7 +1,7 @@
 import colors from '../styles/bases/colors'
 import titleCard from '../assets/illustrations/h3CardPrint.svg'
 import illustrationCard from '../assets/illustrations/Designer _Flatline-2.svg'
-import backgroundCard from '../assets/shapes/EllipseRose.svg'
+import backgroundCard from '../assets/shapes/EllipseRose-light.svg'
 import servicesBackground from '../assets/illustrations/pink-background.jpg'
 
 export const datasPrint = {
