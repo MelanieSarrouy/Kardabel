@@ -1,10 +1,22 @@
 import styled from "styled-components"
+import colors from "../bases/colors"
 import fonts from "../bases/fonts"
 
 export const DivH4Container = styled.div`
   padding: 6rem 7% 4rem 7%;
   display: flex;
   align-items: baseline;
+  position: relative;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    content: '';
+    width: 15rem;
+    height: .3rem;
+    background-color: ${colors.secondary};
+  }
+
   @media (max-width: 1200px) {
     padding: 5rem 7% 3rem 7%;
   }
@@ -60,9 +72,10 @@ export const SvgH4Trio = styled.img`
 
 export const H4Style = styled.h4`
   font-size: 3.6rem;
-  font-family: ${fonts.titles};
+  font-family: ${fonts.kardabel};
   font-weight: 600;
   line-height: 4rem;
+  color: ${colors.primaryDark};
   @media (max-width: 1440px) {
     font-size: 3.4rem;
   }

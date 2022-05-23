@@ -5,54 +5,41 @@ export const DivServicesIntro = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrapo: wrap;
-  background: url(${(props) => props.circleIntro}) no-repeat center ${(props) => props.side};
-  background-size: contain;
-  width: 100%;
-  padding: 2rem 7% 2rem 7%;
+  padding: 0rem 7% 0rem 7%;
   margin-bottom: 4rem;
-  @media (max-width: 640px) {
-    padding: 1rem 7% 1rem 7%;
-    margin-bottom: 3rem;
+  @media (max-width: 950px) {
+    margin-bottom: 2rem;
   }
   @media (max-width: 420px) {
-    padding: 1rem 2rem 1rem 2rem;
-    margin-bottom: 2rem;
+    padding: 0rem 2rem 0rem 2rem;
   }
   & > p {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.8rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0rem;
     @media (max-width: 1320px) {
       font-size: 1.7rem;
       line-height: 2.5rem;
     }
     @media (max-width: 1180px) {
       font-size: 1.6rem;
-      line-height: 2.2rem;
-      padding: 0.5rem 12rem;
     }
     @media (max-width: 1024px) {
-      padding: 0.5rem 2rem;
     }
     @media (max-width: 950px) {
       font-size: 1.5rem;
-      padding: 0.5rem 6rem;
     }
     @media (max-width: 750px) {
-      padding: 0.5rem 2rem;
     }
     @media (max-width: 640px) {
       font-size: 1.4rem;
       line-height: 2.1rem;
-      padding: 0.5rem 0rem;
     }
     @media (max-width: 450px) {
       font-size: 1.3rem;
       line-height: 1.9rem;
-      padding: 0.5rem 0rem;
     }
   }
 `

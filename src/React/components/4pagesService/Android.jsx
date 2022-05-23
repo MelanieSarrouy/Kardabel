@@ -18,8 +18,7 @@ const Android = () => {
       <WhyComponent
         title={datasAndroid.subtitles.why.title}
         id="kesako"
-        side={datasAndroid.subtitles.why.side}
-        circle={datasAndroid.subtitles.why.background}
+        bck={datasAndroid.subtitles.why.background}
         color={datasAndroid.colors.light}
         content={datasAndroid.subtitles.why.content}
       />
@@ -37,8 +36,6 @@ const Android = () => {
         bck={datasAndroid.subtitles.services.background}
         bckSize='contain'
         services={datasAndroid.subtitles.services.services}
-        circleIntro={datasAndroid.subtitles.why.background}
-
       />
     </>
   )

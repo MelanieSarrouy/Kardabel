@@ -1,8 +1,9 @@
 import colors from '../styles/bases/colors'
 import titleCard from '../assets/illustrations/h3CardIdentity.svg'
 import illustrationCard from '../assets/illustrations/Profile analysis _Flatline-2.svg'
-import backgroundCard from '../assets/shapes/EllipseJaune.svg'
+import whyBackground from '../assets/shapes/why-background-yellow.svg'
 import servicesBackground from '../assets/illustrations/the-great-wave-off-kanagawa.png'
+import backgroundCard from '../assets/shapes/EllipseJaune.svg'
 
 
 export const datasIdentity = {
@@ -20,13 +21,13 @@ export const datasIdentity = {
   },
   subtitles: {
     why: {
-      title: 'Kesako ?',
-      background: backgroundCard,
+      title: 'L\'Identité visuelle, Kesako ?',
+      background: whyBackground,
       side: 'left',
       content: 'L\'identité visuelle ou identité graphique est un ensemble d\'éléments visuels cohérents qui permettent de reconnaître une marque ou une structure au premier coup d\'œil. \n Ces différents éléments sont le logo, la typographie, les couleurs, les icônes, les pictogrammes, etc. \n Au travers de la création d’une image de marque forte, efficace et positive,nous développons votre visibilité et valorisons vos produits et services.',
     },
     benefits: {
-      title: 'Avantages',
+      title: 'Les avantages d\'une identité visuelle',
       cards: [
         {
           title: 'Se démarquer',
@@ -50,10 +51,10 @@ export const datasIdentity = {
       ],
     },
     services: {
-      title: 'Prestations',
-      intro: 'Puisqu\'une image vaut mille mots, trouvons ensemble la bonne image, la vôtre... \n Votre identité visuelle vous représente, elle doit être simple, puissante et efficace. \n Kardabel est là pour vous guider et vous conseiller au mieux en fonction de vos besoins.',
+      title: 'Kardabel vous propose',
+      intro: 'Votre identité visuelle vous représente, elle doit être simple, puissante et efficace. \n Kardabel est là pour vous guider et vous conseiller au mieux en fonction de vos besoins.',
       background: servicesBackground,
-      circleService : backgroundCard,
+      ellipse: backgroundCard,
       services: [
         {
           name: 'Logo',

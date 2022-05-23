@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import colors from '../../bases/colors'
 
 export const DivBackPortfolioCard = styled.div`
   display: flex;
@@ -29,6 +30,7 @@ export const PTitlePortfolioVersoCard = styled.p`
   font-size: 1.8rem;
   font-weight: 700;
   padding: 1rem;
+  color: ${colors.primaryDark};
   @media (max-width: 450px) {
     padding: 0 0 0.5rem 0;
   }

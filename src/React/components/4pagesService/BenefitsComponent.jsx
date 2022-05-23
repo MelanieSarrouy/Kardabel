@@ -31,18 +31,16 @@ const BenefitsComponent = (props) => {
             element.title !== '' ? (
               <div key={index} onClick={() => handleClick(index)}>
                 {flipped === index ? (
-                  <DivCard
-                    bck={'yes'}
-                    color={colors.tertiary}
-                  >
+                  <DivCard bck={'yes'} color={colors.background}>
                     <PTextBenefitCard>{NewlineText(element.content)}</PTextBenefitCard>
                   </DivCard>
                 ) : (
-                  <DivCard
-                    bck={'no'}
-                    color={props.color}
-                  >
-                    <PTitleBenefitCard>{NewlineText(element.title)}</PTitleBenefitCard>
+                  <DivCard bck={'no'} color={props.color}>
+                    <div>
+                      <PTitleBenefitCard color={props.color}>
+                        {NewlineText(element.title)}
+                      </PTitleBenefitCard>
+                    </div>
                   </DivCard>
                 )}
               </div>

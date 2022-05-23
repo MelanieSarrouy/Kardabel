@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 
 export const DivH3Title = styled.div`
@@ -45,10 +46,11 @@ export const SvgH3Trio = styled.img`
   }
 `
 export const H3TitleStyle = styled.h3`
-  font-family: ${fonts.titles};
+  font-family: ${fonts.kardabel};
   font-size: 4.5rem;
   font-weight: 600;
   text-transform: uppercase;
+  color: ${colors.primaryDark};
   @media (max-width: 1280px) {
     font-size: 3.8rem;
   }

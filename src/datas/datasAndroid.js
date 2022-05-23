@@ -3,6 +3,7 @@ import titleCard from '../assets/illustrations/h3CardAndroid.svg'
 import illustrationCard from '../assets/illustrations/Authentication_Flatline-2.svg'
 import backgroundCard from '../assets/shapes/EllipseVerte.svg'
 import servicesBackground from '../assets/illustrations/android.png'
+import whyBackground from '../assets/shapes/why-background-green.svg'
 
 export const datasAndroid = {
   id: 'android',
@@ -19,14 +20,13 @@ export const datasAndroid = {
   subtitles: {
     why: {
       title: 'Android, kesako',
-      background: backgroundCard,
+      background: whyBackground,
       side: 'left',
       content:
         "Un site web permet de mettre en valeur une vitrine et de partager du contenu, alors qu'une application est un outil, un service. \n Proposer une application Android, c’est s’adresser à 84% du marché mondial du smartphone. En France, c’est en moyenne 3,6 heures passées chaque jour sur un mobile. \n Avec une application mobile, il est possible d’avoir une place dans le quotidien de vos utilisateurs.",
     },
     benefits: {
-      title: 'Avantages d’une application',
-      background: backgroundCard,
+      title: 'Les avantages d’une application',
       cards: [
         {
           title: 'Confort',
@@ -55,6 +55,7 @@ export const datasAndroid = {
       intro:
         'Toutes les applications développées par Kardabel sont réactives et user friendly. Elles répondent aux standards visuels actuels grâce notamment aux outils Material Design de Google qui amènent un confort et une accessibilité dans un environnement familier. \n Nos applications Android sont développées selon les principes SOLID avec une clean architecture MVVM : robustesse, maintenabilité, tests unitaires de l’ensemble de la logique métier, réutilisabilité et extensibilité du code pour permettre une évolution rapide selon vos besoins. \n Alors n’hésitez plus, venez discuter avec nous de votre projet et bâtissons ensemble l’application de vos rêves !',
       background: servicesBackground,
+      ellipse: backgroundCard,
       services: '',
     },
   },

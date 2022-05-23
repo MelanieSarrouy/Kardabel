@@ -1,5 +1,5 @@
 import React from 'react'
-import trioBleu from '../../assets/icons/trio-bleu.svg'
+import trioBleu from '../../assets/icons/trio-bleu-dark.svg'
 import { DivH3Title, H3TitleStyle, SvgH3Trio } from '../../styles/layout/h3TrioTitle'
 
 const H3TrioTitle = (props) => {

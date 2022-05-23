@@ -20,8 +20,7 @@ const Identity = () => {
       <WhyComponent
         title={datasIdentity.subtitles.why.title}
         id="kesako"
-        circle={datasIdentity.subtitles.why.background}
-        side={datasIdentity.subtitles.why.side}
+        bck={datasIdentity.subtitles.why.background}
         color={datasIdentity.colors.light}
         content={datasIdentity.subtitles.why.content}
       />
@@ -40,7 +39,6 @@ const Identity = () => {
         bckSize='cover'
         services={datasIdentity.subtitles.services.services}
         circle={circle}
-        circleIntro={datasIdentity.subtitles.why.background}
       />
     </>
   )

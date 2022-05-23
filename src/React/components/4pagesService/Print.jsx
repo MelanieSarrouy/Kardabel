@@ -19,7 +19,7 @@ const Print = () => {
       <WhyComponent
         title={datasPrint.subtitles.why.title}
         id="kesako"
-        side={datasPrint.subtitles.why.side}
+        bck={datasPrint.subtitles.why.background}
         circle={datasPrint.subtitles.why.background}
         color={datasPrint.colors.light}
         content={datasPrint.subtitles.why.content}
@@ -39,7 +39,6 @@ const Print = () => {
         bckSize='cover'
         services={datasPrint.subtitles.services.services}
         circle={circle}
-        circleIntro={datasPrint.subtitles.why.background}
       />
     </>
   )

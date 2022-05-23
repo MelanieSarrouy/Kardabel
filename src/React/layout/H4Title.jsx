@@ -1,6 +1,6 @@
 import React from 'react'
 import { DivH4Container, H4Style, SvgH4Trio } from '../../styles/layout/h4Title'
-import trio from '../../assets/icons/trio-bleu.svg'
+import trio from '../../assets/icons/trio-bleu-dark.svg'
 
 
 const H4Title = (props) => {

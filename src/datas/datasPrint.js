@@ -3,6 +3,7 @@ import titleCard from '../assets/illustrations/h3CardPrint.svg'
 import illustrationCard from '../assets/illustrations/Designer _Flatline-2.svg'
 import backgroundCard from '../assets/shapes/EllipseRose-light.svg'
 import servicesBackground from '../assets/illustrations/pink-background.jpg'
+import whyBackground from '../assets/shapes/why-background-pink.svg'
 
 export const datasPrint = {
   id: 'print',
@@ -19,12 +20,12 @@ export const datasPrint = {
   subtitles: {
     why: {
       title: 'Le Print, kesako',
-      background: backgroundCard,
+      background: whyBackground,
       side: 'left',
       content: 'Le Print désigne l\'ensemble des supports de communication imprimés tels que flyers, affiches, brochures ou cartes de visites, utilisés pour promouvoir une marque ou diffuser un message.\n En complément du digital, il est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires.\n Il marque l\'esprit du lecteur avec une image forte et véhicule votre identité, vos savoir-faire et votre professionnalisme.',
     },
     benefits: {
-      title: 'Avantages du print',
+      title: 'Les avantages du print',
       cards: [
         {
           title: 'Mémorisation',
@@ -52,6 +53,7 @@ export const datasPrint = {
       title: 'Kardabel vous propose',
       intro: 'Le choix en matière de type de support, format et finition est quasi illimité.\n Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
       background: servicesBackground,
+      ellipse: backgroundCard,
       services: [
         {
           name: 'Cartes',

@@ -3,6 +3,7 @@ import titleCard from '../assets/illustrations/h3CardWeb.svg'
 import illustrationCard from '../assets/illustrations/Web development _Flatline-2.svg'
 import backgroundCard from '../assets/shapes/EllipseBleue.svg'
 import servicesBackground from '../assets/illustrations/blue-sky.png'
+import whyBackground from '../assets/shapes/why-background-blue.svg'
 
 export const datasWeb = {
   id: 'web',
@@ -21,12 +22,12 @@ export const datasWeb = {
     why:
     {
       title: 'Le Web, kesako',
-      background: backgroundCard,
+      background: whyBackground,
       side: 'left',
       content: 'Ici, le Web désigne la communication digitale aussi connue sous le nom de communication numérique, c\'est-à-dire la communication via des canaux d\'informations tels que sites web, blogs ou newsletters.\nAujourd’hui une stratégie de communication efficace ne se conçoit pas sans un volet digital. Entre smartphones, tablettes, ordinateurs portables ou de bureau,les nouvelles technologies nous accompagnent partout. \n C’est un univers en perpétuelle évolution, incontournable pour votre visibilité, votre notoriété et votre image dynamique et professionnelle.'
     },
     benefits: {
-      title: 'Avantages du web',
+      title: 'Les avantages du web',
       cards: [
         {
           title: 'Visibilité',
@@ -53,7 +54,8 @@ export const datasWeb = {
     services: {
       title: 'Kardabel vous propose',
       background: servicesBackground,
-      intro: 'Création ou refonte de votre site internet ou landing page. \n Kardabel développe pour vous des sites internet sur-mesure from scratch ou avec le CMS WordPress. \n Nous choisirons ensemble les technologies les mieux adaptées à votre projet.',
+      ellipse: backgroundCard,
+      intro: 'La création ou la refonte de votre site internet, landing page, blog ou newsletter. \n Kardabel développe pour vous des sites internet sur-mesure from scratch ou avec le CMS WordPress. \n Nous choisirons ensemble les technologies les mieux adaptées à votre projet.',
       services: [
         {
           name: 'Webdesign \n (UX UI Design)',

@@ -5,6 +5,7 @@ import {
   DivWhyTextContent,
 } from '../../../styles/components/4pagesService/whyContent'
 
+
 const WhyContent = (props) => {
   return (
     <DivWhyContent circle={props.circle} side={props.side}>

@@ -20,8 +20,7 @@ const Web = () => {
       <WhyComponent
         title={datasWeb.subtitles.why.title}
         id="kesako"
-        side={datasWeb.subtitles.why.side}
-        circle={datasWeb.subtitles.why.background}
+        bck={datasWeb.subtitles.why.background}
         color={datasWeb.colors.light}
         content={datasWeb.subtitles.why.content}
       />
@@ -40,7 +39,6 @@ const Web = () => {
         bckSize='cover'
         services={datasWeb.subtitles.services.services}
         circle={circle}
-        circleIntro={datasWeb.subtitles.why.background}
       />
     </>
   )
