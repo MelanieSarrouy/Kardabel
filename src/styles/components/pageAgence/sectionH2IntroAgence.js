@@ -1,6 +1,5 @@
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
-import fonts from '../../bases/fonts'
 
 export const UlButtonContainer = styled.ul`
   display: flex;

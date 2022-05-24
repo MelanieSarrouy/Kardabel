@@ -57,7 +57,6 @@ export const ImgCurvyStyle = styled.img`
     top: 32rem;
   }
 `
-
 export const HeroContent = styled.div`
   padding: 10rem 7%;
   display: flex;
@@ -75,6 +74,10 @@ export const HeroContent = styled.div`
     padding: 5rem 7%;
     height: 550px;
   }
+  @media (max-width: 420px) {
+    padding: 5rem 2rem;
+  }
+
 `
 export const LogoContainer = styled.div`
   width: 100%;
@@ -95,10 +98,10 @@ export const LogoContainer = styled.div`
     padding: 3rem 4rem 0 0;
   }
   @media (max-width: 640px) {
-    padding: 3rem 0rem 3rem 0;
+    padding: 2rem 0rem 2rem 0;
   }
-  @media (max-width: 460px) {
-    padding: 3rem 0rem 2rem 0rem;
+  @media (max-width: 480px) {
+    padding: 2.5rem 0rem 2.5rem 0rem;
   }
 `
 export const ImgLogo = styled.img`
@@ -113,6 +116,10 @@ export const ImgLogo = styled.img`
   @media (max-width: 710px) {
     max-width: 150px;
   }
+  @media (max-width: 640px) {
+    max-width: 140px;
+  }
+
   @media (max-width: 420px) {
     max-width: 120px;
   }
@@ -162,9 +169,6 @@ export const Baseline = styled.p`
     font-size: 1.2rem;
   }
   @media (max-width: 950px) {
-    font-size: 1.1rem;
-  }
-  @media (max-width: 710px) {
     font-size: 1rem;
   }
   @media (max-width: 640px) {
@@ -182,15 +186,15 @@ export const H1Style = styled.h1`
   font-weight: 300;
   text-transform: uppercase;
   line-height: 2.2rem;
-  padding: 3rem 0 3rem 0.2rem;
+  padding: 3rem 0 2rem 0.2rem;
   @media (max-width: 1280px) {
     font-size: 1.5rem;
-    padding: 2rem 0 2rem 0.2rem;
+    padding: 2rem 0 1rem 0.2rem;
     line-height: 2.2rem;
   }
   @media (max-width: 950px) {
     font-size: 1.3rem;
-    padding: 1rem 0 1rem 0.2rem;
+    padding: 1rem 0 .5rem 0.2rem;
     line-height: 1.8rem;
   }
   @media (max-width: 710px) {
@@ -199,32 +203,39 @@ export const H1Style = styled.h1`
   @media (max-width: 640px) {
     font-size: 1.5rem;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0 1rem 0;
   }
   @media (max-width: 480px) {
     font-size: 1.2rem;
+    padding: 1rem 0 .5rem 0;
   }
 `
 export const SpanTitle = styled.span`
+display: block;
   text-transform: capitalize;
   color: ${colors.secondary};
   font-size: 1.5rem;
   font-weight: 300;
-  line-height: 1.2rem;
+  line-height: 2.2rem;
+  padding: 2rem 0 0 0;
   @media (max-width: 1280px) {
     font-size: 1.2rem;
+    padding: 1rem 0 0 0;
+    line-height: 2rem;
   }
   @media (max-width: 950px) {
     font-size: 1rem;
-  }
-  @media (max-width: 710px) {
-    font-size: 0.9rem;
+    line-height: 1.7rem;
   }
   @media (max-width: 640px) {
     font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 1rem 0 0 0;
   }
   @media (max-width: 480px) {
     font-size: 1rem;
+    line-height: 1.6rem;
+    padding: .5rem 0 0 0;
   }
 `
 export const ButtonsContainer = styled.div`
@@ -234,7 +245,6 @@ export const ButtonsContainer = styled.div`
     display: block;
     width: 10rem;
     text-align: center;
-
     @media (max-width: 950px) {
       width: 8rem;
     }
@@ -276,7 +286,6 @@ export const LinkServices = styled(HashLink)`
   @media (max-width: 640px) {
     padding: 0.5rem 2rem;
     margin: 0 .5rem;
-
   }
   @media (max-width: 350px) {
     padding: 0.5rem 1rem;
@@ -312,7 +321,6 @@ export const LinkContacts = styled(HashLink)`
   @media (max-width: 640px) {
     padding: 0.5rem 2rem;
     margin: 0 .5rem;
-
   }
   @media (max-width: 350px) {
     padding: 0.5rem 1rem;

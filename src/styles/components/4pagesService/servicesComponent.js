@@ -4,7 +4,7 @@ import fonts from '../../bases/fonts'
 export const DivServicesIntro = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   padding: 0rem 7% 0rem 7%;
   margin-bottom: 4rem;
@@ -18,7 +18,7 @@ export const DivServicesIntro = styled.div`
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.8rem;
-    text-align: center;
+    text-align: left;
     padding: 0.5rem 0rem;
     @media (max-width: 1320px) {
       font-size: 1.7rem;
@@ -164,48 +164,6 @@ export const PTextServicesCard = styled.div`
     @media (max-width: 360px) {
       font-size: 120%;
       line-height: 1.6rem;
-
     }
-
-    ${'' /* @media (max-width: 1440px) {
-      font-size: 1.4rem;
-      line-height: 2.2rem;
-    }
-    @media (max-width: 1200px) {
-      font-size: 1.3rem;
-      line-height: 2.1rem;
-    }
-    @media (max-width: 1050px) {
-      font-size: 1.2rem;
-
-      line-height: 1.9rem;
-    }
-    @media (max-width: 1023px) {
-      font-size: 1.5rem;
-      line-height: 2.5rem;
-    }
-
-    @media (max-width: 950px) {
-      font-size: 1.4rem;
-      line-height: 2.3rem;
-    }
-    @media (max-width: 850px) {
-      font-size: 1.5rem;
-      line-height: 2.5rem;
-    }
-
-    @media (max-width: 640px) {
-      font-size: 1.4rem;
-      line-height: 2.3rem;
-    }
-    @media (max-width: 420px) {
-      font-size: 1.3rem;
-      line-height: 2rem;
-    }
-    @media (max-width: 340px) {
-      font-size: 1.2rem;
-      line-height: 1.9rem;
-    }
- */}
   }
 `

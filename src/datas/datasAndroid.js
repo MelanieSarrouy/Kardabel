@@ -53,7 +53,7 @@ export const datasAndroid = {
     services: {
       title: 'Kardabel vous propose',
       intro:
-        'Toutes les applications développées par Kardabel sont réactives et user friendly. Elles répondent aux standards visuels actuels grâce notamment aux outils Material Design de Google qui amènent un confort et une accessibilité dans un environnement familier. \n Nos applications Android sont développées selon les principes SOLID avec une clean architecture MVVM : robustesse, maintenabilité, tests unitaires de l’ensemble de la logique métier, réutilisabilité et extensibilité du code pour permettre une évolution rapide selon vos besoins. \n Alors n’hésitez plus, venez discuter avec nous de votre projet et bâtissons ensemble l’application de vos rêves !',
+        'Toutes les applications développées par Kardabel sont réactives et user friendly. Elles répondent aux standards visuels actuels grâce notamment aux outils Material Design de Google qui amènent un confort et une accessibilité dans un environnement familier. \n Nos applications Android sont développées selon les principes SOLID avec une clean architecture MVVM : robustesse, maintenabilité, tests unitaires de l’ensemble de la logique métier, réutilisabilité et extensibilité du code pour permettre une évolution rapide selon vos besoins. \n Alors n’hésitez plus, discutons ensemble de votre projet et bâtissons l’application de vos rêves !',
       background: servicesBackground,
       ellipse: backgroundCard,
       services: '',

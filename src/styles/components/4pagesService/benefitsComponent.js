@@ -58,29 +58,20 @@ export const DivCard = styled.div`
 export const PTitleBenefitCard = styled.div`
   position: absolute;
   padding: 0.5rem 1rem;
-  bottom: 1rem;
-  left: 2.1rem;
-  @media (max-width: 1140px) {
-    bottom: 0.6rem;
+  bottom: .7rem;
+  left: 2.05rem;
+  @media (max-width: 610px) {
+    bottom: 0.2rem;
+    left: 1.55rem;
   }
-  @media (max-width: 950px) {
-    bottom: 0.8rem;
-  }
-  @media (max-width: 580px) {
-    bottom: 0.7rem;
-    padding: 0.5rem 0.8rem;
-  }
-  @media (max-width: 510px) {
-    padding: 0.5rem 0.7rem;
-  }
-  @media (max-width: 470px) {
+  @media (max-width: 440px) {
     bottom: 0rem;
-    left: 1.5rem;
-    padding: 0.5rem;
+    left: 1.55rem;
   }
   @media (max-width: 380px) {
-    left: 1.1rem;
-    padding: 0rem 0.5rem;
+    bottom: 0rem;
+    left: 1.05rem;
+    padding: 0 .5rem 0 .8rem;
   }
   &::before {
     position: absolute;
@@ -93,7 +84,7 @@ export const PTitleBenefitCard = styled.div`
     background-color: ${(props) => props.color};
   }
   & > p {
-    font-size: 3rem;
+    font-size: 250%;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 3.2rem;
@@ -101,38 +92,26 @@ export const PTitleBenefitCard = styled.div`
     font-family: ${fonts.titles};
     color: ${colors.primary};
     position: relative;
-    @media (max-width: 1440px) {
-      font-size: 2.8rem;
-    }
-    @media (max-width: 1240px) {
-      font-size: 2.6rem;
-    }
     @media (max-width: 1140px) {
-      font-size: 2.2rem;
+      font-size: 210%;
     }
     @media (max-width: 1024px) {
-      font-size: 2rem;
+      font-size: 200%;
     }
     @media (max-width: 950px) {
-      font-size: 2.6rem;
+      font-size: 240%;
     }
-    @media (max-width: 580px) {
-      font-size: 2.4rem;
+    @media (max-width: 640px) {
+      font-size: 210%;
     }
-    @media (max-width: 510px) {
-      font-size: 2.2rem;
+    @media (max-width: 440px) {
+      font-size: 170%;
     }
-    @media (max-width: 470px) {
-      font-size: 2rem;
-    }
-    @media (max-width: 420px) {
-      font-size: 1.7rem;
+    @media (max-width: 400px) {
+      font-size: 150%;
     }
     @media (max-width: 380px) {
-      font-size: 1.6rem;
-    }
-    @media (max-width: 350px) {
-      font-size: 1.4rem;
+      font-size: 135%;
     }
   }
 `
