@@ -1,6 +1,7 @@
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
 import colors from '../../bases/colors'
+import fonts from '../../bases/fonts'
 
 export const NavServicesStyle = styled.nav`
   & > ul {

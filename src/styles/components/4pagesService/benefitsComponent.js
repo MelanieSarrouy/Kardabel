@@ -16,9 +16,7 @@ export const DivBenefitsCards = styled.div`
 `
 export const DivCard = styled.div`
   background: ${(props) =>
-    props.bck === 'yes'
-      ? ``
-      : `no-repeat center center url(${logoBenefitCard2})`}; 
+    props.bck === 'yes' ? `` : `no-repeat center center url(${logoBenefitCard2})`};
   background-color: ${(props) => props.color};
   background-size: 15%;
   border-radius: 1.5rem;
@@ -27,17 +25,24 @@ export const DivCard = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   position: relative;
+  @media (max-width: 1240px) {
+    height: 23rem;
+  }
   @media (max-width: 950px) {
     border-radius: 1rem;
+    height: 20rem;
   }
   @media (max-width: 690px) {
     height: 15rem;
-    padding: 2rem;
   }
-  @media (max-width: 470px) {
+  @media (max-width: 610px) {
+    height: 17rem;
     padding: 1.5rem;
   }
-  @media (max-width: 370px) {
+  @media (max-width: 610px) {
+    height: 20rem;
+  }
+  @media (max-width: 380px) {
     padding: 1rem;
   }
   &:hover {
@@ -52,19 +57,41 @@ export const DivCard = styled.div`
 `
 export const PTitleBenefitCard = styled.div`
   position: absolute;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   bottom: 1rem;
   left: 2.1rem;
+  @media (max-width: 1140px) {
+    bottom: 0.6rem;
+  }
+  @media (max-width: 950px) {
+    bottom: 0.8rem;
+  }
+  @media (max-width: 580px) {
+    bottom: 0.7rem;
+    padding: 0.5rem 0.8rem;
+  }
+  @media (max-width: 510px) {
+    padding: 0.5rem 0.7rem;
+  }
+  @media (max-width: 470px) {
+    bottom: 0rem;
+    left: 1.5rem;
+    padding: 0.5rem;
+  }
+  @media (max-width: 380px) {
+    left: 1.1rem;
+    padding: 0rem 0.5rem;
+  }
   &::before {
-      position: absolute;
-      display: flex;
-      content: '';
-      width: 100%;
-      height: 100%;
-      bottom: 0rem;
-      left: 0.1rem;
-      background-color: ${(props) => props.color};
-    }
+    position: absolute;
+    display: flex;
+    content: '';
+    width: 100%;
+    height: 100%;
+    bottom: 0rem;
+    left: 0.1rem;
+    background-color: ${(props) => props.color};
+  }
   & > p {
     font-size: 3rem;
     text-transform: uppercase;
@@ -89,6 +116,24 @@ export const PTitleBenefitCard = styled.div`
     @media (max-width: 950px) {
       font-size: 2.6rem;
     }
+    @media (max-width: 580px) {
+      font-size: 2.4rem;
+    }
+    @media (max-width: 510px) {
+      font-size: 2.2rem;
+    }
+    @media (max-width: 470px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 420px) {
+      font-size: 1.7rem;
+    }
+    @media (max-width: 380px) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: 350px) {
+      font-size: 1.4rem;
+    }
   }
 `
 export const PTextBenefitCard = styled.div`
@@ -97,38 +142,38 @@ export const PTextBenefitCard = styled.div`
   justify-content: center;
   align-items: center;
   & > p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.6rem;
     text-align: center;
     padding: 0.4rem;
     @media (max-width: 1440px) {
-      font-size: 1.7rem;
-      line-height: 2.7rem;
+      font-size: 1.4rem;
+      line-height: 2.3rem;
     }
     @media (max-width: 1240px) {
-      font-size: 1.6rem;
-      line-height: 2.5rem;
-    }
-    @media (max-width: 1024px) {
-      font-size: 1.4rem;
-      line-height: 2.2rem;
-    }
-    @media (max-width: 950px) {
-      font-size: 1.4rem;
-      line-height: 2.1rem;
-    }
-    @media (max-width: 750px) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       line-height: 2rem;
     }
-    @media (max-width: 690px) {
-      font-size: 1.4rem;
-      line-height: 2.1rem;
+    @media (max-width: 1024px) {
+      line-height: 1.9rem;
     }
-    @media (max-width: 470px) {
-      font-size: 1.2rem;
+    @media (max-width: 950px) {
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+    }
+    @media (max-width: 690px) {
+      font-size: 1.3rem;
       line-height: 1.8rem;
+    }
+    @media (max-width: 610px) {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+    }
+    @media (max-width: 420px) {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      padding: 0.2rem;
     }
   }
 `
@@ -139,8 +184,4 @@ export const DivNoCard = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  & > p {
-    font-weight: 600;
-    padding: 0.5rem;
-  }
 `

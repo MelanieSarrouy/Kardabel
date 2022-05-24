@@ -1,5 +1,6 @@
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
+import fonts from '../../bases/fonts'
 
 export const UlButtonContainer = styled.ul`
   display: flex;
@@ -36,7 +37,7 @@ export const LinkButtonServices = styled(HashLink)`
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   color: ${(props) => props.btncolortxt};
   box-shadow: ${(props) => props.boxshadow === 'true' ? '0 3px 8px rgba(0, 0, 0, 0.4)' : ''};
   transition: background-color 600ms, border 100ms,box-shadow 400ms cubic-bezier(.2,.63,.55,.97);

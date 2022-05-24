@@ -58,7 +58,7 @@ export const datasWeb = {
       intro: 'La création ou la refonte de votre site internet, landing page, blog ou newsletter. \n Kardabel développe pour vous des sites internet sur-mesure from scratch ou avec le CMS WordPress. \n Nous choisirons ensemble les technologies les mieux adaptées à votre projet.',
       services: [
         {
-          name: 'Webdesign \n (UX UI Design)',
+          name: 'Webdesign \n (UX / UI)',
           details:
             'Notre but est de concevoir ou personnaliser des interfaces simples et originales, tout en offrant une expérience utilisateur (UX) conviviale, accessible, intuitive et efficace.',
         },
@@ -83,7 +83,7 @@ export const datasWeb = {
         //     'Pour un meilleur référencement naturel, nous prenons en compte certains élément dès la conception de nos sites. Il ne vous reste plus qu’à fournir des contenus de qualité.',
         // },
         {
-          name: 'Nom de domaine \n hébergement',
+          name: 'Domaine \n hébergement',
           details: 'Nous vous accompagnerons dans le choix du nom de domaine et de l’hébergement.',
         },
         {

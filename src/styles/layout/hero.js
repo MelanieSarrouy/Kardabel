@@ -170,13 +170,13 @@ export const Baseline = styled.p`
   @media (max-width: 640px) {
     font-size: 1.2rem;
     text-align: center;
+    padding: 1rem 0;
   }
   @media (max-width: 480px) {
     font-size: 1rem;
   }
 `
 export const H1Style = styled.h1`
-  font-family: ${fonts.titles};
   font-size: 2.2rem;
   color: ${colors.secondary};
   font-weight: 300;
@@ -199,6 +199,7 @@ export const H1Style = styled.h1`
   @media (max-width: 640px) {
     font-size: 1.5rem;
     text-align: center;
+    padding: 1rem 0;
   }
   @media (max-width: 480px) {
     font-size: 1.2rem;
@@ -207,11 +208,9 @@ export const H1Style = styled.h1`
 export const SpanTitle = styled.span`
   text-transform: capitalize;
   color: ${colors.secondary};
-  font-family: ${fonts.titles};
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.2rem;
-
   @media (max-width: 1280px) {
     font-size: 1.2rem;
   }
@@ -235,6 +234,7 @@ export const ButtonsContainer = styled.div`
     display: block;
     width: 10rem;
     text-align: center;
+
     @media (max-width: 950px) {
       width: 8rem;
     }

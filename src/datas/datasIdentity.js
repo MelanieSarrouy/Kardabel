@@ -58,15 +58,15 @@ export const datasIdentity = {
       services: [
         {
           name: 'Logo',
-          details: 'Création de votre logo avec ou sans baseline \n Logo : élément graphique central de l’identité visuelle. \n Baseline : phrase courte ou slogan, souvent liée au logo.'
+          details: 'Création de votre logo (élément graphique central de l’identité visuelle) avec ou sans baseline (phrase courte ou slogan, souvent liée au logo)'
         },
         {
-          name: 'Charte graphique',
-          details: 'Création ou refonte de votre charte graphique \n Document de référence qui rassemble toutes les règles d’utilisation des éléments graphiques d’une marque'
+          name: 'Charte \n graphique',
+          details: 'Création ou refonte de votre charte graphique (document de référence qui rassemble toutes les règles d’utilisation des éléments graphiques d’une marque)'
         },
         {
-          name: 'Brand Board',
-          details: 'Création de votre Brand Board (ou planche de style) \n Document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle'
+          name: 'Brand \n Board',
+          details: 'Création de votre Brand Board (document qui regroupe sur une seule page tous les éléments graphiques de votre identité visuelle)'
         },
       ],
     },

@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import { NewlineText } from '../../../helpers/newLineText'
 import colors from '../../../styles/bases/colors'
 import {
-  PTextBenefitCard,
-  PTitleBenefitCard,
-} from '../../../styles/components/4pagesService/benefitsComponent'
-import {
   DivServicesBackground,
   DivServicesCardsBackground,
   DivServicesIntro,
+  PTitleServicesCard,
+  PTextServicesCard
 } from '../../../styles/components/4pagesService/servicesComponent'
 import H4Title from '../../layout/H4Title'
 
@@ -34,14 +32,14 @@ const ServicesComponent = (props) => {
                 <DivServicesCardsBackground
                   bckColor={colors.background}
                 >
-                  <PTextBenefitCard>{NewlineText(element.details)}</PTextBenefitCard>
+                  <PTextServicesCard>{NewlineText(element.details)}</PTextServicesCard>
                 </DivServicesCardsBackground>
               ) : (
                 <DivServicesCardsBackground
                   bckColor="white"
                   circle={props.circle}
                 >
-                  <PTitleBenefitCard>{NewlineText(element.name)}</PTitleBenefitCard>
+                  <PTitleServicesCard>{NewlineText(element.name)}</PTitleServicesCard>
                 </DivServicesCardsBackground>
               )}
             </div>
