@@ -8,7 +8,7 @@ import stef from '../../../assets/illustrations/stef-toon.png'
 import {
   DivCoordonnees,
   DivCoordonneesContainer,
-  DivLogoContainer,
+  DivImgLogoContainer,
   ImgIcon,
   PCoordonnees,
   PKardabel,
@@ -23,48 +23,45 @@ const CoordonnéesKardabel = () => {
   return (
     <SectionCoordonnes>
       <DivPortraitsContainer>
-        <div>
+        <article>
           <ImgPortrait src={mel} alt="portrait toon Melanie" width={200} />
           <PName>Mélanie Sarrouy</PName>
           <PJob>
             Développeuse Front-End
             <br /> & Graphiste
           </PJob>
-        </div>
-        <div>
+        </article>
+        <article>
           <ImgPortrait src={stef} alt="portrait toon Stephane" width={200} />
           <PName>Stéphane Warin</PName>
           <PJob>
             Développeur d'applications
             <br /> android
           </PJob>
-        </div>
+        </article>
       </DivPortraitsContainer>
 
-      <div>
-        <DivLogoContainer>
-          <img src={logo} alt="logo" width={160} height={180} />
-        </DivLogoContainer>
         <DivCoordonneesContainer>
+          <DivImgLogoContainer>
+            <img src={logo} alt="logo" width={256} />
+          </DivImgLogoContainer>
           <div>
             <PKardabel>Kardabel</PKardabel>
-            <div>
-              <DivCoordonnees>
-                <ImgIcon src={tel} alt="icon" width={25} />
-                <PCoordonnees>09 77 61 11 90</PCoordonnees>
-              </DivCoordonnees>
-              <DivCoordonnees>
-                <ImgIcon src={mail} alt="icon" width={25} />
-                <PCoordonnees>contact@kardabel.com</PCoordonnees>
-              </DivCoordonnees>
-              <DivCoordonnees>
-                <ImgIcon src={location} alt="icon" width={25} />
-                <PCoordonnees>France, Occitanie</PCoordonnees>
-              </DivCoordonnees>
-            </div>
+
+            <DivCoordonnees>
+              <ImgIcon src={tel} alt="icon" width={25} />
+              <PCoordonnees>09 77 61 11 90</PCoordonnees>
+            </DivCoordonnees>
+            <DivCoordonnees>
+              <ImgIcon src={mail} alt="icon" width={25} />
+              <PCoordonnees>contact@kardabel.com</PCoordonnees>
+            </DivCoordonnees>
+            <DivCoordonnees>
+              <ImgIcon src={location} alt="icon" width={25} />
+              <PCoordonnees>France, Occitanie</PCoordonnees>
+            </DivCoordonnees>
           </div>
         </DivCoordonneesContainer>
-      </div>
     </SectionCoordonnes>
   )
 }
