@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 import { HashLink } from 'react-router-hash-link'
@@ -77,7 +77,6 @@ export const HeroContent = styled.div`
   @media (max-width: 420px) {
     padding: 5rem 2rem;
   }
-
 `
 export const LogoContainer = styled.div`
   width: 100%;
@@ -104,24 +103,37 @@ export const LogoContainer = styled.div`
     padding: 2.5rem 0rem 2.5rem 0rem;
   }
 `
+const logo = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+`
 export const ImgLogo = styled.img`
-  max-width: 250px;
+  width: 250px;
   filter: drop-shadow(0.25rem 0.25rem 0.3rem rgba(0, 0, 0, 0.5));
+  animation: 2400ms cubic-bezier(.4,.33,.14,.97) 2.6s backwards ${logo};
   @media (max-width: 1280px) {
-    max-width: 200px;
+    width: 200px;
   }
   @media (max-width: 950px) {
-    max-width: 180px;
+    width: 180px;
   }
   @media (max-width: 710px) {
-    max-width: 150px;
+    width: 150px;
   }
   @media (max-width: 640px) {
-    max-width: 140px;
+    width: 140px;
   }
 
   @media (max-width: 420px) {
-    max-width: 120px;
+    width: 120px;
   }
 `
 export const TextHeroContainer = styled.div`
@@ -135,6 +147,18 @@ export const TextHeroContainer = styled.div`
     align-items: center;
   }
 `
+const kardabel = keyframes`
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+  }`
+
 export const PTitleStyle = styled.p`
   font-family: ${fonts.kardabel};
   font-size: 5.6rem;
@@ -142,6 +166,7 @@ export const PTitleStyle = styled.p`
   font-weight: 700;
   translatex: -0.2rem;
   text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
+  animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) none ${kardabel};
   @media (max-width: 1280px) {
     font-size: 4.5rem;
   }
@@ -164,7 +189,9 @@ export const Baseline = styled.p`
   font-style: italic;
   color: ${colors.background};
   font-weight: 300;
-  padding: 1rem 0 1rem 0.2rem;
+  padding: 1rem 0 1rem 0.4rem;
+  animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 1.2s both ${kardabel};
+
   @media (max-width: 1280px) {
     font-size: 1.2rem;
   }
@@ -180,21 +207,34 @@ export const Baseline = styled.p`
     font-size: 1rem;
   }
 `
+const agence = keyframes`
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }`
+
 export const H1Style = styled.h1`
   font-size: 2.2rem;
   color: ${colors.secondary};
   font-weight: 300;
   text-transform: uppercase;
   line-height: 2.2rem;
-  padding: 3rem 0 2rem 0.2rem;
+  padding: 3rem 0 2rem 0.4rem;
+  animation: 800ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 2.4s both ${agence};
+
   @media (max-width: 1280px) {
     font-size: 1.5rem;
-    padding: 2rem 0 1rem 0.2rem;
+    padding: 2rem 0 1rem 0.4rem;
     line-height: 2.2rem;
   }
   @media (max-width: 950px) {
     font-size: 1.3rem;
-    padding: 1rem 0 .5rem 0.2rem;
+    padding: 1rem 0 0.5rem 0.4rem;
     line-height: 1.8rem;
   }
   @media (max-width: 710px) {
@@ -207,11 +247,11 @@ export const H1Style = styled.h1`
   }
   @media (max-width: 480px) {
     font-size: 1.2rem;
-    padding: 1rem 0 .5rem 0;
+    padding: 1rem 0 0.5rem 0;
   }
 `
 export const SpanTitle = styled.span`
-display: block;
+  display: block;
   text-transform: capitalize;
   color: ${colors.secondary};
   font-size: 1.5rem;
@@ -235,12 +275,12 @@ display: block;
   @media (max-width: 480px) {
     font-size: 1rem;
     line-height: 1.6rem;
-    padding: .5rem 0 0 0;
+    padding: 0.5rem 0 0 0;
   }
 `
 export const ButtonsContainer = styled.div`
   display: flex;
-  padding: 2.6rem 0 0 0;
+  padding: 2.6rem 0 0 0.4rem;
   & > a {
     display: block;
     width: 10rem;
@@ -260,8 +300,41 @@ export const ButtonsContainer = styled.div`
   }
   @media (max-width: 400px) {
     flex-direction: column;
-    gap: .8rem;
-    padding: .8rem 0 0 0;
+    gap: 0.8rem;
+    padding: 0.8rem 0 0 0;
+  }
+`
+const buttonServices = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  25% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  85% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+`
+const buttonContact = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0vw);
   }
 `
 export const LinkServices = styled(HashLink)`
@@ -278,6 +351,8 @@ export const LinkServices = styled(HashLink)`
     border 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   box-shadow: 0rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
+  animation: 800ms cubic-bezier(.2,.32,.04,1.02) 3400ms backwards ${buttonServices};
+
   @media (max-width: 950px) {
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -285,7 +360,7 @@ export const LinkServices = styled(HashLink)`
   }
   @media (max-width: 640px) {
     padding: 0.5rem 2rem;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
   @media (max-width: 350px) {
     padding: 0.5rem 1rem;
@@ -313,6 +388,8 @@ export const LinkContacts = styled(HashLink)`
   text-decoration: none;
   text-transform: uppercase;
   transition: border 600ms, background-color 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
+  animation: 600ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 3000ms backwards ${buttonContact};
+
   @media (max-width: 950px) {
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -320,7 +397,7 @@ export const LinkContacts = styled(HashLink)`
   }
   @media (max-width: 640px) {
     padding: 0.5rem 2rem;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
   @media (max-width: 350px) {
     padding: 0.5rem 1rem;

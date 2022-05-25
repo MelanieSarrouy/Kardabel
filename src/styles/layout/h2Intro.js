@@ -58,7 +58,6 @@ export const TextIntro = styled.div`
     line-height: 3rem;
     padding: 1rem 7% 2rem 7%;
 
-
     @media (max-width: 950px) {
       padding: 0.8rem 0 2rem 0;
       font-size: 1.7rem;

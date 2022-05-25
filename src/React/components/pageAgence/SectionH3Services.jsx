@@ -23,7 +23,7 @@ const SectionH3Services = () => {
   return (
     <SectionServices id='nosservices'>
       <DivServices>
-        <H3TrioTitle title={'Nos services'} />
+        <H3TrioTitle title={'Nos  services'} />
         <UlServicesContent>
           {services.map((element, index) => (
             <li key={index}>

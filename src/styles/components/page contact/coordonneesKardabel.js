@@ -160,7 +160,7 @@ export const ImgPortrait = styled.img`
   }
 `
 export const PName = styled.p`
-  font-family: ${fonts.style};
+  font-family: ${fonts.signature};
   font-size: 3rem;
   line-height: 2rem;
   font-weight: 600;

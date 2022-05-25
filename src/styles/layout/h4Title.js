@@ -10,17 +10,15 @@ export const DivH4Container = styled.div`
   &::before {
     display: block;
     position: absolute;
-    top: 4rem;
+    top: 4.4rem;
     content: '';
     width: 15rem;
     height: .3rem;
     background-color: ${colors.secondary};
   }
-
   @media (max-width: 1200px) {
     padding: 5rem 7% 3rem 7%;
   }
-
   @media (max-width: 1024px) {
     padding: 5rem 7% 2rem 7%;
   }
@@ -73,6 +71,8 @@ export const SvgH4Trio = styled.img`
 export const H4Style = styled.h4`
   font-size: 3.6rem;
   font-family: ${fonts.kardabel};
+  word-spacing: .6rem;
+  letter-spacing: -2px;
   font-weight: 600;
   line-height: 4rem;
   color: ${colors.primaryDark};
