@@ -6,8 +6,7 @@
 # KARDABEL : site vitrine, services et portfolios
 
 ## To do
-- responsive (in progress)
-- animations CSS
+- animations CSS in progress
 - optimisation performances
 - portfolio print
 - portfolio android

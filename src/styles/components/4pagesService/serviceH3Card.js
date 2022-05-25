@@ -68,6 +68,9 @@ export const LiCardstyle = styled.li`
     justify-content: center;
     text-align: center;
     width: 35rem;
+    &:hover {
+      font-weight: 600;
+    }
     @media (max-width: 1440px) {
       width: 50%;
       padding: 1rem 2rem;
@@ -77,14 +80,11 @@ export const LiCardstyle = styled.li`
     }
     @media (max-width: 1140px) {
       font-size: 1.4rem;
-
       padding: 0.7rem 2rem;
     }
-
     @media (max-width: 1024px) {
       font-size: 1.2rem;
       padding: 0.6rem 2rem;
-
     }
     @media (max-width: 950px) {
       font-size: 1.2rem;

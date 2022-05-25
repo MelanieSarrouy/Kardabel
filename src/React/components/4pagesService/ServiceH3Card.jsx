@@ -31,7 +31,7 @@ const ServiceH3Card = (props) => {
                 btncolorbck={colors.primary}
                 btncolorhover={props.colorbtnhover}
                 btncolortxt={colors.background}
-                boxshadow='true'
+                txtcolorhover={colors.primary}
                 to={createLink(element)}
               >
                 {element}

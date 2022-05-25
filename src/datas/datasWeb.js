@@ -42,7 +42,7 @@ export const datasWeb = {
         {
           title: 'Différenciation',
           content:
-            'Des contenus, un style et un ton différents pour se démarquer de la concurrence. \n L’accessibilité, la simplicité, la réactivité et la personnalisation des interfaces et interactions sont des atouts incontournables du web sur lesquels il faut s’appuyer pour faire la différence.',
+            'Des contenus, un style et un ton différents pour se démarquer de la concurrence. \n L’accessibilité, la simplicité et la personnalisation des interfaces et interactions sont des atouts incontournables du web sur lesquels il faut s’appuyer pour faire la différence.',
         },
         {
           title: 'Développement',

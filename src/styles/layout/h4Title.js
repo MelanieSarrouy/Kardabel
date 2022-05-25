@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import colors from "../bases/colors"
-import fonts from "../bases/fonts"
+import styled from 'styled-components'
+import colors from '../bases/colors'
+import fonts from '../bases/fonts'
 
 export const DivH4Container = styled.div`
   padding: 6rem 7% 4rem 7%;
@@ -12,9 +12,27 @@ export const DivH4Container = styled.div`
     position: absolute;
     top: 4.4rem;
     content: '';
-    width: 15rem;
-    height: .3rem;
+    width: 20%;
+    height: 0.3rem;
     background-color: ${colors.secondary};
+    @media (max-width: 1200px) {
+      top: 3.8rem;
+      width: 22%;
+    }
+    @media (max-width: 950px) {
+      top: 3.6rem;
+      width: 25%;
+    }
+    @media (max-width: 750px) {
+      top: 3.7rem;
+    }
+    @media (max-width: 640px) {
+      top: 3.2rem;
+      width: 30%;
+    }
+    @media (max-width: 450px) {
+      top: 3.4rem;
+    }
   }
   @media (max-width: 1200px) {
     padding: 5rem 7% 3rem 7%;
@@ -25,12 +43,8 @@ export const DivH4Container = styled.div`
   @media (max-width: 950px) {
     padding: 4.5rem 7% 2rem 7%;
   }
-  @media (max-width: 640px) {
-    padding: 4.5rem 7% 1rem 7%;
-  }
-
   @media (max-width: 420px) {
-    padding: 4.5rem 2rem 1rem 2rem;
+    padding: 4.5rem 2rem 2rem 2rem;
   }
 `
 export const SvgH4Trio = styled.img`
@@ -38,40 +52,37 @@ export const SvgH4Trio = styled.img`
   margin-right: 1rem;
   @media (max-width: 1440px) {
     width: 2.4rem;
-    margin-right: .9rem;
+    margin-right: 0.9rem;
   }
   @media (max-width: 1280px) {
     width: 2.2rem;
   }
   @media (max-width: 1023px) {
     width: 2rem;
-    margin-right: .8rem;
+    margin-right: 0.8rem;
   }
   @media (max-width: 950px) {
     width: 1.8rem;
-    margin-right: .7rem;
+    margin-right: 0.7rem;
   }
   @media (max-width: 750px) {
     width: 1.6rem;
+    margin-right: 0.5rem;
   }
   @media (max-width: 640px) {
-    width: 1.5rem;
-    margin-right: 0.6rem;
+    width: 1.4rem;
   }
   @media (max-width: 460px) {
     width: 1.2em;
-    margin-right: 0.5rem;
   }
   @media (max-width: 350px) {
     width: 1.1rem;
-    margin-right: 0.5rem;
   }
 `
-
 export const H4Style = styled.h4`
   font-size: 3.6rem;
   font-family: ${fonts.kardabel};
-  word-spacing: .6rem;
+  word-spacing: 0.5rem;
   letter-spacing: -2px;
   font-weight: 600;
   line-height: 4rem;
@@ -86,14 +97,14 @@ export const H4Style = styled.h4`
     font-size: 2.8rem;
   }
   @media (max-width: 950px) {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   @media (max-width: 750px) {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
   @media (max-width: 640px) {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.9rem;
+    line-height: 2.2rem;
   }
   @media (max-width: 460px) {
     font-size: 1.7rem;
@@ -101,7 +112,5 @@ export const H4Style = styled.h4`
   @media (max-width: 350px) {
     font-size: 1.6rem;
     line-height: 2rem;
-
   }
-
 `

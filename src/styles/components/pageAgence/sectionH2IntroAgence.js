@@ -21,7 +21,7 @@ export const UlButtonContainer = styled.ul`
   }
   & > li > a {
     display: block;
-    min-width: 12rem;
+    min-width: 13rem;
     padding: 0.8rem 2rem;
     font-size: 1.2rem;
     margin: 0.6rem;
@@ -36,12 +36,14 @@ export const LinkButtonServices = styled(HashLink)`
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   color: ${(props) => props.btncolortxt};
-  box-shadow: ${(props) => props.boxshadow === 'true' ? '0 3px 8px rgba(0, 0, 0, 0.4)' : ''};
-  transition: background-color 600ms, border 100ms,box-shadow 400ms cubic-bezier(.2,.63,.55,.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 400ms, border 400ms, color 400ms, box-shadow 400ms cubic-bezier(.2,.63,.55,.97);
   &:hover {
     background-color: ${(props) => props.btncolorhover};
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    color: ${(props) => props.txtcolorhover};
+    font-weight: 600;
   }
 `

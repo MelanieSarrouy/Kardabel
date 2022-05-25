@@ -44,8 +44,8 @@ const WebPortfolioCardBack = (props) => {
               btncolorbck={colors.primaryDark}
               btncolorhover={colors.secondary}
               btncolortxt={colors.background}
-              boxshadow="true"
               to={{ pathname: props.site }}
+              txtcolorhover={colors.background}
               target="_blank"
             >
               {props.site.indexOf(figma) !== -1 ? figma : 'site'}
@@ -58,7 +58,7 @@ const WebPortfolioCardBack = (props) => {
               btncolorbck={colors.primaryDark}
               btncolorhover={colors.secondary}
               btncolortxt={colors.background}
-              boxshadow="true"
+              txtcolorhover={colors.background}
               to={{ pathname: props.code }}
               target="_blank"
             >

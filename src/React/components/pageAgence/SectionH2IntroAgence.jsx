@@ -18,7 +18,7 @@ const SectionH2IntroAgence = () => {
             btncolorbck={colors.primaryDark}
             btncolorhover={colors.secondary}
             btncolortxt={colors.background}
-            boxshadow='true'
+            txtcolorhover={colors.background}
             to="/#nosservices"
           >
             Nos services
@@ -29,7 +29,7 @@ const SectionH2IntroAgence = () => {
             btncolorbck={colors.primaryDark}
             btncolorhover={colors.secondary}
             btncolortxt={colors.background}
-            boxshadow='true'
+            txtcolorhover={colors.background}
             to="/#nosobjectifs"
           >
             Nos objectifs
@@ -40,7 +40,7 @@ const SectionH2IntroAgence = () => {
             btncolorbck={colors.primaryDark}
             btncolorhover={colors.secondary}
             btncolortxt={colors.background}
-            boxshadow='true'
+            txtcolorhover={colors.background}
             to="/#nosvaleurs"
           >
             Nos valeurs

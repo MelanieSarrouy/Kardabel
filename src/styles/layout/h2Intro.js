@@ -5,7 +5,6 @@ export const SectionIntro = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1440px;
   margin: 14rem auto 0 auto;
   @media (max-width: 1520px) {
     margin-top: 16rem;
@@ -56,6 +55,7 @@ export const TextIntro = styled.div`
     font-size: 1.8rem;
     text-align: center;
     line-height: 3rem;
+    max-width: 1440px;
     padding: 1rem 7% 2rem 7%;
 
     @media (max-width: 950px) {
