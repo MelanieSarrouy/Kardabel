@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
+    scroll-padding: 3rem 0 0 0;
   }
   body {
     background-color: white;

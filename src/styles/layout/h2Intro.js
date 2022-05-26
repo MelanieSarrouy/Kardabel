@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SectionIntro = styled.section`
-  padding: 10rem 7% 0rem 7%;
+  padding: 10rem 7% 3rem 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ export const SectionIntro = styled.section`
   }
   @media (max-width: 950px) {
     margin-top: 8rem;
-    padding: 10rem 7% 0rem 7%;
+    padding: 10rem 7% 2rem 7%;
   }
   @media (max-width: 750px) {
     margin-top: 6rem;
@@ -45,7 +45,7 @@ export const SectionIntro = styled.section`
   }
   @media (max-width: 420px) {
     margin-top: 0rem;
-    padding: 9rem 2rem 0rem 2rem;
+    padding: 9rem 2rem 2rem 2rem;
   }
 `
 export const TextIntro = styled.div`

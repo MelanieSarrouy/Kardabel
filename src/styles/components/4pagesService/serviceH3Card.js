@@ -2,15 +2,15 @@ import styled from 'styled-components'
 import waveCard from '../../../assets/shapes/waveCard.svg'
 
 export const SectionCard = styled.section`
-  padding: 6rem 7% 2rem 7%;
+  padding: 3rem 7% 2rem 7%;
   @media (max-width: 950px) {
-    padding: 5.5rem 7% 2rem 7%;
+    padding: 2.5rem 7% 2rem 7%;
   }
   @media (max-width: 640px) {
-    padding: 5.5rem 2rem 0rem 2rem;
+    padding: 2.5rem 2rem 0rem 2rem;
   }
   @media (max-width: 420px) {
-    padding: 5rem 2rem 0rem 2rem;
+    padding: 3rem 2rem 0rem 2rem;
   }
 `
 export const DivProfileCard = styled.div`

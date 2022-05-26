@@ -58,7 +58,7 @@ export const PWorkPortfolioVersoCard = styled.p`
 export const UlTechnosPortfolioVersoCard = styled.ul`
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  ${'' /* flex-wrap: wrap; */}
   justify-content: space-evenly;
   align-items: start;
   width: 100%;
