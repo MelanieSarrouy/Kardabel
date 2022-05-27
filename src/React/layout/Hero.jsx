@@ -6,6 +6,7 @@ import waveAgence from '../../assets/shapes/waveAgence.svg'
 import waveServices from '../../assets/shapes/waveServices.svg'
 import wavePortfolio from '../../assets/shapes/wavePortfolio.svg'
 import waveContact from '../../assets/shapes/waveContact.svg'
+import waveMentions from '../../assets/shapes/waveMentions.svg'
 import colors from '../../styles/bases/colors'
 import fonts from '../../styles/bases/fonts'
 import {
@@ -43,7 +44,8 @@ const Hero = () => {
   const services = page.indexOf('services') > -1
   const portfolio = page.indexOf('portfolio') > -1
   const contact = page.indexOf('contact') > -1
-  const agence = !services && !portfolio && !contact
+  const mentions = page.indexOf('mentions-legales') > -1
+  const agence = !services && !portfolio && !contact && !mentions
 
   return (
     <header>
@@ -68,6 +70,8 @@ const Hero = () => {
       {services && <ImgCurvyStyle src={waveServices} alt="background hero" />}
       {portfolio && <ImgCurvyStyle src={wavePortfolio} alt="background hero" />}
       {contact && <ImgCurvyStyle src={waveContact} alt="background hero" />}
+      {mentions && <ImgCurvyStyle src={waveMentions} alt="background hero" />}
+
     </header>
   )
 }

@@ -13,7 +13,7 @@ export const SectionsH3 = styled.section`
     padding: 2rem 2rem 0rem 2rem;
   }
 `
-export const H3MentionsTitle = styled.div`
+export const H3MentionsTitle = styled.h3`
   padding: 0.8rem 1rem;
   margin-bottom: 0.5rem;
   background-color: ${colors.primaryDark};
@@ -44,7 +44,6 @@ export const H3MentionsTitle = styled.div`
     font-size: 1.2rem;
     padding: 0.4rem 1rem;
   }
-
 `
 export const DivMentionsContainer = styled.div`
   padding: 0.5rem 0;
@@ -57,7 +56,6 @@ export const DivMentionsContainer = styled.div`
     margin-left: 3%;
     width: 97%;
     padding: 0.3rem 0;
-
   }
 `
 export const PTxt = styled.p`
@@ -66,11 +64,11 @@ export const PTxt = styled.p`
   padding: 0.3rem 0;
   @media (max-width: 640px) {
     font-size: 1.2rem;
-  line-height: 1.6rem;
+    line-height: 1.6rem;
   }
   @media (max-width: 420px) {
     font-size: 1rem;
-  line-height: 1.3rem;
+    line-height: 1.3rem;
   }
 `
 export const PBold = styled.p`
@@ -80,7 +78,6 @@ export const PBold = styled.p`
   @media (max-width: 640px) {
     font-size: 1.6rem;
   }
-
 `
 export const LiCredits = styled(PTxt).attrs({
   as: 'li',
@@ -163,19 +160,51 @@ const MentionsLegales = () => {
           <PBold>Photos :</PBold>
           <ul>
             <LiCredits>
-              Page Protfolio-web - site 'ArgentBank' : micheile dot com / Unsplash
+              Page portfolio-web - site 'Kardabel' : Photo by Sharon Pittaway on Unsplash
             </LiCredits>
-            <LiCredits>Page Protfolio-web - site 'HRNet' : barbaracascao / Pixabay</LiCredits>
-            <LiCredits>Page Protfolio-web - site 'GameOn' : Anton / Adobe Stock</LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'L'Abet'Mobile 34' : La Ferme du Contrevent
+            </LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'HRNet' : Photo by barbaracascao on Pixabay
+            </LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'ArgentBank' : Photo by micheile dot com on Unsplash
+            </LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'SportSee' : Photo by Clem Onojeghuo on Unsplash
+            </LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'Kasa' : Photo by Kalen Emsley on Unsplash
+            </LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'Les Petits Plats' : Photo by Chad Montano on Unsplash
+            </LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'FishEye' : Photo by Joanna Malinowska on freestocks
+            </LiCredits>
+            <LiCredits>Page portfolio-web - site 'GameOn' : Anton / Adobe Stock</LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'Ohmyfood' : Photo by Marissa Grootes on Unsplash
+            </LiCredits>
+            <LiCredits>
+              Page portfolio-web - site 'Reservia' : Photo by Annie Spratt on Unsplash
+            </LiCredits>
           </ul>
         </DivMentionsContainer>
         <DivMentionsContainer>
           <PBold>Illustrations :</PBold>
-          <PTxt>...</PTxt>
-        </DivMentionsContainer>
-        <DivMentionsContainer>
-          <PBold>Citations :</PBold>
-          <PTxt>...</PTxt>
+          <ul>
+            <LiCredits>
+              Page services/identite/prestations : Image par Loke_Artemis de Pixabay
+            </LiCredits>
+            <LiCredits>
+              Page services/web/prestations : Image par Image par Rano Purnomo de Pixabay
+            </LiCredits>
+            <LiCredits>
+              Page services/android/prestations : Image de freepng
+            </LiCredits>
+          </ul>
         </DivMentionsContainer>
       </SectionsH3>
       {/* Conditions d’utilisation*/}

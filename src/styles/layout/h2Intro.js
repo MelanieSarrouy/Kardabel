@@ -5,6 +5,7 @@ export const SectionIntro = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 14rem auto 0 auto;
   @media (max-width: 1520px) {
     margin-top: 16rem;

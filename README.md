@@ -10,7 +10,6 @@
 - optimisation performances
 - portfolio print
 - portfolio android
-- mentions légales
 
 ## L'agence
 Kardabel est une agence print & web au service des professionnels, particuliers,associations et institutions. Elle est le partenaire fiable et créatif dont vous avez besoin pour assurer la communication visuelle de vos projets. Confiez-nous la conception de vos supports de communication ! Sites web, applications Android, logos, chartes graphiques, cartes de visite, flyers, affiches, dépliants, PLV, étiquettes, brochures, retouche photo,...
