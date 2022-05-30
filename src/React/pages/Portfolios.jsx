@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import SectionH2IntroPorfolios from '../components/1pagePortfolios/SectionH2IntroPorfolios'
+import SectionH2IntroPorfolios from '../components/page portfolios/SectionH2IntroPorfolios'
 
 const Portfolios = () => {
   

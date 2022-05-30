@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import SectionH2IntroServices from '../components/1pageServices/SectionH2IntroServices'
+import SectionH2IntroServices from '../components/page services/SectionH2IntroServices'
 
 const Services = () => {
   

@@ -1,10 +1,10 @@
 /* IMPORTS */
 
 import React, { useEffect } from 'react'
-import SectionH3Objectifs from '../components/pageAgence/SectionH3Objectifs'
-import SectionH3Valeurs from '../components/pageAgence/SectionH3Valeurs'
-import SectionH2IntroAgence from '../components/pageAgence/SectionH2IntroAgence'
-import SectionH3Services from '../components/pageAgence/SectionH3Services'
+import SectionH3Objectifs from '../components/page agence/SectionH3Objectifs'
+import SectionH3Valeurs from '../components/page agence/SectionH3Valeurs'
+import SectionH2IntroAgence from '../components/page agence/SectionH2IntroAgence'
+import SectionH3Services from '../components/page agence/SectionH3Services'
 
 // JSX // _________________________________________________________________
 

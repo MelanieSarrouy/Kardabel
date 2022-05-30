@@ -78,7 +78,7 @@ export const datasPrint = {
         },
         {
           name: 'PLV',
-          details: 'Banderoles, \n kakémonos, \n ou autres PLV',
+          details: 'Panneaux, \n Banderoles, \n kakémonos, \n ou autres PLV',
         },
         {
           name: 'Packaging',

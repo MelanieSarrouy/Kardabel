@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import colors from '../../styles/bases/colors'
 import fonts from '../../styles/bases/fonts'
-import SectionH2IntroMentionsLegal from '../components/pageMentionsLégales/SectionH2IntroMentionsLegal'
+import SectionH2IntroMentionsLegal from '../components/page mentions légales/SectionH2IntroMentionsLegal'
 
 export const SectionsH3 = styled.section`
   padding: 2rem 7% 1rem 7%;
