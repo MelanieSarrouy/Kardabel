@@ -15,14 +15,15 @@ export const datasPrint = {
   colors: {
     normal: colors.color2,
     light: colors.tertiary,
-    dark: colors.color2Dark
+    dark: colors.color2Dark,
   },
   subtitles: {
     why: {
       title: 'Le Print, kesako',
       background: whyBackground,
       side: 'left',
-      content: 'Le Print désigne l\'ensemble des supports de communication imprimés tels que flyers, affiches, brochures ou cartes de visites, utilisés pour promouvoir une marque ou diffuser un message.\n En complément du digital, il est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d\'éventuels partenaires.\n Il marque l\'esprit du lecteur avec une image forte et véhicule votre identité, vos savoir-faire et votre professionnalisme.',
+      content:
+        "Le Print désigne l'ensemble des supports de communication imprimés tels que flyers, affiches, brochures ou cartes de visites, utilisés pour promouvoir une marque ou diffuser un message.\n En complément du digital, il est essentiel pour communiquer efficacement avec vos clients, prospects, adhérents ou bien d'éventuels partenaires.\n Il marque l'esprit du lecteur avec une image forte et véhicule votre identité, vos savoir-faire et votre professionnalisme.",
     },
     benefits: {
       title: 'Les avantages du print',
@@ -51,58 +52,66 @@ export const datasPrint = {
     },
     services: {
       title: 'Kardabel vous propose',
-      intro: 'Le choix en matière de type de support, format et finition est quasi illimité.\n Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
+      intro:
+        'Le choix en matière de type de support, format et finition est quasi illimité.\n Nous sommes là pour vous conseiller et vous accompagner pour trouver la solution la plus adaptée à votre projet et à votre identité.',
       background: servicesBackground,
       ellipse: backgroundCard,
       services: [
         {
           name: 'Cartes',
           details:
-            'Cartes de visite, \n cartes de fidélité, \n cartes cadeau, \n faires-parts, \n invitations...',
+            "Cartes de visite, \n cartes d'adhésion, \n cartes de fidélité, \n cartes cadeau, \n cartes produit...",
         },
         {
-          name: 'Flyers',
-          details: 'Flyers \ntous formats',
+          name: 'Flyers \n Dépliants',
+          details:
+            'Flyers et tracts tous formats \n Dépliants (2plis, 3 plis, etc) \n plaquettes commerciales, \n plaquettes de présentation., \n programme..',
+        },
+        {
+          name: 'Invitations \n Faire-Part',
+          details: "Tous formats, \n cartons d'invitation, \n cartes de voeux, \n faire-part...",
         },
         {
           name: 'Affiches',
-          details: 'Affiches \n tous formats',
+          details: 'Affiches tous formats \n sur-mesure, \n poster...',
         },
         {
-          name: 'Dépliants',
-          details: 'Dépliants, \n plaquettes commerciales, \n plaquettes de présentation...',
+          name: 'Brochures \n & livrets',
+          details:
+            'Tous formats, \n brochures, livrets, revues, \n catalogues, journaux, \n livres, magazines...',
         },
         {
-          name: 'Brochures',
-          details: 'Brochures, \n livrets, \n journaux, \n magazines, \n livres...',
-        },
-        {
-          name: 'PLV',
-          details: 'Panneaux, \n Banderoles, \n kakémonos, \n ou autres PLV',
+          name: 'PLV \n Signalétique',
+          details:
+            "Roll'up, kakemonos, \n totems, présentoirs,\n drapeaux, oriflammes... \n Bâches, panneaux, \n banderoles, plaques...",
         },
         {
           name: 'Packaging',
-          details: 'Étiquettes \n et packaging',
+          details:
+            "Flexible ou solide, \n sachets, sacs, boites, cartons d'emballage, bouteilles...",
         },
         {
-          name: 'Stickers',
-          details: 'Autocollants, \n marquage sur véhicule',
+          name: 'Étiquettes \n Stickers',
+          details:
+            'Autocollants, \n étiquettes alimentaires, \n étiquettes produit, \n autocollants pour véhicule, \n stickers personnalisés...',
         },
         {
-          name: 'Menus',
-          details: 'Menus \n et cartes de vins',
+          name: 'Hôtellerie \n Restauration',
+          details:
+            'Menus, cartes de vins \n sets de table, sous-verres, \n ecocups (gobelets réutilisables), chevalets de rue...',
         },
         {
-          name: 'Macarons',
-          details: 'Macarons \n pour CD ou vinyles',
+          name: 'CD / DVD \n vinyles',
+          details: 'Macarons, \n pochettes carton, \n jaquettes, livrets...',
         },
         {
           name: 'Dossiers',
-          details: 'CV, \n dossiers de presse, \n etc.',
+          details: 'CV, \n books, portfolios \n dossiers de presse, \n etc.',
         },
         {
-          name: 'Goodies',
-          details: 'Textiles, \n papeterie, \n etc.',
+          name: 'Papeterie \n Goodies',
+          details:
+            'Tampons, calendriers, \n vêtements, sacs, \n clés USB, stylos, \n mugs, portes-clés...',
         },
       ],
     },

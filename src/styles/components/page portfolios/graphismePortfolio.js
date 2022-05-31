@@ -1,6 +1,7 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 import colors from '../../bases/colors'
 import fonts from '../../bases/fonts'
+
 export const DivImgWait = styled.div`
   display: flex;
   align-items: center;
@@ -36,57 +37,58 @@ export const PTextProvisoire = styled.p`
     line-height: 1.9rem;
   }
 `
-export const DivPortfolioGraphicCard = styled.div`
+export const ArcticlePortfolioGraphicCard = styled.article`
   overflow: hidden;
-  border-radius: 1.5rem;
-  max-height: 22rem;
-  position: relative;
+  border-radius: 12px;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
-
 `
 export const ImgPortfolioGraphicCard = styled.img`
-width: 50rem;
-transform: translate(-25%, -10%);
-
+  height: 72%;
+  scale: 1;
+  filter: brightness(80%);
+  transition: filter 400ms ease-in-out;
+  &:hover {
+    filter: brightness(100%);
+  }
 `
 export const DivTitlePortfolioGraphicCard = styled.div`
-  position: absolute;
-  bottom: -1px;
   width: 100%;
-  border-radius: 0 0 1.5rem 1.5rem;
+  border-radius: 0 0 12px 12px;
   background-color: ${colors.background};
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
-  height: 33%;
+  height: 28%;
 `
 export const PTitlePortfolioGraphicCard = styled.p`
   font-family: ${fonts.titles};
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  text-align: center;
-  padding: 0 0 1rem 0;
+  word-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: ${colors.primaryDark};
+  padding: 0 0 1.2rem 0;
 `
 export const UlTagsPortfolioGraphicCard = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: baseline;
-  gap: .5rem;
   & > li {
-    padding: .3rem .5rem;
-    font-size: 1.1rem;
-    background-color: ${colors.background};
-    color: ${colors.primary};
-    border-radius: 1.5rem;
-    width: 6.5rem;
+    font-size: 1rem;
+    color: ${colors.primaryDark};
     text-align: center;
-    border: solid 2px ${colors.primary};
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background-color: ${colors.background};
+    border-radius: 1rem;
+    border: solid 1px ${colors.primary};
   }
 `
-
