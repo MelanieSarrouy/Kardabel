@@ -1,9 +1,9 @@
-import eye from '../assets/icons/vector-eye.svg'
-import sound from '../assets/icons/vector-sound.svg'
-import solution from '../assets/icons/vector-solution.svg'
-import regardImage from '../assets/illustrations/analytics_process_flatline.svg'
-import ecouteImage from '../assets/illustrations/Consulting_Flatline.svg'
-import solutionsImage from '../assets/illustrations/Problem Solving_Flatline.svg'
+import eye from '../../assets/icons/vector-eye.svg'
+import sound from '../../assets/icons/vector-sound.svg'
+import solution from '../../assets/icons/vector-solution.svg'
+import regardImage from '../../assets/illustrations/analytics_process_flatline.svg'
+import ecouteImage from '../../assets/illustrations/Consulting_Flatline.svg'
+import solutionsImage from '../../assets/illustrations/Problem Solving_Flatline.svg'
 
 export const datasValues = [
   {

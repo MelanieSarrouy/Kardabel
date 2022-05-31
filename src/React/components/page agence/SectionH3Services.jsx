@@ -7,8 +7,8 @@ import {
   LinkCardService,
   SectionServices,
   DivServices,
-} from '../../../styles/components/pageAgence/sectionH3Services'
-import { services } from '../../../datas/services'
+} from '../../../styles/components/page agence/sectionH3Services'
+import { services } from '../../../datas/agence/services'
 import H3TrioTitle from '../../layout/H3TrioTitle'
 import { createLink } from '../../../helpers/createLink'
 

@@ -1,9 +1,9 @@
-import colors from '../styles/bases/colors'
-import titleCard from '../assets/illustrations/h3CardAndroid.svg'
-import illustrationCard from '../assets/illustrations/Authentication_Flatline-2.svg'
-import backgroundCard from '../assets/shapes/EllipseVerte.svg'
-import servicesBackground from '../assets/illustrations/android.png'
-import whyBackground from '../assets/shapes/why-background-green.svg'
+import colors from '../../styles/bases/colors'
+import titleCard from '../../assets/illustrations/h3CardAndroid.svg'
+import illustrationCard from '../../assets/illustrations/Authentication_Flatline-2.svg'
+import backgroundCard from '../../assets/shapes/EllipseVerte.svg'
+import servicesBackground from '../../assets/illustrations/android.png'
+import whyBackground from '../../assets/shapes/why-background-green.svg'
 
 export const datasAndroid = {
   id: 'android',

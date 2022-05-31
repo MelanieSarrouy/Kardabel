@@ -1,9 +1,9 @@
-import colors from '../styles/bases/colors'
-import titleCard from '../assets/illustrations/h3CardPrint.svg'
-import illustrationCard from '../assets/illustrations/Designer _Flatline-2.svg'
-import backgroundCard from '../assets/shapes/EllipseRose-light.svg'
-import servicesBackground from '../assets/illustrations/pink-background.jpg'
-import whyBackground from '../assets/shapes/why-background-pink.svg'
+import colors from '../../styles/bases/colors'
+import titleCard from '../../assets/illustrations/h3CardPrint.svg'
+import illustrationCard from '../../assets/illustrations/Designer _Flatline-2.svg'
+import backgroundCard from '../../assets/shapes/EllipseRose-light.svg'
+import servicesBackground from '../../assets/illustrations/pink-background.jpg'
+import whyBackground from '../../assets/shapes/why-background-pink.svg'
 
 export const datasPrint = {
   id: 'print',

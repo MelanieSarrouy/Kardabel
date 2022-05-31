@@ -4,7 +4,7 @@ import {
   DivValeursContent,
   SectionValeurs,
 } from '../../../styles/components/page agence/sectionH3Valeurs'
-import { datasValues } from '../../../datas/datasValues'
+import { datasValues } from '../../../datas/agence/datasValues'
 import ArticleServiceCard from './ArticleServiceCard'
 import H3TrioTitle from '../../layout/H3TrioTitle'
 

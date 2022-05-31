@@ -3,7 +3,7 @@ import {
   DivFrontPortfolioCard,
   PTitleFront,
   ImgFrontCard,
-} from '../../../styles/components/3pagesPortfolio/webPortfolioCardFront'
+} from '../../../styles/components/page portfolios/webPortfolioCardFront'
 
 const WebPortfolioCardFront = (props) => {
   return (

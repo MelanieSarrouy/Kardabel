@@ -1,9 +1,9 @@
-import colors from '../styles/bases/colors'
-import titleCard from '../assets/illustrations/h3CardWeb.svg'
-import illustrationCard from '../assets/illustrations/Web development _Flatline-2.svg'
-import backgroundCard from '../assets/shapes/EllipseBleue.svg'
-import servicesBackground from '../assets/illustrations/blue-sky.png'
-import whyBackground from '../assets/shapes/why-background-blue.svg'
+import colors from '../../styles/bases/colors'
+import titleCard from '../../assets/illustrations/h3CardWeb.svg'
+import illustrationCard from '../../assets/illustrations/Web development _Flatline-2.svg'
+import backgroundCard from '../../assets/shapes/EllipseBleue.svg'
+import servicesBackground from '../../assets/illustrations/blue-sky.png'
+import whyBackground from '../../assets/shapes/why-background-blue.svg'
 
 export const datasWeb = {
   id: 'web',

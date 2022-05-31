@@ -8,8 +8,8 @@ import {
   PTitlePortfolioVersoCard,
   UlTechnosPortfolioVersoCard,
   ImgIconTechno,
-} from '../../../styles/components/3pagesPortfolio/webPortfolioCardBack'
-import { LinkButtonServices } from '../../../styles/components/pageAgence/sectionH2IntroAgence'
+} from '../../../styles/components/page portfolios/webPortfolioCardBack'
+import { LinkButtonServices } from '../../../styles/components/page agence/sectionH2IntroAgence'
 const figma = 'figma'
 const npm = 'npm'
 const trello = 'trello'

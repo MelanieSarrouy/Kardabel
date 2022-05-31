@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArticlePortfolioFlipCard } from '../../../styles/components/3pagesPortfolio/webPortfolioCard'
+import { ArticlePortfolioFlipCard } from '../../../styles/components/page portfolios/webPortfolioCard'
 import WebPortfolioCardBack from './WebPortfolioCardBack'
 import WebPortfolioCardFront from './WebPortfolioCardFront'
 

@@ -3,7 +3,7 @@ import { NewlineText } from '../../../helpers/newLineText'
 import {
   DivWhyContent,
   DivWhyTextContent,
-} from '../../../styles/components/4pagesService/whyContent'
+} from '../../../styles/components/page services/whyContent'
 
 
 const WhyContent = (props) => {

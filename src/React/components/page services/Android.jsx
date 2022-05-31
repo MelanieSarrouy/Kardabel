@@ -1,7 +1,7 @@
 import React from 'react'
 import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
-import { datasAndroid } from '../../../datas/datasAndroid'
+import { datasAndroid } from '../../../datas/services/datasAndroid'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
 

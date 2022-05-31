@@ -12,7 +12,7 @@ import {
   ImgCommasStart,
   DivText,
   ImgCommasEnd,
-} from '../../../styles/components/pageAgence/articleServiceCard'
+} from '../../../styles/components/page agence/articleServiceCard'
 import commas from '../../../assets/icons/commas.svg'
 
 

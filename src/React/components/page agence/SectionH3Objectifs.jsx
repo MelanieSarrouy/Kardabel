@@ -5,7 +5,7 @@ import {
   DivImgObjContainer,
   DivObectifsContent,
   PTextObjectifs,
-} from '../../../styles/components/pageAgence/sectionH3Objectifs'
+} from '../../../styles/components/page agence/sectionH3Objectifs'
 import H3TrioTitle from '../../layout/H3TrioTitle'
 
 const SectionH3Objectifs = () => {

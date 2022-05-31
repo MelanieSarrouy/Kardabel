@@ -1,9 +1,9 @@
-import colors from '../styles/bases/colors'
-import titleCard from '../assets/illustrations/h3CardIdentity.svg'
-import illustrationCard from '../assets/illustrations/Profile analysis _Flatline-2.svg'
-import whyBackground from '../assets/shapes/why-background-yellow.svg'
-import servicesBackground from '../assets/illustrations/the-great-wave-off-kanagawa.png'
-import backgroundCard from '../assets/shapes/EllipseJaune.svg'
+import colors from '../../styles/bases/colors'
+import titleCard from '../../assets/illustrations/h3CardIdentity.svg'
+import illustrationCard from '../../assets/illustrations/Profile analysis _Flatline-2.svg'
+import whyBackground from '../../assets/shapes/why-background-yellow.svg'
+import servicesBackground from '../../assets/illustrations/the-great-wave-off-kanagawa.png'
+import backgroundCard from '../../assets/shapes/EllipseJaune.svg'
 
 
 export const datasIdentity = {

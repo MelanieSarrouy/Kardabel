@@ -1,7 +1,7 @@
-import identityPicture from '../assets/illustrations/Profile analysis _Flatline.svg'
-import printPicture from '../assets/illustrations/Designer _Flatline.svg'
-import webPicture from '../assets/illustrations/Web development _Flatline.svg'
-import androidPicture from '../assets/illustrations/Authentication_Flatline.svg'
+import identityPicture from '../../assets/illustrations/Profile analysis _Flatline.svg'
+import printPicture from '../../assets/illustrations/Designer _Flatline.svg'
+import webPicture from '../../assets/illustrations/Web development _Flatline.svg'
+import androidPicture from '../../assets/illustrations/Authentication_Flatline.svg'
 
 export const services = [
   {

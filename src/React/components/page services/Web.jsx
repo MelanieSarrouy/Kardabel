@@ -1,7 +1,7 @@
 import React from 'react'
 import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
-import { datasWeb } from '../../../datas/datasWeb'
+import { datasWeb } from '../../../datas/services/datasWeb'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
 import circle from '../../../assets/shapes/EllipseLightGold.svg'

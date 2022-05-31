@@ -7,9 +7,9 @@ import {
   ImgSVGTitle,
   LiCardstyle,
   UlCardStyle,
-} from '../../../styles/components/4pagesService/serviceH3Card'
+} from '../../../styles/components/page services/serviceH3Card'
 import { standardizeAndLowerCase } from '../../../helpers/standardizeAndLowerCase'
-import { LinkButtonServices } from '../../../styles/components/pageAgence/sectionH2IntroAgence'
+import { LinkButtonServices } from '../../../styles/components/page agence/sectionH2IntroAgence'
 import colors from '../../../styles/bases/colors'
 
 const titlesList = ['Kesako', 'Avantages', 'Préstations']

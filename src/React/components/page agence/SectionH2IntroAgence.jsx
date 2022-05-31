@@ -3,7 +3,7 @@ import colors from '../../../styles/bases/colors'
 import {
   UlButtonContainer,
   LinkButtonServices,
-} from '../../../styles/components/pageAgence/sectionH2IntroAgence'
+} from '../../../styles/components/page agence/sectionH2IntroAgence'
 import H2Intro from '../../layout/H2Intro'
 const title = "L'Agence"
 const content =

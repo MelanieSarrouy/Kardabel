@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionWhy, DivH4Content } from '../../../styles/components/4pagesService/whyComponent'
+import { SectionWhy, DivH4Content } from '../../../styles/components/page services/whyComponent'
 import H4Title from '../../layout/H4Title'
 import WhyContent from './WhyContent'
 

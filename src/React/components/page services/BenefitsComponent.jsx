@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import H4Title from '../../layout/H4Title'
-import { DivH4Content } from '../../../styles/components/4pagesService/whyComponent'
+import { DivH4Content } from '../../../styles/components/page services/whyComponent'
 import colors from '../../../styles/bases/colors'
 import {
   DivBenefitsCards,
@@ -8,7 +8,7 @@ import {
   DivNoCard,
   PTextBenefitCard,
   PTitleBenefitCard,
-} from '../../../styles/components/4pagesService/benefitsComponent'
+} from '../../../styles/components/page services/benefitsComponent'
 import { NewlineText } from '../../../helpers/newLineText'
 
 const BenefitsComponent = (props) => {
