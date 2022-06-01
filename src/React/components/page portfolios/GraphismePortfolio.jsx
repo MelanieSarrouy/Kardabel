@@ -9,6 +9,7 @@ import {
   DivTitlePortfolioGraphicCard,
   PTitlePortfolioGraphicCard,
   UlTagsPortfolioGraphicCard,
+  DivImgContainer
 } from '../../../styles/components/page portfolios/graphismePortfolio'
 import { data } from '../../../datas/portfolios/portfolio-graphisme/datas'
 
@@ -18,11 +19,19 @@ const GraphismePortfolio = () => {
       <DivPortfolioCardsContainer>
         {data.map((element, index) => (
           <ArcticlePortfolioGraphicCard key={index}>
-            <ImgPortfolioGraphicCard
+            <DivImgContainer>
+              <ImgPortfolioGraphicCard
+                src={element.images.cover}
+                alt={'création graphique pour ' + element.title}
+                width={800}
+              />
+              {/* <div></div> */}
+            </DivImgContainer>
+            {/* <ImgPortfolioGraphicCard
               src={element.images.cover}
               alt={'création graphique pour ' + element.title}
               width={800}
-            />
+            /> */}
             <DivTitlePortfolioGraphicCard>
               <PTitlePortfolioGraphicCard>{element.title}</PTitlePortfolioGraphicCard>
               <UlTagsPortfolioGraphicCard>

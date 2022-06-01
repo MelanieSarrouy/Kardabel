@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import colors from '../../bases/colors'
 
 export const NavServicesStyle = styled.nav`
+  width: 100%;
+
   & > ul {
     display: flex;
     justify-content: center;

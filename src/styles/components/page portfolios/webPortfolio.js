@@ -14,7 +14,7 @@ export const SectionPortfolio = styled.section`
 `
 export const DivPortfolioCardsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 3rem;
   justify-content: space-between;
   align-items: center;

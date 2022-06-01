@@ -22,7 +22,7 @@ import CouvertoiradeCover from "./images/cover-Couvertoirade.png"
 import AbatMobileCover from "./images/cover-AbatMobile.png"
 import CartesCover from "./images/cover-Cartes.png"
 import LogosCover from "./images/cover-Logos.png"
-
+import CVCover from "./images/cover-CV.png"
 
 
 
@@ -37,7 +37,7 @@ export const data = [
       cover: mascMedCover,
       more: [mascMedMore1, mascMedMore2, mascMedMore3, mascMedMore4]
     },
-    tags: ["#affiche", "#flyer", "#bannière"]
+    tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
   },
   {
     title: "Les Folles Bergères",
@@ -49,7 +49,7 @@ export const data = [
       cover: follesBergCover,
       more: [follesBergMore1, follesBergMore2, follesBergMore3, follesBergMore4]
     },
-    tags: ["#affiche", "#flyer", "#bannière"]
+    tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
   },
   {
     title: "Les Ailes du Larzac",
@@ -60,7 +60,7 @@ export const data = [
       cover: AilesLarzCover,
       more: ["", "", ""]
     },
-    tags: ["#affiche", "#flyer", "#banderole", "#sticker"]
+    tags: ["#affiche", "#flyer", "#signalétique", "#véhicule", "#banderole", "#autocollant"]
   },
   {
     title: "Brelock en Stock",
@@ -71,7 +71,7 @@ export const data = [
       cover: BrelockStockCover,
       more: ["", "", ""]
     },
-    tags: ["#affiche"]
+    tags: ["#affiche", "#évènement"]
   },
   {
     title: "Affiches Tournois",
@@ -83,7 +83,7 @@ export const data = [
       cover: AffichesTournoisCover,
       more: ["", "", ""]
     },
-    tags: ["#affiche"]
+    tags: ["#affiche", "#évènement"]
   },
   {
     title: "Brochures Visites Guidées",
@@ -95,7 +95,7 @@ export const data = [
         cover: BrochuresCover,
         more: ["", "", ""]
       },
-      tags: ["#brochure"]
+      tags: ["#brochure", "#livret", "#tourisme"]
   },
   {
     title: "Programme",
@@ -107,7 +107,7 @@ export const data = [
       cover: ProgrammeCover,
       more: ["", "", ""]
     },
-    tags: ["#dépliant"]
+    tags: ["#dépliant", "#tourisme"]
   },
   {
     title: "Le Trésor d'Offerus",
@@ -119,7 +119,7 @@ export const data = [
         cover: OfferusCover,
         more: ["", "", ""]
       },
-      tags: ["#livret"]
+      tags: ["#livret", "#brochure"]
   },
   {
     title: "Le Festival des Épouvantails",
@@ -131,7 +131,7 @@ export const data = [
         cover: EpouvantailsCover,
         more: ["", "", ""]
       },
-      tags: ["#affiche", "#flyer", "#bannière"]
+      tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
   },
   {
     title: "Insonnance 01",
@@ -142,7 +142,7 @@ export const data = [
       cover: InsonnanceCover,
       more: ["", "", ""]
     },
-    tags: ["#macaron"]
+    tags: ["#macaron", "vinyle", "#musique"]
   },
   {
     title: "Faire-part",
@@ -154,7 +154,7 @@ export const data = [
       cover: FairePartCover,
       more: ["", "", ""]
     },
-    tags: ["#carte", "#dépliant"]
+    tags: ["#carte", "#dépliant", "#faire-part", "#invitation"]
   },
   {
     title: "Pierre & Sophie",
@@ -166,7 +166,7 @@ export const data = [
       cover: PierreSophieCover,
       more: ["", "", ""]
     },
-    tags: ["#étiquette", "#logo"]
+    tags: ["#étiquette", "#logo", "#produit", "#alimentaire"]
   },
   {
     title: "La Couvertoirade",
@@ -178,7 +178,7 @@ export const data = [
         cover: CouvertoiradeCover,
         more: ["", "", ""]
       },
-      tags: ["#dépliant", "#roll-up", "#PLV"]
+      tags: ["#dépliant", "#roll-up", "#PLV", "#tourisme"]
   },
   {
     title: "L'Abat'Mobile 34",
@@ -190,7 +190,7 @@ export const data = [
       cover: AbatMobileCover,
       more: ["", "", ""]
     },
-    tags: ["#dépliant", "#logo", "#site"]
+    tags: ["#dépliant", "#logo", "#site", "#web"]
   },
   {
     title: "Cartes",
@@ -202,7 +202,7 @@ export const data = [
       cover: CartesCover,
       more: ["", "", ""]
     },
-    tags: ["#carte"]
+    tags: ["#carte", "#carte-de-visite", "#carte d'adhésion"]
   },
   {
     title: "Logos",
@@ -214,6 +214,18 @@ export const data = [
       cover: LogosCover,
       more: ["", "", ""]
     },
-    tags: ["#logo"]
+    tags: ["#logo", "#signature", "#identité"]
+  },
+  {
+    title: "CV",
+    dates: [2022],
+    description:
+      "Conception et réalisation de CV, mise en page dossiers de presse, dossiers de présenation de projets...",
+    client: "divers",
+    images: {
+      cover: CVCover,
+      more: ["", "", ""]
+    },
+    tags: ["#CV", "#dossiers", "#mise-en-page"]
   }
 ]
