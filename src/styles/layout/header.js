@@ -9,7 +9,7 @@ export const HeaderStyle = styled.header`
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 20;
   background-color: ${colors.primaryDark}E6;
 `
 export const DivHeaderContent = styled.div`

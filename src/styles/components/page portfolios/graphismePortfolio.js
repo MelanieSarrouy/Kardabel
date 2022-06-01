@@ -42,15 +42,12 @@ export const ArcticlePortfolioGraphicCard = styled.article`
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
   cursor: pointer;
 `
 export const DivImgContainer = styled.div`
   position: relative;
-  transform: scale(1.02);
-  transform-origin: bottom center;
   transition: transform 400ms ease-in-out;
   &::after {
     content: '';
@@ -67,19 +64,13 @@ export const DivImgContainer = styled.div`
     left: 0;
     top: 0;
     opacity: 1;
-    transform-origin: bottom center;
-    transform: scaleY(1);
     transition: opacity 400ms ease-in;
   }
   &:hover {
-    transform: scale(1);
     &::after {
       opacity: 0.6;
     }
   }
-`
-export const ImgPortfolioGraphicCard = styled.img`
-  object-fit: cover;
 `
 export const DivTitlePortfolioGraphicCard = styled.div`
   width: 100%;
@@ -88,13 +79,9 @@ export const DivTitlePortfolioGraphicCard = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  height: 8.6rem;
-  @media (max-width: 420px) {
-    height: 7.6rem;
-  }
-  @media (max-width: 390px) {
-    height: 8.7rem;
-    padding: 0.8rem;
+  height: 8.2rem;
+  @media (max-width: 874px) {
+    height: auto;
   }
 `
 export const PTitlePortfolioGraphicCard = styled.p`

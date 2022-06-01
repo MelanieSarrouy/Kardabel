@@ -63,7 +63,7 @@ export const HeroContent = styled.div`
   justify-content: space-between;
   height: 450px;
   background-color: ${colors.primary};
-  z-index: 800;
+  z-index: 15;
   max-width: 1620px;
   @media (max-width: 950px) {
     padding: 8rem 7%;
@@ -82,7 +82,7 @@ export const LogoContainer = styled.div`
   width: 100%;
   text-align: center;
   padding: 2rem 8rem 0 0;
-  z-index: 800;
+  z-index: 15;
 
   @media (max-width: 1580px) {
     padding: 3rem 8rem 0 0;
@@ -141,7 +141,7 @@ export const TextHeroContainer = styled.div`
   flex-direction: column;
   align-items: start;
   width: 50%;
-  z-index: 800;
+  z-index: 15;
   @media (max-width: 640px) {
     width: 100%;
     align-items: center;

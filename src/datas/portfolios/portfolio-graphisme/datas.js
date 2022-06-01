@@ -28,6 +28,7 @@ import CVCover from "./images/cover-CV.png"
 
 export const data = [
   {
+    id: '01',
     title: "Les Mascarades Médiévales",
     dates: [2017, 2018, 2019],
     description:
@@ -40,6 +41,7 @@ export const data = [
     tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
   },
   {
+    id: '02',
     title: "Les Folles Bergères",
     dates: [2019, 2020],
     description:
@@ -52,17 +54,19 @@ export const data = [
     tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
   },
   {
-    title: "Les Ailes du Larzac",
-    dates: [2019, 2020, 2021],
-    description: "Conception et réalisation des supports de communication",
-    client: "Les Ailes du Larzac",
+    id: '03',
+    title: "Insonnance 01",
+    dates: [2019],
+    description: "Conception et réalisation du macaron du 1er vinyle édité par Vinylbleu.fr",
+    client: "Vinylbleu.fr",
     images: {
-      cover: AilesLarzCover,
+      cover: InsonnanceCover,
       more: ["", "", ""]
     },
-    tags: ["#affiche", "#flyer", "#signalétique", "#véhicule", "#banderole", "#autocollant"]
+    tags: ["#macaron", "vinyle", "#musique"]
   },
   {
+    id: '04',
     title: "Brelock en Stock",
     dates: [2019, 2020],
     description: "Conception et réalisation d'une affiche",
@@ -74,18 +78,7 @@ export const data = [
     tags: ["#affiche", "#évènement"]
   },
   {
-    title: "Affiches Tournois",
-    dates: [2022],
-    description:
-      "Exercices de conception et réalisation de templates pour des affiches de tournois",
-    client: "-",
-    images: {
-      cover: AffichesTournoisCover,
-      more: ["", "", ""]
-    },
-    tags: ["#affiche", "#évènement"]
-  },
-  {
+    id: '05',
     title: "Brochures Visites Guidées",
     dates: [2017, 2018, 2019, 2020, 2021, 2022],
     description:
@@ -98,18 +91,7 @@ export const data = [
       tags: ["#brochure", "#livret", "#tourisme"]
   },
   {
-    title: "Programme",
-    dates: [2018, 2019, 2020],
-    description:
-      "Conception et réalisation du programme de la saison touristique à La Couvertoirade \n Programmation et mise en place des animations en 2018 et 2019 \n (format A5 - 2 volets - 1 pli roulé)",
-    client: "Mairie de La Couvertoirade",
-    images: {
-      cover: ProgrammeCover,
-      more: ["", "", ""]
-    },
-    tags: ["#dépliant", "#tourisme"]
-  },
-  {
+    id: '06',
     title: "Le Trésor d'Offerus",
     dates: [2020],
     description:
@@ -122,41 +104,20 @@ export const data = [
       tags: ["#livret", "#brochure"]
   },
   {
-    title: "Le Festival des Épouvantails",
-    dates: [2020],
+    id: '07',
+    title: "Programme",
+    dates: [2018, 2019, 2020],
     description:
-      "Conception et réalisation des supports de communication \n Co-organisation de l'évènement",
-      client: "Association Larzac Repère",
-      images: {
-        cover: EpouvantailsCover,
-        more: ["", "", ""]
-      },
-      tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
-  },
-  {
-    title: "Insonnance 01",
-    dates: [2019],
-    description: "Conception et réalisation du macaron du 1er vinyle édité par Vinylbleu.fr",
-    client: "Vinylbleu.fr",
+      "Conception et réalisation du programme de la saison touristique à La Couvertoirade \n Programmation et mise en place des animations en 2018 et 2019 \n (format A5 - 2 volets - 1 pli roulé)",
+    client: "Mairie de La Couvertoirade",
     images: {
-      cover: InsonnanceCover,
+      cover: ProgrammeCover,
       more: ["", "", ""]
     },
-    tags: ["#macaron", "vinyle", "#musique"]
+    tags: ["#dépliant", "#tourisme"]
   },
   {
-    title: "Faire-part",
-    dates: [2019],
-    description:
-      "Conception et réalisation de faire-part de naissance, mariage, invitations, etc. \n (format carré - 2 volets - 1 pli roulé)",
-    client: "Particuliers",
-    images: {
-      cover: FairePartCover,
-      more: ["", "", ""]
-    },
-    tags: ["#carte", "#dépliant", "#faire-part", "#invitation"]
-  },
-  {
+    id: '08',
     title: "Pierre & Sophie",
     dates: [2020, 2021],
     description:
@@ -169,6 +130,58 @@ export const data = [
     tags: ["#étiquette", "#logo", "#produit", "#alimentaire"]
   },
   {
+    id: '09',
+    title: "Le Festival des Épouvantails",
+    dates: [2020],
+    description:
+      "Conception et réalisation des supports de communication \n Co-organisation de l'évènement",
+      client: "Association Larzac Repère",
+      images: {
+        cover: EpouvantailsCover,
+        more: ["", "", ""]
+      },
+      tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
+  },
+  {
+    id: '10',
+    title: "Les Ailes du Larzac",
+    dates: [2019, 2020, 2021],
+    description: "Conception et réalisation des supports de communication",
+    client: "Les Ailes du Larzac",
+    images: {
+      cover: AilesLarzCover,
+      more: ["", "", ""]
+    },
+    tags: ["#affiche", "#flyer", "#signalétique", "#véhicule", "#banderole", "#autocollant"]
+  },
+  {
+    id: '11',
+    title: "Affiches Tournois",
+    dates: [2022],
+    description:
+      "Exercices de conception et réalisation de templates pour des affiches de tournois",
+    client: "-",
+    images: {
+      cover: AffichesTournoisCover,
+      more: ["", "", ""]
+    },
+    tags: ["#affiche", "#évènement"]
+  },
+  {
+    id: '12',
+    title: "Faire-part",
+    dates: [2019],
+    description:
+      "Conception et réalisation de faire-part de naissance, mariage, invitations, etc. \n (format carré - 2 volets - 1 pli roulé)",
+    client: "Particuliers",
+    images: {
+      cover: FairePartCover,
+      more: ["", "", ""]
+    },
+    tags: ["#carte", "#dépliant", "#faire-part", "#invitation"]
+  },
+  {
+    id: '13',
     title: "La Couvertoirade",
     dates: [2016, 2017, 2018, 2019, 2020, 2021],
     description:
@@ -181,6 +194,7 @@ export const data = [
       tags: ["#dépliant", "#roll-up", "#PLV", "#tourisme"]
   },
   {
+    id: '14',
     title: "L'Abat'Mobile 34",
     dates: [2022],
     description:
@@ -193,6 +207,7 @@ export const data = [
     tags: ["#dépliant", "#logo", "#site", "#web"]
   },
   {
+    id: '15',
     title: "Cartes",
     dates: [2020, 2021],
     description:
@@ -205,6 +220,7 @@ export const data = [
     tags: ["#carte", "#carte-de-visite", "#carte d'adhésion"]
   },
   {
+    id: '16',
     title: "Logos",
     dates: [2016, 2020, 2021, 2022],
     description:
@@ -217,6 +233,7 @@ export const data = [
     tags: ["#logo", "#signature", "#identité"]
   },
   {
+    id: '17',
     title: "CV",
     dates: [2022],
     description:

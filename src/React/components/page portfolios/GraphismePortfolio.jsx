@@ -1,48 +1,78 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   SectionPortfolio,
   DivPortfolioCardsContainer,
 } from '../../../styles/components/page portfolios/webPortfolio'
 import {
   ArcticlePortfolioGraphicCard,
-  ImgPortfolioGraphicCard,
   DivTitlePortfolioGraphicCard,
   PTitlePortfolioGraphicCard,
   UlTagsPortfolioGraphicCard,
-  DivImgContainer
+  DivImgContainer,
 } from '../../../styles/components/page portfolios/graphismePortfolio'
 import { data } from '../../../datas/portfolios/portfolio-graphisme/datas'
+import Modal from './Modal'
 
 const GraphismePortfolio = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+  let position
+  const [dataModal, setDataModal] = useState({})
+
+  const handleSubmit = (event) => {
+    setModalIsOpen(true)
+    const target = event.target
+    const id = getId(target)
+    position = getCreation(id)
+    setDataModal(data[position])
+  }
+  const getId = (target) => {
+    const str = target.id
+    const number = str.split('-')
+    const id = number[1]
+    return id
+  }
+  const getCreation = (idString) => {
+    const creation = data.find((element) => element.id === idString)
+    const position = data.indexOf(creation)
+    return position
+  }
+
+  const closeModal = () => {
+    setModalIsOpen(false)
+  }
+
   return (
     <SectionPortfolio id="gallery">
       <DivPortfolioCardsContainer>
         {data.map((element, index) => (
-          <ArcticlePortfolioGraphicCard key={index}>
-            <DivImgContainer>
-              <ImgPortfolioGraphicCard
+          <ArcticlePortfolioGraphicCard
+            key={index}
+            onClick={(event) => handleSubmit(event)}
+            id={element.id}
+          >
+            <DivImgContainer id={'divIMg-' + element.id}>
+              <img
                 src={element.images.cover}
-                alt={'création graphique pour ' + element.title}
+                alt={element.title + ' créations graphiques pour'}
                 width={800}
               />
-              {/* <div></div> */}
             </DivImgContainer>
-            {/* <ImgPortfolioGraphicCard
-              src={element.images.cover}
-              alt={'création graphique pour ' + element.title}
-              width={800}
-            /> */}
-            <DivTitlePortfolioGraphicCard>
-              <PTitlePortfolioGraphicCard>{element.title}</PTitlePortfolioGraphicCard>
-              <UlTagsPortfolioGraphicCard>
+            <DivTitlePortfolioGraphicCard id={'divTxt-' + element.id}>
+              <PTitlePortfolioGraphicCard id={'divTitle-' + element.id}>
+                {element.title}
+              </PTitlePortfolioGraphicCard>
+              <UlTagsPortfolioGraphicCard id={'divUl-' + element.id}>
                 {element.tags.map((el, index) => (
-                  <li key={'tag' + index}>{el}</li>
+                  <li id={'divIl-' + element.id} key={'tag' + index}>
+                    {el}
+                  </li>
                 ))}
               </UlTagsPortfolioGraphicCard>
             </DivTitlePortfolioGraphicCard>
           </ArcticlePortfolioGraphicCard>
         ))}
       </DivPortfolioCardsContainer>
+      {modalIsOpen && <Modal datas={dataModal} hideModal={closeModal}></Modal>}
     </SectionPortfolio>
   )
 }
