@@ -51,11 +51,15 @@ const GraphismePortfolio = () => {
             id={element.id}
           >
             <DivImgContainer id={'divIMg-' + element.id}>
-              <img
-                src={element.images.cover}
-                alt={element.title + ' créations graphiques pour'}
-                width={800}
-              />
+              <picture>
+                <source srcSet={element.images.cover.png} type="image/png" />
+                <source srcSet={element.images.cover.webp} type="image/webp" />
+                <img
+                  src={element.images.cover.webp}
+                  alt={element.title + ' créations graphiques pour'}
+                  width={800}
+                />
+              </picture>
             </DivImgContainer>
             <DivTitlePortfolioGraphicCard id={'divTxt-' + element.id}>
               <PTitlePortfolioGraphicCard id={'divTitle-' + element.id}>

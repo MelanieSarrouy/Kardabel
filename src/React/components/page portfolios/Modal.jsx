@@ -13,6 +13,7 @@ import {
   DivPWork,
   DivInfosContainer,
   PTitleModal,
+  PictureCareoussel,
   ImgCaroussel,
   DivButtonsSide,
 } from '../../../styles/components/page portfolios/modal'
@@ -46,7 +47,11 @@ const Modal = (props) => {
           <img src={preview} alt="fleche précédent" width={30} />
         </DivButtonsSide>
         <div>
-          <ImgCaroussel id={'caroussel-' + count} src={caroussel[count]} alt={title} />
+          <PictureCareoussel>
+            <source srcSet={caroussel[count].png} type="image/png" />
+            <source srcSet={caroussel[count].webp} type="image/webp" />
+            <ImgCaroussel id={'caroussel-' + count} src={caroussel[count].webp} alt={title} width={700} />
+          </PictureCareoussel>
           <DivInfosContainer>
             <DivTitle>
               <PTitleModal>{title}</PTitleModal>

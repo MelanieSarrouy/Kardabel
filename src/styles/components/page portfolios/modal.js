@@ -38,7 +38,7 @@ export const ModalContent = styled.div`
     rgba(0, 0, 0, 0.75) 90%,
     rgba(0, 0, 0, 0.9) 100%
   );
-  top: 3vh;
+  top: 5vh;
   transform: translateX(-1500px);
   animation: ${roadRunnerIn} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   display: flex;
@@ -54,7 +54,7 @@ export const CloseModal = styled.img`
 `
 export const DivButtonsSide = styled.div`
   width: 5rem;
-  height: 75vh;
+  height: 73vh;
   margin: 2rem 0;
   display: flex;
   justify-content: center;
@@ -65,12 +65,17 @@ export const DivButtonsSide = styled.div`
     margin: .5rem;
   }
 `
+export const PictureCareoussel = styled.picture`
+  display: flex;
+  justify-content: center;
+  align-items: center
+`
 export const ImgCaroussel = styled.img`
   object-fit: contain;
   box-sizing: content-box;
-  height: 75vh;
+  height: 73vh;
   filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.9));
-
+  max-width: 43.75rem;
 `
 export const DivInfosContainer = styled.div`
   width: 100%;

@@ -76,7 +76,7 @@ export const buttonContact = keyframes`
     transform: translateX(0vw);
   }
 `
-export const trio= keyframes`
+export const trio = keyframes`
   0% {
     opacity: 0;
     transform: scale(0);
@@ -90,7 +90,7 @@ export const trio= keyframes`
     transform: rotate(0deg);
   }
 `
-export const h2Title= keyframes`
+export const h2Title = keyframes`
   0% {
     opacity:0;
     transform: translateX(600px);
@@ -105,4 +105,15 @@ export const h2Title= keyframes`
     transform: translateX(0px);
   }
 `
+export const buttonsHashLink = keyframes`
+  0% {
+    filter: brightness(1);    
+  }
+  50% {
+    filter: brightness(0.9);  
+  }
+  100% {
+    filter: brightness(1);    
+  }
 
+`

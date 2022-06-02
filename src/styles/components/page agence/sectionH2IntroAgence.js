@@ -1,5 +1,6 @@
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
+import { buttonsHashLink } from '../../bases/keyframes'
 
 export const UlButtonContainer = styled.ul`
   display: flex;
@@ -39,7 +40,12 @@ export const LinkButtonServices = styled(HashLink)`
   font-weight: 600;
   color: ${(props) => props.btncolortxt};
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 400ms, border 400ms, color 400ms, box-shadow 400ms cubic-bezier(.2,.63,.55,.97);
+  animation-name: ${buttonsHashLink};
+  animation-duration: 600ms;
+  animation-iteration-count: 10;
+  animation-fill-mode: backwards;
+  transition: background-color 400ms, border 400ms, color 400ms,
+    box-shadow 400ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   &:hover {
     background-color: ${(props) => props.btncolorhover};
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
