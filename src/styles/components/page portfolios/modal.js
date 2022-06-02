@@ -1,24 +1,8 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
+import colors from '../../bases/colors'
+import fonts from '../../bases/fonts'
+import { fadeIn, roadRunnerIn } from '../../bases/keyframes'
 
-const fadeIn = keyframes`
-  0% {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-`
-const roadRunnerIn = keyframes`
-  0% {
-    transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
-  }
-  70% {
-    transform: translateX(30px) skewX(0deg) scaleX(0.9);
-  }
-  100% {
-    transform: translateX(0px) skewX(0deg) scaleX(1);
-  }
-`
 export const ModalDiv = styled.div`
   display: flex;
   justify-content: center;
@@ -30,7 +14,7 @@ export const ModalDiv = styled.div`
   bottom: 0;
   width: auto;
   height: auto;
-  z-index: 25;
+  z-index: 20;
   overflow: auto;
   background: linear-gradient(
     133deg,
@@ -42,40 +26,95 @@ export const ModalDiv = styled.div`
 `
 export const ModalContent = styled.div`
   width: auto;
-  height: 80vh;
+  max-width: 90vw;
   position: absolute;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-  padding: 1rem;
   border-radius: 0.5rem;
-  background-color: white;
-  top: 10vh;
+  background: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 65%,
+    rgba(0, 0, 0, 0.75) 90%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  top: 3vh;
   transform: translateX(-1500px);
   animation: ${roadRunnerIn} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-`
-export const Content = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: black;
-  line-height: 1.5rem;
+  padding: 1rem 0 0.5rem 0;
 `
 export const CloseModal = styled.img`
   position: absolute;
-  top: .5rem;
-  right: .5rem;
+  top: 1rem;
+  right: 1rem;
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+`
+export const DivButtonsSide = styled.div`
+  width: 5rem;
+  height: 75vh;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & > img {
+    width: 2.5rem;
+    margin: .5rem;
+  }
+`
+export const ImgCaroussel = styled.img`
+  object-fit: contain;
+  box-sizing: content-box;
+  height: 75vh;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.9));
+
+`
+export const DivInfosContainer = styled.div`
+  width: 100%;
+  padding: 1rem 0;
 `
 export const DivDates = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 0 1.2rem 0;
   & > p {
-    padding: 0 .5rem;
+    padding: 0 0.5rem 0 0;
+    font-size: 1.1rem;
+    color: ${colors.background};
+    font-weight: 300;
   }
 `
-export const DivTags = styled(DivDates)`
+export const DivTitle = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: solid 1px ${colors.background};
+  & > p {
+    color: ${colors.background};
+  }
+`
+export const PTitleModal = styled.p`
+  font-family: ${fonts.titles};
+  font-size: 1.4rem;
+  padding-right: 1.5rem;
+`
+export const PClient = styled.p`
+  font-style: italic;
+  padding-bottom: 0.5rem;
+  color: ${colors.background};
+  font-weight: 300;
+`
+export const DivPWork = styled.div`
+  & > p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: ${colors.background};
+    line-height: 1.4rem;
+  }
 `

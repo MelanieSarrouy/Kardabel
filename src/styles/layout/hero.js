@@ -1,7 +1,8 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 import { HashLink } from 'react-router-hash-link'
+import { buttonContact, buttonServices, kardabel, logo } from '../bases/keyframes'
 
 export const ImgCurvyStyle = styled.img`
   width: 100%;
@@ -103,18 +104,6 @@ export const LogoContainer = styled.div`
     padding: 2.5rem 0rem 2.5rem 0rem;
   }
 `
-const logo = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0vw);
-  }
-`
 export const ImgLogo = styled.img`
   width: 250px;
   filter: drop-shadow(0.25rem 0.25rem 0.3rem rgba(0, 0, 0, 0.5));
@@ -147,17 +136,6 @@ export const TextHeroContainer = styled.div`
     align-items: center;
   }
 `
-const kardabel = keyframes`
-  0% {
-    transform: translateY(-300px);
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0px);
-  }`
 
 export const PTitleStyle = styled.p`
   font-family: ${fonts.kardabel};
@@ -207,17 +185,6 @@ export const Baseline = styled.p`
     font-size: 1rem;
   }
 `
-const agence = keyframes`
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }`
-
 export const H1Style = styled.h1`
   font-size: 2.2rem;
   color: ${colors.secondary};
@@ -225,7 +192,7 @@ export const H1Style = styled.h1`
   text-transform: uppercase;
   line-height: 2.2rem;
   padding: 3rem 0 2rem 0.4rem;
-  animation: 800ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 2.4s both ${agence};
+  animation: 800ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 2.4s both ${kardabel};
 
   @media (max-width: 1280px) {
     font-size: 1.5rem;
@@ -302,39 +269,6 @@ export const ButtonsContainer = styled.div`
     flex-direction: column;
     gap: 0.8rem;
     padding: 0.8rem 0 0 0;
-  }
-`
-const buttonServices = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  25% {
-    opacity: 1;
-  }
-  80% {
-    transform: rotate(5deg);
-  }
-  85% {
-    transform: rotate(-5deg);
-  }
-  90% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: translateX(0vw);
-  }
-`
-const buttonContact = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(100vw);
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0vw);
   }
 `
 export const LinkServices = styled(HashLink)`

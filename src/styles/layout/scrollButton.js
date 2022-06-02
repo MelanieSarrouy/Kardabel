@@ -9,9 +9,7 @@ export const ImgSVGArrowTop = styled.img`
   @media (max-width: 950px) {
     width: 2rem;
     bottom: 6rem;
-
   }
-
 `
 export const ImgSVGArrowBottom = styled.img`
   position: fixed;
@@ -23,6 +21,4 @@ export const ImgSVGArrowBottom = styled.img`
   @media (max-width: 950px) {
     width: 2rem;
   }
-
 `
-

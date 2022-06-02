@@ -1,25 +1,12 @@
 import styled, { keyframes } from "styled-components"
 import colors from "../bases/colors"
 import fonts from "../bases/fonts"
+import { h2Title, trio } from "../bases/keyframes"
 
 export const DivH2Title = styled.div`
   display: flex;
   justify-content: center;
   align-items: baseline;
-`
-const trio= keyframes`
-  0% {
-    opacity: 0;
-    transform: scale(0);
-    transform: rotate(-720deg);
-    }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    transform: rotate(0deg);
-  }
 `
 export const SvgH2Trio = styled.img`
   width: 5.5rem;
@@ -45,21 +32,6 @@ export const SvgH2Trio = styled.img`
   @media (max-width: 420px) {
     width: 1.6rem;
     margin-right: .6rem;
-  }
-`
-const h2Title= keyframes`
-  0% {
-    opacity:0;
-    transform: translateX(600px);
-    }
-  10% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0px);
   }
 `
 export const H2TitleStyle = styled.h2`

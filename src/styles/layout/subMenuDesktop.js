@@ -34,7 +34,6 @@ export const UlSubMenu = styled.ul`
       @media (max-width: 1024px) {
         padding: 1rem 1.2rem;
       }
-
       @media (max-width: 950px) {
         padding: 1rem 21% 1rem 2rem;
       }

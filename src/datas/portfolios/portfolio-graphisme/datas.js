@@ -1,13 +1,24 @@
 import mascMedCover from "./images/cover-Mascarades.png"
 import mascMedMore1 from "./images/affiche-Mascarades2019.png"
-import mascMedMore2 from "./images/affiche-Mascarades2018.png"
-import mascMedMore3 from "./images/mockup_fly_mascarades2019.png"
-import mascMedMore4 from "./images/mockup_fly_mascarades2018.png"
+import mascMedMore2 from "./images/fly-verso-Mascarades2019.png"
+import mascMedMore3 from "./images/banniere-twitter-Mascarades2019.png"
+import mascMedMore4 from "./images/affiche-Mascarades2018.png"
+import mascMedMore5 from "./images/fly-verso-Mascarades2018.png"
+
 import follesBergCover from "./images/cover-FollesBergeres.png"
 import follesBergMore1 from "./images/affiche-FollesBergeres2020.png"
-import follesBergMore2 from "./images/affiche-FollesBergeres2019.png"
-import follesBergMore3 from "./images/mockup_fly_follesBergeres2020.png"
-import follesBergMore4 from "./images/mockup_fly_follesBergeres2019.png"
+import follesBergMore2 from "./images/fly-verso-Folles-Bergères2020.png"
+import follesBergMore3 from "./images/affiche-FollesBergeres2019.png"
+import follesBergMore4 from "./images/fly-verso-Folles-Bergères2019.png"
+import follesBergMore5 from "./images/banniere-facebook-FolleBergere2019.png"
+
+import InsonnanceCover from "./images/cover-Insonnance01.png"
+import insonnanceMore01 from "./images/insonnanceA.png"
+import insonnanceMore02 from "./images/insonnanceB.png"
+import insonnanceMore03 from "./images/vinyleRV.png"
+import insonnanceMore04 from "./images/vinyle-recto.jpg"
+import insonnanceMore05 from "./images/vinyle-verso.jpg"
+
 import AilesLarzCover from "./images/cover-LesAilesDuLarzac.png"
 import BrelockStockCover from "./images/cover-BrelockEnStock.png"
 import AffichesTournoisCover from "./images/cover-AffichesTournois.png"
@@ -15,7 +26,7 @@ import BrochuresCover from "./images/cover-Brochures.png"
 import ProgrammeCover from "./images/cover-Programme.png"
 import OfferusCover from "./images/cover-Livret.png"
 import EpouvantailsCover from "./images/cover-FestivalEpouvantails.png"
-import InsonnanceCover from "./images/cover-Insonnance01.png"
+
 import FairePartCover from "./images/cover-FairePart.png"
 import PierreSophieCover from "./images/cover-PierreSophie.png"
 import CouvertoiradeCover from "./images/cover-Couvertoirade.png"
@@ -36,7 +47,7 @@ export const data = [
     client: "Mairie de La Couvertoirade",
     images: {
       cover: mascMedCover,
-      more: [mascMedMore1, mascMedMore2, mascMedMore3, mascMedMore4]
+      more: [mascMedMore1, mascMedMore2, mascMedMore3, mascMedMore4, mascMedMore5]
     },
     tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
   },
@@ -49,7 +60,7 @@ export const data = [
     client: "Mairie de La Couvertoirade",
     images: {
       cover: follesBergCover,
-      more: [follesBergMore1, follesBergMore2, follesBergMore3, follesBergMore4]
+      more: [follesBergMore1, follesBergMore2, follesBergMore3, follesBergMore4, follesBergMore5]
     },
     tags: ["#affiche", "#flyer", "#bannière", "#réseaux", "#web", "#évènement"]
   },
@@ -61,7 +72,7 @@ export const data = [
     client: "Vinylbleu.fr",
     images: {
       cover: InsonnanceCover,
-      more: ["", "", ""]
+      more: [insonnanceMore01, insonnanceMore02, insonnanceMore03, insonnanceMore04, insonnanceMore05]
     },
     tags: ["#macaron", "vinyle", "#musique"]
   },
@@ -132,7 +143,7 @@ export const data = [
   {
     id: '09',
     title: "Le Festival des Épouvantails",
-    dates: [2020],
+    dates: [2022],
     description:
       "Conception et réalisation des supports de communication \n Co-organisation de l'évènement",
       client: "Association Larzac Repère",
@@ -212,7 +223,7 @@ export const data = [
     dates: [2020, 2021],
     description:
       "Conception et réalisation de cartes de visites, cartes d'adhésion, carte de fidélité, etc. \n (format 85 x 55 mm - coins arrondis - vernis sélectif)",
-    client: "divers",
+    client: "",
     images: {
       cover: CartesCover,
       more: ["", "", ""]
@@ -225,7 +236,7 @@ export const data = [
     dates: [2016, 2020, 2021, 2022],
     description:
       "Conception et réalisation de logos, avec ou sans déclinaisons",
-    client: "divers",
+    client: "",
     images: {
       cover: LogosCover,
       more: ["", "", ""]
@@ -238,7 +249,7 @@ export const data = [
     dates: [2022],
     description:
       "Conception et réalisation de CV, mise en page dossiers de presse, dossiers de présenation de projets...",
-    client: "divers",
+    client: "",
     images: {
       cover: CVCover,
       more: ["", "", ""]

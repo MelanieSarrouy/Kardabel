@@ -5,5 +5,9 @@ export const createLink = (str, name, submenu, prefixeName, suffixeName) => {
   let b = prefixeName + a
   let c= suffixeName
   return ((submenu) ? ('/' + name + '/' + b + c) : ('/' + name))
-   
+}
+
+export const createHashLink = (str) => {
+  let a = standardizeAndLowerCase(str)
+  return ('/#' + a)
 }

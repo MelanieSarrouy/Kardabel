@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import burgerNormal from '../../assets/icons/hamburge-normal.svg'
-import burgerActive from '../../assets/icons/hamburge-active.svg'
+import burgerActive from '../../assets/icons/icons8-close-92.svg'
 import arrowDownWhite from '../../assets/icons/chevron-down-solid-white.svg'
 import arrowDownBlue from '../../assets/icons/chevron-down-solid-blue.svg'
 
