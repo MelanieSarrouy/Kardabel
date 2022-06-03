@@ -127,7 +127,6 @@ import LogosCoverwebp from './images/cover-Logos.webp'
 import CVCoverpng from './images/cover-CV.png'
 import CVCoverwebp from './images/cover-CV.webp'
 
-
 export const data = [
   {
     id: '01',
@@ -145,22 +144,27 @@ export const data = [
         {
           png: mascMedMore1Png,
           webp: mascMedMore1Webp,
+          title: 'Affiches Mascarades 2019 - A4/A3/A2/A0/Sucette',
         },
         {
           png: mascMedMore2Png,
           webp: mascMedMore2Webp,
+          title: 'Verso Flyer Mascarades 2019 - A6',
         },
         {
           png: mascMedMore3Png,
           webp: mascMedMore3Webp,
+          title: 'Bannière Facebook Mascarades 2019',
         },
         {
           png: mascMedMore4Png,
           webp: mascMedMore4Webp,
+          title: 'Affiches 2018 - A4/A3/A2/A0/Sucette',
         },
         {
           png: mascMedMore5Png,
           webp: mascMedMore5Webp,
+          title: 'Verso Flyer Mascarades 2018 - A6',
         },
       ],
     },
@@ -182,22 +186,27 @@ export const data = [
         {
           png: follesBergMore1Png,
           webp: follesBergMore1Webp,
+          title: 'Affiches Folles Bergères 2020 - A4/A3/A2/A0/Sucette',
         },
         {
           png: follesBergMore2Png,
           webp: follesBergMore2Webp,
+          title: 'Verso Flyer Folles Bergères 2020 - A6',
         },
         {
           png: follesBergMore3Png,
           webp: follesBergMore3Webp,
+          title: 'Affiches Folles Bergères 2019 - A4/A3/A2/A0/Sucette',
         },
         {
           png: follesBergMore4Png,
           webp: follesBergMore4Webp,
+          title: 'Verso Flyer Folles Bergères 2019 - A6',
         },
         {
           png: follesBergMore5Png,
           webp: follesBergMore5Webp,
+          title: 'Bannière Facebook Folles Bergères 2019',
         },
       ],
     },
@@ -218,18 +227,22 @@ export const data = [
         {
           png: insonnanceMore01Png,
           webp: insonnanceMore01Webp,
+          title: 'Macaron recto Insonnance01 2019 - 50x50mm',
         },
         {
           png: insonnanceMore02Png,
           webp: insonnanceMore02Webp,
+          title: 'Macaron verso Insonnance01 2019 - 50x50mm',
         },
         {
           png: insonnanceMore03Png,
           webp: insonnanceMore03Webp,
+          title: 'Macaron R/V Insonnance01 2019 - 50x50mm',
         },
         {
           png: insonnanceMore04Png,
           webp: insonnanceMore04Webp,
+          title: 'Macaron recto Insonnance01 2019 sur vinyle',
         },
       ],
     },
@@ -250,10 +263,12 @@ export const data = [
         {
           png: brelockMore01png,
           webp: brelockMore01webp,
+          title: 'Affiches Brelock en Stock 2020 - A4/A3',
         },
         {
           png: brelockMore02png,
           webp: brelockMore02webp,
+          title: 'Affiches Brelock en Stock 2019 - A4/A3',
         },
       ],
     },
@@ -275,29 +290,33 @@ export const data = [
         {
           png: BrochuresMore01png,
           webp: BrochuresMore01webp,
+          title: 'Couverture 1 Brochure Visites Groupes Adultes 2022 - format carré 148mm',
         },
         {
           png: BrochuresMore02png,
           webp: BrochuresMore02webp,
+          title: 'Couverture 1 Brochure Visites Groupes Scolaire 2022 - format carré 148mm',
         },
         {
           png: BrochuresMore03png,
           webp: BrochuresMore03webp,
+          title: 'Pages 1 & 2 Brochure Visites Groupes Scolaire 2022',
         },
         {
           png: BrochuresMore04png,
           webp: BrochuresMore04webp,
+          title: 'Pages 3 & 4 Brochure Visites Groupes Scolaire 2022',
         },
         {
           png: BrochuresMore05png,
           webp: BrochuresMore05webp,
+          title: 'Pages 9 & 10 Brochure Visites Groupes Adultes 2022',
         },
         {
           png: BrochuresMore06png,
           webp: BrochuresMore06webp,
+          title: 'Pages 11 & 12 Brochure Visites Groupes Adultes 2022',
         },
-
-
       ],
     },
     tags: ['#brochure', '#livret', '#tourisme'],
@@ -305,7 +324,7 @@ export const data = [
   {
     id: '06',
     title: "Le Trésor d'Offerus",
-    dates: [2020],
+    dates: [2019],
     description:
       "Conception et réalisation d'un livret pour un jeu de piste \n Co-création du contenu \n (format A5 - 36 pages - broché )",
     client: 'Service Tourisme de La Couvertoirade',
@@ -318,30 +337,41 @@ export const data = [
         {
           png: OfferusMore01png,
           webp: OfferusMore01webp,
+          title: 'Couverture 1 Livret Le Trésor d\'Offerus - A5 fermé',
+
         },
         {
           png: OfferusMore02png,
           webp: OfferusMore02webp,
+          title: 'Couverture 1-bis Livret Le Trésor d\'Offerus - A5 fermé',
+
         },
         {
           png: OfferusMore03png,
           webp: OfferusMore03webp,
+          title: 'Couverture 2 Livret Le Trésor d\'Offerus - A5 fermé',
+
         },
         {
           png: OfferusMore04png,
           webp: OfferusMore04webp,
+          title: 'Page 1 Livret Le Trésor d\'Offerus',
+
         },
         {
           png: OfferusMore05png,
           webp: OfferusMore05webp,
+          title: 'Pages 6 & 7 Livret Le Trésor d\'Offerus',
         },
         {
           png: OfferusMore06png,
           webp: OfferusMore06webp,
+          title: 'Pages 14 & 15 Livret Le Trésor d\'Offerus',
         },
         {
           png: OfferusMore07png,
           webp: OfferusMore07webp,
+          title: 'Pages 22 & 23 Livret Le Trésor d\'Offerus',
         },
       ],
     },
@@ -363,26 +393,32 @@ export const data = [
         {
           png: ProgrammeMore01png,
           webp: ProgrammeMore01webp,
+          title: 'Couverture 1 dépliant Programme de la saison 2020 - A5 fermé',
         },
         {
           png: ProgrammeMore02png,
           webp: ProgrammeMore02webp,
+          title: 'Intérieur dépliant Programme de la saison 2020 - A5 fermé',
         },
         {
           png: ProgrammeMore03png,
           webp: ProgrammeMore03webp,
+          title: 'Couverture 2 dépliant Programme de la saison 2020 - A5 fermé',
         },
         {
           png: ProgrammeMore04png,
           webp: ProgrammeMore04webp,
+          title: 'Couverture 1 dépliant Programme de la saison 2019 - A5 fermé',
         },
         {
           png: ProgrammeMore05png,
           webp: ProgrammeMore05webp,
+          title: 'Intérieur dépliant Programme de la saison 2019 - A5 fermé',
         },
         {
           png: ProgrammeMore06png,
           webp: ProgrammeMore06webp,
+          title: 'Couverture 2 dépliant Programme de la saison 2019 - A5 fermé',
         },
       ],
     },
@@ -404,18 +440,22 @@ export const data = [
         {
           png: PierreSophieMore04bispng,
           webp: PierreSophieMore04biswebp,
+          title: 'planche étiquettes alimentaires 2021 - Ø 6cm',
         },
         {
           png: PierreSophieMore05png,
           webp: PierreSophieMore05webp,
+          title: 'planche étiquettes alimentaires 2020 - Ø 6cm',
         },
         {
           png: PierreSophieMore06png,
           webp: PierreSophieMore06webp,
+          title: 'Logo-signature pour mails et papier d\'emballage 2021',
         },
         {
           png: PierreSophieMore10bispng,
           webp: PierreSophieMore10biswebp,
+          title: 'Logo-signature pour mails et papier d\'emballage 2021',
         },
       ],
     },
@@ -474,7 +514,7 @@ export const data = [
     dates: [2019],
     description:
       'Conception et réalisation de faire-part de naissance, mariage, invitations, etc. \n (format carré - 2 volets - 1 pli roulé)',
-    client: 'Particuliers',
+    client: '',
     images: {
       cover: {
         png: FairePartCoverpng,

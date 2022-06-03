@@ -15,15 +15,17 @@ import Modal from './Modal'
 
 const GraphismePortfolio = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
-  let position
-  const [dataModal, setDataModal] = useState({})
+  const[dataPosition, setDataPosition] = useState(0)
+  let position = dataPosition
+  // const [dataModal, setDataModal] = useState({})
 
   const handleSubmit = (event) => {
     setModalIsOpen(true)
     const target = event.target
     const id = getId(target)
     position = getCreation(id)
-    setDataModal(data[position])
+    setDataPosition(position)
+    // setDataModal(data[position])
   }
   const getId = (target) => {
     const str = target.id
@@ -76,7 +78,7 @@ const GraphismePortfolio = () => {
           </ArcticlePortfolioGraphicCard>
         ))}
       </DivPortfolioCardsContainer>
-      {modalIsOpen && <Modal datas={dataModal} hideModal={closeModal}></Modal>}
+      {modalIsOpen && <Modal allData={data} position={dataPosition} hideModal={closeModal}></Modal>}
     </SectionPortfolio>
   )
 }

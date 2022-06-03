@@ -71,6 +71,12 @@ export const DivImgContainer = styled.div`
       opacity: 0.6;
     }
   }
+  & > picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ${colors.primary};
+  }
 `
 export const DivTitlePortfolioGraphicCard = styled.div`
   width: 100%;
