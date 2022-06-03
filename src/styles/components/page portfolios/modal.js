@@ -70,18 +70,22 @@ export const DivPagination = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: .6rem 0;
-  & > div > p {
-    color: ${colors.background};
-    padding: 0 .5rem;
-  }
 `
 export const DivGolbalPagination = styled.div`
     display: flex;
     padding-bottom: .6rem;
-
+    & > p {
+      color: ${colors.background};
+    padding: 0 .5rem;
+    & > span {
+      color: ${colors.background};
+      padding-right: .5rem;
+    }
+    }
     & > img {
       width: 1rem;
       padding: .1rem;
+      cursor: pointer;
     }
 `
 export const DivCarousselPosition = styled.div`

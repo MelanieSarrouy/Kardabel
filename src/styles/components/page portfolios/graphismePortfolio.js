@@ -75,7 +75,7 @@ export const DivImgContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${colors.primary};
+    background-color: ${colors.primaryDark}CC;
   }
 `
 export const DivTitlePortfolioGraphicCard = styled.div`

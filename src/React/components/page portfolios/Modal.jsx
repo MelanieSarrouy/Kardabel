@@ -85,7 +85,7 @@ const Modal = (props) => {
                 onClick={handleClickPaginationPreview}
               />
               <p>
-                {position + 1} / {allDataLenght}
+                <span>projet </span>{position + 1} / {allDataLenght}
               </p>
               <img src={next} alt="fleche suivant" width={30} onClick={handleClickPaginationNext} />
             </DivGolbalPagination>

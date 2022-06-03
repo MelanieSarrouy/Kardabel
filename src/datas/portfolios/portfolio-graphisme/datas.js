@@ -2,11 +2,15 @@ import mascMedCoverpng from './images/cover-Mascarades.png'
 import mascMedCoverwebp from './images/cover-Mascarades.webp'
 import mascMedMore1Png from './images/affiche-Mascarades2019.png'
 import mascMedMore2Png from './images/fly-verso-Mascarades2019.png'
+import mascMedMore2bisPng from './images/mascarades-mockup-flyer-recto-verso.png'
+import mascMedMore2terPng from './images/mascarades-mockup-flyer-verso-recto.png'
 import mascMedMore3Png from './images/banniere-facebook-Mascarades2019.png'
 import mascMedMore4Png from './images/affiche-Mascarades2018.png'
 import mascMedMore5Png from './images/fly-verso-Mascarades2018.png'
 import mascMedMore1Webp from './images/affiche-Mascarades2019.webp'
 import mascMedMore2Webp from './images/fly-verso-Mascarades2019.webp'
+import mascMedMore2bisWebp from './images/mascarades-mockup-flyer-recto-verso.webp'
+import mascMedMore2terWebp from './images/mascarades-mockup-flyer-verso-recto.webp'
 import mascMedMore3Webp from './images/banniere-facebook-Mascarades2019.webp'
 import mascMedMore4Webp from './images/affiche-Mascarades2018.webp'
 import mascMedMore5Webp from './images/fly-verso-Mascarades2018.webp'
@@ -79,35 +83,43 @@ import ProgrammeCoverwebp from './images/cover-Programme.webp'
 import ProgrammeMore01png from './images/programme-saison-2020-p1.png'
 import ProgrammeMore02png from './images/programme-saison-2020-p2-3.png'
 import ProgrammeMore03png from './images/programme-saison-2020-p4.png'
+import ProgrammeMore03bispng from './images/programme-saison-mockup.png'
 import ProgrammeMore04png from './images/programme-saison-2019-p1.png'
 import ProgrammeMore05png from './images/programme-saison-2019-p2-3.png'
 import ProgrammeMore06png from './images/programme-saison-2019-p4.png'
 import ProgrammeMore01webp from './images/programme-saison-2020-p1.webp'
 import ProgrammeMore02webp from './images/programme-saison-2020-p2-3.webp'
 import ProgrammeMore03webp from './images/programme-saison-2020-p4.webp'
+import ProgrammeMore03biswebp from './images/programme-saison-mockup.webp'
 import ProgrammeMore04webp from './images/programme-saison-2019-p1.webp'
 import ProgrammeMore05webp from './images/programme-saison-2019-p2-3.webp'
 import ProgrammeMore06webp from './images/programme-saison-2019-p4.webp'
 
 import PierreSophieCoverpng from './images/cover-PierreSophie.png'
 import PierreSophieCoverwebp from './images/cover-PierreSophie.webp'
-import PierreSophieMore04bispng from './images/etiquettes-planche-2021.png'
-import PierreSophieMore05png from './images/gaec-signature2-2021.png'
-import PierreSophieMore06png from './images/gaec-signature1-2021.png'
-import PierreSophieMore10bispng from './images/etiquettes-planche-2020.png'
-import PierreSophieMore04biswebp from './images/etiquettes-planche-2021.webp'
-import PierreSophieMore05webp from './images/gaec-signature2-2021.webp'
-import PierreSophieMore06webp from './images/gaec-signature1-2021.webp'
-import PierreSophieMore10biswebp from './images/etiquettes-planche-2020.webp'
+import PierreSophieMore01png from './images/etiquettes-planche-2021.png'
+import PierreSophieMore02png from './images/etiquettes-planche-2020.png'
+import PierreSophieMore03png from './images/gaec-signature-2021.png'
+import PierreSophieMore01webp from './images/etiquettes-planche-2021.webp'
+import PierreSophieMore02webp from './images/etiquettes-planche-2020.webp'
+import PierreSophieMore03webp from './images/gaec-signature-2021.webp'
+
+import EpouvantailsCoverpng from './images/cover-FestivalEpouvantails.png'
+import EpouvantailsCoverwebp from './images/cover-FestivalEpouvantails.webp'
+import EpouvantailsMore01png from './images/festival-des-epouvantails-2022-affiche.png'
+import EpouvantailsMore02png from './images/festival-des-epouvantails-2022-flyer-verso.png'
+import EpouvantailsMore03png from './images/festival-des-epouvantails-2022-mockup-flyer-recto-verso.png'
+import EpouvantailsMore04png from './images/festival-des-epouvantails-2022-mockup-flyer-verso-recto.png'
+import EpouvantailsMore01webp from './images/festival-des-epouvantails-2022-affiche.webp'
+import EpouvantailsMore02webp from './images/festival-des-epouvantails-2022-flyer-verso.webp'
+import EpouvantailsMore03webp from './images/festival-des-epouvantails-2022-mockup-flyer-recto-verso.webp'
+import EpouvantailsMore04webp from './images/festival-des-epouvantails-2022-mockup-flyer-verso-recto.webp'
 
 import AilesLarzCoverpng from './images/cover-LesAilesDuLarzac.png'
 import AilesLarzCoverwebp from './images/cover-LesAilesDuLarzac.webp'
 
 import AffichesTournoisCoverpng from './images/cover-AffichesTournois.png'
 import AffichesTournoisCoverwebp from './images/cover-AffichesTournois.webp'
-
-import EpouvantailsCoverpng from './images/cover-FestivalEpouvantails.png'
-import EpouvantailsCoverwebp from './images/cover-FestivalEpouvantails.webp'
 
 import CouvertoiradeCoverpng from './images/cover-Couvertoirade.png'
 import CouvertoiradeCoverwebp from './images/cover-Couvertoirade.webp'
@@ -151,6 +163,17 @@ export const data = [
           webp: mascMedMore2Webp,
           title: 'Verso Flyer Mascarades 2019 - A6',
         },
+        {
+          png: mascMedMore2bisPng,
+          webp: mascMedMore2bisWebp,
+          title: 'Mock-Up Flyer Mascarades 2019',
+        },
+        {
+          png: mascMedMore2terPng,
+          webp: mascMedMore2terWebp,
+          title: 'Mock-Up Flyer Mascarades 2019',
+        },
+
         {
           png: mascMedMore3Png,
           webp: mascMedMore3Webp,
@@ -406,6 +429,11 @@ export const data = [
           title: 'Couverture 2 dépliant Programme de la saison 2020 - A5 fermé',
         },
         {
+          png: ProgrammeMore03bispng,
+          webp: ProgrammeMore03biswebp,
+          title: 'Mock-Up Programme de la saison 2020 - A5 fermé',
+        },
+        {
           png: ProgrammeMore04png,
           webp: ProgrammeMore04webp,
           title: 'Couverture 1 dépliant Programme de la saison 2019 - A5 fermé',
@@ -438,24 +466,19 @@ export const data = [
       },
       more: [
         {
-          png: PierreSophieMore04bispng,
-          webp: PierreSophieMore04biswebp,
+          png: PierreSophieMore01png,
+          webp: PierreSophieMore01webp,
           title: 'planche étiquettes alimentaires 2021 - Ø 6cm',
         },
         {
-          png: PierreSophieMore05png,
-          webp: PierreSophieMore05webp,
+          png: PierreSophieMore02png,
+          webp: PierreSophieMore02webp,
           title: 'planche étiquettes alimentaires 2020 - Ø 6cm',
         },
         {
-          png: PierreSophieMore06png,
-          webp: PierreSophieMore06webp,
-          title: 'Logo-signature pour mails et papier d\'emballage 2021',
-        },
-        {
-          png: PierreSophieMore10bispng,
-          webp: PierreSophieMore10biswebp,
-          title: 'Logo-signature pour mails et papier d\'emballage 2021',
+          png: PierreSophieMore03png,
+          webp: PierreSophieMore03webp,
+          title: 'planche logos/signatures pour mails et papier d\'emballage 2021',
         },
       ],
     },
@@ -473,7 +496,28 @@ export const data = [
         png: EpouvantailsCoverpng,
         webp: EpouvantailsCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: EpouvantailsMore01png,
+          webp: EpouvantailsMore01webp,
+          title: 'Affiches Festival des Épouvantails 2022 - A4/A3/A2 ',
+        },
+        {
+          png: EpouvantailsMore02png,
+          webp: EpouvantailsMore02webp,
+          title: 'Verso Flyer Festival des Épouvantails 2022 - A6 ',
+        },
+        {
+          png: EpouvantailsMore03png,
+          webp: EpouvantailsMore03webp,
+          title: 'Mockup Flyer Festival des Épouvantails 2022 - R/V',
+        },
+        {
+          png: EpouvantailsMore04png,
+          webp: EpouvantailsMore04webp,
+          title: 'Mockup Flyer Festival des Épouvantails 2022 - V/R',
+        },
+      ],
     },
     tags: ['#affiche', '#flyer', '#bannière', '#réseaux', '#web', '#évènement'],
   },
