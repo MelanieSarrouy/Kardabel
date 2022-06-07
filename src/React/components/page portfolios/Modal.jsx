@@ -27,7 +27,6 @@ import { NewlineText } from '../../../helpers/newLineText'
 
 const Modal = (props) => {
   useKeyPress('Escape', props.hideModal)
-  // const data = props.datas
   const allData = props.allData
   const allDataLenght = allData.length
   const positionStart = props.position

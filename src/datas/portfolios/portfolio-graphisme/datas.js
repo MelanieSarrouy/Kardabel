@@ -1,32 +1,28 @@
 import mascMedCoverpng from './images/cover-Mascarades.png'
 import mascMedCoverwebp from './images/cover-Mascarades.webp'
 import mascMedMore1Png from './images/affiche-Mascarades2019.png'
-import mascMedMore2Png from './images/fly-verso-Mascarades2019.png'
-import mascMedMore2bisPng from './images/mascarades-mockup-flyer-recto-verso.png'
-import mascMedMore2terPng from './images/mascarades-mockup-flyer-verso-recto.png'
-import mascMedMore3Png from './images/banniere-facebook-Mascarades2019.png'
-import mascMedMore4Png from './images/affiche-Mascarades2018.png'
-import mascMedMore5Png from './images/fly-verso-Mascarades2018.png'
+import mascMedMore2Png from './images/mascarades-mockup-flyer-recto-verso.png'
+import mascMedMore3Png from './images/mascarades-mockup-flyer-verso-recto.png'
+import mascMedMore4Png from './images/banniere-facebook-Mascarades2019.png'
+import mascMedMore5Png from './images/affiche-Mascarades2018.png'
 import mascMedMore1Webp from './images/affiche-Mascarades2019.webp'
-import mascMedMore2Webp from './images/fly-verso-Mascarades2019.webp'
-import mascMedMore2bisWebp from './images/mascarades-mockup-flyer-recto-verso.webp'
-import mascMedMore2terWebp from './images/mascarades-mockup-flyer-verso-recto.webp'
-import mascMedMore3Webp from './images/banniere-facebook-Mascarades2019.webp'
-import mascMedMore4Webp from './images/affiche-Mascarades2018.webp'
-import mascMedMore5Webp from './images/fly-verso-Mascarades2018.webp'
+import mascMedMore2Webp from './images/mascarades-mockup-flyer-recto-verso.webp'
+import mascMedMore3Webp from './images/mascarades-mockup-flyer-verso-recto.webp'
+import mascMedMore4Webp from './images/banniere-facebook-Mascarades2019.webp'
+import mascMedMore5Webp from './images/affiche-Mascarades2018.webp'
 
 import follesBergCoverpng from './images/cover-FollesBergeres.png'
 import follesBergCoverwebp from './images/cover-FollesBergeres.webp'
 import follesBergMore1Png from './images/affiche-FollesBergeres2020.png'
-import follesBergMore2Png from './images/fly-verso-Folles-Bergères2020.png'
-import follesBergMore3Png from './images/affiche-FollesBergeres2019.png'
-import follesBergMore4Png from './images/fly-verso-Folles-Bergères2019.png'
-import follesBergMore5Png from './images/banniere-facebook-FolleBergere2019.png'
+import follesBergMore2Png from './images/follesBergeres-mockup-flyer-recto-verso.png'
+import follesBergMore3Png from './images/follesBergeres-mockup-flyer-verso-recto.png'
+import follesBergMore4Png from './images/banniere-facebook-FolleBergere2019.png'
+import follesBergMore5Png from './images/affiche-FollesBergeres2019.png'
 import follesBergMore1Webp from './images/affiche-FollesBergeres2020.webp'
-import follesBergMore2Webp from './images/fly-verso-Folles-Bergères2020.webp'
-import follesBergMore3Webp from './images/affiche-FollesBergeres2019.webp'
-import follesBergMore4Webp from './images/fly-verso-Folles-Bergères2019.webp'
-import follesBergMore5Webp from './images/banniere-facebook-FolleBergere2019.webp'
+import follesBergMore2Webp from './images/follesBergeres-mockup-flyer-recto-verso.webp'
+import follesBergMore3Webp from './images/follesBergeres-mockup-flyer-verso-recto.webp'
+import follesBergMore4Webp from './images/banniere-facebook-FolleBergere2019.webp'
+import follesBergMore5Webp from './images/affiche-FollesBergeres2019.webp'
 
 import InsonnanceCoverpng from './images/cover-Insonnance01.png'
 import InsonnanceCoverwebp from './images/cover-Insonnance01.webp'
@@ -107,16 +103,28 @@ import PierreSophieMore03webp from './images/gaec-signature-2021.webp'
 import EpouvantailsCoverpng from './images/cover-FestivalEpouvantails.png'
 import EpouvantailsCoverwebp from './images/cover-FestivalEpouvantails.webp'
 import EpouvantailsMore01png from './images/festival-des-epouvantails-2022-affiche.png'
-import EpouvantailsMore02png from './images/festival-des-epouvantails-2022-flyer-verso.png'
-import EpouvantailsMore03png from './images/festival-des-epouvantails-2022-mockup-flyer-recto-verso.png'
-import EpouvantailsMore04png from './images/festival-des-epouvantails-2022-mockup-flyer-verso-recto.png'
+import EpouvantailsMore02png from './images/festival-des-epouvantails-2022-mockup-flyer-recto-verso.png'
+import EpouvantailsMore03png from './images/festival-des-epouvantails-2022-mockup-flyer-verso-recto.png'
 import EpouvantailsMore01webp from './images/festival-des-epouvantails-2022-affiche.webp'
-import EpouvantailsMore02webp from './images/festival-des-epouvantails-2022-flyer-verso.webp'
-import EpouvantailsMore03webp from './images/festival-des-epouvantails-2022-mockup-flyer-recto-verso.webp'
-import EpouvantailsMore04webp from './images/festival-des-epouvantails-2022-mockup-flyer-verso-recto.webp'
+import EpouvantailsMore02webp from './images/festival-des-epouvantails-2022-mockup-flyer-recto-verso.webp'
+import EpouvantailsMore03webp from './images/festival-des-epouvantails-2022-mockup-flyer-verso-recto.webp'
 
 import AilesLarzCoverpng from './images/cover-LesAilesDuLarzac.png'
 import AilesLarzCoverwebp from './images/cover-LesAilesDuLarzac.webp'
+import AilesLarzMore01png from './images/ailesLarzac-2021-afficheA3.png'
+import AilesLarzMore02png from './images/ailesLarzac-Mockup-flyer-recto.png'
+import AilesLarzMore03png from './images/ailesLarzac-Mockup-flyer-recto-verso.png'
+import AilesLarzMore04png from './images/ailesLarzac-Mockup-rollup-banderole.png'
+import AilesLarzMore05png from './images/ailesLarzac-Maquette-arriere.png'
+import AilesLarzMore06png from './images/ailesLarzac-photo-adhesif.png'
+import AilesLarzMore01webp from './images/ailesLarzac-2021-afficheA3.webp'
+import AilesLarzMore02webp from './images/ailesLarzac-Mockup-flyer-recto.webp'
+import AilesLarzMore03webp from './images/ailesLarzac-Mockup-flyer-recto-verso.webp'
+import AilesLarzMore04webp from './images/ailesLarzac-Mockup-rollup-banderole.webp'
+import AilesLarzMore05webp from './images/ailesLarzac-Maquette-arriere.webp'
+import AilesLarzMore06webp from './images/ailesLarzac-photo-adhesif.webp'
+
+
 
 import AffichesTournoisCoverpng from './images/cover-AffichesTournois.png'
 import AffichesTournoisCoverwebp from './images/cover-AffichesTournois.webp'
@@ -161,37 +169,27 @@ export const data = [
         {
           png: mascMedMore2Png,
           webp: mascMedMore2Webp,
-          title: 'Verso Flyer Mascarades 2019 - A6',
-        },
-        {
-          png: mascMedMore2bisPng,
-          webp: mascMedMore2bisWebp,
           title: 'Mock-Up Flyer Mascarades 2019',
         },
         {
-          png: mascMedMore2terPng,
-          webp: mascMedMore2terWebp,
+          png: mascMedMore3Png,
+          webp: mascMedMore3Webp,
           title: 'Mock-Up Flyer Mascarades 2019',
         },
 
         {
-          png: mascMedMore3Png,
-          webp: mascMedMore3Webp,
-          title: 'Bannière Facebook Mascarades 2019',
-        },
-        {
           png: mascMedMore4Png,
           webp: mascMedMore4Webp,
-          title: 'Affiches 2018 - A4/A3/A2/A0/Sucette',
+          title: 'Bannière Facebook Mascarades 2019',
         },
         {
           png: mascMedMore5Png,
           webp: mascMedMore5Webp,
-          title: 'Verso Flyer Mascarades 2018 - A6',
+          title: 'Affiches 2018 - A4/A3/A2/A0/Sucette',
         },
       ],
     },
-    tags: ['#affiche', '#flyer', '#bannière', '#réseaux', '#web', '#évènement'],
+    tags: ['#affiche', '#flyer', '#banniere', '#evenement'],
   },
   {
     id: '02',
@@ -214,26 +212,26 @@ export const data = [
         {
           png: follesBergMore2Png,
           webp: follesBergMore2Webp,
-          title: 'Verso Flyer Folles Bergères 2020 - A6',
+          title: 'Mock-Up Flyer Folles Bergères 2020 - A6',
         },
         {
           png: follesBergMore3Png,
           webp: follesBergMore3Webp,
-          title: 'Affiches Folles Bergères 2019 - A4/A3/A2/A0/Sucette',
+          title: 'Mock-Up Flyer Folles Bergères 2020 - A6',
         },
         {
           png: follesBergMore4Png,
           webp: follesBergMore4Webp,
-          title: 'Verso Flyer Folles Bergères 2019 - A6',
+          title: 'Bannière Facebook Folles Bergères 2019',
         },
         {
           png: follesBergMore5Png,
           webp: follesBergMore5Webp,
-          title: 'Bannière Facebook Folles Bergères 2019',
+          title: 'Affiches Folles Bergères 2019 - A4/A3/A2/A0/Sucette',
         },
       ],
     },
-    tags: ['#affiche', '#flyer', '#bannière', '#réseaux', '#web', '#évènement'],
+    tags: ['#affiche', '#flyer', '#banniere', '#evenement'],
   },
   {
     id: '03',
@@ -269,7 +267,7 @@ export const data = [
         },
       ],
     },
-    tags: ['#macaron', 'vinyle', '#musique'],
+    tags: ['#macaron', '#vinyle'],
   },
   {
     id: '04',
@@ -295,7 +293,7 @@ export const data = [
         },
       ],
     },
-    tags: ['#affiche', '#évènement'],
+    tags: ['#affiche', '#evenement'],
   },
   {
     id: '05',
@@ -398,7 +396,7 @@ export const data = [
         },
       ],
     },
-    tags: ['#livret', '#brochure'],
+    tags: ['#livret', '#brochure', '#tourisme'],
   },
   {
     id: '07',
@@ -450,7 +448,7 @@ export const data = [
         },
       ],
     },
-    tags: ['#dépliant', '#tourisme'],
+    tags: ['#depliant', '#tourisme'],
   },
   {
     id: '08',
@@ -482,7 +480,7 @@ export const data = [
         },
       ],
     },
-    tags: ['#étiquette', '#logo', '#produit', '#alimentaire'],
+    tags: ['#etiquette', '#logo'],
   },
   {
     id: '09',
@@ -500,26 +498,21 @@ export const data = [
         {
           png: EpouvantailsMore01png,
           webp: EpouvantailsMore01webp,
-          title: 'Affiches Festival des Épouvantails 2022 - A4/A3/A2 ',
+          title: 'Affiches Festival des Épouvantails 2022 - A4/A3/A2',
         },
         {
           png: EpouvantailsMore02png,
           webp: EpouvantailsMore02webp,
-          title: 'Verso Flyer Festival des Épouvantails 2022 - A6 ',
+          title: 'Mockup Flyer Festival des Épouvantails 2022 - R/V',
         },
         {
           png: EpouvantailsMore03png,
           webp: EpouvantailsMore03webp,
-          title: 'Mockup Flyer Festival des Épouvantails 2022 - R/V',
-        },
-        {
-          png: EpouvantailsMore04png,
-          webp: EpouvantailsMore04webp,
           title: 'Mockup Flyer Festival des Épouvantails 2022 - V/R',
         },
       ],
     },
-    tags: ['#affiche', '#flyer', '#bannière', '#réseaux', '#web', '#évènement'],
+    tags: ['#affiche', '#flyer', '#banniere', '#evenement'],
   },
   {
     id: '10',
@@ -532,9 +525,41 @@ export const data = [
         png: AilesLarzCoverpng,
         webp: AilesLarzCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: AilesLarzMore01png,
+          webp: AilesLarzMore01webp,
+          title: 'Affiche Les Ailes du Larzac - 2021 - A3',
+        },
+        {
+          png: AilesLarzMore02png,
+          webp: AilesLarzMore02webp,
+          title: 'Recto flyer Les Ailes du Larzac - 2021 - DL',
+        },
+        {
+          png: AilesLarzMore03png,
+          webp: AilesLarzMore03webp,
+          title: 'Flyer R/V Les Ailes du Larzac - 2021 - DL',
+        },
+        {
+          png: AilesLarzMore04png,
+          webp: AilesLarzMore04webp,
+          title: 'Banderole Les Ailes du Larzac - 2021 - 60x160cm',
+        },
+        {
+          png: AilesLarzMore05png,
+          webp: AilesLarzMore05webp,
+          title: 'Maquette adhesif vehicule Les Ailes du Larzac- 2020',
+        },
+        {
+          png: AilesLarzMore06png,
+          webp: AilesLarzMore06webp,
+          title: 'Photo adhesif vehicule Les Ailes du Larzac- 2020',
+        },
+
+      ],
     },
-    tags: ['#affiche', '#flyer', '#signalétique', '#véhicule', '#banderole', '#autocollant'],
+    tags: ['#affiche', '#flyer', '#signaletique', '#vehicule', '#banderole', '#autocollant'],
   },
   {
     id: '11',
@@ -550,7 +575,7 @@ export const data = [
       },
       more: ['', '', ''],
     },
-    tags: ['#affiche', '#évènement'],
+    tags: ['#affiche', '#evenement'],
   },
   {
     id: '12',
@@ -566,7 +591,7 @@ export const data = [
       },
       more: ['', '', ''],
     },
-    tags: ['#carte', '#dépliant', '#faire-part', '#invitation'],
+    tags: ['#carte', '#depliant', '#fairepart', '#invitation'],
   },
   {
     id: '13',
@@ -582,7 +607,7 @@ export const data = [
       },
       more: ['', '', ''],
     },
-    tags: ['#dépliant', '#roll-up', '#PLV', '#tourisme'],
+    tags: ['#depliant', '#rollup', '#PLV', '#tourisme'],
   },
   {
     id: '14',
@@ -598,7 +623,7 @@ export const data = [
       },
       more: ['', '', ''],
     },
-    tags: ['#dépliant', '#logo', '#site', '#web'],
+    tags: ['#depliant', '#logo', '#site', '#web'],
   },
   {
     id: '15',
@@ -614,7 +639,7 @@ export const data = [
       },
       more: ['', '', ''],
     },
-    tags: ['#carte', '#carte-de-visite', "#carte d'adhésion"],
+    tags: ['#carte'],
   },
   {
     id: '16',
@@ -629,7 +654,7 @@ export const data = [
       },
       more: ['', '', ''],
     },
-    tags: ['#logo', '#signature', '#identité'],
+    tags: ['#logo', '#identite'],
   },
   {
     id: '17',
@@ -645,6 +670,6 @@ export const data = [
       },
       more: ['', '', ''],
     },
-    tags: ['#CV', '#dossiers', '#mise-en-page'],
+    tags: ['#CV'],
   },
 ]

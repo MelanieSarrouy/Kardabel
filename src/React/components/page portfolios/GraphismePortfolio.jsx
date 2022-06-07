@@ -9,23 +9,24 @@ import {
   PTitlePortfolioGraphicCard,
   UlTagsPortfolioGraphicCard,
   DivImgContainer,
+  LitagsCard,
 } from '../../../styles/components/page portfolios/graphismePortfolio'
 import { data } from '../../../datas/portfolios/portfolio-graphisme/datas'
 import Modal from './Modal'
 
 const GraphismePortfolio = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
-  const[dataPosition, setDataPosition] = useState(0)
+  const [dataPosition, setDataPosition] = useState(0)
   let position = dataPosition
-  // const [dataModal, setDataModal] = useState({})
+  let dataToDisplay = data
 
-  const handleSubmit = (event) => {
+
+  const openModal = (event) => {
     setModalIsOpen(true)
     const target = event.target
     const id = getId(target)
     position = getCreation(id)
     setDataPosition(position)
-    // setDataModal(data[position])
   }
   const getId = (target) => {
     const str = target.id
@@ -34,8 +35,8 @@ const GraphismePortfolio = () => {
     return id
   }
   const getCreation = (idString) => {
-    const creation = data.find((element) => element.id === idString)
-    const position = data.indexOf(creation)
+    const creation = dataToDisplay.find((element) => element.id === idString)
+    const position = dataToDisplay.indexOf(creation)
     return position
   }
 
@@ -46,10 +47,10 @@ const GraphismePortfolio = () => {
   return (
     <SectionPortfolio id="gallery">
       <DivPortfolioCardsContainer>
-        {data.map((element, index) => (
+        {dataToDisplay.map((element, index) => (
           <ArcticlePortfolioGraphicCard
             key={index}
-            onClick={(event) => handleSubmit(event)}
+            onClick={(event) => openModal(event)}
             id={element.id}
           >
             <DivImgContainer id={'divIMg-' + element.id}>
@@ -69,16 +70,18 @@ const GraphismePortfolio = () => {
               </PTitlePortfolioGraphicCard>
               <UlTagsPortfolioGraphicCard id={'divUl-' + element.id}>
                 {element.tags.map((el, index) => (
-                  <li id={'divIl-' + element.id} key={'tag' + index}>
+                  <LitagsCard id={'divLi' + index + '-' + element.id} key={'tag' + index}>
                     {el}
-                  </li>
+                  </LitagsCard>
                 ))}
               </UlTagsPortfolioGraphicCard>
             </DivTitlePortfolioGraphicCard>
           </ArcticlePortfolioGraphicCard>
         ))}
       </DivPortfolioCardsContainer>
-      {modalIsOpen && <Modal allData={data} position={dataPosition} hideModal={closeModal}></Modal>}
+      {modalIsOpen && (
+        <Modal allData={dataToDisplay} position={dataPosition} hideModal={closeModal}></Modal>
+      )}
     </SectionPortfolio>
   )
 }

@@ -37,6 +37,9 @@ export const PTextProvisoire = styled.p`
     line-height: 1.9rem;
   }
 `
+export const DivTags = styled.div`
+  padding: 0 2rem 3rem 2rem;
+`
 export const ArcticlePortfolioGraphicCard = styled.article`
   overflow: hidden;
   border-radius: 12px;
@@ -108,8 +111,8 @@ export const UlTagsPortfolioGraphicCard = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  & > li {
+  justify-content: ${props => props.justify || 'flex-start'};
+  ${'' /* & > li {
     font-size: 1rem;
     color: ${colors.primaryDark};
     text-align: center;
@@ -119,6 +122,7 @@ export const UlTagsPortfolioGraphicCard = styled.ul`
     background-color: ${colors.background};
     border-radius: 1rem;
     border: solid 1px ${colors.primary};
+    cursor: pointer;
     @media (max-width: 420px) {
       font-size: 0.9rem;
       margin-right: 0.3rem;
@@ -132,5 +136,71 @@ export const UlTagsPortfolioGraphicCard = styled.ul`
       background-color: ${colors.primary};
       border: solid 1px ${colors.primary};
     }
-  }
+  } */}
+`
+export const LitagsCard = styled.li`
+    font-size: 1rem;
+    color: ${colors.primaryDark};
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background-color: ${colors.background};
+    border-radius: 1rem;
+    border: solid 1px ${colors.primary};
+    cursor: pointer;
+    @media (max-width: 420px) {
+      font-size: 0.9rem;
+      margin-right: 0.3rem;
+      margin-bottom: 0.2rem;
+    }
+    @media (max-width: 390px) {
+      font-size: 1rem;
+    }
+`
+export const LiTagNoActive = styled.li`
+    font-size: 1rem;
+    color: ${colors.primaryDark};
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background-color: ${colors.background};
+    border-radius: 1rem;
+    border: solid 1px ${colors.primary};
+    cursor: pointer;
+    @media (max-width: 420px) {
+      font-size: 0.9rem;
+      margin-right: 0.3rem;
+      margin-bottom: 0.2rem;
+    }
+    @media (max-width: 390px) {
+      font-size: 1rem;
+    }
+    &:hover {
+      color: ${colors.background};
+      background-color: ${colors.primary};
+      border: solid 1px ${colors.primary};
+    }
+`
+export const LiTagActive = styled(LiTagNoActive)`
+    font-size: 1rem;
+    color: ${colors.background};
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background-color: ${colors.primary};
+    border-radius: 1rem;
+    border: solid 1px ${colors.primary};
+    cursor: pointer;
+    @media (max-width: 420px) {
+      font-size: 0.9rem;
+      margin-right: 0.3rem;
+      margin-bottom: 0.2rem;
+    }
+    @media (max-width: 390px) {
+      font-size: 1rem;
+    }
+
 `
