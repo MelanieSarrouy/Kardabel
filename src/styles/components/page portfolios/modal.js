@@ -14,7 +14,7 @@ export const ModalDiv = styled.div`
   width: auto;
   height: auto;
   z-index: 20;
-  overflow: auto;
+  overflow-y: auto;
   background: linear-gradient(
     133deg,
     rgba(0, 0, 0, 0.8) 0%,
@@ -37,7 +37,7 @@ export const ModalContent = styled.div`
     rgba(0, 0, 0, 0.75) 90%,
     rgba(0, 0, 0, 0.9) 100%
   );
-  top: 1vh;
+  top: 2vh;
   transform: translateX(-1500px);
   animation: ${roadRunnerIn} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   display: flex;
@@ -62,7 +62,21 @@ export const DivButtonsSide = styled.div`
   & > img {
     width: 2.5rem;
     margin: 0.5rem;
+    @media (max-width: 640px) {
+      width: 1.5rem;
+    }
+
   }
+  @media (max-width: 640px) {
+    height: 50vh;
+    width: 3rem;
+
+    }
+    @media (max-width: 340px) {
+    height: 40vh;
+    }
+
+
 `
 export const DivPagination = styled.div`
   display: flex;
@@ -114,6 +128,12 @@ export const ImgCaroussel = styled.img`
   height: 72vh;
   filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.9));
   max-width: 43.75rem;
+  @media (max-width: 640px) {
+    height: 50vh;
+    }
+    @media (max-width: 340px) {
+    height: 40vh;
+    }
 `
 export const DivInfosContainer = styled.div`
   width: 100%;
@@ -128,12 +148,16 @@ export const DivDates = styled.div`
     font-size: 1.1rem;
     color: ${colors.background};
     font-weight: 300;
+    @media (max-width: 750px) {
+    font-size: 1rem;
+    }
+
   }
 `
 export const DivTitle = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   padding-top: .6rem;
   padding-bottom: .6rem;
@@ -141,12 +165,20 @@ export const DivTitle = styled.div`
   & > p {
     color: ${colors.background};
   }
+  @media (max-width: 700px) {
+      line-height: 1.6rem;
+    }
+
 `
 export const PTitleModal = styled.p`
   font-size: 1.4rem;
   padding-right: 1.5rem;
   font-weight: 400;
   letter-spacing: 1px;
+  @media (max-width: 750px) {
+    font-size: 1.3rem;
+    }
+
 `
 export const PClient = styled.p`
   font-style: italic;
@@ -159,5 +191,11 @@ export const DivPWork = styled.div`
     font-weight: 300;
     color: ${colors.background};
     line-height: 1.4rem;
+    @media (max-width: 750px) {
+    font-size: 1rem;
+    line-height: 1.3rem;
+
+    }
+
   }
 `

@@ -9,7 +9,7 @@ import {
   PTitlePortfolioGraphicCard,
   UlTagsPortfolioGraphicCard,
   DivImgContainer,
-  LitagsCard,
+  LiTagsCard,
 } from '../../../styles/components/page portfolios/graphismePortfolio'
 import { data } from '../../../datas/portfolios/portfolio-graphisme/datas'
 import Modal from './Modal'
@@ -70,9 +70,9 @@ const GraphismePortfolio = () => {
               </PTitlePortfolioGraphicCard>
               <UlTagsPortfolioGraphicCard id={'divUl-' + element.id}>
                 {element.tags.map((el, index) => (
-                  <LitagsCard id={'divLi' + index + '-' + element.id} key={'tag' + index}>
+                  <LiTagsCard id={'divLi' + index + '-' + element.id} key={'tag' + index}>
                     {el}
-                  </LitagsCard>
+                  </LiTagsCard>
                 ))}
               </UlTagsPortfolioGraphicCard>
             </DivTitlePortfolioGraphicCard>

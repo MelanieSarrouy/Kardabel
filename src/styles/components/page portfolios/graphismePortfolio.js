@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import colors from '../../bases/colors'
-import fonts from '../../bases/fonts'
 
 export const DivImgWait = styled.div`
   display: flex;
@@ -94,9 +93,8 @@ export const DivTitlePortfolioGraphicCard = styled.div`
   }
 `
 export const PTitlePortfolioGraphicCard = styled.p`
-  font-family: ${fonts.titles};
-  word-spacing: 2px;
-  font-weight: 500;
+  word-spacing: 1px;
+  font-weight: 600;
   font-size: 1.4rem;
   color: ${colors.primaryDark};
   padding: 0 0 1.2rem 0;
@@ -138,7 +136,7 @@ export const UlTagsPortfolioGraphicCard = styled.ul`
     }
   } */}
 `
-export const LitagsCard = styled.li`
+export const LiTagsCard = styled.li`
     font-size: 1rem;
     color: ${colors.primaryDark};
     text-align: center;

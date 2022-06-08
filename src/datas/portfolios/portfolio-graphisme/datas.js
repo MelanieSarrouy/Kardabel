@@ -153,7 +153,7 @@ export const data = [
     title: 'Les Mascarades Médiévales',
     dates: [2017, 2018, 2019],
     description:
-      "Organisation complète de l'évènement \n Conception et réalisation de tous les supports de communication",
+      "Organisation complète de l'évènement / Conception et réalisation de tous les supports de communication",
     client: 'Mairie de La Couvertoirade',
     images: {
       cover: {
@@ -196,7 +196,7 @@ export const data = [
     title: 'Les Folles Bergères',
     dates: [2019, 2020],
     description:
-      "Organisation complète de l'évènement \n Conception et réalisation de tous les supports de communication",
+      "Organisation complète de l'évènement / Conception et réalisation de tous les supports de communication",
     client: 'Mairie de La Couvertoirade',
     images: {
       cover: {
@@ -300,7 +300,7 @@ export const data = [
     title: 'Brochures Visites Guidées',
     dates: [2017, 2018, 2019, 2020, 2021, 2022],
     description:
-      'Conception et réalisation des brochures de présentation des visites guidées pour les groupes adultes et scolaires à La Couvertoirade \n (format carré - 12 pages - broché)',
+      'Conception et réalisation des brochures de présentation des visites guidées pour les groupes adultes et scolaires à La Couvertoirade (format carré - 12 pages - broché)',
     client: 'Service Tourisme de La Couvertoirade',
     images: {
       cover: {
@@ -347,7 +347,7 @@ export const data = [
     title: "Le Trésor d'Offerus",
     dates: [2019],
     description:
-      "Conception et réalisation d'un livret pour un jeu de piste \n Co-création du contenu \n (format A5 - 36 pages - broché )",
+      "Conception et réalisation d'un livret pour un jeu de piste / Co-création du contenu (format A5 - 36 pages - broché )",
     client: 'Service Tourisme de La Couvertoirade',
     images: {
       cover: {
@@ -403,7 +403,7 @@ export const data = [
     title: 'Programme',
     dates: [2018, 2019, 2020],
     description:
-      'Conception et réalisation du programme de la saison touristique à La Couvertoirade \n Programmation et mise en place des animations en 2018 et 2019 \n (format A5 - 2 volets - 1 pli roulé)',
+      'Conception et réalisation du programme de la saison touristique à La Couvertoirade / Programmation et mise en place des animations en 2018 et 2019 (format A5 - 2 volets - 1 pli roulé)',
     client: 'Mairie de La Couvertoirade',
     images: {
       cover: {
@@ -455,7 +455,7 @@ export const data = [
     title: 'Pierre & Sophie',
     dates: [2020, 2021],
     description:
-      "Conception et réalisation de 4 déclinaisons d'étiquettes pour la vente de produits alimentaires de production artisanale \n (diamètre 6 cm) \n Conception et réalisation du 'logo' pour les signatures de mail et le papier d'emballage alimentaire",
+      "Conception et réalisation de 4 déclinaisons d'étiquettes pour la vente de produits alimentaires de production artisanale (diamètre 6 cm) + 'logo' pour les signatures de mail et le papier d'emballage alimentaire",
     client: 'GAEC des Infruts',
     images: {
       cover: {
@@ -487,7 +487,7 @@ export const data = [
     title: 'Le Festival des Épouvantails',
     dates: [2022],
     description:
-      "Conception et réalisation des supports de communication \n Co-organisation de l'évènement",
+      "Conception et réalisation des supports de communication / Co-organisation de l'évènement",
     client: 'Association Larzac Repère',
     images: {
       cover: {
@@ -556,7 +556,6 @@ export const data = [
           webp: AilesLarzMore06webp,
           title: 'Photo adhesif vehicule Les Ailes du Larzac- 2020',
         },
-
       ],
     },
     tags: ['#affiche', '#flyer', '#signaletique', '#vehicule', '#banderole', '#autocollant'],
@@ -582,7 +581,7 @@ export const data = [
     title: 'Faire-part',
     dates: [2019],
     description:
-      'Conception et réalisation de faire-part de naissance, mariage, invitations, etc. \n (format carré - 2 volets - 1 pli roulé)',
+      'Conception et réalisation de faire-part de naissance, mariage, invitations, etc, tous formats (ici: format carré - 2 volets - 1 pli roulé)',
     client: '',
     images: {
       cover: {
@@ -598,7 +597,7 @@ export const data = [
     title: 'La Couvertoirade',
     dates: [2016, 2017, 2018, 2019, 2020, 2021],
     description:
-      'Conception et réalisation du dépliant de présentation de la Cité médiévale de La Couvertoirade \n (format DL - 3 volets - 2 plis roulés)',
+      'Conception et réalisation du dépliant de présentation de la Cité médiévale de La Couvertoirade (format DL - 3 volets - 2 plis roulés)',
     client: 'Service Tourisme de La Couvertoirade',
     images: {
       cover: {
@@ -614,7 +613,7 @@ export const data = [
     title: "L'Abat'Mobile 34",
     dates: [2022],
     description:
-      "Conception et réalisation du dépliant de présentation du projet d'abattage à la ferme \n (format DL - 3 volets - 2 plis roulés) \n Conception et réalisation du logo et de ses déclinaisons \n Conception et réalisation d'un site vitrine pour le projet : www.labatmobile34.fr ",
+      "Conception et réalisation du dépliant de présentation du projet d'abattage à la ferme (format DL - 3 volets - 2 plis roulés) / Conception et réalisation du logo et de ses déclinaisons / Conception et réalisation d'un site vitrine pour le projet : www.labatmobile34.fr ",
     client: "Association Abattage à la Ferme de l'Hérault",
     images: {
       cover: {
@@ -630,7 +629,7 @@ export const data = [
     title: 'Cartes',
     dates: [2020, 2021],
     description:
-      "Conception et réalisation de cartes de visites, cartes d'adhésion, carte de fidélité, etc. \n (format 85 x 55 mm - coins arrondis - vernis sélectif)",
+      "Conception et réalisation de cartes de visites, cartes d'adhésion, carte de fidélité, etc, tous formats (ici: format 85 x 55 mm - coins arrondis - vernis sélectif)",
     client: '',
     images: {
       cover: {

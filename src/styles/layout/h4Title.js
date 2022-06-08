@@ -81,10 +81,10 @@ export const SvgH4Trio = styled.img`
 `
 export const H4Style = styled.h4`
   font-size: 3.6rem;
-  font-family: ${fonts.kardabel};
+  font-family: ${fonts.titles};
   word-spacing: 0.5rem;
-  letter-spacing: -2px;
-  font-weight: 600;
+  letter-spacing: -1px;
+  font-weight: 500;
   line-height: 4rem;
   color: ${colors.primaryDark};
   @media (max-width: 1440px) {
