@@ -83,6 +83,7 @@ import ProgrammeMore03bispng from './images/programme-saison-mockup.png'
 import ProgrammeMore04png from './images/programme-saison-2019-p1.png'
 import ProgrammeMore05png from './images/programme-saison-2019-p2-3.png'
 import ProgrammeMore06png from './images/programme-saison-2019-p4.png'
+import ProgrammeMore07png from './images/programme-saison2019-mockup.png'
 import ProgrammeMore01webp from './images/programme-saison-2020-p1.webp'
 import ProgrammeMore02webp from './images/programme-saison-2020-p2-3.webp'
 import ProgrammeMore03webp from './images/programme-saison-2020-p4.webp'
@@ -90,6 +91,7 @@ import ProgrammeMore03biswebp from './images/programme-saison-mockup.webp'
 import ProgrammeMore04webp from './images/programme-saison-2019-p1.webp'
 import ProgrammeMore05webp from './images/programme-saison-2019-p2-3.webp'
 import ProgrammeMore06webp from './images/programme-saison-2019-p4.webp'
+import ProgrammeMore07webp from './images/programme-saison2019-mockup.webp'
 
 import PierreSophieCoverpng from './images/cover-PierreSophie.png'
 import PierreSophieCoverwebp from './images/cover-PierreSophie.webp'
@@ -124,16 +126,44 @@ import AilesLarzMore04webp from './images/ailesLarzac-Mockup-rollup-banderole.we
 import AilesLarzMore05webp from './images/ailesLarzac-Maquette-arriere.webp'
 import AilesLarzMore06webp from './images/ailesLarzac-photo-adhesif.webp'
 
-
-
 import AffichesTournoisCoverpng from './images/cover-AffichesTournois.png'
 import AffichesTournoisCoverwebp from './images/cover-AffichesTournois.webp'
-
-import CouvertoiradeCoverpng from './images/cover-Couvertoirade.png'
-import CouvertoiradeCoverwebp from './images/cover-Couvertoirade.webp'
+import AffichesTournois01png from './images/template-affiche-A3-tournoi-judo.png'
+import AffichesTournois02png from './images/template-affiche-A3-tournoi-scrabble.png'
+import AffichesTournois03png from './images/templates-Mockup-affiches.png'
+import AffichesTournois01webp from './images/template-affiche-A3-tournoi-judo.webp'
+import AffichesTournois02webp from './images/template-affiche-A3-tournoi-scrabble.webp'
+import AffichesTournois03webp from './images/templates-Mockup-affiches.webp'
 
 import FairePartCoverpng from './images/cover-FairePart.png'
 import FairePartCoverwebp from './images/cover-FairePart.webp'
+import FairePart01png from './images/fairepart-p1.png'
+import FairePart02png from './images/fairepart-p2-3.png'
+import FairePart03png from './images/fairepart-p4.png'
+import FairePart04png from './images/fairepart-Mockup.png'
+import FairePart05png from './images/inauguration.png'
+import FairePart01webp from './images/fairepart-p1.webp'
+import FairePart02webp from './images/fairepart-p2-3.webp'
+import FairePart03webp from './images/fairepart-p4.webp'
+import FairePart04webp from './images/fairepart-Mockup.webp'
+import FairePart05webp from './images/inauguration.webp'
+
+import CouvertoiradeCoverpng from './images/cover-Couvertoirade.png'
+import CouvertoiradeCoverwebp from './images/cover-Couvertoirade.webp'
+import Couvertoirade01png from './images/couvertoirade-mockup-depliants.png'
+import Couvertoirade02png from './images/couvertoirade-depliant-tryptique.png'
+import Couvertoirade03png from './images/couvertoirade-Mockup-flyer-recto-verso.png'
+import Couvertoirade04png from './images/couvertoirade-mockup-depliant-recto.png'
+import Couvertoirade05png from './images/couvertoirade-mockup-depliant-verso.png'
+import Couvertoirade06png from './images/couvertoirade-rollup.png'
+import Couvertoirade07png from './images/plaque-secretariat.png'
+import Couvertoirade01webp from './images/couvertoirade-mockup-depliants.webp'
+import Couvertoirade02webp from './images/couvertoirade-depliant-tryptique.webp'
+import Couvertoirade03webp from './images/couvertoirade-Mockup-flyer-recto-verso.webp'
+import Couvertoirade04webp from './images/couvertoirade-mockup-depliant-recto.webp'
+import Couvertoirade05webp from './images/couvertoirade-mockup-depliant-verso.webp'
+import Couvertoirade06webp from './images/couvertoirade-rollup.webp'
+import Couvertoirade07webp from './images/plaque-secretariat.webp'
 
 import AbatMobileCoverpng from './images/cover-AbatMobile.png'
 import AbatMobileCoverwebp from './images/cover-AbatMobile.webp'
@@ -446,6 +476,11 @@ export const data = [
           webp: ProgrammeMore06webp,
           title: 'Couverture 2 dépliant Programme de la saison 2019 - A5 fermé',
         },
+        {
+          png: ProgrammeMore07png,
+          webp: ProgrammeMore07webp,
+          title: 'Couverture 2 dépliant Programme de la saison 2019 - A5 fermé',
+        },
       ],
     },
     tags: ['#depliant', '#tourisme'],
@@ -572,7 +607,23 @@ export const data = [
         png: AffichesTournoisCoverpng,
         webp: AffichesTournoisCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: AffichesTournois01png,
+          webp: AffichesTournois01webp,
+          title: 'Template affiche tournoi de Judo - 2021 - A3',
+        },
+        {
+          png: AffichesTournois02png,
+          webp: AffichesTournois02webp,
+          title: 'Template affiche tournoi de Scrabble - 2021 - A3',
+        },
+        {
+          png: AffichesTournois03png,
+          webp: AffichesTournois03webp,
+          title: 'Template affiches tournois - 2021 - A3',
+        },
+      ],
     },
     tags: ['#affiche', '#evenement'],
   },
@@ -588,7 +639,33 @@ export const data = [
         png: FairePartCoverpng,
         webp: FairePartCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: FairePart01png,
+          webp: FairePart01webp,
+          title: 'Couverture 1 faire-part - 2019 - format carré plié',
+        },
+        {
+          png: FairePart02png,
+          webp: FairePart02webp,
+          title: 'intérieur faire-part - 2019 - format carré plié',
+        },
+        {
+          png: FairePart03png,
+          webp: FairePart03webp,
+          title: 'Couverture 2 faire-part - 2019 - format carré plié',
+        },
+        {
+          png: FairePart04png,
+          webp: FairePart04webp,
+          title: 'Faire-part - 2019 - format carré plié',
+        },
+        {
+          png: FairePart05png,
+          webp: FairePart05webp,
+          title: 'Invitation - Inauguration - 2018 - DL',
+        },
+      ],
     },
     tags: ['#carte', '#depliant', '#fairepart', '#invitation'],
   },
@@ -604,9 +681,45 @@ export const data = [
         png: CouvertoiradeCoverpng,
         webp: CouvertoiradeCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: Couvertoirade01png,
+          webp: Couvertoirade01webp,
+          title: 'Recto dépliant Couvertoirade (fr) - 2021 - format DL',
+        },
+        {
+          png: Couvertoirade02png,
+          webp: Couvertoirade02webp,
+          title: 'Triptyque dépliants Couvertoirade (fr, gb, es) - 2021 - format DL',
+        },
+        {
+          png: Couvertoirade03png,
+          webp: Couvertoirade03webp,
+          title: 'Flyer Couvertoirade R/V (fr) - 2021 - format DL',
+        },
+        {
+          png: Couvertoirade04png,
+          webp: Couvertoirade04webp,
+          title: 'Recto dépliant ouvert Couvertoirade (fr) - 2021 - format DL',
+        },
+        {
+          png: Couvertoirade05png,
+          webp: Couvertoirade05webp,
+          title: 'Verso dépliant ouvert Couvertoirade (fr) - 2021 - format DL',
+        },
+        {
+          png: Couvertoirade06png,
+          webp: Couvertoirade06webp,
+          title: 'Roll-up Couvertoirade - 2016',
+        },
+        {
+          png: Couvertoirade07png,
+          webp: Couvertoirade07webp,
+          title: 'Plaque pour le secrétariat - 2019',
+        },
+      ],
     },
-    tags: ['#depliant', '#rollup', '#PLV', '#tourisme'],
+    tags: ['#depliant', '#flyer', '#rollup', '#PLV', '#signalétique', '#tourisme'],
   },
   {
     id: '14',
@@ -620,7 +733,14 @@ export const data = [
         png: AbatMobileCoverpng,
         webp: AbatMobileCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: Couvertoirade01png,
+          webp: Couvertoirade01webp,
+          title: 'Recto dépliant Couvertoirade (fr) - 2021 - format DL',
+        },
+
+      ],
     },
     tags: ['#depliant', '#logo', '#site', '#web'],
   },

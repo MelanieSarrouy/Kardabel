@@ -22,6 +22,7 @@ const submenu = true
 const SectionH2IntroPorfolios = () => {
   const sampleLocation = useLocation()
   const location = sampleLocation.pathname
+  console.log(location)
 
   return (
     <div>
