@@ -21,7 +21,8 @@ import {
   DivPagination,
   PTitleImage,
   DivCarousselPosition,
-  DivGolbalPagination
+  DivGolbalPagination,
+  DivProjet,
 } from '../../../styles/components/page portfolios/modal'
 import { NewlineText } from '../../../helpers/newLineText'
 
@@ -83,9 +84,13 @@ const Modal = (props) => {
                 width={20}
                 onClick={handleClickPaginationPreview}
               />
-              <p>
-                <span>projet </span>{position + 1} / {allDataLenght}
-              </p>
+              <DivProjet>
+                <p>{title} :{'\u00a0'} </p>
+                <p>
+                  projet {'\u00a0'}
+                  {position + 1} / {allDataLenght}
+                </p>
+              </DivProjet>
               <img src={next} alt="fleche suivant" width={30} onClick={handleClickPaginationNext} />
             </DivGolbalPagination>
             <DivCarousselPosition>
@@ -106,10 +111,10 @@ const Modal = (props) => {
               src={caroussel[count].webp}
               alt={title}
               width={700}
+              height={700}
             />
           </PictureCareoussel>
           <PTitleImage>{caroussel[count].title}</PTitleImage>
-
           <DivInfosContainer>
             <DivTitle>
               <PTitleModal>{title}</PTitleModal>

@@ -1,8 +1,8 @@
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
-import colors from '../../bases/colors'
+import colors from '../bases/colors'
 
-export const NavServicesStyle = styled.nav`
+export const NavIntro = styled.nav`
   width: 100%;
 
   & > ul {

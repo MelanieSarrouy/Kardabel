@@ -19,7 +19,7 @@ const GraphismePortfolio = () => {
   const [dataPosition, setDataPosition] = useState(0)
   let position = dataPosition
   let dataToDisplay = data
-
+  const body = document.querySelector('body')
 
   const openModal = (event) => {
     setModalIsOpen(true)
@@ -27,6 +27,7 @@ const GraphismePortfolio = () => {
     const id = getId(target)
     position = getCreation(id)
     setDataPosition(position)
+    body.classList.add('no-scroll')
   }
   const getId = (target) => {
     const str = target.id
@@ -39,9 +40,9 @@ const GraphismePortfolio = () => {
     const position = dataToDisplay.indexOf(creation)
     return position
   }
-
   const closeModal = () => {
     setModalIsOpen(false)
+    body.classList.remove('no-scroll')
   }
 
   return (

@@ -29,7 +29,7 @@ import MentionsLegales from './pages/MentionsLegales'
  * @returns {?JSX}
  */
 
-export const App = () => {
+export const App = (props) => {
   return (
     <>
       <BrowserRouter>

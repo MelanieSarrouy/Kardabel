@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import colors from '../../../styles/bases/colors'
 import {
   DivBackPortfolioCard,
   UlButtonsContainers,
@@ -41,11 +40,7 @@ const WebPortfolioCardBack = (props) => {
         {props.site !== '' && (
           <li>
             <LinkButtonServices
-              btncolorbck={colors.primaryDark}
-              btncolorhover={colors.secondary}
-              btncolortxt={colors.background}
               to={{ pathname: props.site }}
-              txtcolorhover={colors.background}
               target="_blank"
             >
               {props.site.indexOf(figma) !== -1 ? figma : 'site'}
@@ -55,10 +50,6 @@ const WebPortfolioCardBack = (props) => {
         {props.code !== '' && (
           <li>
             <LinkButtonServices
-              btncolorbck={colors.primaryDark}
-              btncolorhover={colors.secondary}
-              btncolortxt={colors.background}
-              txtcolorhover={colors.background}
               to={{ pathname: props.code }}
               target="_blank"
             >
@@ -69,9 +60,6 @@ const WebPortfolioCardBack = (props) => {
         {props.other !== '' && (
           <li>
             <LinkButtonServices
-              btncolorbck={colors.primaryDark}
-              btncolorhover={colors.secondary}
-              btncolortxt={colors.background}
               boxshadow="true"
               to={{ pathname: props.other }}
               target="_blank"

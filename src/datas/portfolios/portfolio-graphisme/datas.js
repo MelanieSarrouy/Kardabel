@@ -167,12 +167,51 @@ import Couvertoirade07webp from './images/plaque-secretariat.webp'
 
 import AbatMobileCoverpng from './images/cover-AbatMobile.png'
 import AbatMobileCoverwebp from './images/cover-AbatMobile.webp'
+import AbatMobile02png from './images/abat-mobile34-depliants-mockup.png'
+import AbatMobile03png from './images/abat-mobile34-recto.png'
+import AbatMobile04png from './images/abat-mobile34-verso.png'
+import AbatMobile05png from './images/abat-mobile34-planche-declinaisons-logo.png'
+import AbatMobile02webp from './images/abat-mobile34-depliants-mockup.webp'
+import AbatMobile03webp from './images/abat-mobile34-recto.webp'
+import AbatMobile04webp from './images/abat-mobile34-verso.webp'
+import AbatMobile05webp from './images/abat-mobile34-planche-declinaisons-logo.webp'
+
+import FaitesZikCoverpng from './images/cover-fete-musique.png'
+import FaitesZikCoverwebp from './images/cover-fete-musique.webp'
+import FaitesZik01png from './images/fete-musique-2018-A3.png'
+import FaitesZik02png from './images/fete-musique-2019-A3.png'
+import FaitesZik03png from './images/faites-zik-affiches.png'
+import FaitesZik01webp from './images/fete-musique-2018-A3.webp'
+import FaitesZik02webp from './images/fete-musique-2019-A3.webp'
+import FaitesZik03webp from './images/faites-zik-affiches.webp'
 
 import CartesCoverpng from './images/cover-Cartes.png'
 import CartesCoverwebp from './images/cover-Cartes.webp'
+import Cartes01png from './images/card-kardabel-v1-recto.png'
+import Cartes02png from './images/card-kardabel-v1-verso.png'
+import Cartes03png from './images/card-kardabel-v1-recto-photo.png'
+import Cartes04png from './images/card-kardabel-v1-verso-photo.png'
+import Cartes05png from './images/card-kardabel-v1-recto-verso-photo.png'
+import Cartes06png from './images/card-larz-rep-recto.png'
+import Cartes01webp from './images/card-kardabel-v1-recto.webp'
+import Cartes02webp from './images/card-kardabel-v1-verso.webp'
+import Cartes03webp from './images/card-kardabel-v1-recto-photo.webp'
+import Cartes04webp from './images/card-kardabel-v1-verso-photo.webp'
+import Cartes05webp from './images/card-kardabel-v1-recto-verso-photo.webp'
+import Cartes06webp from './images/card-larz-rep-recto.webp'
 
 import LogosCoverpng from './images/cover-Logos.png'
 import LogosCoverwebp from './images/cover-Logos.webp'
+import Logos03png from './images/gaec-signature-2021.png'
+import Logos03webp from './images/gaec-signature-2021.webp'
+import Logos04png from './images/abat-mobile34-logo-texte.png'
+import Logos04webp from './images/abat-mobile34-logo-texte.webp'
+import Logos05png from './images/abat-mobile34-logo2.png'
+import Logos05webp from './images/abat-mobile34-logo2.webp'
+import Logos06png from './images/abat-mobile34-planche-declinaisons-logo.png'
+import Logos06webp from './images/abat-mobile34-planche-declinaisons-logo.webp'
+import Logos07png from './images/abat-mobile34-favicon.png'
+import Logos07webp from './images/abat-mobile34-favicon.webp'
 
 import CVCoverpng from './images/cover-CV.png'
 import CVCoverwebp from './images/cover-CV.webp'
@@ -297,7 +336,7 @@ export const data = [
         },
       ],
     },
-    tags: ['#macaron', '#vinyle'],
+    tags: ['#macaron', '#vinyle', '#autocollant', '#produit'],
   },
   {
     id: '04',
@@ -330,7 +369,7 @@ export const data = [
     title: 'Brochures Visites Guidées',
     dates: [2017, 2018, 2019, 2020, 2021, 2022],
     description:
-      'Conception et réalisation des brochures de présentation des visites guidées pour les groupes adultes et scolaires à La Couvertoirade (format carré - 12 pages - broché)',
+      'Conception et réalisation des brochures pour les visites guidées des groupes adultes et scolaires à La Couvertoirade (format carré - 12 pages - broché)',
     client: 'Service Tourisme de La Couvertoirade',
     images: {
       cover: {
@@ -501,21 +540,21 @@ export const data = [
         {
           png: PierreSophieMore01png,
           webp: PierreSophieMore01webp,
-          title: 'planche étiquettes alimentaires 2021 - Ø 6cm',
+          title: 'planche étiquettes alimentaires - 2021 - Ø 6cm',
         },
         {
           png: PierreSophieMore02png,
           webp: PierreSophieMore02webp,
-          title: 'planche étiquettes alimentaires 2020 - Ø 6cm',
+          title: 'planche étiquettes alimentaires - 2020 - Ø 6cm',
         },
         {
           png: PierreSophieMore03png,
           webp: PierreSophieMore03webp,
-          title: 'planche logos/signatures pour mails et papier d\'emballage 2021',
+          title: 'planche déclinaisons logos pour mails et papier d\'emballage - 2021',
         },
       ],
     },
-    tags: ['#etiquette', '#logo'],
+    tags: ['#etiquette', '#autocollant', '#logo', '#produit'],
   },
   {
     id: '09',
@@ -547,7 +586,7 @@ export const data = [
         },
       ],
     },
-    tags: ['#affiche', '#flyer', '#banniere', '#evenement'],
+    tags: ['#affiche', '#flyer', '#evenement'],
   },
   {
     id: '10',
@@ -735,17 +774,64 @@ export const data = [
       },
       more: [
         {
-          png: Couvertoirade01png,
-          webp: Couvertoirade01webp,
-          title: 'Recto dépliant Couvertoirade (fr) - 2021 - format DL',
+          png: AbatMobile02png,
+          webp: AbatMobile02webp,
+          title: 'Recto dépliant L\'Abat\'Mobile - 2022 - format DL',
         },
-
+        
+        {
+          png: AbatMobile03png,
+          webp: AbatMobile03webp,
+          title: 'Recto dépliant ouvert L\'Abat\'Mobile - 2022 - format DL',
+        },
+        {
+          png: AbatMobile04png,
+          webp: AbatMobile04webp,
+          title: 'Verso dépliant ouvert L\'Abat\'Mobile - 2022 - format DL',
+        },
+        {
+          png: AbatMobile05png,
+          webp: AbatMobile05webp,
+          title: 'planche déclinaisons logo complet et simplifié (version favicon)',
+        },
       ],
     },
-    tags: ['#depliant', '#logo', '#site', '#web'],
+    tags: ['#depliant', '#logo'],
   },
   {
     id: '15',
+    title: "Faites de la Zik'",
+    dates: [2018, 2019],
+    description:
+      "Conception et réalisation des affiches pour \"Faites de la Zik'\", La fête de la musique organisaée par le collectif Le Grand Poucet / Co-organisation de l'évènement.",
+    client: "Collectif Le Grand Poucet",
+    images: {
+      cover: {
+        png: FaitesZikCoverpng,
+        webp: FaitesZikCoverwebp,
+      },
+      more: [
+        {
+          png: FaitesZik01png,
+          webp: FaitesZik01webp,
+          title: 'Affiche Faites de la zik\' - 2018 - A4/A3',
+        },
+        {
+          png: FaitesZik02png,
+          webp: FaitesZik02webp,
+          title: 'Affiche Faites de la zik\' - 2019 - A4/A3',
+        },
+        {
+          png: FaitesZik03png,
+          webp: FaitesZik03webp,
+          title: 'Affiches Faites de la zik\' - 2018/2019',
+        },
+      ],
+    },
+    tags: ['#affiche', '#evenement'],
+  },
+  {
+    id: '16',
     title: 'Cartes',
     dates: [2020, 2021],
     description:
@@ -756,12 +842,43 @@ export const data = [
         png: CartesCoverpng,
         webp: CartesCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: Cartes01png,
+          webp: Cartes01webp,
+          title: 'Recto carte de visite Kardabel(v1) - 2020 - 85x55mm coins arrondis',
+        },
+        {
+          png: Cartes02png,
+          webp: Cartes02webp,
+          title: 'Verso carte de visite Kardabel(v1) - 2020 - 85x55mm coins arrondis',
+        },
+        {
+          png: Cartes03png,
+          webp: Cartes03webp,
+          title: 'Photo recto carte de visite Kardabel(v1) / vernis selectif',
+        },
+        {
+          png: Cartes04png,
+          webp: Cartes04webp,
+          title: 'Photo verso carte de visite Kardabel(v1) / vernis selectif',
+        },
+        {
+          png: Cartes05png,
+          webp: Cartes05webp,
+          title: 'Photo carte de visite Kardabel(v1) / vernis selectif',
+        },
+        {
+          png: Cartes06png,
+          webp: Cartes06webp,
+          title: 'Recto carte de visite Larzac Repère - 2021 - 85x55mm coins arrondis',
+        },
+      ],
     },
     tags: ['#carte'],
   },
   {
-    id: '16',
+    id: '17',
     title: 'Logos',
     dates: [2016, 2020, 2021, 2022],
     description: 'Conception et réalisation de logos, avec ou sans déclinaisons',
@@ -771,12 +888,38 @@ export const data = [
         png: LogosCoverpng,
         webp: LogosCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: Logos03png,
+          webp: Logos03webp,
+          title: 'Pierre & Sophie : planche déclinaisons logo pour mails et papier d\'emballage - 2021',
+        },
+        {
+          png: Logos04png,
+          webp: Logos04webp,
+          title: 'L\'Abat\'Mobile 34 : logo avec texte / blanc fond transparent - 2022',
+        },
+        {
+          png: Logos05png,
+          webp: Logos05webp,
+          title: 'L\'Abat\'Mobile 34 : logo / blanc fond vert - 2022',
+        },
+        {
+          png: Logos06png,
+          webp: Logos06webp,
+          title: 'L\'Abat\'Mobile 34 : planche déclinaisons logo',
+        },
+        {
+          png: Logos07png,
+          webp: Logos07webp,
+          title: 'L\'Abat\'Mobile 34 : logo simplifié (version favicon) - 2022',
+        },
+      ],
     },
     tags: ['#logo', '#identite'],
   },
   {
-    id: '17',
+    id: '18',
     title: 'CV',
     dates: [2022],
     description:

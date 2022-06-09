@@ -1,5 +1,6 @@
 import { HashLink } from 'react-router-hash-link'
 import styled from 'styled-components'
+import colors from '../../bases/colors'
 import { buttonsHashLink } from '../../bases/keyframes'
 
 export const UlButtonContainer = styled.ul`
@@ -32,13 +33,13 @@ export const UlButtonContainer = styled.ul`
   }
 `
 export const LinkButtonServices = styled(HashLink)`
-  background-color: ${(props) => props.btncolorbck};
+  background-color: ${colors.primaryDark};
   border-radius: 2rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   font-weight: 600;
-  color: ${(props) => props.btncolortxt};
+  color: ${colors.background};
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   animation-name: ${buttonsHashLink};
   animation-duration: 600ms;
@@ -47,9 +48,8 @@ export const LinkButtonServices = styled(HashLink)`
   transition: background-color 400ms, border 400ms, color 400ms,
     box-shadow 400ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   &:hover {
-    background-color: ${(props) => props.btncolorhover};
+    background-color: ${colors.secondary};
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-    color: ${(props) => props.txtcolorhover};
     font-weight: 600;
   }
 `
