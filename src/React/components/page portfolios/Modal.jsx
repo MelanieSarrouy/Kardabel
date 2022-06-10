@@ -82,7 +82,7 @@ const Modal = (props) => {
             />
             <DivProjet>
               <p>
-                {title} :{'\u00a0'}{' '}
+                {title} {'\u00a0'}{' '}
               </p>
               <p>
                 projet {'\u00a0'}

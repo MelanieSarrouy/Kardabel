@@ -62,6 +62,8 @@ import OfferusCoverwebp from './images/cover-Livret.webp'
 import OfferusMore01png from './images/offerus-couv1.png'
 import OfferusMore02png from './images/offerus-couv1-Bis.png'
 import OfferusMore03png from './images/offerus-couv2.png'
+import OfferusMore031png from './images/livret-couverture.png'
+import OfferusMore032png from './images/livret-couverture-bis.png'
 import OfferusMore04png from './images/offerus-page-1-sommaire.png'
 import OfferusMore05png from './images/offerus-pages-6-7.png'
 import OfferusMore06png from './images/offerus-pages-14-15.png'
@@ -69,6 +71,8 @@ import OfferusMore07png from './images/offerus-pages-22-23.png'
 import OfferusMore01webp from './images/offerus-couv1.webp'
 import OfferusMore02webp from './images/offerus-couv1-Bis.webp'
 import OfferusMore03webp from './images/offerus-couv2.webp'
+import OfferusMore031webp from './images/livret-couverture.webp'
+import OfferusMore032webp from './images/livret-couverture-bis.webp'
 import OfferusMore04webp from './images/offerus-page-1-sommaire.webp'
 import OfferusMore05webp from './images/offerus-pages-6-7.webp'
 import OfferusMore06webp from './images/offerus-pages-14-15.webp'
@@ -234,6 +238,43 @@ import Logos11png from './images/kardabel-v1-logo05.png'
 import Logos11webp from './images/kardabel-v1-logo05.webp'
 import Logos12png from './images/kardabel-v1-logo10.png'
 import Logos12webp from './images/kardabel-v1-logo10.webp'
+import Logos13png from './images/couv-logo0001.png'
+import Logos13webp from './images/couv-logo0001.webp'
+import Logos14png from './images/couv-logo001.png'
+import Logos14webp from './images/couv-logo001.webp'
+import Logos15png from './images/couv-logo01.png'
+import Logos15webp from './images/couv-logo01.webp'
+import Logos16png from './images/couv-logo03.png'
+import Logos16webp from './images/couv-logo03.webp'
+import Logos17png from './images/couv-logo04.png'
+import Logos17webp from './images/couv-logo04.webp'
+import Logos18png from './images/couv-logo06.png'
+import Logos18webp from './images/couv-logo06.webp'
+import Logos19png from './images/gaec-logo03.png'
+import Logos19webp from './images/gaec-logo03.webp'
+import Logos20png from './images/gaec-logo05.png'
+import Logos20webp from './images/gaec-logo05.webp'
+import Logos21png from './images/abat-mobile34-logo01.png'
+import Logos21webp from './images/abat-mobile34-logo01.webp'
+import Logos22png from './images/abat-mobile34-logo2.png'
+import Logos22webp from './images/abat-mobile34-logo2.webp'
+import Logos23png from './images/abat-mobile34-logo03.png'
+import Logos23webp from './images/abat-mobile34-logo03.webp'
+import Logos24png from './images/abat-mobile34-logo04.png'
+import Logos24webp from './images/abat-mobile34-logo04.webp'
+import Logos25png from './images/abat-mobile34-favicon.png'
+import Logos25webp from './images/abat-mobile34-favicon.webp'
+import Logos26png from './images/larz-rep-logo01.png'
+import Logos26webp from './images/larz-rep-logo01.webp'
+import Logos27png from './images/larz-rep-logo02.png'
+import Logos27webp from './images/larz-rep-logo02.webp'
+import Logos28png from './images/gp-logo001.png'
+import Logos28webp from './images/gp-logo001.webp'
+import Logos29png from './images/gp-logo002.png'
+import Logos29webp from './images/gp-logo002.webp'
+import Logos30png from './images/gp-logo003.png'
+import Logos30webp from './images/gp-logo003.webp'
+
 
 import CVCoverpng from './images/cover-CV.png'
 import CVCoverwebp from './images/cover-CV.webp'
@@ -305,6 +346,11 @@ export const data = [
           title: 'Affiches Folles Bergères 2020 - A4/A3/A2/A0/Sucette',
         },
         {
+          png: follesBergMore5Png,
+          webp: follesBergMore5Webp,
+          title: 'Affiches Folles Bergères 2019 - A4/A3/A2/A0/Sucette',
+        },
+        {
           png: follesBergMore2Png,
           webp: follesBergMore2Webp,
           title: 'Mock-Up Flyer Folles Bergères 2020 - A6',
@@ -318,12 +364,7 @@ export const data = [
           png: follesBergMore4Png,
           webp: follesBergMore4Webp,
           title: 'Bannière Facebook Folles Bergères 2019',
-        },
-        {
-          png: follesBergMore5Png,
-          webp: follesBergMore5Webp,
-          title: 'Affiches Folles Bergères 2019 - A4/A3/A2/A0/Sucette',
-        },
+        }
       ],
     },
     tags: ['#affiche', '#flyer', '#banniere', '#evenement'],
@@ -466,6 +507,18 @@ export const data = [
           png: OfferusMore03png,
           webp: OfferusMore03webp,
           title: 'Couverture 2 Livret Le Trésor d\'Offerus - A5 fermé',
+
+        },
+        {
+          png: OfferusMore031png,
+          webp: OfferusMore031webp,
+          title: 'Couverture 1 Livret Le Trésor d\'Offerus - A5 fermé',
+
+        },
+        {
+          png: OfferusMore032png,
+          webp: OfferusMore032webp,
+          title: 'Couverture 1-bis Livret Le Trésor d\'Offerus - A5 fermé',
 
         },
         {
@@ -968,32 +1021,127 @@ export const data = [
         {
           png: Logos07png,
           webp: Logos07webp,
-          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+          title: 'logo simplifié (version favicon) Kardabel(v1) - 2020',
         },
         {
           png: Logos08png,
           webp: Logos08webp,
-          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+          title: 'logo simplifié (version favicon) Kardabel(v1) - 2020',
         },
         {
           png: Logos09png,
           webp: Logos09webp,
-          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+          title: 'logo complet Kardabel(v1) - 2020',
         },
         {
           png: Logos10png,
           webp: Logos10webp,
-          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+          title: 'logo complet Kardabel(v1) - 2020',
         },
         {
           png: Logos11png,
           webp: Logos11webp,
-          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+          title: 'logo complet Kardabel(v1) - 2020',
         },
         {
           png: Logos12png,
           webp: Logos12webp,
-          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+          title: 'logo complet Kardabel(v1) - 2020',
+        },
+        {
+          png: Logos13png,
+          webp: Logos13webp,
+          title: 'logo version simple La Couvertoirade - 2016',
+        },
+        {
+          png: Logos14png,
+          webp: Logos14webp,
+          title: 'logo version simple La Couvertoirade - 2016',
+        },
+        {
+          png: Logos15png,
+          webp: Logos15webp,
+          title: 'logo version simple La Couvertoirade - 2016',
+        },
+        {
+          png: Logos16png,
+          webp: Logos16webp,
+          title: 'logo La Couvertoirade - 2016',
+        },
+        {
+          png: Logos17png,
+          webp: Logos17webp,
+          title: 'logo La Couvertoirade - 2016',
+        },
+        {
+          png: Logos18png,
+          webp: Logos18webp,
+          title: 'logo La Couvertoirade - 2016',
+        },
+        {
+          png: PierreSophieMore03png,
+          webp: PierreSophieMore03webp,
+          title: 'logo pour mails et papier d\'emballage - 2021',
+        },
+        {
+          png: Logos19png,
+          webp: Logos19webp,
+          title: 'logo pour mails et papier d\'emballage - 2021',
+        },
+        {
+          png: Logos20png,
+          webp: Logos20webp,
+          title: 'logo pour mails et papier d\'emballage - 2021',
+        },
+        {
+          png: Logos21png,
+          webp: Logos21webp,
+          title: 'logo L\'Abat\'Mobile 34 - 2022',
+        },
+        {
+          png: Logos22png,
+          webp: Logos22webp,
+          title: 'logo L\'Abat\'Mobile 34 - 2022',
+        },
+        {
+          png: Logos23png,
+          webp: Logos23webp,
+          title: 'logo L\'Abat\'Mobile 34 - 2022',
+        },
+        {
+          png: Logos24png,
+          webp: Logos24webp,
+          title: 'logo L\'Abat\'Mobile 34 - 2022',
+        },
+        {
+          png: Logos25png,
+          webp: Logos25webp,
+          title: 'logo simplifié (version favicon) L\'Abat\'Mobile 34 - 2022',
+        },
+        {
+          png: Logos26png,
+          webp: Logos26webp,
+          title: 'logo Blanc Larzac Repère - 2021',
+        },
+        {
+          png: Logos27png,
+          webp: Logos27webp,
+          title: 'logo Couleurs Larzac Repère - 2021',
+        },
+        {
+          png: Logos28png,
+          webp: Logos28webp,
+          title: 'logo Blanc Le Grand Poucet - 2018',
+        },
+        {
+          png: Logos29png,
+          webp: Logos29webp,
+          title: 'logo Noir Le Grand Poucet - 2018',
+        },
+        {
+          png: Logos30png,
+          webp: Logos30webp,
+          title: 'logo Couleurs Le Grand Poucet - 2018',
         },
       ],
     },

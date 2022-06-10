@@ -140,6 +140,7 @@ export const DivProjet = styled.div`
 `
 export const DivCarousselPosition = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   & > img {
