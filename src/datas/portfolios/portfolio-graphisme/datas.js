@@ -95,12 +95,20 @@ import ProgrammeMore07webp from './images/programme-saison2019-mockup.webp'
 
 import PierreSophieCoverpng from './images/cover-PierreSophie.png'
 import PierreSophieCoverwebp from './images/cover-PierreSophie.webp'
+import PierreSophieMore001png from './images/Etiquette_Patecrouterustique.png'
+import PierreSophieMore002png from './images/Etiquette_Patecroutejarret.png'
+import PierreSophieMore003png from './images/Etiquette_Patecroutetete.png'
+import PierreSophieMore004png from './images/Etiquette_Patecroutechataignes.png'
+import PierreSophieMore001webp from './images/Etiquette_Patecrouterustique.webp'
+import PierreSophieMore002webp from './images/Etiquette_Patecroutejarret.webp'
+import PierreSophieMore003webp from './images/Etiquette_Patecroutetete.webp'
+import PierreSophieMore004webp from './images/Etiquette_Patecroutechataignes.webp'
 import PierreSophieMore01png from './images/etiquettes-planche-2021.png'
 import PierreSophieMore02png from './images/etiquettes-planche-2020.png'
-import PierreSophieMore03png from './images/gaec-signature-2021.png'
+import PierreSophieMore03png from './images/gaec-logo02.png'
 import PierreSophieMore01webp from './images/etiquettes-planche-2021.webp'
 import PierreSophieMore02webp from './images/etiquettes-planche-2020.webp'
-import PierreSophieMore03webp from './images/gaec-signature-2021.webp'
+import PierreSophieMore03webp from './images/gaec-logo02.webp'
 
 import EpouvantailsCoverpng from './images/cover-FestivalEpouvantails.png'
 import EpouvantailsCoverwebp from './images/cover-FestivalEpouvantails.webp'
@@ -170,11 +178,11 @@ import AbatMobileCoverwebp from './images/cover-AbatMobile.webp'
 import AbatMobile02png from './images/abat-mobile34-depliants-mockup.png'
 import AbatMobile03png from './images/abat-mobile34-recto.png'
 import AbatMobile04png from './images/abat-mobile34-verso.png'
-import AbatMobile05png from './images/abat-mobile34-planche-declinaisons-logo.png'
+import AbatMobile05png from './images/abat-mobile34-logo00.png'
 import AbatMobile02webp from './images/abat-mobile34-depliants-mockup.webp'
 import AbatMobile03webp from './images/abat-mobile34-recto.webp'
 import AbatMobile04webp from './images/abat-mobile34-verso.webp'
-import AbatMobile05webp from './images/abat-mobile34-planche-declinaisons-logo.webp'
+import AbatMobile05webp from './images/abat-mobile34-logo00.webp'
 
 import FaitesZikCoverpng from './images/cover-fete-musique.png'
 import FaitesZikCoverwebp from './images/cover-fete-musique.webp'
@@ -202,19 +210,37 @@ import Cartes06webp from './images/card-larz-rep-recto.webp'
 
 import LogosCoverpng from './images/cover-Logos.png'
 import LogosCoverwebp from './images/cover-Logos.webp'
-import Logos03png from './images/gaec-signature-2021.png'
-import Logos03webp from './images/gaec-signature-2021.webp'
-import Logos04png from './images/abat-mobile34-logo-texte.png'
-import Logos04webp from './images/abat-mobile34-logo-texte.webp'
-import Logos05png from './images/abat-mobile34-logo2.png'
-import Logos05webp from './images/abat-mobile34-logo2.webp'
-import Logos06png from './images/abat-mobile34-planche-declinaisons-logo.png'
-import Logos06webp from './images/abat-mobile34-planche-declinaisons-logo.webp'
-import Logos07png from './images/abat-mobile34-favicon.png'
-import Logos07webp from './images/abat-mobile34-favicon.webp'
+import Logos01png from './images/kardabel-v2-logo01.png'
+import Logos01webp from './images/kardabel-v2-logo01.webp'
+import Logos02png from './images/kardabel-v2-logo02.png'
+import Logos02webp from './images/kardabel-v2-logo02.webp'
+import Logos03png from './images/kardabel-v2-logo03.png'
+import Logos03webp from './images/kardabel-v2-logo03.webp'
+import Logos04png from './images/kardabel-v2-logo04.png'
+import Logos04webp from './images/kardabel-v2-logo04.webp'
+import Logos05png from './images/kardabel-v2-logo05.png'
+import Logos05webp from './images/kardabel-v2-logo05.webp'
+import Logos06png from './images/kardabel-v2-logo06.png'
+import Logos06webp from './images/kardabel-v2-logo06.webp'
+import Logos07png from './images/kardabel-v1-logo09.png'
+import Logos07webp from './images/kardabel-v1-logo09.webp'
+import Logos08png from './images/kardabel-v1-logo08.png'
+import Logos08webp from './images/kardabel-v1-logo08.webp'
+import Logos09png from './images/kardabel-v1-logo04.png'
+import Logos09webp from './images/kardabel-v1-logo04.webp'
+import Logos10png from './images/kardabel-v1-logo06.png'
+import Logos10webp from './images/kardabel-v1-logo06.webp'
+import Logos11png from './images/kardabel-v1-logo05.png'
+import Logos11webp from './images/kardabel-v1-logo05.webp'
+import Logos12png from './images/kardabel-v1-logo10.png'
+import Logos12webp from './images/kardabel-v1-logo10.webp'
 
 import CVCoverpng from './images/cover-CV.png'
 import CVCoverwebp from './images/cover-CV.webp'
+import CV01png from './images/CV-mel-2022.png'
+import CV01webp from './images/CV-mel-2022.webp'
+import CV02png from './images/CV-steph-2022.png'
+import CV02webp from './images/CV-steph-2022.webp'
 
 export const data = [
   {
@@ -538,6 +564,26 @@ export const data = [
       },
       more: [
         {
+          png: PierreSophieMore001png,
+          webp: PierreSophieMore001webp,
+          title: 'Etiquette alimentaire Pâté en croûte Rustique - 2021 - Ø 6cm',
+        },
+        {
+          png: PierreSophieMore002png,
+          webp: PierreSophieMore002webp,
+          title: 'Etiquette alimentaire Pâté en croûte Jarret et carottes - 2021 - Ø 6cm',
+        },
+        {
+          png: PierreSophieMore003png,
+          webp: PierreSophieMore003webp,
+          title: 'Etiquette alimentaire Pâté en croûte Tête de veau - 2021 - Ø 6cm',
+        },
+        {
+          png: PierreSophieMore004png,
+          webp: PierreSophieMore004webp,
+          title: 'Etiquette alimentaire Pâté en croûte Aux châtaignes - 2021 - Ø 6cm',
+        },
+        {
           png: PierreSophieMore01png,
           webp: PierreSophieMore01webp,
           title: 'planche étiquettes alimentaires - 2021 - Ø 6cm',
@@ -550,7 +596,7 @@ export const data = [
         {
           png: PierreSophieMore03png,
           webp: PierreSophieMore03webp,
-          title: 'planche déclinaisons logos pour mails et papier d\'emballage - 2021',
+          title: 'logo pour mails et papier d\'emballage - 2021',
         },
       ],
     },
@@ -890,29 +936,64 @@ export const data = [
       },
       more: [
         {
+          png: Logos01png,
+          webp: Logos01webp,
+          title: 'Logo complet Blanc Kardabel(v2) - 2022',
+        },
+        {
+          png: Logos02png,
+          webp: Logos02webp,
+          title: 'Logo complet Doré Kardabel(v2) - 2022',
+        },
+        {
           png: Logos03png,
           webp: Logos03webp,
-          title: 'Pierre & Sophie : planche déclinaisons logo pour mails et papier d\'emballage - 2021',
+          title: 'Logo complet Bleu Kardabel(v2) - 2022',
         },
         {
           png: Logos04png,
           webp: Logos04webp,
-          title: 'L\'Abat\'Mobile 34 : logo avec texte / blanc fond transparent - 2022',
+          title: 'Logo simplifié Blanc Kardabel(v2) - 2022',
         },
         {
           png: Logos05png,
           webp: Logos05webp,
-          title: 'L\'Abat\'Mobile 34 : logo / blanc fond vert - 2022',
+          title: 'Logo simplifié Bleu Kardabel(v2) - 2022',
         },
         {
           png: Logos06png,
           webp: Logos06webp,
-          title: 'L\'Abat\'Mobile 34 : planche déclinaisons logo',
+          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
         },
         {
           png: Logos07png,
           webp: Logos07webp,
-          title: 'L\'Abat\'Mobile 34 : logo simplifié (version favicon) - 2022',
+          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+        },
+        {
+          png: Logos08png,
+          webp: Logos08webp,
+          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+        },
+        {
+          png: Logos09png,
+          webp: Logos09webp,
+          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+        },
+        {
+          png: Logos10png,
+          webp: Logos10webp,
+          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+        },
+        {
+          png: Logos11png,
+          webp: Logos11webp,
+          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
+        },
+        {
+          png: Logos12png,
+          webp: Logos12webp,
+          title: 'logo simplifié (version favicon) Kardabel(v2) - 2022',
         },
       ],
     },
@@ -930,7 +1011,18 @@ export const data = [
         png: CVCoverpng,
         webp: CVCoverwebp,
       },
-      more: ['', '', ''],
+      more: [
+        {
+          png: CV01png,
+          webp: CV01webp,
+          title: 'CV Mélanie Sarrouy - 2022 - A4',
+        },
+        {
+          png: CV02png,
+          webp: CV02webp,
+          title: 'CV Stéphane Warin - 2022 - A4',
+        },
+      ],
     },
     tags: ['#CV'],
   },

@@ -26,6 +26,7 @@ export const ModalDiv = styled.div`
 export const ModalContent = styled.div`
   max-width: 90vw;
   position: absolute;
+  top: 2vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.2);
@@ -36,10 +37,20 @@ export const ModalContent = styled.div`
     rgba(0, 0, 0, 0.85) 90%,
     rgba(0, 0, 0, 0.9) 100%
   );
-  margin: 4% auto;
+  margin: 2% auto;
   transform: translateX(-1500px);
   animation: ${roadRunnerIn} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  & > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 `
 export const CloseModal = styled.img`
   position: absolute;
@@ -59,35 +70,36 @@ export const CloseModal = styled.img`
     right: 0.7rem;
   }
 `
-export const DivButtonsSide = styled.div`
+export const DivButtonsSide = styled.button`
   width: 5rem;
-  height: 72vh;
-  margin: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5rem 0;
   & > img {
     width: 2.5rem;
-    margin: 0.5rem;
+    margin: .5rem;
     @media (max-width: 640px) {
       width: 1.5rem;
     }
   }
   @media (max-width: 640px) {
-    height: 50vh;
     width: 3rem;
-  }
-  @media (max-width: 340px) {
-    height: 40vh;
   }
 `
 export const DivPagination = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 0 0.6rem 0;
+  padding: 1rem 5rem 1.6rem 5rem;
+  @media (max-width: 640px) {
+    padding: 1rem 3rem 1.6rem 3rem;
+  }
+
 `
 export const DivGolbalPagination = styled.div`
   display: flex;
@@ -111,6 +123,7 @@ export const DivProjet = styled.div`
     flex-direction: column;
   }
   & > p {
+    text-align: center;
     &:first-child {
       font-weight: 600;
       padding-right: 0.5rem;
@@ -129,7 +142,6 @@ export const DivCarousselPosition = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0.5rem;
   & > img {
     width: 1rem;
     padding: 0.2rem;
@@ -137,34 +149,39 @@ export const DivCarousselPosition = styled.div`
 `
 export const PictureCareoussel = styled.picture`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  & > img {
+    object-fit: scale-down;
+  }
 `
 export const PTitleImage = styled.p`
   text-align: center;
-  padding: 1.2rem 0 0.4rem 0;
+  padding: 1.6rem 5rem 1rem 5rem;
+  @media (max-width: 640px) {
+    padding: 1.6rem 2rem 1rem 2rem;
+    line-height: 1.3rem;
+  }
+
 `
 export const ImgCaroussel = styled.img`
   display: flex;
   object-fit: contain;
   box-sizing: content-box;
-  height: 72vh;
   filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.9));
   max-width: 43.75rem;
-  @media (max-width: 640px) {
-    height: 50vh;
-  }
-  @media (max-width: 340px) {
-    height: 40vh;
-  }
 `
 export const DivInfosContainer = styled.div`
   width: 100%;
-  padding: 0.5rem 0 1rem 0;
+  padding: 0rem 5rem 1rem 5rem;
+  @media (max-width: 640px) {
+    padding: .5rem 2rem 1rem 2rem;
+  }
+
 `
 export const DivDates = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: .5rem;
   & > p {
@@ -173,7 +190,16 @@ export const DivDates = styled.div`
     @media (max-width: 750px) {
       font-size: 1rem;
     }
+    @media (max-width: 420px) {
+      line-height: .9rem;
+      font-size: .9rem;
+    }
   }
+  @media (max-width: 420px) {
+      flex-wrap: wrap;
+      padding-top: .5rem;
+      gap: .3rem;
+    }
 `
 export const DivTitle = styled.div`
   display: flex;
@@ -185,6 +211,7 @@ export const DivTitle = styled.div`
   border-top: solid 1px ${colors.background};
   & > p {
     color: ${colors.background};
+    padding-right: .5rem;
   }
   @media (max-width: 700px) {
     line-height: 1.6rem;
@@ -200,6 +227,8 @@ export const PTitleModal = styled.p`
   }
   @media (max-width: 640px) {
     font-size: 1.2rem;
+    padding-right: 0;
+
   }
 `
 export const PClient = styled.p`

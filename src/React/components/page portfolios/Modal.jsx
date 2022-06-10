@@ -72,66 +72,69 @@ const Modal = (props) => {
   return (
     <ModalDiv id={'modal-' + id} onClick={props.hideModal}>
       <ModalContent onClick={(e) => handleClick(e)}>
-        <DivButtonsSide onClick={handleClicPreview}>
-          <img src={preview} alt="fleche précédent" width={20} />
-        </DivButtonsSide>
-        <div>
-          <DivPagination>
-            <DivGolbalPagination>
-              <img
-                src={preview}
-                alt="fleche suivant"
-                width={20}
-                onClick={handleClickPaginationPreview}
-              />
-              <DivProjet>
-                <p>{title} :{'\u00a0'} </p>
-                <p>
-                  projet {'\u00a0'}
-                  {position + 1} / {allDataLenght}
-                </p>
-              </DivProjet>
-              <img src={next} alt="fleche suivant" width={30} onClick={handleClickPaginationNext} />
-            </DivGolbalPagination>
-            <DivCarousselPosition>
-              {caroussel.map((el, index) =>
-                index === count ? (
-                  <img key={index} src={circleSolid} alt="icon" width={5} />
-                ) : (
-                  <img key={index} src={circleRegular} alt="icon" width={5} />
-                )
-              )}
-            </DivCarousselPosition>
-          </DivPagination>
-          <PictureCareoussel>
-            <source srcSet={caroussel[count].png} type="image/png" />
-            <source srcSet={caroussel[count].webp} type="image/webp" />
-            <ImgCaroussel
-              id={'caroussel-' + count}
-              src={caroussel[count].webp}
-              alt={title}
-              width={700}
-              height={700}
+        <DivPagination>
+          <DivGolbalPagination>
+            <img
+              src={preview}
+              alt="fleche suivant"
+              width={20}
+              onClick={handleClickPaginationPreview}
             />
-          </PictureCareoussel>
-          <PTitleImage>{caroussel[count].title}</PTitleImage>
-          <DivInfosContainer>
-            <DivTitle>
-              <PTitleModal>{title}</PTitleModal>
-              <DivDates>
-                {dates.map((element, index) => (
-                  <p key={'dates' + index}>{element}</p>
-                ))}
-              </DivDates>
-            </DivTitle>
-            {client !== '' ? <PClient>{client}</PClient> : <PClient>'Divers'</PClient>}
+            <DivProjet>
+              <p>
+                {title} :{'\u00a0'}{' '}
+              </p>
+              <p>
+                projet {'\u00a0'}
+                {position + 1} / {allDataLenght}
+              </p>
+            </DivProjet>
+            <img src={next} alt="fleche suivant" width={30} onClick={handleClickPaginationNext} />
+          </DivGolbalPagination>
+          <DivCarousselPosition>
+            {caroussel.map((el, index) =>
+              index === count ? (
+                <img key={index} src={circleSolid} alt="icon" width={5} />
+              ) : (
+                <img key={index} src={circleRegular} alt="icon" width={5} />
+              )
+            )}
+          </DivCarousselPosition>
+        </DivPagination>
+            <div>
+              <DivButtonsSide onClick={handleClicPreview}>
+                <img src={preview} alt="fleche précédent" width={20} />
+              </DivButtonsSide>
+              <PictureCareoussel>
+                <source srcSet={caroussel[count].png} type="image/png" />
+                <source srcSet={caroussel[count].webp} type="image/webp" />
+                <ImgCaroussel
+                  id={'caroussel-' + count}
+                  src={caroussel[count].webp}
+                  alt={title}
+                  width={700}
+                  // height={700}
+                />
+              </PictureCareoussel>
+              <DivButtonsSide onClick={handleClickNext}>
+                <img src={next} alt="fleche suivant" width={30} />
+              </DivButtonsSide>
+            </div>
+            <PTitleImage>{caroussel[count].title}</PTitleImage>
+            <DivInfosContainer>
+              <DivTitle>
+                <PTitleModal>{title}</PTitleModal>
+                <DivDates>
+                  {dates.map((element, index) => (
+                    <p key={'dates' + index}>{element}</p>
+                  ))}
+                </DivDates>
+              </DivTitle>
+              {client !== '' ? <PClient>{client}</PClient> : <PClient>'Divers'</PClient>}
 
-            <DivPWork>{NewlineText(description)}</DivPWork>
-          </DivInfosContainer>
-        </div>
-        <DivButtonsSide onClick={handleClickNext}>
-          <img src={next} alt="fleche suivant" width={30} />
-        </DivButtonsSide>
+              <DivPWork>{NewlineText(description)}</DivPWork>
+            </DivInfosContainer>
+
         <CloseModal src={close} alt="close" onClick={props.hideModal} />
       </ModalContent>
     </ModalDiv>

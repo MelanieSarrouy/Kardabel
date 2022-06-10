@@ -12,9 +12,6 @@ export const roadRunnerIn = keyframes`
   0% {
     transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
   }
-  70% {
-    transform: translateX(30px) skewX(0deg) scaleX(0.9);
-  }
   100% {
     transform: translateX(0px) skewX(0deg) scaleX(1);
   }
