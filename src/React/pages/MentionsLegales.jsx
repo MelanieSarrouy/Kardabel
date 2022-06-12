@@ -1,99 +1,23 @@
 import React from 'react'
-import styled from 'styled-components'
-import colors from '../../styles/bases/colors'
-import fonts from '../../styles/bases/fonts'
-import SectionH2IntroMentionsLegal from '../components/page mentions légales/SectionH2IntroMentionsLegal'
+import {
+  ALinksMention,
+  DivMentionsContainer,
+  H3MentionsTitle,
+  LiCredits,
+  PBold,
+  PTxt,
+  SectionsH3,
+} from '../../styles/components/page mentions/mentions'
+import H2Intro from '../layout/H2Intro'
 
-export const SectionsH3 = styled.section`
-  padding: 2rem 7% 1rem 7%;
-  @media (max-width: 640px) {
-    padding: 2.5rem 7% 0rem 7%;
-  }
-  @media (max-width: 420px) {
-    padding: 2rem 2rem 0rem 2rem;
-  }
-`
-export const H3MentionsTitle = styled.h3`
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.5rem;
-  background-color: ${colors.primaryDark};
-  color: ${colors.background};
-  font-family: ${fonts.kardabel};
-  word-spacing: 0.6rem;
-  font-size: 2.8rem;
-  font-weight: 500;
-  @media (max-width: 1080px) {
-    font-size: 2.4rem;
-  }
-  @media (max-width: 950px) {
-    font-size: 2.1rem;
-    word-spacing: 0.4rem;
-  }
-  @media (max-width: 850px) {
-    font-size: 1.9rem;
-  }
-  @media (max-width: 850px) {
-    font-size: 1.8rem;
-  }
-  @media (max-width: 500px) {
-    font-size: 1.4rem;
-    padding: 0.6rem 1rem;
-    line-height: 1.6rem;
-  }
-  @media (max-width: 420px) {
-    font-size: 1.2rem;
-    padding: 0.4rem 1rem;
-  }
-`
-export const DivMentionsContainer = styled.div`
-  padding: 0.5rem 0;
-  width: 80%;
-  margin-left: 1rem;
-  @media (max-width: 950px) {
-    width: 90%;
-  }
-  @media (max-width: 640px) {
-    margin-left: 3%;
-    width: 97%;
-    padding: 0.3rem 0;
-  }
-`
-export const PTxt = styled.p`
-  font-size: 1.4rem;
-  line-height: 1.9rem;
-  padding: 0.3rem 0;
-  @media (max-width: 640px) {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
-  @media (max-width: 420px) {
-    font-size: 1rem;
-    line-height: 1.3rem;
-  }
-`
-export const PBold = styled.p`
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 0.5rem 0;
-  @media (max-width: 640px) {
-    font-size: 1.6rem;
-  }
-`
-export const LiCredits = styled(PTxt).attrs({
-  as: 'li',
-})``
-export const ALinksMention = styled(PTxt).attrs({
-  as: 'a',
-})`
-  font-weight: 600;
-  color: ${colors.secondary};
-`
+const title = 'Mentions Légales'
+const content =
+  'Merci de lire avec attention les différentes modalités d’utilisation du présent site avant d’y parcourir ses pages. En vous connectant sur ce site, vous acceptez, sans réserves, les présentes modalités. \n Aussi, conformément à l’article n°6 de la Loi n°2004-575 du 21 Juin 2004 pour la confiance dans l’économie numérique, les responsables du présent site internet www.kardabel.com sont :'
 
 const MentionsLegales = () => {
   return (
     <>
-      <SectionH2IntroMentionsLegal />
-      {/* Editeur */}
+      <H2Intro id="mentions-legales" title={title} content={content}></H2Intro>
       <SectionsH3>
         <H3MentionsTitle>Editeur</H3MentionsTitle>
         <DivMentionsContainer>
@@ -201,9 +125,7 @@ const MentionsLegales = () => {
             <LiCredits>
               Page services/web/prestations : Image par Image par Rano Purnomo de Pixabay
             </LiCredits>
-            <LiCredits>
-              Page services/android/prestations : Image de freepng
-            </LiCredits>
+            <LiCredits>Page services/android/prestations : Image de freepng</LiCredits>
           </ul>
         </DivMentionsContainer>
       </SectionsH3>
@@ -308,10 +230,11 @@ const MentionsLegales = () => {
         <H3MentionsTitle>Liens hypertextes</H3MentionsTitle>
         <DivMentionsContainer>
           <PTxt>
-            Les sites internet de peuvent offrir des liens vers d’autres sites internet ou d’autres
-            ressources disponibles sur Internet.{' '}
+            Les sites internet de{' '}
+            <ALinksMention href="https://www.kardabel.com">Kardabel</ALinksMention> peuvent offrir
+            des liens vers d’autres sites internet ou d’autres ressources disponibles sur Internet.{' '}
             <ALinksMention href="https://www.kardabel.com">Kardabel</ALinksMention> ne dispose
-            d'aucun moyen pour contrôler les sites en connexion avec ses sites internet.{' '}
+            d'aucun moyen pour contrôler les sites en connexion avec ses sites internet.
           </PTxt>
           <PTxt>
             <ALinksMention href="https://www.kardabel.com">Kardabel</ALinksMention> ne répond pas de

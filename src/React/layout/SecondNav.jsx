@@ -25,7 +25,7 @@ const SecondNav = (props) => {
       {links.map((element, index) => (
         <li key={index}>
           {location === createLink(element, name, true, prefixeName, '') ? (
-            <LinkSecondaryStyleActive to={'/'+ name}>{element}</LinkSecondaryStyleActive>
+            <LinkSecondaryStyleActive to={createLink(element, name, true, prefixeName, suffixeName)}>{element}</LinkSecondaryStyleActive>
           ) : (
             <LinkSecondaryStyle to={createLink(element, name, true, prefixeName, suffixeName)}>
               {element}

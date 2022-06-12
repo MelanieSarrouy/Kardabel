@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import colors from "../bases/colors"
 import fonts from "../bases/fonts"
-import { h2Title, trio } from "../bases/keyframes"
 
 export const DivH2Title = styled.div`
   display: flex;
@@ -11,8 +10,6 @@ export const DivH2Title = styled.div`
 export const SvgH2Trio = styled.img`
   width: 5.5rem;
   margin: 0 1.4rem 1rem 0;
-  animation: 1200ms cubic-bezier(.2,.32,.04,1.02) 100ms backwards ${trio};
-
   @media (max-width: 1280px) {
     width: 4rem;
     margin-right: 1.3rem;
@@ -35,7 +32,7 @@ export const SvgH2Trio = styled.img`
   }
 `
 export const H2TitleStyle = styled.h2`
-  font-family: ${fonts.kardabel};
+  font-family: ${fonts.titles2};
   color: ${colors.secondary};
   font-size: 7.5rem;
   text-transform: uppercase;
@@ -44,7 +41,6 @@ export const H2TitleStyle = styled.h2`
   line-height: 8rem;
   font-weight: 600;
   padding-bottom: 5rem;
-  animation: 600ms cubic-bezier(.2,.32,.04,1.02) 400ms backwards ${h2Title};
   @media (max-width: 1280px) {
     font-size: 5.5rem;
     padding-bottom: 4rem;

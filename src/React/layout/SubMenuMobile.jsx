@@ -12,9 +12,10 @@ const SubMenuMobile = (props) => {
   const name = props.name
   const prefixeName = props.prefixeName
   const suffixeName = props.suffixeName
+  const onClick = props.onClick
 
   return (
-    <UlSubMenuMobile>
+    <UlSubMenuMobile onClick={onClick}>
       {links.map((element, index) => (
         <li key={index}>
           {location === createLink(element, name, true, prefixeName, '') ? (

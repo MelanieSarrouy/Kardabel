@@ -21,7 +21,7 @@ const ScrollButton = () => {
   window.addEventListener('scroll', toggleVisible)
 
   return (
-    <button onClick={scrollToTop} style={{ display: visible ? 'flex' : 'none' }}>
+    <button type='button' onClick={scrollToTop} style={{ display: visible ? 'flex' : 'none' }}>
       <ImgSVGArrowTop src={top} alt="remonter en haut de la page" />
     </button>
   )

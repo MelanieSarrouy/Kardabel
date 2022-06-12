@@ -1,14 +1,16 @@
+// IMPORTS // ______________________________________________________________
+
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
-
+// components imports
+import SubMenuMobile from './SubMenuMobile'
+// assets imports
 import burgerNormal from '../../assets/icons/hamburge-normal.svg'
 import burgerActive from '../../assets/icons/icons8-close-92.svg'
 import arrowDownWhite from '../../assets/icons/chevron-down-solid-white.svg'
 import arrowDownBlue from '../../assets/icons/chevron-down-solid-blue.svg'
-
 import arrowUpBlue from '../../assets/icons/chevron-up-solid-blue.svg'
-
-import SubMenuMobile from './SubMenuMobile'
+// styles imports
 import {
   BurgerContainer,
   ImgBurger,
@@ -19,13 +21,23 @@ import {
 } from '../../styles/layout/navBurger'
 import { ImgMenuArrow } from '../../styles/layout/header'
 
+// JSX // _________________________________________________________________
+
+/**
+ * Navurger component to display navigation with small devices (smartphones and tablets)
+ * @name NavBurger * 
+ * @returns {?JSX}
+ */
+
 const NavBurger = () => {
   const [submenu1, setSubmenu1] = useState(false)
   const [submenu2, setSubmenu2] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleClickClose = () => {
     setSubmenu1(false)
     setSubmenu2(false)
+    setIsOpen(false)
   }
   const handleClickServices = () => {
     setSubmenu1(!submenu1)
@@ -36,7 +48,6 @@ const NavBurger = () => {
     setSubmenu1(false)
   }
 
-  const [isOpen, setIsOpen] = useState(false)
   const sampleLocation = useLocation()
   const location = sampleLocation.pathname
 
@@ -84,7 +95,7 @@ const NavBurger = () => {
                 )}
               </div>
               {submenu1 ? (
-                <SubMenuMobile
+                <SubMenuMobile onClick={() => setIsOpen(!isOpen)}
                   links={['Identité', 'Print', 'Web', 'Android']}
                   name={'services'}
                   prefixeName={''}
@@ -115,7 +126,7 @@ const NavBurger = () => {
                 )}
               </div>
               {submenu2 ? (
-                <SubMenuMobile
+                <SubMenuMobile onClick={() => setIsOpen(!isOpen)}
                   links={['Graphisme', 'Web', 'Android']}
                   name={'portfolios'}
                   prefixeName={'portfolio-'}
@@ -146,5 +157,7 @@ const NavBurger = () => {
     </BurgerContainer>
   )
 }
+
+// EXPORTS // ______________________________________________________________
 
 export default NavBurger

@@ -1,30 +1,14 @@
 import React, { useState } from 'react'
 import { useKeyPress } from '../../../helpers/useKeyPress'
 import close from '../../../assets/icons/icons8-close-91.svg'
-import preview from '../../../assets/icons/preview.svg'
-import next from '../../../assets/icons/next.svg'
-import circleRegular from '../../../assets/icons/circle-regular.svg'
-import circleSolid from '../../../assets/icons/circle-solid.svg'
 import {
   CloseModal,
   ModalContent,
   ModalDiv,
-  DivDates,
-  DivTitle,
-  PClient,
-  DivPWork,
-  DivInfosContainer,
-  PTitleModal,
-  PictureCareoussel,
-  ImgCaroussel,
-  DivButtonsSide,
-  DivPagination,
-  PTitleImage,
-  DivCarousselPosition,
-  DivGolbalPagination,
-  DivProjet,
 } from '../../../styles/components/page portfolios/modal'
-import { NewlineText } from '../../../helpers/newLineText'
+import ModalPagination from './ModalPagination'
+import ModalCaroussel from './ModalCaroussel'
+import ModalInfos from './ModalInfos'
 
 const Modal = (props) => {
   useKeyPress('Escape', props.hideModal)
@@ -72,69 +56,30 @@ const Modal = (props) => {
   return (
     <ModalDiv id={'modal-' + id} onClick={props.hideModal}>
       <ModalContent onClick={(e) => handleClick(e)}>
-        <DivPagination>
-          <DivGolbalPagination>
-            <img
-              src={preview}
-              alt="fleche suivant"
-              width={20}
-              onClick={handleClickPaginationPreview}
-            />
-            <DivProjet>
-              <p>
-                {title} {'\u00a0'}{' '}
-              </p>
-              <p>
-                projet {'\u00a0'}
-                {position + 1} / {allDataLenght}
-              </p>
-            </DivProjet>
-            <img src={next} alt="fleche suivant" width={30} onClick={handleClickPaginationNext} />
-          </DivGolbalPagination>
-          <DivCarousselPosition>
-            {caroussel.map((el, index) =>
-              index === count ? (
-                <img key={index} src={circleSolid} alt="icon" width={5} />
-              ) : (
-                <img key={index} src={circleRegular} alt="icon" width={5} />
-              )
-            )}
-          </DivCarousselPosition>
-        </DivPagination>
-            <div>
-              <DivButtonsSide onClick={handleClicPreview}>
-                <img src={preview} alt="fleche précédent" width={20} />
-              </DivButtonsSide>
-              <PictureCareoussel>
-                <source srcSet={caroussel[count].png} type="image/png" />
-                <source srcSet={caroussel[count].webp} type="image/webp" />
-                <ImgCaroussel
-                  id={'caroussel-' + count}
-                  src={caroussel[count].webp}
-                  alt={title}
-                  width={700}
-                  // height={700}
-                />
-              </PictureCareoussel>
-              <DivButtonsSide onClick={handleClickNext}>
-                <img src={next} alt="fleche suivant" width={30} />
-              </DivButtonsSide>
-            </div>
-            <PTitleImage>{caroussel[count].title}</PTitleImage>
-            <DivInfosContainer>
-              <DivTitle>
-                <PTitleModal>{title}</PTitleModal>
-                <DivDates>
-                  {dates.map((element, index) => (
-                    <p key={'dates' + index}>{element}</p>
-                  ))}
-                </DivDates>
-              </DivTitle>
-              {client !== '' ? <PClient>{client}</PClient> : <PClient>'Divers'</PClient>}
-
-              <DivPWork>{NewlineText(description)}</DivPWork>
-            </DivInfosContainer>
-
+        <ModalPagination
+          onClickPreview={handleClickPaginationPreview}
+          title={title}
+          position={position}
+          allDataLenght={allDataLenght}
+          onClickNext={handleClickPaginationNext}
+          caroussel={caroussel}
+          count={count}
+        ></ModalPagination>
+        <ModalCaroussel
+          caroussel={caroussel}
+          count={count}
+          title={title}
+          handleClicPreview={handleClicPreview}
+          handleClickNext={handleClickNext}
+        ></ModalCaroussel>
+        <ModalInfos
+          title={title}
+          dates={dates}
+          client={client}
+          description={description}
+          caroussel={caroussel}
+          count={count}
+        ></ModalInfos>
         <CloseModal src={close} alt="close" onClick={props.hideModal} />
       </ModalContent>
     </ModalDiv>

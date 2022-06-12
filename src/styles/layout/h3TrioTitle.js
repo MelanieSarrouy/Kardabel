@@ -46,11 +46,11 @@ export const SvgH3Trio = styled.img`
   }
 `
 export const H3TitleStyle = styled.h3`
-  font-family: ${fonts.titles};
-  word-spacing: .6rem;
+  font-family: ${fonts.titles2};
+  ${'' /* word-spacing: .6rem; */}
   font-size: 4.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  ${'' /* font-weight: 500; */}
+  ${'' /* text-transform: uppercase; */}
   color: ${colors.primaryDark};
   @media (max-width: 1280px) {
     font-size: 3.8rem;

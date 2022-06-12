@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import colors from '../bases/colors'
 import fonts from '../bases/fonts'
 import { HashLink } from 'react-router-hash-link'
-import { buttonContact, buttonServices, kardabel, logo } from '../bases/keyframes'
+import { buttonContact, buttonServices, heroTitle, kardabel, logo } from '../bases/keyframes'
 
 export const ImgCurvyStyle = styled.img`
   width: 100%;
@@ -107,7 +107,7 @@ export const LogoContainer = styled.div`
 export const ImgLogo = styled.img`
   width: 250px;
   filter: drop-shadow(0.25rem 0.25rem 0.3rem rgba(0, 0, 0, 0.5));
-  animation: 2400ms cubic-bezier(.4,.33,.14,.97) 2.6s backwards ${logo};
+  animation: 2400ms cubic-bezier(.4,.33,.14,.97) 2.4s backwards ${logo};
   @media (max-width: 1280px) {
     width: 200px;
   }
@@ -138,7 +138,7 @@ export const TextHeroContainer = styled.div`
 `
 
 export const PTitleStyle = styled.p`
-  font-family: ${fonts.kardabel};
+  font-family: ${fonts.titles2};
   font-size: 5.6rem;
   color: ${colors.secondary};
   font-weight: 700;
@@ -164,12 +164,12 @@ export const PTitleStyle = styled.p`
 `
 export const Baseline = styled.p`
   font-size: 1.5rem;
-  font-style: italic;
+  ${'' /* font-style: italic; */}
   color: ${colors.background};
   font-weight: 300;
   padding: 1rem 0 1rem 0.4rem;
-  animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 1.2s both ${kardabel};
-
+  animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 800ms both ${kardabel};
+  ${'' /* font-family: ${fonts.signature}; */}
   @media (max-width: 1280px) {
     font-size: 1.2rem;
   }
@@ -192,7 +192,8 @@ export const H1Style = styled.h1`
   text-transform: uppercase;
   line-height: 2.2rem;
   padding: 3rem 0 2rem 0.4rem;
-  animation: 800ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 2.4s both ${kardabel};
+  animation: 2.2s cubic-bezier(0.27, 0.29, 0.14, 0.98) 800ms both ${heroTitle};
+  font-family: ${fonts.titles2};
 
   @media (max-width: 1280px) {
     font-size: 1.5rem;
@@ -222,7 +223,7 @@ export const SpanTitle = styled.span`
   text-transform: capitalize;
   color: ${colors.secondary};
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.2rem;
   padding: 2rem 0 0 0;
   @media (max-width: 1280px) {
@@ -285,7 +286,7 @@ export const LinkServices = styled(HashLink)`
     border 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   box-shadow: 0rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
-  animation: 800ms cubic-bezier(.2,.32,.04,1.02) 3400ms backwards ${buttonServices};
+  animation: 800ms cubic-bezier(.2,.32,.04,1.02) 2400ms backwards ${buttonServices};
 
   @media (max-width: 950px) {
     font-size: 1rem;
@@ -322,7 +323,7 @@ export const LinkContacts = styled(HashLink)`
   text-decoration: none;
   text-transform: uppercase;
   transition: border 600ms, background-color 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
-  animation: 600ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 3000ms backwards ${buttonContact};
+  animation: 600ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 2000ms backwards ${buttonContact};
 
   @media (max-width: 950px) {
     font-size: 1rem;

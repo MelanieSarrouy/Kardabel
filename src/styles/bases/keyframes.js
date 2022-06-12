@@ -40,6 +40,15 @@ export const kardabel = keyframes`
     transform: translateY(0px);
   }
 `
+export const heroTitle = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
+
 export const buttonServices = keyframes`
   0% {
     opacity: 0;
