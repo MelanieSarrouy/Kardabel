@@ -81,7 +81,7 @@ export const SvgH4Trio = styled.img`
 `
 export const H4Style = styled.h4`
   font-size: 3.6rem;
-  font-family: ${fonts.titles};
+  font-family: ${fonts.titles2};
   word-spacing: 0.5rem;
   letter-spacing: -1px;
   font-weight: 500;

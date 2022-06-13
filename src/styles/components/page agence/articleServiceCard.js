@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import colors from '../../bases/colors'
+import fonts from '../../bases/fonts'
 
 export const ArticleCard = styled.article`
   display: flex;
@@ -77,7 +78,7 @@ export const H4Style = styled.h4`
   font-weight: 600;
   padding-bottom: 2rem;
   ${'' /* color: ${colors.primaryDark}; */}
-
+  font-family: ${fonts.signature};
   @media (max-width: 950px) {
     padding-top: 0.5rem;
   }

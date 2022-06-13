@@ -1,8 +1,18 @@
 import { createGlobalStyle } from 'styled-components'
 import colors from './colors'
 import fonts from './fonts'
+import MyFontWoff from './mechta-webfont.woff';
+import MyFontWoff2 from './mechta-webfont.woff2';
 
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'mechtaregular';
+  src: 
+  url(${MyFontWoff}) format('woff'),
+  url(${MyFontWoff2}) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
   /* Styles principaux */
   * {
     font-family: ${fonts.txt};

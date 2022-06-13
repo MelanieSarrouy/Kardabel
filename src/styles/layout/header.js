@@ -24,11 +24,11 @@ export const DivHeaderContent = styled.div`
   }
 `
 export const ImgStyle = styled.img`
-  max-height: 4.5rem;
+  max-width: 12rem;
   min-width: 2rem;
   padding: 0.6rem 0;
   @media (max-width: 1024px) {
-    max-height: 4rem;
+    max-width: 10rem;
   }
 
 `
@@ -56,7 +56,7 @@ export const NavStyle = styled.nav`
   }
 `
 export const NavLinkStyle = styled(NavLink)`
-  padding: 1.8rem 0;
+  padding: 1.9rem 0;
   border-top: solid 3px rgba(0, 0, 0, 0);
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   font-family: ${fonts.titles};

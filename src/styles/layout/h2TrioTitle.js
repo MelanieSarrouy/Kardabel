@@ -39,7 +39,7 @@ export const H2TitleStyle = styled.h2`
   letter-spacing: -2px;
   word-spacing: 1rem;
   line-height: 8rem;
-  font-weight: 600;
+  ${'' /* font-weight: 600; */}
   padding-bottom: 5rem;
   @media (max-width: 1280px) {
     font-size: 5.5rem;

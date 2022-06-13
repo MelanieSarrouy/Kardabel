@@ -84,7 +84,7 @@ export const H4ServiceStyle = styled.h4`
   font-weight: 600;
   text-transform: uppercase;
   padding: 2rem;
-  font-family: ${fonts.titles};
+  font-family: ${fonts.titles2};
   @media (max-width: 1024px) {
     font-size: 2.5rem;
     padding: 1rem 0rem;

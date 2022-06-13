@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../../assets/logo/kardabel_logo-simple.svg'
+
 import waveAgence from '../../assets/shapes/waveAgence.svg'
 import waveServices from '../../assets/shapes/waveServices.svg'
 import wavePortfolio from '../../assets/shapes/wavePortfolio.svg'
@@ -54,8 +55,10 @@ const Hero = () => {
           <ImgLogo src={logo} alt="logo" />
         </LogoContainer>
         <TextHeroContainer>
+
+        
           <PTitleStyle>KARDABEL</PTitleStyle>
-          <Baseline>Un regard, une écoute, des solutions</Baseline>
+          <Baseline>un regard, une écoute, des solutions</Baseline>
           <H1Style>
             Agence Print & Web <br />
             <SpanTitle>Design Graphique & Développement <br/>(Web / Front / Applications)</SpanTitle>

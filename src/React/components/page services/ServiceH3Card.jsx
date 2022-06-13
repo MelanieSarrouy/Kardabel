@@ -12,7 +12,7 @@ import { standardizeAndLowerCase } from '../../../helpers/standardizeAndLowerCas
 import { LinkButtonServices } from '../../../styles/components/page agence/sectionH2IntroAgence'
 import colors from '../../../styles/bases/colors'
 
-const titlesList = ['Kesako', 'Avantages', 'Préstations']
+const titlesList = ['Kesako', 'Avantages', 'Prestations']
 
 const createLink = (str) => {
   return '#' + standardizeAndLowerCase(str)

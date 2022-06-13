@@ -59,7 +59,7 @@ export const ImgCurvyStyle = styled.img`
   }
 `
 export const HeroContent = styled.div`
-  padding: 10rem 7%;
+  padding: 9rem 7%;
   display: flex;
   justify-content: space-between;
   height: 450px;
@@ -67,7 +67,7 @@ export const HeroContent = styled.div`
   z-index: 15;
   max-width: 1620px;
   @media (max-width: 950px) {
-    padding: 8rem 7%;
+    padding: 7rem 7%;
     height: 280px;
   }
   @media (max-width: 640px) {
@@ -76,7 +76,7 @@ export const HeroContent = styled.div`
     height: 550px;
   }
   @media (max-width: 420px) {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
   }
 `
 export const LogoContainer = styled.div`
@@ -101,7 +101,7 @@ export const LogoContainer = styled.div`
     padding: 2rem 0rem 2rem 0;
   }
   @media (max-width: 480px) {
-    padding: 2.5rem 0rem 2.5rem 0rem;
+    padding: 2.5rem 0rem 2rem 0rem;
   }
 `
 export const ImgLogo = styled.img`
@@ -138,10 +138,10 @@ export const TextHeroContainer = styled.div`
 `
 
 export const PTitleStyle = styled.p`
-  font-family: ${fonts.titles2};
+  font-family: ${fonts.kardabel};
   font-size: 5.6rem;
   color: ${colors.secondary};
-  font-weight: 700;
+  font-weight: 600;
   translatex: -0.2rem;
   text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) none ${kardabel};
@@ -167,9 +167,9 @@ export const Baseline = styled.p`
   ${'' /* font-style: italic; */}
   color: ${colors.background};
   font-weight: 300;
-  padding: 1rem 0 1rem 0.4rem;
+  padding: .8rem 0 .8rem 0.6rem;
   animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 800ms both ${kardabel};
-  ${'' /* font-family: ${fonts.signature}; */}
+  font-family: ${fonts.signature};
   @media (max-width: 1280px) {
     font-size: 1.2rem;
   }
@@ -179,7 +179,7 @@ export const Baseline = styled.p`
   @media (max-width: 640px) {
     font-size: 1.2rem;
     text-align: center;
-    padding: 1rem 0;
+    padding: .8rem 0;
   }
   @media (max-width: 480px) {
     font-size: 1rem;
@@ -188,13 +188,13 @@ export const Baseline = styled.p`
 export const H1Style = styled.h1`
   font-size: 2.2rem;
   color: ${colors.secondary};
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 2.2rem;
-  padding: 3rem 0 2rem 0.4rem;
+  padding: 2.5rem 0 2rem 0.4rem;
   animation: 2.2s cubic-bezier(0.27, 0.29, 0.14, 0.98) 800ms both ${heroTitle};
   font-family: ${fonts.titles2};
-
+  text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   @media (max-width: 1280px) {
     font-size: 1.5rem;
     padding: 2rem 0 1rem 0.4rem;
@@ -221,11 +221,13 @@ export const H1Style = styled.h1`
 export const SpanTitle = styled.span`
   display: block;
   text-transform: capitalize;
-  color: ${colors.secondary};
+  color: ${colors.background};
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 2.2rem;
-  padding: 2rem 0 0 0;
+  padding: 1.2rem 0 0 0;
+  text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0);
+  font-family: ${fonts.titles};
   @media (max-width: 1280px) {
     font-size: 1.2rem;
     padding: 1rem 0 0 0;
@@ -264,7 +266,7 @@ export const ButtonsContainer = styled.div`
     }
   }
   @media (max-width: 950px) {
-    padding: 2rem 0 0 0;
+    padding: 1.5rem 0 0 0;
   }
   @media (max-width: 400px) {
     flex-direction: column;
@@ -287,7 +289,6 @@ export const LinkServices = styled(HashLink)`
   box-shadow: 0rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   animation: 800ms cubic-bezier(.2,.32,.04,1.02) 2400ms backwards ${buttonServices};
-
   @media (max-width: 950px) {
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -324,7 +325,6 @@ export const LinkContacts = styled(HashLink)`
   text-transform: uppercase;
   transition: border 600ms, background-color 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   animation: 600ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 2000ms backwards ${buttonContact};
-
   @media (max-width: 950px) {
     font-size: 1rem;
     padding: 0.5rem 1rem;

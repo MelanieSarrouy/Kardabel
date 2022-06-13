@@ -82,7 +82,7 @@ export const PTitleBenefitCard = styled.div`
     font-weight: 700;
     line-height: 3.2rem;
     letter-spacing: 1px;
-    font-family: ${fonts.titles};
+    font-family: ${fonts.titles2};
     color: ${colors.primary};
     position: relative;
     @media (max-width: 1140px) {

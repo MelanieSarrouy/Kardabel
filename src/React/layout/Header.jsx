@@ -48,7 +48,7 @@ const Header = () => {
     <HeaderStyle onClick={() => handleCloseDropdowns()}>
       <DivHeaderContent>
         <Link to="/" onClick={() => handleClickClose()}>
-          <ImgStyle src={logo} alt="logo" width={160} />
+          <ImgStyle src={logo} alt="logo" width={192} />
         </Link>
         <NavStyle>
           <ul>
