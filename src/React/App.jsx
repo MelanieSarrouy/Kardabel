@@ -29,7 +29,7 @@ import MentionsLegales from './pages/MentionsLegales'
  * @returns {?JSX}
  */
 
-export const App = (props) => {
+export const App = () => {
   return (
     <>
       <BrowserRouter>
@@ -37,7 +37,7 @@ export const App = (props) => {
         <Header />
         <Main>
           <Routes>
-            <Route exact path="/" element={<Homepage />} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/services" element={<Services />}>
               <Route path="identite" element={<Identity />} />
               <Route path="print" element={<Print />} />
