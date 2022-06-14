@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import notFound from '../../assets/illustrations/404 Page Not Found _Flatline.svg'
 import { NewlineText } from '../../helpers/newLineText'
-import { DivLink, LinkBackHome, PNotFound } from '../../styles/components/page NotFound/notFound'
+import { DivLink, PNotFound } from '../../styles/components/page NotFound/notFound'
 import { SectionIntro } from '../../styles/layout/h2Intro'
-import logo from '../../assets/logo/kardabel_logo-simple.svg'
-import { ImgStyle } from '../../styles/layout/header'
 import { LinkButtonServices } from '../../styles/components/page agence/sectionH2IntroAgence'
 
 const NotFound = () => {
