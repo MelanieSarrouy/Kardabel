@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1826516dd3cc4dd5912593e1c24e3f7a)](https://app.codacy.com/gh/MelanieSarrouy/Kardabel?utm_source=github.com&utm_medium=referral&utm_content=MelanieSarrouy/Kardabel&utm_campaign=Badge_Grade_Settings)
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/818fd35c-fd6f-424a-817d-b3ba8b90f30c/deploy-status)](https://app.netlify.com/sites/sportseep12/deploys) -->
 <br/>
 <p align="center"><img src="https://github.com/MelanieSarrouy/Kardabel/blob/main/src/assets/logo/logo-bleu.png?raw=true" alt="Kardabel logo" /></p>
