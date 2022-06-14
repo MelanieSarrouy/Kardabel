@@ -1,9 +1,15 @@
+/* IMPORTS */
+
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+// components imports
+import NavBurger from './NavBurger'
+import SubMenuDesktop from './SubMenuDesktop'
+// assets imports
 import logo from '../../assets/logo/kardabel.png'
 import arrowDownWhite from '../../assets/icons/chevron-down-solid-white.svg'
 import arrowUpGold from '../../assets/icons/chevron-up-solid-gold.svg'
-
+// styles imports
 import {
   HeaderStyle,
   DivHeaderContent,
@@ -11,30 +17,38 @@ import {
   NavLinkStyle,
   NavStyle,
   ImgMenuArrow,
+  DivDropdownSubmenu
 } from '../../styles/layout/header'
-import styled from 'styled-components'
-import NavBurger from './NavBurger'
-import SubMenuDesktop from './SubMenuDesktop'
 
-export const DivDropdownSubmenu = styled.div`
-  position: relative;
-`
-const Header = () => {
+// JSX // _________________________________________________________________
+
+/**
+ * Header component to display website's Header
+ * @name Header
+ * @returns {?JSX}
+ */
+
+ const Header = () => {
+
   const [submenu1, setSubmenu1] = useState(false)
   const [submenu2, setSubmenu2] = useState(false)
 
+/* A function that is called when the user clicks on the logo. */
   const handleClickClose = () => {
     setSubmenu1(false)
     setSubmenu2(false)
   }
+/* A function that is called when the user clicks on the Services menu item. */
   const handleClickServices = () => {
     setSubmenu1(!submenu1)
     setSubmenu2(false)
   }
+/* A function that is called when the user clicks on the Portfolios menu item. */
   const handleClickPortfolios = () => {
     setSubmenu2(!submenu2)
     setSubmenu1(false)
   }
+/* A function that is called when the user clicks on the logo. */
   const handleCloseDropdowns = () => {
     if (submenu1) {
       setSubmenu1(false)
@@ -127,5 +141,7 @@ const Header = () => {
     </HeaderStyle>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Header

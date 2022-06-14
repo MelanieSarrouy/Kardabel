@@ -1,5 +1,9 @@
+/* IMPORTS */
+
 import React from 'react'
+// assets imports
 import logo from '../../assets/logo/kardabel.png'
+// styles imports
 import {
   DivFooterContent,
   DivTextFooterContainer,
@@ -10,7 +14,15 @@ import {
   PTextCopyright,
 } from '../../styles/layout/footer'
 
-const Footer = () => {
+// JSX // _________________________________________________________________
+
+/**
+ * Footer component to display website's Footer
+ * @name Footer
+ * @returns {?JSX}
+ */
+
+ const Footer = () => {
   return (
     <FooterStyle>
       <DivFooterContent>
@@ -29,5 +41,7 @@ const Footer = () => {
     </FooterStyle>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Footer

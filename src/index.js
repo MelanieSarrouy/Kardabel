@@ -1,11 +1,16 @@
+// IMPORTS // ______________________________________________________________
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './React/App'
 import reportWebVitals from './reportWebVitals'
 
+/* Getting the root element from the index.html file. */
 const container = document.getElementById('root')
+
+/* Creating a root element for the React app to render into. */
 const root = createRoot(container)
 
+/* Rendering the App component into the root element. */
 root.render(<App />)
 
 // If you want to start measuring performance in your app, pass a function

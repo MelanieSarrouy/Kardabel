@@ -76,3 +76,7 @@ export const ImgMenuArrow = styled.img`
   margin: 0 0rem 0 1rem;
   border-top: solid 3px rgba(0, 0, 0, 0);
 `
+export const DivDropdownSubmenu = styled.div`
+  position: relative;
+`
+

@@ -1,8 +1,18 @@
+/* IMPORTS */
+
 import React, { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
+// components imports
 import H2Intro from '../layout/H2Intro'
 import SecondNav from '../layout/SecondNav'
 
+// JSX // _________________________________________________________________
+
+/**
+ * Services component to display website's Services page
+ * @name Services
+ * @returns {?JSX}
+ */
 
 const Services = () => {
   const title = 'Services'
@@ -13,7 +23,7 @@ const Services = () => {
   const prefixeName = ''
   const suffixeName = '#card'
 
-  
+  /* Scrolling the window to the top of the page after every render. */
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -32,5 +42,7 @@ const Services = () => {
     </div>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Services
