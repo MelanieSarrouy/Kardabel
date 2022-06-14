@@ -1,11 +1,6 @@
-Options -MultiViews
-RewriteEngine On
-RewriteBase /
-RewriteBase /subdirectory
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule ^ index.html [QSA,L]
+RewriteEngine on
 RewriteCond %{HTTP_HOST} ^kardabel.com$
-RewriteRule ^(.*) https://www.kardabel.com/$1 [QSA,L,R=301]
+RewriteRule ^(.*) http://www.kardabel.com/$1 [QSA,L,R=301]
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]

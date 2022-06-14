@@ -1,15 +1,15 @@
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/818fd35c-fd6f-424a-817d-b3ba8b90f30c/deploy-status)](https://app.netlify.com/sites/sportseep12/deploys) -->
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9b078173868848f6b4e3c491f169b880)](https://www.codacy.com/gh/MelanieSarrouy/Kardabel/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MelanieSarrouy/Kardabel&amp;utm_campaign=Badge_Grade)
 <br/>
 <p align="center"><img src="https://github.com/MelanieSarrouy/Kardabel/blob/main/src/assets/logo/logo-bleu.png?raw=true" alt="Kardabel logo" /></p>
-<!-- [SportSee](https://sportseep12.netlify.app/) -->
+
+
+[Kardabel](https://kardabel.com/)
 
 # KARDABEL : site vitrine, services et portfolios
 
 ## To do
-- animations CSS in progress
-- optimisation performances
-- portfolio print
 - portfolio android
+- doc and proptypes
 
 ## L'agence
 Kardabel est une agence print & web au service des professionnels, particuliers,associations et institutions. Elle est le partenaire fiable et créatif dont vous avez besoin pour assurer la communication visuelle de vos projets. Confiez-nous la conception de vos supports de communication ! Sites web, applications Android, logos, chartes graphiques, cartes de visite, flyers, affiches, dépliants, PLV, étiquettes, brochures, retouche photo,...
