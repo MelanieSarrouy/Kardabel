@@ -1,15 +1,15 @@
+/* IMPORTS */
+
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import styled from 'styled-components'
+// assets imports
 import logo from '../../assets/logo/kardabel_logo-simple.svg'
-
 import waveAgence from '../../assets/shapes/waveAgence.svg'
 import waveServices from '../../assets/shapes/waveServices.svg'
 import wavePortfolio from '../../assets/shapes/wavePortfolio.svg'
 import waveContact from '../../assets/shapes/waveContact.svg'
 import waveMentions from '../../assets/shapes/waveMentions.svg'
-import colors from '../../styles/bases/colors'
-import fonts from '../../styles/bases/fonts'
+// styles imports
 import {
   Baseline,
   ButtonsContainer,
@@ -25,28 +25,19 @@ import {
   TextHeroContainer,
 } from '../../styles/layout/hero'
 
-export const PTitlePage = styled.p`
-  color: ${colors.primaryDark}4D;
-  font-size: 18rem;
-  padding: 1rem 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: ${fonts.titles};
-  position: absolute;
-  top: 110px;
-  text-align: justify;
-  width: 100%;
-  left: 6%;
-`
+// JSX // _________________________________________________________________
 
-const Hero = () => {
-  const location = useLocation()
-  const page = location.pathname
-  const services = page.indexOf('services') > -1
-  const portfolio = page.indexOf('portfolio') > -1
-  const contact = page.indexOf('contact') > -1
-  const mentions = page.indexOf('mentions-legales') > -1
-  const agence = !services && !portfolio && !contact && !mentions
+/**
+ * Hero component to display website's Hero
+ * @name Hero
+ * @returns {?JSX}
+ */
+
+ const Hero = () => {
+  const sampleLocation = useLocation()
+  const page = sampleLocation.pathname
+  const arrayPath = page.split('/')
+  const location = arrayPath[1]
 
   return (
     <header>
@@ -55,8 +46,6 @@ const Hero = () => {
           <ImgLogo src={logo} alt="logo" />
         </LogoContainer>
         <TextHeroContainer>
-
-        
           <PTitleStyle>KARDABEL</PTitleStyle>
           <Baseline>un regard, une écoute, des solutions</Baseline>
           <H1Style>
@@ -69,14 +58,16 @@ const Hero = () => {
           </ButtonsContainer>
         </TextHeroContainer>
       </HeroContent>
-      {agence && <ImgCurvyStyle src={waveAgence} alt="background hero" />}
-      {services && <ImgCurvyStyle src={waveServices} alt="background hero" />}
-      {portfolio && <ImgCurvyStyle src={wavePortfolio} alt="background hero" />}
-      {contact && <ImgCurvyStyle src={waveContact} alt="background hero" />}
-      {mentions && <ImgCurvyStyle src={waveMentions} alt="background hero" />}
+      {location === '' && <ImgCurvyStyle src={waveAgence} alt="background hero" />}
+      {location === 'services' && <ImgCurvyStyle src={waveServices} alt="background hero" />}
+      {location === 'portfolios' && <ImgCurvyStyle src={wavePortfolio} alt="background hero" />}
+      {location === 'contact' && <ImgCurvyStyle src={waveContact} alt="background hero" />}
+      {location === 'mentions-legales' && <ImgCurvyStyle src={waveMentions} alt="background hero" />}
 
     </header>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Hero

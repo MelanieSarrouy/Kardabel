@@ -4,7 +4,7 @@ const fonts = {
   txt: 'Urbanist, sans-serif',
   signature : 'Hearth Stone, sans-serif',
   titles2: 'Amaranth, sans-serif',
-  // titles2: 'mechtaregular, sans-serif',
+
 }
 
 export default fonts

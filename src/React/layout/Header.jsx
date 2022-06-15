@@ -1,24 +1,15 @@
 /* IMPORTS */
 
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 // components imports
 import NavBurger from './NavBurger'
 import SubMenuDesktop from './SubMenuDesktop'
+import LiHeaderNav from './LiHeaderNav'
 // assets imports
 import logo from '../../assets/logo/kardabel.png'
-import arrowDownWhite from '../../assets/icons/chevron-down-solid-white.svg'
-import arrowUpGold from '../../assets/icons/chevron-up-solid-gold.svg'
 // styles imports
-import {
-  HeaderStyle,
-  DivHeaderContent,
-  ImgStyle,
-  NavLinkStyle,
-  NavStyle,
-  ImgMenuArrow,
-  DivDropdownSubmenu
-} from '../../styles/layout/header'
+import { HeaderStyle, DivHeaderContent, ImgStyle, NavStyle } from '../../styles/layout/header'
 
 // JSX // _________________________________________________________________
 
@@ -28,27 +19,48 @@ import {
  * @returns {?JSX}
  */
 
- const Header = () => {
-
+const Header = () => {
   const [submenu1, setSubmenu1] = useState(false)
   const [submenu2, setSubmenu2] = useState(false)
+  const [servicesActive, setServicesActive] = useState(false)
+  const [portfoliosActive, setPortfoliosActive] = useState(false)
 
-/* A function that is called when the user clicks on the logo. */
+  const sampleLocation = useLocation()
+  const path = sampleLocation.pathname
+  const arrayPath = path.split('/')
+  const location = arrayPath[1]
+
+/* When pathname location change, 'services' and 'portfolios' style change too */
+  useEffect(() => {
+    if (location === 'services') {
+      setServicesActive(true)
+      setPortfoliosActive(false)    }
+    if (location === 'portfolios') {
+      setPortfoliosActive(true)
+      setServicesActive(false)
+    }
+    if (location !== 'services' &&  location !== 'portfolios') {
+      setServicesActive(false)
+      setPortfoliosActive(false)    
+    }
+  }, [location])
+
+  /* To close dropdowns when the user clicks on the logo. */
   const handleClickClose = () => {
     setSubmenu1(false)
     setSubmenu2(false)
   }
-/* A function that is called when the user clicks on the Services menu item. */
+  /* To open Services dropdown and close Portfolios dropdown */
   const handleClickServices = () => {
-    setSubmenu1(!submenu1)
+    setSubmenu1(true)
     setSubmenu2(false)
   }
-/* A function that is called when the user clicks on the Portfolios menu item. */
+  /* To open Portfolios dropdown and close Services dropdown */
   const handleClickPortfolios = () => {
-    setSubmenu2(!submenu2)
+    setSubmenu2(true)
     setSubmenu1(false)
   }
-/* A function that is called when the user clicks on the logo. */
+  /* To close dropdowns when the user clicks on the header. */
   const handleCloseDropdowns = () => {
     if (submenu1) {
       setSubmenu1(false)
@@ -66,31 +78,18 @@ import {
         </Link>
         <NavStyle>
           <ul>
-            <li>
-              <div onClick={() => handleClickClose()}>
-                <NavLinkStyle
-                  to="/"
-                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                >
-                  L'Agence
-                </NavLinkStyle>
-              </div>
-            </li>
-            <li>
-              <div onClick={() => handleClickServices()}>
-                <NavLinkStyle
-                  to="/services"
-                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                >
-                  Services
-                </NavLinkStyle>
-                <DivDropdownSubmenu>
-                  <ImgMenuArrow
-                    src={submenu1 ? arrowUpGold : arrowDownWhite}
-                    alt="accès au sous-menu"
-                  />
-                </DivDropdownSubmenu>
-              </div>
+            <LiHeaderNav
+              onClick={() => handleClickClose()}
+              link={true}
+              to="/"
+              name="L'Agence"
+            ></LiHeaderNav>
+            <LiHeaderNav
+              onClick={() => handleClickServices()}
+              link={false}
+              active={servicesActive}
+              name="Services"
+            >
               {submenu1 && (
                 <SubMenuDesktop
                   links={['Identité', 'Print', 'Web', 'Android']}
@@ -99,41 +98,28 @@ import {
                   suffixeName={'#card'}
                 />
               )}
-            </li>
-            <li>
-              <div onClick={() => handleClickPortfolios()}>
-                <NavLinkStyle
-                  to="/portfolios"
-                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                >
-                  Portfolios
-                </NavLinkStyle>
-                <DivDropdownSubmenu>
-                  <ImgMenuArrow
-                    src={submenu2 ? arrowUpGold : arrowDownWhite}
-                    alt="accès au sous-menu"
-                  />
-                </DivDropdownSubmenu>
-              </div>
-              {submenu2 && 
+            </LiHeaderNav>
+            <LiHeaderNav
+              onClick={() => handleClickPortfolios()}
+              link={false}
+              active={portfoliosActive}
+              name="Portfolios"
+            >
+              {submenu2 && (
                 <SubMenuDesktop
                   links={['Graphisme', 'Web', 'Android']}
                   name={'portfolios'}
                   prefixeName={'portfolio-'}
                   suffixeName={'#gallery'}
                 />
-              }
-            </li>
-            <li>
-              <div onClick={() => handleClickClose()}>
-                <NavLinkStyle
-                  to="/contact"
-                  className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                >
-                  Contact
-                </NavLinkStyle>
-              </div>
-            </li>
+              )}
+            </LiHeaderNav>
+            <LiHeaderNav
+              onClick={() => handleClickClose()}
+              link={true}
+              to="/contact"
+              name="Contact"
+            ></LiHeaderNav>
           </ul>
         </NavStyle>
         <NavBurger />

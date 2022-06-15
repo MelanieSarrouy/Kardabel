@@ -1,31 +1,26 @@
 // IMPORTS // ______________________________________________________________
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 // components imports
 import SubMenuMobile from './SubMenuMobile'
 // assets imports
 import burgerNormal from '../../assets/icons/hamburge-normal.svg'
-import burgerActive from '../../assets/icons/icons8-close-92.svg'
-import arrowDownWhite from '../../assets/icons/chevron-down-solid-white.svg'
-import arrowDownBlue from '../../assets/icons/chevron-down-solid-blue.svg'
-import arrowUpBlue from '../../assets/icons/chevron-up-solid-blue.svg'
+import close from '../../assets/icons/icons8-close-92.svg'
 // styles imports
 import {
   BurgerContainer,
   ImgBurger,
   NavBurgerContainer,
   UlMenuBurger,
-  NavLinkBurgerStyle,
-  NavLinkBurgerStyleActive,
 } from '../../styles/layout/navBurger'
-import { ImgMenuArrow } from '../../styles/layout/header'
+import LiHeaderNavMobile from './LiHeaderNavMobile'
 
 // JSX // _________________________________________________________________
 
 /**
  * Navurger component to display navigation with small devices (smartphones and tablets)
- * @name NavBurger * 
+ * @name NavBurger *
  * @returns {?JSX}
  */
 
@@ -33,6 +28,43 @@ const NavBurger = () => {
   const [submenu1, setSubmenu1] = useState(false)
   const [submenu2, setSubmenu2] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [agenceActive, setAgenceActive] = useState(false)
+  const [servicesActive, setServicesActive] = useState(false)
+  const [portfoliosActive, setPortfoliosActive] = useState(false)
+  const [contactActive, setContactActive] = useState(false)
+
+  const sampleLocation = useLocation()
+  const path = sampleLocation.pathname
+  const arrayPath = path.split('/')
+  const location = arrayPath[1]
+
+  /* When pathname location change, nav burger style change too */
+  useEffect(() => {
+    if (location === '') {
+      setAgenceActive(true)
+      setServicesActive(false)
+      setPortfoliosActive(false)
+      setContactActive(false)
+    }
+    if (location === 'services') {
+      setAgenceActive(false)
+      setServicesActive(true)
+      setPortfoliosActive(false)
+      setContactActive(false)
+    }
+    if (location === 'portfolios') {
+      setAgenceActive(false)
+      setPortfoliosActive(true)
+      setServicesActive(false)
+      setContactActive(false)
+    }
+    if (location === 'contact') {
+      setAgenceActive(false)
+      setPortfoliosActive(false)
+      setServicesActive(false)
+      setContactActive(true)
+    }
+  }, [location])
 
   const handleClickClose = () => {
     setSubmenu1(false)
@@ -48,110 +80,63 @@ const NavBurger = () => {
     setSubmenu1(false)
   }
 
-  const sampleLocation = useLocation()
-  const location = sampleLocation.pathname
-
   return (
     <BurgerContainer>
       <NavBurgerContainer>
         <ImgBurger
-          src={isOpen ? burgerActive : burgerNormal}
+          src={isOpen ? close : burgerNormal}
           alt="burger navigation"
           onClick={() => setIsOpen(!isOpen)}
         />
-        {isOpen ? (
+        {isOpen && (
           <UlMenuBurger>
-            <li>
-              <div onClick={() => handleClickClose()}>
-                {location === '/' ? (
-                  <NavLinkBurgerStyleActive to="/">
-                    <p>L'Agence</p>
-                  </NavLinkBurgerStyleActive>
-                ) : (
-                  <NavLinkBurgerStyle to="/">
-                    <p>L'Agence</p>
-                  </NavLinkBurgerStyle>
-                )}
-              </div>
-            </li>
-            <li>
-              <div onClick={() => handleClickServices()}>
-                {location === '/services' ? (
-                  <NavLinkBurgerStyleActive to="/services">
-                    <p>Services</p>
-                    <ImgMenuArrow
-                      src={submenu1 ? arrowUpBlue : arrowDownBlue}
-                      alt="accès au sous-menu"
-                    />
-                  </NavLinkBurgerStyleActive>
-                ) : (
-                  <NavLinkBurgerStyle to="/services">
-                    <p>Services</p>
-                    <ImgMenuArrow
-                      src={submenu1 ? arrowUpBlue : arrowDownWhite}
-                      alt="accès au sous-menu"
-                    />
-                  </NavLinkBurgerStyle>
-                )}
-              </div>
-              {submenu1 ? (
-                <SubMenuMobile onClick={() => setIsOpen(!isOpen)}
+            <LiHeaderNavMobile
+              onClick={() => handleClickClose()}
+              to="/"
+              name="L'Agence"
+              link={true}
+              active={agenceActive}
+            ></LiHeaderNavMobile>
+            <LiHeaderNavMobile
+              onClick={() => handleClickServices()}
+              name="Services"
+              link={false}
+              active={servicesActive}
+            >
+              {submenu1 && 
+                <SubMenuMobile
+                  onClick={() => setIsOpen(!isOpen)}
                   links={['Identité', 'Print', 'Web', 'Android']}
                   name={'services'}
                   prefixeName={''}
                   suffixeName={'#card'}
                 />
-              ) : (
-                ''
-              )}
-            </li>
-            <li>
-              <div onClick={() => handleClickPortfolios()}>
-                {location === '/portfolios' ? (
-                  <NavLinkBurgerStyleActive to="/portfolios">
-                    <p>Portfolios</p>
-                    <ImgMenuArrow
-                      src={submenu2 ? arrowUpBlue : arrowDownBlue}
-                      alt="accès au sous-menu"
-                    />
-                  </NavLinkBurgerStyleActive>
-                ) : (
-                  <NavLinkBurgerStyle to="/portfolios">
-                    <p>Portfolios</p>
-                    <ImgMenuArrow
-                      src={submenu2 ? arrowUpBlue : arrowDownWhite}
-                      alt="accès au sous-menu"
-                    />
-                  </NavLinkBurgerStyle>
-                )}
-              </div>
-              {submenu2 ? (
-                <SubMenuMobile onClick={() => setIsOpen(!isOpen)}
+              }
+            </LiHeaderNavMobile>
+            <LiHeaderNavMobile
+              onClick={() => handleClickPortfolios()}
+              name="Portfolios"
+              link={false}
+              active={portfoliosActive}
+            >
+              {submenu2 && 
+                <SubMenuMobile
+                  onClick={() => setIsOpen(!isOpen)}
                   links={['Graphisme', 'Web', 'Android']}
                   name={'portfolios'}
                   prefixeName={'portfolio-'}
                   suffixeName={'#gallery'}
                 />
-              ) : (
-                ''
-              )}
-            </li>
-            <li>
-              <div onClick={() => handleClickClose()}>
-                {location === '/contact' ? (
-                  <NavLinkBurgerStyleActive to="/contact">
-                    <p>Contact</p>
-                  </NavLinkBurgerStyleActive>
-                ) : (
-                  <NavLinkBurgerStyle to="/contact">
-                    <p>Contact</p>
-                  </NavLinkBurgerStyle>
-                )}
-              </div>
-            </li>
+              }
+            </LiHeaderNavMobile>
+            <LiHeaderNavMobile
+              onClick={() => handleClickClose()}
+              to="/contact"
+              name="Contact"
+              link={true}
+              active={contactActive}
+            ></LiHeaderNavMobile>
           </UlMenuBurger>
-        ) : (
-          ''
         )}
       </NavBurgerContainer>
     </BurgerContainer>

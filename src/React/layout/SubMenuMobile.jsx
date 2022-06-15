@@ -1,13 +1,28 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { createLink } from '../../helpers/createLink';
-import { SubNavLinkStyle, SubNavLinkStyleActive } from '../../styles/layout/subMenuDesktop';
-import { UlSubMenuMobile } from '../../styles/layout/subMenuMobile';
+/* IMPORTS */
 
+import React from 'react'
+import { useLocation } from 'react-router-dom'
+import PropTypes from 'prop-types'
+// helpers imports
+import { createLink } from '../../helpers/createLink'
+// styles imports
+import colors from '../../styles/bases/colors'
+import { SubNavLinkStyle, SubNavLinkStyleActive } from '../../styles/layout/subMenuDesktop'
+import { UlSubMenuMobile } from '../../styles/layout/subMenuMobile'
 
-const SubMenuMobile = (props) => {
+// JSX // _________________________________________________________________
+
+/**
+ * SubMenuMobile component to display the submenu of a website on a mobile device.
+ * @name SubMenuMobile
+ * @param {object} props
+ * @returns {?JSX}
+ */
+
+ const SubMenuMobile = (props) => {
   const sampleLocation = useLocation()
   const location = sampleLocation.pathname
+  
   const links = props.links
   const name = props.name
   const prefixeName = props.prefixeName
@@ -19,7 +34,9 @@ const SubMenuMobile = (props) => {
       {links.map((element, index) => (
         <li key={index}>
           {location === createLink(element, name, true, prefixeName, '') ? (
-            <SubNavLinkStyleActive to={createLink(element, name, false, '', '')}>{element}</SubNavLinkStyleActive>
+            <SubNavLinkStyleActive color={colors.tertiary} to={createLink(element, name, true, prefixeName, suffixeName)}>
+              {element}
+            </SubNavLinkStyleActive>
           ) : (
             <SubNavLinkStyle to={createLink(element, name, true, prefixeName, suffixeName)}>
               {element}
@@ -29,6 +46,17 @@ const SubMenuMobile = (props) => {
       ))}
     </UlSubMenuMobile>
   )
-};
+}
 
-export default SubMenuMobile;
+// PROPTYPES // ___________________________________________________________
+
+SubMenuMobile.propTypes = {
+  links: PropTypes.array.isRequired,
+  name: PropTypes.string.isRequired,
+  prefixeName: PropTypes.string.isRequired,
+  suffixeName: PropTypes.string.isRequired
+}
+
+// EXPORT // ______________________________________________________________
+
+export default SubMenuMobile

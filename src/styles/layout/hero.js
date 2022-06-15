@@ -107,7 +107,7 @@ export const LogoContainer = styled.div`
 export const ImgLogo = styled.img`
   width: 250px;
   filter: drop-shadow(0.25rem 0.25rem 0.3rem rgba(0, 0, 0, 0.5));
-  animation: 2400ms cubic-bezier(.4,.33,.14,.97) 2.4s backwards ${logo};
+  animation: 2400ms cubic-bezier(.4,.33,.14,.97) 1800ms backwards ${logo};
   @media (max-width: 1280px) {
     width: 200px;
   }
@@ -168,7 +168,7 @@ export const Baseline = styled.p`
   color: ${colors.background};
   font-weight: 300;
   padding: .8rem 0 .8rem 0.6rem;
-  animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 800ms both ${kardabel};
+  animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 100ms both ${kardabel};
   font-family: ${fonts.signature};
   @media (max-width: 1280px) {
     font-size: 1.2rem;
@@ -192,7 +192,7 @@ export const H1Style = styled.h1`
   text-transform: uppercase;
   line-height: 2.2rem;
   padding: 2.5rem 0 2rem 0.4rem;
-  animation: 2.2s cubic-bezier(0.27, 0.29, 0.14, 0.98) 800ms both ${heroTitle};
+  animation: 1s cubic-bezier(0.27, 0.29, 0.14, 0.98) 800ms both ${heroTitle};
   font-family: ${fonts.titles2};
   text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   @media (max-width: 1280px) {
@@ -288,7 +288,7 @@ export const LinkServices = styled(HashLink)`
     border 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   box-shadow: 0rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
-  animation: 800ms cubic-bezier(.2,.32,.04,1.02) 2400ms backwards ${buttonServices};
+  animation: 800ms cubic-bezier(.2,.32,.04,1.02) 1800ms backwards ${buttonServices};
   @media (max-width: 950px) {
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -324,7 +324,7 @@ export const LinkContacts = styled(HashLink)`
   text-decoration: none;
   text-transform: uppercase;
   transition: border 600ms, background-color 600ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
-  animation: 600ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 2000ms backwards ${buttonContact};
+  animation: 600ms cubic-bezier(0.27, 0.29, 0.14, 0.98) 1400ms backwards ${buttonContact};
   @media (max-width: 950px) {
     font-size: 1rem;
     padding: 0.5rem 1rem;

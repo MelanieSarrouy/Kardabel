@@ -66,6 +66,7 @@ export const SubNavLinkStyle = styled(HashLink)`
   }
 `
 export const SubNavLinkStyleActive = styled(HashLink)`
-  background-color: ${colors.secondary};
+  background-color: ${props => props.color};
   font-weight: 500;
+
 `
