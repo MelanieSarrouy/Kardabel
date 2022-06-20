@@ -1,4 +1,10 @@
+/* IMPORTS */
+
 import React from 'react'
+import PropTypes from 'prop-types'
+// assets imports
+import commas from '../../../assets/icons/commas.svg'
+// styles imports
 import {
   ArticleCard,
   DivIconContainer,
@@ -13,10 +19,17 @@ import {
   DivText,
   ImgCommasEnd,
 } from '../../../styles/components/page agence/articleServiceCard'
-import commas from '../../../assets/icons/commas.svg'
 
+// JSX // _________________________________________________________________
 
-const ArticleServiceCard = (props) => {
+/**
+ * ArticleServiceCard component to display Services Cards on 'agence' page
+ * @name ArticleServiceCard
+ * @param {object} props
+ * @returns {?JSX}
+ */
+
+ const ArticleServiceCard = (props) => {
   return (
     <ArticleCard>
       <DivIconContainer>
@@ -41,5 +54,18 @@ const ArticleServiceCard = (props) => {
     </ArticleCard>
   )
 }
+
+// PROPTYPES // ___________________________________________________________
+
+ArticleServiceCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  altIcon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.array.isRequired,
+  illustration: PropTypes.string.isRequired,
+  altIllustration: PropTypes.string.isRequired,
+}
+
+// EXPORT // ______________________________________________________________
 
 export default ArticleServiceCard

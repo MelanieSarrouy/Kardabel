@@ -1,14 +1,27 @@
+/* IMPORTS */
+
 import React from 'react'
+// data imports
+import { datasValues } from '../../../datas/agence/datasValues'
+// styles imports
 import {
   DivArticlesContainer,
   DivValeursContent,
   SectionValeurs,
 } from '../../../styles/components/page agence/sectionH3Valeurs'
-import { datasValues } from '../../../datas/agence/datasValues'
+// components imports
 import ArticleServiceCard from './ArticleServiceCard'
 import H3TrioTitle from '../../layout/H3TrioTitle'
 
-const SectionH3Valeurs = () => {
+// JSX // _________________________________________________________________
+
+/**
+ * SectionH3Valeurs component to display agence page's values section
+ * @name SectionH3Valeurs
+ * @returns {?JSX}
+ */
+
+ const SectionH3Valeurs = () => {
   return (
     <SectionValeurs id='nosvaleurs'>
       <DivValeursContent>
@@ -30,5 +43,7 @@ const SectionH3Valeurs = () => {
     </SectionValeurs>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default SectionH3Valeurs

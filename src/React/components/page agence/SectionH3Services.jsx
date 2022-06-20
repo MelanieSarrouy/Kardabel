@@ -1,4 +1,11 @@
+/* IMPORTS */
+
 import React from 'react'
+// helpers imports
+import { createLink } from '../../../helpers/createLink'
+// data imports
+import { services } from '../../../datas/agence/services'
+// styles imports
 import {
   UlServicesContent,
   H4ServiceStyle,
@@ -8,20 +15,28 @@ import {
   SectionServices,
   DivServices,
 } from '../../../styles/components/page agence/sectionH3Services'
-import { services } from '../../../datas/agence/services'
+// components imports
 import H3TrioTitle from '../../layout/H3TrioTitle'
-import { createLink } from '../../../helpers/createLink'
 
-const createIllustrationAlt = (str) => {
-  return 'illustration ' + str
-}
-const name = 'services'
-const prefixeName = ''
-const suffixeName = '#card'
+// JSX // _________________________________________________________________
 
-const SectionH3Services = () => {
+/**
+ * SectionH3Services component to display agence page's services section
+ * @name SectionH3Services
+ * @returns {?JSX}
+ */
+
+ const SectionH3Services = () => {
+
+  const createIllustrationAlt = (str) => {
+    return 'illustration ' + str
+  }
+  const name = 'services'
+  const prefixeName = ''
+  const suffixeName = '#card'
+
   return (
-    <SectionServices id='nosservices'>
+    <SectionServices id="nosservices">
       <DivServices>
         <H3TrioTitle title={'Nos  services'} />
         <UlServicesContent>
@@ -42,5 +57,7 @@ const SectionH3Services = () => {
     </SectionServices>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default SectionH3Services

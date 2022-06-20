@@ -1,14 +1,27 @@
+/* IMPORTS */
+
 import React from 'react'
+// assets imports
 import objectifsImage from '../../../assets/illustrations/Idea applications_Monochromatic.svg'
+// styles imports
 import {
   SectionObjectifs,
   DivImgObjContainer,
   DivObectifsContent,
   PTextObjectifs,
 } from '../../../styles/components/page agence/sectionH3Objectifs'
+// components imports
 import H3TrioTitle from '../../layout/H3TrioTitle'
 
-const SectionH3Objectifs = () => {
+// JSX // _________________________________________________________________
+
+/**
+ * SectionH3Objectifs component to display agence page's objectifs section
+ * @name SectionH3Objectifs
+ * @returns {?JSX}
+ */
+
+ const SectionH3Objectifs = () => {
   return (
     <SectionObjectifs id='nosobjectifs'>
       <DivObectifsContent>
@@ -33,5 +46,7 @@ const SectionH3Objectifs = () => {
     </SectionObjectifs>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default SectionH3Objectifs

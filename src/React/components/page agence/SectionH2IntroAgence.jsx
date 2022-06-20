@@ -1,12 +1,25 @@
+/* IMPORTS */
+
 import React from 'react'
+// helpers imports
 import { createHashLink } from '../../../helpers/createLink'
+// styles imports
 import {
   UlButtonContainer,
   LinkButtonServices,
 } from '../../../styles/components/page agence/sectionH2IntroAgence'
+// components imports
 import H2Intro from '../../layout/H2Intro'
 
-const SectionH2IntroAgence = () => {
+// JSX // _________________________________________________________________
+
+/**
+ * SectionH2IntroAgence component to display agence page's introduction
+ * @name SectionH2IntroAgence
+ * @returns {?JSX}
+ */
+
+ const SectionH2IntroAgence = () => {
   
   const title = "L'Agence"
   const content =
@@ -25,5 +38,7 @@ const SectionH2IntroAgence = () => {
     </H2Intro>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default SectionH2IntroAgence
