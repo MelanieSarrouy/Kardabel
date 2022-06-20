@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import colors from '../../bases/colors'
 import fonts from '../../bases/fonts'
 
 export const DivServicesIntro = styled.div`
@@ -111,8 +112,9 @@ export const PTitleServicesCard = styled.div`
     text-transform: uppercase;
     font-weight: 700;
     line-height: 3.2rem;
-    font-family: ${fonts.titles};
+    font-family: ${fonts.titles2};
     text-align: center;
+    color: ${colors.primaryDark};
     @media (max-width: 1300px) {
       font-size: 190%;
       line-height: 3rem;

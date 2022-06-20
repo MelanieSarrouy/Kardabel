@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import logoBenefitCard2 from '../../../assets/logo/logo-simple-dore.svg'
 import backgroundCard from '../../../assets/shapes/EllipseRose-light.svg'
+import circle from '../../../assets/shapes/EllipseLightGold.svg'
 import colors from '../../bases/colors'
 import fonts from '../../bases/fonts'
 
@@ -16,15 +17,16 @@ export const DivBenefitsCards = styled.div`
 `
 export const DivCard = styled.div`
   background: ${(props) =>
-    props.bck === 'yes' ? `` : `no-repeat center center url(${logoBenefitCard2})`};
+    props.bck === 'yes' ? `no-repeat center center url(${circle})` : `no-repeat center center url(${logoBenefitCard2})`};
   background-color: ${(props) => props.color};
-  background-size: 15%;
+  background-size: ${(props) => (props.flippedcard ? '120%' : '15%')};
   border-radius: 1.5rem;
   padding: 2rem;
   height: 20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   position: relative;
+  transition: ${(props) => (props.flippedcard ? 'background-size 600ms cubic-bezier(0.78, 0.08, 0.73, 0.87)' : '15%')};
   @media (max-width: 950px) {
     border-radius: 1rem;
     height: 20rem;
@@ -51,7 +53,7 @@ export const DivCard = styled.div`
 export const PTitleBenefitCard = styled.div`
   position: absolute;
   padding: 0.5rem 1rem;
-  bottom: .7rem;
+  bottom: 0.7rem;
   left: 2.05rem;
   @media (max-width: 610px) {
     bottom: 0.2rem;
@@ -64,7 +66,7 @@ export const PTitleBenefitCard = styled.div`
   @media (max-width: 380px) {
     bottom: 0rem;
     left: 1.05rem;
-    padding: 0 .5rem 0 .8rem;
+    padding: 0 0.5rem 0 0.8rem;
   }
   &::before {
     position: absolute;
@@ -83,7 +85,7 @@ export const PTitleBenefitCard = styled.div`
     line-height: 3.2rem;
     letter-spacing: 1px;
     font-family: ${fonts.titles2};
-    color: ${colors.primary};
+    color: ${colors.primaryDark};
     position: relative;
     @media (max-width: 1140px) {
       font-size: 210%;
@@ -118,7 +120,7 @@ export const PTextBenefitCard = styled.div`
     font-weight: 600;
     line-height: 2.3rem;
     text-align: center;
-    padding: 0.4rem;
+    padding: 0.4rem;    
     @media (max-width: 1440px) {
       font-size: 142%;
       line-height: 2.1rem;

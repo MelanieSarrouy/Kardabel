@@ -25,7 +25,7 @@ export const ModalDiv = styled.div`
 export const ModalContent = styled.div`
   max-width: 90vw;
   position: absolute;
-  top: 2vh;
+  top: 1vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.2);

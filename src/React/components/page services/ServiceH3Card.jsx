@@ -10,7 +10,6 @@ import {
 } from '../../../styles/components/page services/serviceH3Card'
 import { standardizeAndLowerCase } from '../../../helpers/standardizeAndLowerCase'
 import { LinkButtonServices } from '../../../styles/components/page agence/sectionH2IntroAgence'
-import colors from '../../../styles/bases/colors'
 
 const titlesList = ['Kesako', 'Avantages', 'Prestations']
 
@@ -29,10 +28,7 @@ const ServiceH3Card = (props) => {
           {titlesList.map((element, index) => (
             <LiCardstyle key={index}>
               <LinkButtonServices
-                btncolorbck={colors.primary}
                 btncolorhover={props.colorbtnhover}
-                btncolortxt={colors.background}
-                txtcolorhover={colors.primary}
                 to={createLink(element)}
               >
                 {element}

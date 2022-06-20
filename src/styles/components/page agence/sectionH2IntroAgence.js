@@ -48,8 +48,7 @@ export const LinkButtonServices = styled(HashLink)`
   transition: background-color 400ms, border 400ms, color 400ms,
     box-shadow 400ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   &:hover {
-    background-color: ${colors.secondary};
+    background-color: ${(props) => props.btncolorhover || colors.secondary};
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-    font-weight: 600;
   }
 `
