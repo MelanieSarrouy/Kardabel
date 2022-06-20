@@ -11,7 +11,6 @@ import {
 import { LinkButtonServices } from '../../../styles/components/page agence/sectionH2IntroAgence'
 import { formatDate } from '../../../helpers/formatDate'
 
-
 const WebPortfolioCardBack = (props) => {
   const [display, setDisplay] = useState(false)
   const handleClick = (event) => {
@@ -19,20 +18,16 @@ const WebPortfolioCardBack = (props) => {
     event.stopPropagation()
     setDisplay(!display)
   }
-  const figma = 'figma'
-  const npm = 'npm'
-  const trello = 'trello'
-  const swagger = 'swagger'
 
   return (
     <DivBackPortfolioCard flipped={props.flipped}>
       <PTitlePortfolioVersoCard>{props.title}</PTitlePortfolioVersoCard>
-      <PWorkPortfolioVersoCard>{formatDate(props.date)}</PWorkPortfolioVersoCard>
+      <p>- {formatDate(props.date)} -</p>
       <PDescriptionPortfolioVersoCard>{props.description}</PDescriptionPortfolioVersoCard>
       <PWorkPortfolioVersoCard>{props.work}</PWorkPortfolioVersoCard>
       <UlTechnosPortfolioVersoCard>
         {props.technos.map((element, index) => (
-          <li key={'li-' + index} onClick={(event) => handleClick(event)}>
+          <li key={'liTechnos-' + index} onClick={(event) => handleClick(event)}>
             {!display ? (
               <ImgIconTechno src={element.logo} alt="icone techno" title={element.legende} />
             ) : (
@@ -42,33 +37,13 @@ const WebPortfolioCardBack = (props) => {
         ))}
       </UlTechnosPortfolioVersoCard>
       <UlButtonsContainers>
-        {props.site !== '' && (
-          <li>
-            <LinkButtonServices to={{ pathname: props.site }} target="_blank">
-              {props.site.indexOf(figma) !== -1 ? figma : 'site'}
+        {props.links.map((element, index) => (
+          <li key={'liLinks-' + index}>
+            <LinkButtonServices to={{ pathname: element.url }} target="_blank">
+              {element.name}
             </LinkButtonServices>
           </li>
-        )}
-        {props.code !== '' && (
-          <li>
-            <LinkButtonServices to={{ pathname: props.code }} target="_blank">
-              code
-            </LinkButtonServices>
-          </li>
-        )}
-        {props.other !== '' && (
-          <li>
-            <LinkButtonServices boxshadow="true" to={{ pathname: props.other }} target="_blank">
-              {props.other.indexOf(npm) !== -1
-                ? npm
-                : props.other.indexOf(trello) !== -1
-                ? trello
-                : props.other.indexOf(swagger) !== -1
-                ? swagger
-                : ''}
-            </LinkButtonServices>
-          </li>
-        )}
+        ))}
       </UlButtonsContainers>
     </DivBackPortfolioCard>
   )

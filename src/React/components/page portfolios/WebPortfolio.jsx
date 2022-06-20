@@ -14,14 +14,13 @@ const WebPortfolio = () => {
         <WebPortfolioCard
           key={index}
           title={element.title}
-          image={element.image}
+          imagejpg={element.image.jpg}
+          imagewebp={element.image.webp}
           description={element.description}
           date={element.date}
           work={element.work}
           technos={element.technos}
-          site={element.links.site}
-          code={element.links.code}
-          other={element.links.other}
+          links={element.links}
         />
       ))}
       </DivPortfolioCardsContainer>

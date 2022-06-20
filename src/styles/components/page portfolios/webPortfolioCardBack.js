@@ -6,13 +6,7 @@ export const DivBackPortfolioCard = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 12px;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
   background-color: white;
   padding: 2rem;
   @media (max-width: 450px) {
@@ -61,7 +55,6 @@ export const UlTechnosPortfolioVersoCard = styled.ul`
   padding: 0.8rem 0rem;
   & > li {
     font-size: 1.2rem;
-    font-weight: 600;
     text-align: center;
     padding: 0.5rem;
     text-transform: uppercase;

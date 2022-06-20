@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const ArticlePortfolioFlipCard = styled.article`
   cursor: pointer;
-  min-height: 32rem;
-  position: relative;
-  transform-style: preserve-3d;
+  height: 32rem;
   border-radius: 12px;
-  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
   @media (max-width: 360px) {
-    min-height: 34rem;
+    height: 34rem;
   }
 
 `

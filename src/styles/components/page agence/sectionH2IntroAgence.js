@@ -27,6 +27,8 @@ export const UlButtonContainer = styled.ul`
     padding: 0.8rem 2rem;
     font-size: 1.2rem;
     margin: 0.6rem;
+    font-weight: 500;
+
     @media (max-width: 750px) {
       margin: 0.6rem 0;
     }
@@ -36,17 +38,14 @@ export const LinkButtonServices = styled(HashLink)`
   background-color: ${colors.primaryDark};
   border-radius: 2rem;
   text-transform: uppercase;
-  text-decoration: none;
   text-align: center;
-  font-weight: 600;
   color: ${colors.background};
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   animation-name: ${buttonsHashLink};
   animation-duration: 600ms;
   animation-iteration-count: 10;
   animation-fill-mode: backwards;
-  transition: background-color 400ms, border 400ms, color 400ms,
-    box-shadow 400ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
+  transition: background-color 400ms, box-shadow 400ms cubic-bezier(0.2, 0.63, 0.55, 0.97);
   &:hover {
     background-color: ${(props) => props.btncolorhover || colors.secondary};
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);

@@ -7,8 +7,13 @@ import {
 
 const WebPortfolioCardFront = (props) => {
   return (
-    <DivFrontPortfolioCard flipped={props.flipped} image={props.image}>
-      <ImgFrontCard src={props.image} alt={'image du site' + props.title} width={800} />
+    <DivFrontPortfolioCard flipped={props.flipped}>
+      <picture>
+        <source srcSet={props.imagejpg} type="image/jpg" />
+        <source srcSet={props.imagewebp} type="image/webp" />
+        <ImgFrontCard src={props.imagewebp} alt={'image du site' + props.title} width={800} />
+      </picture>
+
       <PTitleFront>{props.title}</PTitleFront>
     </DivFrontPortfolioCard>
   )

@@ -15,12 +15,10 @@ const WebPortfolioCard = (props) => {
           description={props.description}
           work={props.work}
           technos={props.technos}
-          site={props.site}
-          code={props.code}
-          other={props.other}
+          links={props.links}
         />
       ) : (
-        <WebPortfolioCardFront flipped={flipped} image={props.image} title={props.title} />
+        <WebPortfolioCardFront flipped={flipped} imagejpg={props.imagejpg} imagewebp={props.imagewebp} title={props.title} />
       )}
     </ArticlePortfolioFlipCard>
   )
