@@ -165,6 +165,7 @@ export const PName = styled.p`
   line-height: 2rem;
   font-weight: 600;
   padding: 1.5rem 0 4rem 0;
+  text-align: center;
   @media (max-width: 1120px) {
     font-size: 2.5rem;
     padding: 1.5rem 0 2rem 0;
@@ -175,46 +176,44 @@ export const PName = styled.p`
   }
   @media (max-width: 780px) {
     font-size: 2.7rem;
-    padding: 1.5rem 0 2rem 0;
+    padding: 1.5rem 0 2.5rem 0;
   }
   @media (max-width: 520px) {
     font-size: 2.2rem;
-    padding: 1rem 0 1.7rem 0;
+    padding: 1rem 0 2rem 0;
   }
   @media (max-width: 420px) {
     font-size: 2rem;
-    padding: 0 0 1.5rem 0;
+    padding: 0 0 1.8rem 0;
   }
 `
-export const PJob = styled.p`
+export const PJob = styled.div`
+ & > p {
   font-family: ${fonts.titles};
   font-size: 1.8rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-weight: 300;
-  padding: 1rem 0rem;
   text-transform: uppercase;
   text-align: center;
   @media (max-width: 1120px) {
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 2.2rem;
   }
   @media (max-width: 900px) {
     font-size: 1.2rem;
     line-height: 1.8rem;
-    padding: 0.8rem 0rem;
   }
   @media (max-width: 780px) {
     font-size: 1.6rem;
-    line-height: 2.2rem;
-    padding: 1rem 0rem;
+    line-height: 2.8rem;
   }
   @media (max-width: 520px) {
     font-size: 1.2rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
   }
   @media (max-width: 420px) {
     font-size: 1rem;
     line-height: 1.6rem;
-    padding: 0.8rem 0rem;
   }
+ }
 `

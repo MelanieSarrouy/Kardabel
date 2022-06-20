@@ -1,10 +1,13 @@
+/* IMPORTS */
+
 import React from 'react'
+// helpers imports
+import { NewlineText } from '../../../helpers/newLineText'
+// data imports
+import { dataMembers, dataDetails } from '../../../datas/contact/data'
+// assets imports
 import logo from '../../../assets/logo/logo-simple-bleu.svg'
-import tel from '../../../assets/icons/tel.svg'
-import mail from '../../../assets/icons/mail.svg'
-import location from '../../../assets/icons/location.svg'
-import mel from '../../../assets/illustrations/mel-toon.png'
-import stef from '../../../assets/illustrations/stef-toon.png'
+// styles imports
 import {
   DivCoordonnees,
   DivCoordonneesContainer,
@@ -19,26 +22,26 @@ import {
   PJob,
 } from '../../../styles/components/page contact/coordonneesKardabel'
 
-const CoordonnéesKardabel = () => {
+// JSX // _________________________________________________________________
+
+/**
+ * CoordonnéesKardabel component to display to display the contact details of kardabel on the contact page
+ * @name CoordonnéesKardabel
+ * @returns {?JSX}
+ */
+
+ const CoordonnéesKardabel = () => {
   return (
     <SectionCoordonnes>
       <DivPortraitsContainer>
-        <article>
-          <ImgPortrait src={mel} alt="portrait toon Melanie" width={200} />
-          <PName>Mélanie Sarrouy</PName>
-          <PJob>
-            Développeuse Front-End
-            <br /> & Graphiste
+      {dataMembers.map((element, index) => (
+        <article key={index}>
+          <ImgPortrait src={element.image} alt={'portrait toon' + element.name} width={200} />
+          <PName>{element.name}</PName>
+          <PJob>{NewlineText(element.Job)}
           </PJob>
         </article>
-        <article>
-          <ImgPortrait src={stef} alt="portrait toon Stephane" width={200} />
-          <PName>Stéphane Warin</PName>
-          <PJob>
-            Développeur d'applications
-            <br /> android
-          </PJob>
-        </article>
+      ))}
       </DivPortraitsContainer>
 
         <DivCoordonneesContainer>
@@ -47,23 +50,18 @@ const CoordonnéesKardabel = () => {
           </DivImgLogoContainer>
           <div>
             <PKardabel>Kardabel</PKardabel>
-
-            <DivCoordonnees>
-              <ImgIcon src={tel} alt="icon" width={25} />
-              <PCoordonnees>09 77 61 11 90</PCoordonnees>
+            {dataDetails.map((element, index) => (
+              <DivCoordonnees key={index}>
+              <ImgIcon src={element.src} alt="icon" width={25} />
+              <PCoordonnees>{element.txt}</PCoordonnees>
             </DivCoordonnees>
-            <DivCoordonnees>
-              <ImgIcon src={mail} alt="icon" width={25} />
-              <PCoordonnees>contact@kardabel.com</PCoordonnees>
-            </DivCoordonnees>
-            <DivCoordonnees>
-              <ImgIcon src={location} alt="icon" width={25} />
-              <PCoordonnees>France, Occitanie</PCoordonnees>
-            </DivCoordonnees>
+            ))}
           </div>
         </DivCoordonneesContainer>
     </SectionCoordonnes>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default CoordonnéesKardabel

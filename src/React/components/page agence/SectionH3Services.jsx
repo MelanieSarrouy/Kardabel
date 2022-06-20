@@ -26,7 +26,7 @@ import H3TrioTitle from '../../layout/H3TrioTitle'
  * @returns {?JSX}
  */
 
- const SectionH3Services = () => {
+const SectionH3Services = () => {
 
   const createIllustrationAlt = (str) => {
     return 'illustration ' + str
