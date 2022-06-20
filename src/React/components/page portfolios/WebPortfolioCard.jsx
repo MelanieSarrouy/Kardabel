@@ -11,6 +11,7 @@ const WebPortfolioCard = (props) => {
         <WebPortfolioCardBack
           flipped={flipped}
           title={props.title}
+          date={props.date}
           description={props.description}
           work={props.work}
           technos={props.technos}

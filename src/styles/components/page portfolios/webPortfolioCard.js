@@ -7,4 +7,8 @@ export const ArticlePortfolioFlipCard = styled.article`
   transform-style: preserve-3d;
   border-radius: 12px;
   box-sizing: border-box;
+  @media (max-width: 360px) {
+    min-height: 34rem;
+  }
+
 `

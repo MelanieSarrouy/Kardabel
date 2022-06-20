@@ -15,10 +15,6 @@ export const DivBackPortfolioCard = styled.div`
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
   background-color: white;
   padding: 2rem;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: transform ease 500ms;
-  transform: rotateY(${(props) => (props.flipped ? '0deg' : '-180deg')});
   @media (max-width: 450px) {
     padding: 1.2rem;
   }
@@ -58,7 +54,7 @@ export const PWorkPortfolioVersoCard = styled.p`
 export const UlTechnosPortfolioVersoCard = styled.ul`
   width: 100%;
   display: flex;
-  ${'' /* flex-wrap: wrap; */}
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: start;
   width: 100%;
@@ -69,10 +65,6 @@ export const UlTechnosPortfolioVersoCard = styled.ul`
     text-align: center;
     padding: 0.5rem;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     margin: 0 0.2rem;
     @media (max-width: 420px) {
       margin: 0;
@@ -86,7 +78,7 @@ export const UlTechnosPortfolioVersoCard = styled.ul`
       font-size: 1rem;
       @media (max-width: 420px) {
         padding: 0.5rem 0 0 0;
-        font-size: 1rem;
+        font-size: .9rem;
       }
     }
   }

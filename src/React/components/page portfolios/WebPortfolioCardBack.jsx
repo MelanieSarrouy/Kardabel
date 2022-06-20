@@ -9,20 +9,25 @@ import {
   ImgIconTechno,
 } from '../../../styles/components/page portfolios/webPortfolioCardBack'
 import { LinkButtonServices } from '../../../styles/components/page agence/sectionH2IntroAgence'
-const figma = 'figma'
-const npm = 'npm'
-const trello = 'trello'
-const swagger = 'swagger'
+import { formatDate } from '../../../helpers/formatDate'
+
 
 const WebPortfolioCardBack = (props) => {
   const [display, setDisplay] = useState(false)
   const handleClick = (event) => {
     event.preventDefault()
     event.stopPropagation()
-    setDisplay(!display)  }
+    setDisplay(!display)
+  }
+  const figma = 'figma'
+  const npm = 'npm'
+  const trello = 'trello'
+  const swagger = 'swagger'
+
   return (
     <DivBackPortfolioCard flipped={props.flipped}>
       <PTitlePortfolioVersoCard>{props.title}</PTitlePortfolioVersoCard>
+      <PWorkPortfolioVersoCard>{formatDate(props.date)}</PWorkPortfolioVersoCard>
       <PDescriptionPortfolioVersoCard>{props.description}</PDescriptionPortfolioVersoCard>
       <PWorkPortfolioVersoCard>{props.work}</PWorkPortfolioVersoCard>
       <UlTechnosPortfolioVersoCard>
@@ -39,31 +44,21 @@ const WebPortfolioCardBack = (props) => {
       <UlButtonsContainers>
         {props.site !== '' && (
           <li>
-            <LinkButtonServices
-              to={{ pathname: props.site }}
-              target="_blank"
-            >
+            <LinkButtonServices to={{ pathname: props.site }} target="_blank">
               {props.site.indexOf(figma) !== -1 ? figma : 'site'}
             </LinkButtonServices>
           </li>
         )}
         {props.code !== '' && (
           <li>
-            <LinkButtonServices
-              to={{ pathname: props.code }}
-              target="_blank"
-            >
+            <LinkButtonServices to={{ pathname: props.code }} target="_blank">
               code
             </LinkButtonServices>
           </li>
         )}
         {props.other !== '' && (
           <li>
-            <LinkButtonServices
-              boxshadow="true"
-              to={{ pathname: props.other }}
-              target="_blank"
-            >
+            <LinkButtonServices boxshadow="true" to={{ pathname: props.other }} target="_blank">
               {props.other.indexOf(npm) !== -1
                 ? npm
                 : props.other.indexOf(trello) !== -1

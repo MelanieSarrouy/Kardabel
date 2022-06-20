@@ -1,31 +1,31 @@
-import imgReservia from '../assets/images/portfolioWeb/reservia.jpg'
-import imgOhmyfood from '../assets/images/portfolioWeb/ohmyfood.jpg'
-import imgGameOn from '../assets/images/portfolioWeb/gameon.jpg'
-import imgFishEye from '../assets/images/portfolioWeb/fisheye.jpg'
-import imgPetitsPlats from '../assets/images/portfolioWeb/lesPetitsPlats.jpg'
-import imgLearnAtHome from '../assets/images/portfolioWeb/learnAtHome.jpg'
-import imgKasa from '../assets/images/portfolioWeb/kasa.jpg'
-import imgSportSee from '../assets/images/portfolioWeb/sportsee.jpg'
-import imgArgentBank from '../assets/images/portfolioWeb/argentBank.jpeg'
-import imgHRNet from '../assets/images/portfolioWeb/hrnet.jpg'
-import imgKardabel from '../assets/images/portfolioWeb/kardabel.jpg'
-import imgLabatMobile from '../assets/images/portfolioWeb/labatmobile.jpg'
-import html from '../assets/icons/html.svg'
-import css from '../assets/icons/css.svg'
-import js from '../assets/icons/js.svg'
-import react from '../assets/icons/react.svg'
-import redux from '../assets/icons/redux.svg'
-import sass from '../assets/icons/sass.svg'
-import styledComponents from '../assets/icons/styled-components.svg'
-import swagger from '../assets/icons/swagger.svg'
-import figma from '../assets/icons/figma.svg'
-import animCSS from '../assets/icons/animCSS.svg'
-import wp from '../assets/icons/wp.svg'
-import oceanWP from '../assets/icons/oceanWP.svg'
-import elementor from '../assets/icons/elementor.svg'
-import firestore from '../assets/icons/firestore.svg'
-import recharts from '../assets/icons/recharts.svg'
-import trello from '../assets/icons/trello.svg'
+import imgReservia from './images/reservia.jpg'
+import imgOhmyfood from './images/ohmyfood.jpg'
+import imgGameOn from './images/gameon.jpg'
+import imgFishEye from './images/fisheye.jpg'
+import imgPetitsPlats from './images/lesPetitsPlats.jpg'
+import imgLearnAtHome from './images/learnAtHome.jpg'
+import imgKasa from './images/kasa.jpg'
+import imgSportSee from './images/sportsee.jpg'
+import imgArgentBank from './images/argentBank.jpeg'
+import imgHRNet from './images/hrnet.jpg'
+import imgKardabel from './images/kardabel.jpg'
+import imgLabatMobile from './images/labatmobile.jpg'
+import html from '../../../assets/icons/html.svg'
+import css from '../../../assets/icons/css.svg'
+import js from '../../../assets/icons/js.svg'
+import react from '../../../assets/icons/react.svg'
+import redux from '../../../assets/icons/redux.svg'
+import sass from '../../../assets/icons/sass.svg'
+import styledComponents from '../../../assets/icons/styled-components.svg'
+import swagger from '../../../assets/icons/swagger.svg'
+import figma from '../../../assets/icons/figma.svg'
+import animCSS from '../../../assets/icons/animCSS.svg'
+import wp from '../../../assets/icons/wp.svg'
+import oceanWP from '../../../assets/icons/oceanWP.svg'
+import elementor from '../../../assets/icons/elementor.svg'
+import firestore from '../../../assets/icons/firestore.svg'
+import recharts from '../../../assets/icons/recharts.svg'
+import trello from '../../../assets/icons/trello.svg'
 
 export const datasPortfolioWeb = [
   {
@@ -191,7 +191,7 @@ export const datasPortfolioWeb = [
       { logo: styledComponents, legende: 'Styled-Components' },
       { logo: firestore, legende: 'Firestore' },
     ],
-    date: '12-2021',
+    date: '01-2022',
     links: {
       site: '//oc-hrnet.netlify.app',
       code: '//github.com/MelanieSarrouy/HRNet_11-2021',
