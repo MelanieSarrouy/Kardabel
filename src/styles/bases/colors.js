@@ -11,12 +11,9 @@ const colors = {
   background: '#ffffff', //blanc
   transparent: '#ffffff00', //transparent
 
-
   color1: '#FFEEAD', //jaune
   color1clair: '#FFFEF7', //jaune clair
   color1Dark: '#D8C271', //jaune foncé
-
-
 
   color2: '#F9C5D5', //rose
   color2clair: '#FFFAFB', //rose clair

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Mélanie Sarrouy",
+    "Job": "Développeuse Front-End \n & Graphiste",
+    "image": "/images/mel-toon.png"
+  },
+  {
+    "name": "Stéphane Warin",
+    "Job": "Développeur d'applications \n & android",
+    "image": "/images/stef-toon.png"
+  }
+]
