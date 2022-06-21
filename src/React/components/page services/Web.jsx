@@ -1,6 +1,8 @@
 /* IMPORTS */
 
 import React from 'react'
+// data imports
+import { datasWeb } from '../../../datas/services/services-web/datasWeb'
 // assets imports
 import circle from '../../../assets/shapes/EllipseLightGold.svg'
 // components imports
@@ -8,7 +10,6 @@ import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
-import { useFetch } from '../../../services/API'
 
 // JSX // _________________________________________________________________
 
@@ -19,15 +20,6 @@ import { useFetch } from '../../../services/API'
  */
 
 const Web = () => {
-  /* A hook that is used to fetch data from an API. */
-  const { data, isLoading, error } = useFetch(`services/web.json`)
-  if (error) {
-    return <p>Oups, il y a un problème de chargement des données</p>
-  }
-  if (isLoading) {
-    return <p>Loading...</p>
-  } else {
-    const datasWeb = data
 
     return (
       <>
@@ -63,7 +55,6 @@ const Web = () => {
         />
       </>
     )
-  }
 }
 
 // EXPORT // ______________________________________________________________

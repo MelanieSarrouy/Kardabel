@@ -14,7 +14,6 @@ import {
   ImgIcon,
   PCoordonnees,
 } from '../../../styles/components/page contact/details'
-import { useFetch } from '../../../services/API'
 
 // JSX // _________________________________________________________________
 
@@ -25,31 +24,23 @@ import { useFetch } from '../../../services/API'
  */
 
 const Details = () => {
-  /* A hook that is used to fetch data from an API. */
-  const { data, isLoading, error } = useFetch(`contact/details.json`)
-  if (error) {
-    return <p>Oups, il y a un problème de chargement des données</p>
-  }
-  if (isLoading) {
-    return <p>Loading...</p>
-  } else {
-    return (
-      <DivCoordonneesContainer>
-        <DivImgLogoContainer>
-          <img src={logo} alt="logo" width={256} />
-        </DivImgLogoContainer>
-        <div>
-          <PKardabel>Kardabel</PKardabel>
-          {data.map((element, index) => (
-            <DivCoordonnees key={index}>
-              <ImgIcon src={element.src} alt="icon" width={25} />
-              <PCoordonnees>{element.txt}</PCoordonnees>
-            </DivCoordonnees>
-          ))}
-        </div>
-      </DivCoordonneesContainer>
-    )
-  }
+  const data = dataDetails
+  return (
+    <DivCoordonneesContainer>
+      <DivImgLogoContainer>
+        <img src={logo} alt="logo" width={256} />
+      </DivImgLogoContainer>
+      <div>
+        <PKardabel>Kardabel</PKardabel>
+        {data.map((element, index) => (
+          <DivCoordonnees key={index}>
+            <ImgIcon src={element.src} alt="icon" width={25} />
+            <PCoordonnees>{element.txt}</PCoordonnees>
+          </DivCoordonnees>
+        ))}
+      </div>
+    </DivCoordonneesContainer>
+  )
 }
 
 export default Details

@@ -6,8 +6,8 @@ import PropTypes from 'prop-types'
 
 // HOOK // ______________________________________________________________
 
-axios.defaults.baseURL = 'https://www.kardabel.com/datas/'
-// axios.defaults.baseURL = 'http://localhost:3000/datas/'
+// axios.defaults.baseURL = 'https://www.kardabel.com/datas/'
+axios.defaults.baseURL = 'http://localhost:3000/datas/'
 
 
 /**

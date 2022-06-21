@@ -1,6 +1,8 @@
 /* IMPORTS */
 
 import React from 'react'
+// data imports
+import { datasIdentity } from '../../../datas/services/services-identity/datasIdentity'
 // assets imports
 import circle from '../../../assets/shapes/EllipseLightGold.svg'
 // components imports
@@ -8,7 +10,6 @@ import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
-import { useFetch } from '../../../services/API'
 
 // JSX // _________________________________________________________________
 
@@ -19,15 +20,6 @@ import { useFetch } from '../../../services/API'
  */
 
  const Identity = () => {
-    /* A hook that is used to fetch data from an API. */
-    const { data, isLoading, error } = useFetch(`services/identity.json`)
-    if (error) {
-      return <p>Oups, il y a un problème de chargement des données</p>
-    }
-    if (isLoading) {
-      return <p>Loading...</p>
-    } else {
-      const datasIdentity = data
   
   return (
     <>
@@ -64,7 +56,6 @@ import { useFetch } from '../../../services/API'
       />
     </>
   )
-    }
 }
 
 // EXPORT // ______________________________________________________________

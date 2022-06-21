@@ -4,7 +4,7 @@ import React from 'react'
 // helpers imports
 import { createLink } from '../../../helpers/createLink'
 // data imports
-// import { services } from '../../../datas/agence/agence-services/services'
+import { services } from '../../../datas/agence/agence-services/services'
 // styles imports
 import {
   UlServicesContent,
@@ -17,7 +17,6 @@ import {
 } from '../../../styles/components/page agence/sectionH3Services'
 // components imports
 import H3TrioTitle from '../../layout/H3TrioTitle'
-import { useFetch } from '../../../services/API'
 
 // JSX // _________________________________________________________________
 
@@ -28,8 +27,6 @@ import { useFetch } from '../../../services/API'
  */
 
 const SectionH3Services = () => {
-/* A hook that is used to fetch data from an API. */
-  const { data, isLoading, error } = useFetch(`agence/services.json`)
 
   const createIllustrationAlt = (str) => {
     return 'illustration ' + str
@@ -38,12 +35,8 @@ const SectionH3Services = () => {
   const prefixeName = ''
   const suffixeName = '#card'
 
-  if (error) {
-    return <p>Oups, il y a un problème de chargement des données</p>
-  }
-  if (isLoading) {
-    return <p>Loading...</p>
-  } else {
+  const data = services
+
     return (
       <SectionServices id="nosservices">
         <DivServices>
@@ -67,7 +60,6 @@ const SectionH3Services = () => {
         </DivServices>
       </SectionServices>
     )
-  }
 }
 
 // EXPORT // ______________________________________________________________
