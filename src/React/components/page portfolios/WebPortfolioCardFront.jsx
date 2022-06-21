@@ -1,9 +1,22 @@
+/* IMPORTS */
+
 import React from 'react'
+import PropTypes from 'prop-types'
+// styles imports
 import {
   DivFrontPortfolioCard,
   PTitleFront,
   ImgFrontCard,
 } from '../../../styles/components/page portfolios/webPortfolioCardFront'
+
+// JSX // _________________________________________________________________
+
+/**
+ * WebPortfolioCardFront component to display front cards web portfolio
+ * @name ArticleServiceCard
+ * @param {object} props
+ * @returns {?JSX}
+ */
 
 const WebPortfolioCardFront = (props) => {
   return (
@@ -18,5 +31,16 @@ const WebPortfolioCardFront = (props) => {
     </DivFrontPortfolioCard>
   )
 }
+
+// PROPTYPES // ___________________________________________________________
+
+WebPortfolioCardFront.propTypes = {
+  flipped: PropTypes.bool.isRequired,
+  imagejpg: PropTypes.string.isRequired,
+  imagewebp: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
+
+// EXPORT // ______________________________________________________________
 
 export default WebPortfolioCardFront

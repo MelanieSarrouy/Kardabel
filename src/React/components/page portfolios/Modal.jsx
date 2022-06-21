@@ -57,7 +57,6 @@ images to fetch all elements of selected project*/
     const current = count
     if (current === 0) {
       position === 0 ? setPosition(allDataLenght - 1) : setPosition(position - 1)
-
       setCount(0)
     } else {
       setCount(current - 1)

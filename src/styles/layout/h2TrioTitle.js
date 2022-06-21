@@ -8,27 +8,27 @@ export const DivH2Title = styled.div`
   align-items: baseline;
 `
 export const SvgH2Trio = styled.img`
-  width: 5.5rem;
+  width: 5.1rem;
   margin: 0 1.4rem 1rem 0;
   @media (max-width: 1280px) {
-    width: 4rem;
-    margin-right: 1.3rem;
+    width: 3.8rem;
+    margin-right: 1.2rem;
   }
   @media (max-width: 950px) {
-    width: 2.9rem;
-    margin-right: 1rem;
-  }
-  @media (max-width: 640px) {
-    width: 2.4rem;
+    width: 2.7rem;
     margin-right: .9rem;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     width: 2.2rem;
     margin-right: .8rem;
   }
+  @media (max-width: 480px) {
+    width: 2.1rem;
+    margin-right: .7rem;
+  }
   @media (max-width: 420px) {
-    width: 1.6rem;
-    margin-right: .6rem;
+    width: 1.5rem;
+    margin-right: .5rem;
   }
 `
 export const H2TitleStyle = styled.h2`
@@ -39,7 +39,6 @@ export const H2TitleStyle = styled.h2`
   letter-spacing: -2px;
   word-spacing: 1rem;
   line-height: 8rem;
-  ${'' /* font-weight: 600; */}
   padding-bottom: 5rem;
   @media (max-width: 1280px) {
     font-size: 5.5rem;

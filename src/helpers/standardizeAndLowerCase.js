@@ -1,3 +1,7 @@
+/**
+ * It takes a string, removes all non-alphanumeric characters, and returns the string in lowercase.
+ * @param str - The string to be standardized and lowercased.
+ */
 export const standardizeAndLowerCase = (str) => {
   let a = str
     .replace(/[\u0300-\u036f]/g, '')

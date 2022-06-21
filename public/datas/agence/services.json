@@ -1,0 +1,22 @@
+[
+  {
+    "name": "identité",
+    "illustration": "./images/Profile analysis _Flatline.svg",
+    "text": "Création ou refonte de votre identité visuelle (logo, charte graphique, brand board)"
+  },
+  {
+    "name": "print",
+    "illustration": "./images/Designer _Flatline.svg",
+    "text": "Conception et réalisation de tous les supports de communication matériels dont vous avez besoin"
+  },
+  {
+    "name": "web",
+    "illustration": "./images/Web development _Flatline.svg",
+    "text": "Création ou refonte de votre site internet avec un CMS type WordPress ou ‘from scatch’ pour un site sur-mesure"
+  },
+  {
+    "name": "android",
+    "illustration": "./images/Authentication_Flatline.svg",
+    "text": "Conception et réalisation d’une application Android, un outil pour vous faciliter la vie en fonction de vos besoins et de votre activité"
+  }
+]

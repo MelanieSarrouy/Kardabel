@@ -1,4 +1,10 @@
+/* IMPORTS */
+
 import { keyframes } from 'styled-components'
+
+// EXPORTS // ______________________________________________________________
+
+/* fadeIn */
 
 export const fadeIn = keyframes`
   0% {
@@ -8,6 +14,9 @@ export const fadeIn = keyframes`
     background-color: rgba(0, 0, 0, 0.8);
 }
 `
+
+/* roadRunnerIn */
+
 export const roadRunnerIn = keyframes`
   0% {
     transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
@@ -16,6 +25,9 @@ export const roadRunnerIn = keyframes`
     transform: translateX(0px) skewX(0deg) scaleX(1);
   }
 `
+
+/* logo */
+
 export const logo = keyframes`
   0% {
     opacity: 0;
@@ -28,6 +40,9 @@ export const logo = keyframes`
     transform: translateX(0vw);
   }
 `
+
+/* kardabel */
+
 export const kardabel = keyframes`
   0% {
     transform: translateY(-300px);
@@ -40,6 +55,9 @@ export const kardabel = keyframes`
     transform: translateY(0px);
   }
 `
+
+/* heroTitle */
+
 export const heroTitle = keyframes`
   0% {
     opacity: 0;
@@ -48,6 +66,8 @@ export const heroTitle = keyframes`
     opacity: 1;
   }
 `
+
+/* buttonServices */
 
 export const buttonServices = keyframes`
   0% {
@@ -70,6 +90,9 @@ export const buttonServices = keyframes`
     transform: translateX(0vw);
   }
 `
+
+/* buttonContact */
+
 export const buttonContact = keyframes`
   0% {
     opacity: 0;
@@ -82,6 +105,9 @@ export const buttonContact = keyframes`
     transform: translateX(0vw);
   }
 `
+
+/* trio */
+
 export const trio = keyframes`
   0% {
     opacity: 0;
@@ -96,6 +122,9 @@ export const trio = keyframes`
     transform: rotate(0deg);
   }
 `
+
+/* h2Title */
+
 export const h2Title = keyframes`
   0% {
     opacity:0;
@@ -111,6 +140,9 @@ export const h2Title = keyframes`
     transform: translateX(0px);
   }
 `
+
+/* buttonsHashLink */
+
 export const buttonsHashLink = keyframes`
   0% {
     filter: brightness(1);    

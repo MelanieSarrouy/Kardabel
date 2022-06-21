@@ -1,13 +1,25 @@
+/* IMPORTS */
+
 import React from 'react'
+// data imports
+import { datasWeb } from '../../../datas/services/services-web/datasWeb'
+// assets imports
+import circle from '../../../assets/shapes/EllipseLightGold.svg'
+// components imports
 import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
-import { datasWeb } from '../../../datas/services/datasWeb'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
-import circle from '../../../assets/shapes/EllipseLightGold.svg'
 
+// JSX // _________________________________________________________________
 
-const Web = () => {
+/**
+ * Web component to display web services page
+ * @name Web
+ * @returns {?JSX}
+ */
+
+ const Web = () => {
   return (
     <>
       <ServiceH3Card
@@ -43,5 +55,7 @@ const Web = () => {
     </>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Web

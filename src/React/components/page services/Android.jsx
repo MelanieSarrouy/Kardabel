@@ -1,9 +1,21 @@
+/* IMPORTS */
+
 import React from 'react'
+// data imports
+import { datasAndroid } from '../../../datas/services/services-android/datasAndroid'
+// components imports
 import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
-import { datasAndroid } from '../../../datas/services/datasAndroid'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
+
+// JSX // _________________________________________________________________
+
+/**
+ * Android component to display android services page
+ * @name Android
+ * @returns {?JSX}
+ */
 
 const Android = () => {
   return (
@@ -40,5 +52,7 @@ const Android = () => {
     </>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Android

@@ -14,32 +14,33 @@ export const DivH3Title = styled.div`
   }
 `
 export const SvgH3Trio = styled.img`
-  width: 3.25rem;
+  width: 3.15rem;
   margin-right: 1rem;
   @media (max-width: 1280px) {
-    width: 2.8rem;
+    width: 2.6rem;
+    margin-right: .9rem;
   }
   @media (max-width: 1023px) {
-    width: 2.5rem;
-  }
-  @media (max-width: 950px) {
     width: 2.4rem;
   }
+  @media (max-width: 950px) {
+    width: 2.3rem;
+  }
   @media (max-width: 750px) {
-    width: 2.2rem;
-    margin-right: 1rem;
+    width: 2.1rem;
+    margin-right: .8rem;
   }
   @media (max-width: 640px) {
     width: 1.9rem;
-    margin-right: 0.8rem;
-  }
-  @media (max-width: 450px) {
-    width: 1.6rem;
     margin-right: 0.7rem;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 1.5rem;
     margin-right: 0.6rem;
+  }
+  @media (max-width: 400px) {
+    width: 1.4rem;
+    margin-right: 0.5rem;
   }
   @media (max-width: 330px) {
     width: 1.3rem;

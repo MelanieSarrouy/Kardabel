@@ -2,7 +2,7 @@
 
 import React from 'react'
 // data imports
-import { datasValues } from '../../../datas/agence/datasValues'
+import { datasValues } from '../../../datas/agence/agence-valeurs/datasValues'
 // styles imports
 import {
   DivArticlesContainer,

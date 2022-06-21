@@ -1,12 +1,25 @@
+/* IMPORTS */
+
 import React from 'react'
+// data imports
+import { datasIdentity } from '../../../datas/services/services-identity/datasIdentity'
+// assets imports
+import circle from '../../../assets/shapes/EllipseLightGold.svg'
+// components imports
 import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
-import { datasIdentity } from '../../../datas/services/datasIdentity'
 import BenefitsComponent from './BenefitsComponent'
 import ServicesComponent from './ServicesComponent'
-import circle from '../../../assets/shapes/EllipseLightGold.svg'
 
-const Identity = () => {
+// JSX // _________________________________________________________________
+
+/**
+ * Identity component to display identity services page
+ * @name Identity
+ * @returns {?JSX}
+ */
+
+ const Identity = () => {
   return (
     <>
       <ServiceH3Card
@@ -43,5 +56,7 @@ const Identity = () => {
     </>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Identity

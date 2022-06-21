@@ -48,32 +48,32 @@ export const DivH4Container = styled.div`
   }
 `
 export const SvgH4Trio = styled.img`
-  width: 2.6rem;
-  margin-right: 1rem;
+  width: 2.5rem;
+  margin-right: .9rem;
   @media (max-width: 1440px) {
     width: 2.4rem;
-    margin-right: 0.9rem;
   }
   @media (max-width: 1280px) {
-    width: 2.2rem;
-  }
-  @media (max-width: 1023px) {
-    width: 2rem;
+    width: 2.1rem;
     margin-right: 0.8rem;
   }
-  @media (max-width: 950px) {
-    width: 1.8rem;
+  @media (max-width: 1023px) {
+    width: 1.9rem;
     margin-right: 0.7rem;
   }
+  @media (max-width: 950px) {
+    width: 1.7rem;
+    margin-right: 0.6rem;
+  }
   @media (max-width: 750px) {
-    width: 1.6rem;
-    margin-right: 0.5rem;
+    width: 1.5rem;
   }
   @media (max-width: 640px) {
-    width: 1.4rem;
+    width: 1.3rem;
+    margin-right: 0.5rem;
   }
   @media (max-width: 460px) {
-    width: 1.2em;
+    width: 1.15rem;
   }
   @media (max-width: 350px) {
     width: 1.1rem;

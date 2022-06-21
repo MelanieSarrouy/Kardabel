@@ -4,7 +4,7 @@ import React from 'react'
 // helpers imports
 import { createLink } from '../../../helpers/createLink'
 // data imports
-import { services } from '../../../datas/agence/services'
+// import { services } from '../../../datas/agence/agence-services/services'
 // styles imports
 import {
   UlServicesContent,
@@ -17,6 +17,7 @@ import {
 } from '../../../styles/components/page agence/sectionH3Services'
 // components imports
 import H3TrioTitle from '../../layout/H3TrioTitle'
+import { useFetch } from '../../../services/API'
 
 // JSX // _________________________________________________________________
 
@@ -27,6 +28,8 @@ import H3TrioTitle from '../../layout/H3TrioTitle'
  */
 
 const SectionH3Services = () => {
+/* A hook that is used to fetch data from an API. */
+  const { data, isLoading, error } = useFetch(`agence/services.json`)
 
   const createIllustrationAlt = (str) => {
     return 'illustration ' + str
@@ -35,27 +38,36 @@ const SectionH3Services = () => {
   const prefixeName = ''
   const suffixeName = '#card'
 
-  return (
-    <SectionServices id="nosservices">
-      <DivServices>
-        <H3TrioTitle title={'Nos  services'} />
-        <UlServicesContent>
-          {services.map((element, index) => (
-            <li key={index}>
-              <LinkCardService to={createLink(element.name, name, true, prefixeName, suffixeName)}>
-                <ImgSVGService
-                  src={element.illustration}
-                  alt={createIllustrationAlt(element.name)}
-                />
-                <H4ServiceStyle>{element.name}</H4ServiceStyle>
-                <PtextService>{element.text}</PtextService>
-              </LinkCardService>
-            </li>
-          ))}
-        </UlServicesContent>
-      </DivServices>
-    </SectionServices>
-  )
+  if (error) {
+    return <p>Oups, il y a un problème de chargement des données</p>
+  }
+  if (isLoading) {
+    return <p>Loading...</p>
+  } else {
+    return (
+      <SectionServices id="nosservices">
+        <DivServices>
+          <H3TrioTitle title={'Nos  services'} />
+          <UlServicesContent>
+            {data.map((element, index) => (
+              <li key={index}>
+                <LinkCardService
+                  to={createLink(element.name, name, true, prefixeName, suffixeName)}
+                >
+                  <ImgSVGService
+                    src={element.illustration}
+                    alt={createIllustrationAlt(element.name)}
+                  />
+                  <H4ServiceStyle>{element.name}</H4ServiceStyle>
+                  <PtextService>{element.text}</PtextService>
+                </LinkCardService>
+              </li>
+            ))}
+          </UlServicesContent>
+        </DivServices>
+      </SectionServices>
+    )
+  }
 }
 
 // EXPORT // ______________________________________________________________

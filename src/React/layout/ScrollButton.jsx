@@ -17,6 +17,7 @@ import { ImgSVGArrowTop } from '../../styles/layout/scrollButton'
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false)
 
+/* A function that is called when the user scrolls. */
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop
 

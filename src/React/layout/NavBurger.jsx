@@ -38,7 +38,7 @@ const NavBurger = () => {
   const arrayPath = path.split('/')
   const location = arrayPath[1]
 
-  /* When pathname location change, nav burger style change too */
+  /* When pathname change, burger nav style change too */
   useEffect(() => {
     if (location === '') {
       setAgenceActive(true)
@@ -66,15 +66,18 @@ const NavBurger = () => {
     }
   }, [location])
 
+/* A function that is called when the user clicks on the close button. */
   const handleClickClose = () => {
     setSubmenu1(false)
     setSubmenu2(false)
     setIsOpen(false)
   }
+/* A function that is called when the user clicks on the services button. */
   const handleClickServices = () => {
     setSubmenu1(!submenu1)
     setSubmenu2(false)
   }
+/* A function that is called when the user clicks on the portfolios button. */
   const handleClickPortfolios = () => {
     setSubmenu2(!submenu2)
     setSubmenu1(false)

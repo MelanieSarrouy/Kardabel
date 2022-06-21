@@ -1,10 +1,23 @@
+/* IMPORTS */
+
 import React from 'react'
+// data imports
+import { datasPrint } from '../../../datas/services/services-print/datasPrint'
+// assets imports
+import circle from '../../../assets/shapes/EllipseLightGold.svg'
+// components imports
 import ServiceH3Card from './ServiceH3Card'
 import WhyComponent from './WhyComponent'
-import { datasPrint } from '../../../datas/services/datasPrint'
 import BenefitsComponent from './BenefitsComponent'
-import circle from '../../../assets/shapes/EllipseLightGold.svg'
 import ServicesComponent from './ServicesComponent'
+
+// JSX // _________________________________________________________________
+
+/**
+ * Print component to display Print services page
+ * @name Android
+ * @returns {?JSX}
+ */
 
 const Print = () => {
   return (
@@ -36,12 +49,14 @@ const Print = () => {
         id="prestations"
         intro={datasPrint.subtitles.services.intro}
         bck={datasPrint.subtitles.services.background}
-        bckSize='cover'
+        bckSize="cover"
         services={datasPrint.subtitles.services.services}
         circle={circle}
       />
     </>
   )
 }
+
+// EXPORT // ______________________________________________________________
 
 export default Print

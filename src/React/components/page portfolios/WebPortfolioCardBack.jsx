@@ -1,4 +1,10 @@
+/* IMPORTS */
+
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+// helpers imports
+import { formatDate } from '../../../helpers/formatDate'
+// styles imports
 import {
   DivBackPortfolioCard,
   UlButtonsContainers,
@@ -9,7 +15,15 @@ import {
   ImgIconTechno,
 } from '../../../styles/components/page portfolios/webPortfolioCardBack'
 import { LinkButtonServices } from '../../../styles/components/page agence/sectionH2IntroAgence'
-import { formatDate } from '../../../helpers/formatDate'
+
+// JSX // _________________________________________________________________
+
+/**
+ * WebPortfolioCardBack component to display back cards web portfolio 
+ * @name WebPortfolioCardBack
+ * @param {object} props
+ * @returns {?JSX}
+ */
 
 const WebPortfolioCardBack = (props) => {
   const [display, setDisplay] = useState(false)
@@ -48,5 +62,19 @@ const WebPortfolioCardBack = (props) => {
     </DivBackPortfolioCard>
   )
 }
+
+// PROPTYPES // ___________________________________________________________
+
+WebPortfolioCardBack.propTypes = {
+  flipped: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  work: PropTypes.string.isRequired,
+  technos: PropTypes.array.isRequired,
+  links: PropTypes.array.isRequired,
+}
+
+// EXPORT // ______________________________________________________________
 
 export default WebPortfolioCardBack

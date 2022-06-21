@@ -1,5 +1,10 @@
+/* IMPORTS */
+
 import React, { useState } from 'react'
-import H4Title from '../../layout/H4Title'
+import PropTypes from 'prop-types'
+// helpers imports
+import { NewlineText } from '../../../helpers/newLineText'
+// styles imports
 import { DivH4Content } from '../../../styles/components/page services/whyComponent'
 import colors from '../../../styles/bases/colors'
 import {
@@ -9,7 +14,17 @@ import {
   PTextBenefitCard,
   PTitleBenefitCard,
 } from '../../../styles/components/page services/benefitsComponent'
-import { NewlineText } from '../../../helpers/newLineText'
+// components imports
+import H4Title from '../../layout/H4Title'
+
+// JSX // _________________________________________________________________
+
+/**
+ * BenefitsComponent component to display benefits cards on the services page
+ * @name BenefitsComponent
+ * @param {object} props
+ * @returns {?JSX}
+ */
 
 const BenefitsComponent = (props) => {
   const [flipped, setFlipped] = useState(-1)
@@ -55,5 +70,16 @@ const BenefitsComponent = (props) => {
     </section>
   )
 }
+
+// PROPTYPES // ___________________________________________________________
+
+BenefitsComponent.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  benefits: PropTypes.array.isRequired,
+  color: PropTypes.string.isRequired,
+}
+
+// EXPORT // ______________________________________________________________
 
 export default BenefitsComponent

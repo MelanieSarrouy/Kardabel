@@ -1,3 +1,7 @@
+/**
+ * It takes a date string and returns a formatted date string.
+ * @param dateStr - The date string to be formatted.
+ */
 export const formatDate = (dateStr) => {
   const array = dateStr.split('-')
   const year = array[1]
