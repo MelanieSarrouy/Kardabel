@@ -19,7 +19,7 @@ import { DivH4Container, H4Style, SvgH4Trio } from '../../styles/layout/h4Title'
  const H4Title = (props) => {
   return (
     <DivH4Container id={props.id}>
-      <SvgH4Trio src={trio} alt="icon" />
+      <SvgH4Trio src={trio} alt="icon" width={40} />
       <H4Style>{props.title}</H4Style>
     </DivH4Container>
   )

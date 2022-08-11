@@ -50,6 +50,7 @@ const SectionH3Services = () => {
                   <ImgSVGService
                     src={element.illustration}
                     alt={createIllustrationAlt(element.name)}
+                    width={400}
                   />
                   <H4ServiceStyle>{element.name}</H4ServiceStyle>
                   <PtextService>{element.text}</PtextService>

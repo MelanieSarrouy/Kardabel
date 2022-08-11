@@ -43,7 +43,7 @@ import {
     <header>
       <HeroContent>
         <LogoContainer>
-          <ImgLogo src={logo} alt="logo" />
+          <ImgLogo src={logo} alt="logo" width={250}/>
         </LogoContainer>
         <TextHeroContainer>
           <PTitleStyle>KARDABEL</PTitleStyle>
@@ -58,11 +58,11 @@ import {
           </ButtonsContainer>
         </TextHeroContainer>
       </HeroContent>
-      {location === '' && <ImgCurvyStyle src={waveAgence} alt="background hero" />}
-      {location === 'services' && <ImgCurvyStyle src={waveServices} alt="background hero" />}
-      {location === 'portfolios' && <ImgCurvyStyle src={wavePortfolio} alt="background hero" />}
-      {location === 'contact' && <ImgCurvyStyle src={waveContact} alt="background hero" />}
-      {location === 'mentions-legales' && <ImgCurvyStyle src={waveMentions} alt="background hero" />}
+      {location === '' && <ImgCurvyStyle src={waveAgence} alt="background hero" width={1620} />}
+      {location === 'services' && <ImgCurvyStyle src={waveServices} alt="background hero" width={1620}/>}
+      {location === 'portfolios' && <ImgCurvyStyle src={wavePortfolio} alt="background hero" width={1620}/>}
+      {location === 'contact' && <ImgCurvyStyle src={waveContact} alt="background hero" width={1620}/>}
+      {location === 'mentions-legales' && <ImgCurvyStyle src={waveMentions} alt="background hero" width={1620}/>}
 
     </header>
   )

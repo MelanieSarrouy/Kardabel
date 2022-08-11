@@ -33,7 +33,7 @@ import { LinkButtonServices } from '../../../styles/components/page agence/secti
   return (
     <SectionCard id="card">
       <DivProfileCard color={props.color}>
-        <ImgSVGTitle src={props.h3Illustration} alt="title" />
+        <ImgSVGTitle src={props.h3Illustration} alt="title" width={1620} />
         <h3 className="sr-only">{props.h3Title}</h3>
         <UlCardStyle>
           {titlesList.map((element, index) => (

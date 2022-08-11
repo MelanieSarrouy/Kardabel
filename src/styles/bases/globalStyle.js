@@ -4,6 +4,13 @@ import fonts from './fonts'
 
 export const GlobalStyle = createGlobalStyle`
   /* Styles principaux */
+  @font-face {
+    font-family: 'Hearth Stone';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Hearth Stone'), url('https://fonts.cdnfonts.com/s/77674/Hearth Stone.woff') format('woff');
+  }
+  
   * {
     font-family: ${fonts.txt};
     color: ${colors.primary};

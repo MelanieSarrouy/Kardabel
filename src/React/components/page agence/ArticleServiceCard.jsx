@@ -38,14 +38,14 @@ import {
       <DivH4Container>
         <H4Style>{props.title}</H4Style>
         <DivTextContainer>
-          <ImgCommasStart src={commas} alt="" />
+          <ImgCommasStart src={commas} alt="" width={40} />
           <DivText>
           {props.text.map((el, index) => (
             <PtextCards key={index}>{el}</PtextCards>
           ))}
           </DivText>
 
-          <ImgCommasEnd src={commas} alt="" />
+          <ImgCommasEnd src={commas} alt="" width={40} />
         </DivTextContainer>
       </DivH4Container>
       <DivImgContainer>

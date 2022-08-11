@@ -90,6 +90,7 @@ const NavBurger = () => {
           src={isOpen ? close : burgerNormal}
           alt="burger navigation"
           onClick={() => setIsOpen(!isOpen)}
+          width={30}
         />
         {isOpen && (
           <UlMenuBurger>

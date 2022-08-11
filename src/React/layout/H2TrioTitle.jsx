@@ -19,7 +19,7 @@ import { DivH2Title, H2TitleStyle, SvgH2Trio } from '../../styles/layout/h2TrioT
 const H2TrioTitle = (props) => {
   return (
     <DivH2Title>
-      <SvgH2Trio src={trioDore} alt="deco" />
+      <SvgH2Trio src={trioDore} alt="deco" width={82} />
       <H2TitleStyle>{props.title}</H2TitleStyle>
     </DivH2Title>
   )

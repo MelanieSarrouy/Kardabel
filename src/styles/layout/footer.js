@@ -41,21 +41,21 @@ export const DivTextFooterContainer = styled.div`
   }
   & > div {
     @media (max-width: 750px) {
-      padding: 0 0 1rem 0;
+      padding: 1rem 0;
     }
   }
 `
 export const PTextCopyright = styled.p`
   color: ${colors.background};
   padding: 0.3rem 0;
+  font-weight: 300;
   @media (max-width: 750px) {
     text-align: center;
+    line-height: 1.5rem;
   }
   @media (max-width: 640px) {
-    line-height: 1.8rem;
-    padding: 0.3rem 3rem;
+    padding: 0.3rem;
   }
-
 `
 export const NavFooter = styled.nav`
   display: flex;
