@@ -12,6 +12,8 @@ import imgArgentBankjpg from './images/argentBank.jpeg'
 import imgHRNetjpg from './images/hrnet.jpg'
 import imgKardabeljpg from './images/kardabel.jpg'
 import imgLabatMobilejpg from './images/labatmobile.jpg'
+import imgArgojpg from './images/argo.jpg'
+import imgOARjpg from './images/oar.jpg'
 import imgReserviawebp from './images/reservia.webp'
 import imgOhmyfoodwebp from './images/ohmyfood.webp'
 import imgGameOnwebp from './images/gameon.webp'
@@ -24,6 +26,8 @@ import imgArgentBankwebp from './images/argentBank.webp'
 import imgHRNetwebp from './images/hrnet.webp'
 import imgKardabelwebp from './images/kardabel.webp'
 import imgLabatMobilewebp from './images/labatmobile.webp'
+import imgArgowebp from './images/argo.webp'
+import imgOARwebp from './images/oar.webp'
 
 import html from './images/html.svg'
 import css from './images/css.svg'
@@ -41,6 +45,11 @@ import elementor from './images/elementor.svg'
 import firestore from './images/firestore.svg'
 import recharts from './images/recharts.svg'
 import trello from './images/trello.svg'
+import googleMap from './images/google-map.svg'
+import mongoDB from './images/mongodb.svg'
+import expressJS from './images/expressjs.svg'
+import nodeJS from './images/nodejs.svg'
+import npm from './images/npm.svg'
 
 // EXPORT // ______________________________________________________________
 
@@ -154,7 +163,10 @@ export const datasPortfolioWeb = [
     ],
     date: '07-2021',
     links: [
-      { name: 'figma', url: '//www.figma.com/file/I5CJA4jvKeavEec4XoaMIo/P10_Learn%40Home_MelanieSarrouy(Demo-Mobile)?node-id=0%3A1' },
+      {
+        name: 'figma',
+        url: '//www.figma.com/file/I5CJA4jvKeavEec4XoaMIo/P10_Learn%40Home_MelanieSarrouy(Demo-Mobile)?node-id=0%3A1',
+      },
       { name: 'trello', url: '//trello.com/b/dc1SG8RH/learnhome' },
     ],
   },
@@ -213,7 +225,10 @@ export const datasPortfolioWeb = [
     date: '11-2021',
     links: [
       { name: 'code', url: '//github.com/MelanieSarrouy/ArgentBank_10-2021' },
-      { name: 'swagger', url: '//app.swaggerhub.com/apis/MelanieSarrouy13/Argent_Bank/1.0.0#/tags' },
+      {
+        name: 'swagger',
+        url: '//app.swaggerhub.com/apis/MelanieSarrouy13/Argent_Bank/1.0.0#/tags',
+      },
     ],
   },
   {
@@ -227,7 +242,7 @@ export const datasPortfolioWeb = [
     technos: [
       { logo: react, legende: 'React' },
       { logo: redux, legende: 'Redux' },
-      { logo: styledComponents, legende: 'Styled-Components' },
+      { logo: npm, legende: 'Styled-Components' },
       { logo: firestore, legende: 'Firestore' },
     ],
     date: '01-2022',
@@ -252,9 +267,7 @@ export const datasPortfolioWeb = [
       { logo: elementor, legende: 'Elementor' },
     ],
     date: '03-2022',
-    links: [
-      { name: 'site', url: '//www.labatmobile34.fr/' },
-    ],
+    links: [{ name: 'site', url: '//www.labatmobile34.fr/' }],
   },
   {
     title: 'Kardabel',
@@ -274,6 +287,48 @@ export const datasPortfolioWeb = [
     links: [
       { name: 'site', url: '//www.kardabel.com' },
       { name: 'code', url: '//github.com/MelanieSarrouy/Kardabel' },
+    ],
+  },
+  {
+    title: 'OAR',
+    image: {
+      jpg: imgOARjpg,
+      webp: imgOARwebp,
+    },
+    description:
+      "Open Apparel Registery - application pour afficher sur une map une sélection d'usines textiles par marque et/ou pays ou OAR ID",
+    work: 'Google Map, marqueurs, filtres, avec une sélection de data mockées',
+    technos: [
+      { logo: react, legende: 'React' },
+      { logo: redux, legende: 'Redux' },
+      { logo: styledComponents, legende: 'Styled-Components' },
+      { logo: googleMap, legende: 'Google Map' },
+    ],
+    date: '08-2022',
+    links: [
+      { name: 'site', url: '//oar-app.netlify.app' },
+      { name: 'code', url: '//github.com/MelanieSarrouy/OAR-app' },
+    ],
+  },
+  {
+    title: 'Argo',
+    image: {
+      jpg: imgArgojpg,
+      webp: imgArgowebp,
+    },
+    description:
+      "Page équipage du site de l'Argo : Lire, ajouter, supprimer, mettre à jour la liste de l'équipage (les Argonautes)",
+    work: '1er projet FullStack (MERN Stack) - CRUD : Create, Read, Update and Delete',
+    technos: [
+      { logo: mongoDB, legende: 'MongoDB' },
+      { logo: expressJS, legende: 'Express.js' },
+      { logo: nodeJS, legende: 'Node.js' },
+      { logo: react, legende: 'React' },
+    ],
+    date: '09-2022',
+    links: [
+      { name: 'site', url: '//argonautes-wcs-ms.herokuapp.com/team' },
+      { name: 'code', url: '//github.com/MelanieSarrouy/Argo' },
     ],
   },
 ]

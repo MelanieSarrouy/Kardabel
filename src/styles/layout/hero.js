@@ -142,7 +142,6 @@ export const PTitleStyle = styled.p`
   font-size: 5.6rem;
   color: ${colors.secondary};
   font-weight: 600;
-  translatex: -0.2rem;
   text-shadow: 0px 0.2rem 2px rgba(0, 0, 0, 0.4);
   animation: 1200ms cubic-bezier(0.27, 0.29, 0.14, 0.98) none ${kardabel};
   @media (max-width: 1280px) {
